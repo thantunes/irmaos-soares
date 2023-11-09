@@ -1,0 +1,26 @@
+{
+    "store.custom#politica-de-privacidade": {
+        "children": [
+            "flex-layout.row#politica-de-privacidade"
+        ]
+    },
+    "flex-layout.row#politica-de-privacidade": {
+        "props": {
+            "blockClass": "politica-de-privacidade"
+        },
+        "children": [
+            "flex-layout.col#politica-de-privacidade"
+        ]
+    },
+    "flex-layout.col#politica-de-privacidade": {
+        "children": [
+            "rich-text#politica-de-privacidade"
+        ]
+    },
+    "rich-text#politica-de-privacidade": {
+        "props": {
+            "text": "## politica-de-privacidade"
+        }
+    }
+   
+}

@@ -1,0 +1,20 @@
+.locationInfo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+
+}
+
+.locationInfoText{
+    flex:1;
+    font-size: 16px;
+    color: #0D6721;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.modal-localizacao__link{
+    display: block;
+}

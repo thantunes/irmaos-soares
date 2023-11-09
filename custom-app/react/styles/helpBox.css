@@ -1,0 +1,268 @@
+.menuHelpBox {
+  max-width: 299px;
+  width: 380px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 3px rgb(0 0 0 / 50%);
+  border-radius: 10px;
+  transform: translate(110%);
+  transition: 0.2s ease-in-out;
+  z-index: 999;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  .menuHelpBox {
+    bottom: 15px;
+    right: 0;
+    max-width: 100%;
+  }
+}
+
+.menuHelpButtonClose {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 6px;
+    text-align: center;
+    color: #333333;
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.menuHelpBoxHeader {
+  padding: 15px 10px 24px 10px;
+}
+
+.menuHelpBoxHeader p {
+    font-family: 'Lato';
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #414141;
+}
+
+.menuHelpBoxHeader p:last-of-type {
+   margin-bottom: 0;
+}
+
+.clienteName {
+  margin: 28px 0 12px;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 33px;
+  color: #333333;
+}
+.clienteNameContent {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 33px;
+  color: #333333;
+  text-transform: capitalize;
+}
+
+.menuHelpBoxlist {
+  list-style: none;
+  padding: 0 10px 21px;
+  margin: 0 0 10px 0;
+}
+
+.menuHelpBoxlist li {
+    padding: 8px 0;
+  }
+
+
+
+.helpBoxLink {
+  color: #333333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.helpBoxIcon {
+  display: block;
+  padding: 9px 10px;
+  background: #245189;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.helpBoxIcon span {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background:url(../assets/chat.png);
+    background-position: center;
+}
+
+.helpBoxIcon img {
+    width: 30px;
+    height: 30px;
+}
+.helpBoxItem {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+  max-width: 213px;
+}
+
+.helpBoxItem h3 {
+  margin: 0;
+  font-family: 'Lato';
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.05em;
+text-transform: capitalize;
+color: #414141;
+}
+
+.helpBoxItem p {
+    font-family: 'Lato';
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #414141;
+    margin: 0;
+}
+
+.menuHelpBoxForm {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: none;
+  position: relative;
+}
+
+.hbFormGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.hbFormGroup label {
+  color: rgba(35, 35, 35, 0.68);
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hbFormGroup input,
+.hbFormGroup select,
+.hbFormGroup textarea {
+  border: 1px solid #ccc;
+  padding: 14px;
+  margin: 0;
+  border-radius: 5px;
+  max-width: 100%;
+  resize: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .hbFormGroup input {
+    padding: 7px;
+  }
+}
+
+.submitButton {
+  background-color: #232323;
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 1px solid #cecece;
+  padding: 15px;
+  width: 100%;
+  margin: 10px 0 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.successSendFormHelp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 13px;
+  color: #28ab68;
+  padding: 10px;
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto;
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleY(0);
+}
+
+.errorSendFormHelp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 13px;
+  color: red;
+  padding: 10px;
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto;
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleY(0);
+}
+
+.show {
+  background: #fff;
+  box-shadow: 0 0 5px black;
+  transform: scaleY(1);
+}
+
+.cancelSendFormHelp {
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #67a0dd;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  z-index: 10;
+}
+
+.menuHelpBoxFooter {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 17px;
+  text-align: center;
+  color: #333333;
+  max-width: 307px;
+  margin: 0 auto;
+}
+
+.active {
+  display: block !important;
+}
+
+.desactivated {
+  display: none !important;
+}

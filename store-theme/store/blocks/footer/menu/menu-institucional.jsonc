@@ -1,0 +1,101 @@
+{
+    "vtex.menu@2.x:menu#Institucional": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+			"rich-text#Institucional",
+			"menu-item#quem-somos",
+			"menu-item#nossos-servicos",
+            "menu-item#nossas-lojas"
+		]
+	},
+	"rich-text#Institucional": {
+		"props": {
+			"text": "Institucional",
+			"blockClass": "footer-menu-title"
+		}
+	},
+	"menu-item#quem-somos": {
+		"props": {
+			"id": "footer-menu-item",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+            "blockClass": "footer-menu-item",
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/quem-somos",
+				"noFollow": false,
+				"tagTitle": "A Irmãos Soares",
+				"text": "A Irmãos Soares"
+			}
+		}
+	},
+
+    "menu-item#nossos-servicos": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/servicos",
+                "noFollow": false,
+                "tagTitle": "Nossos Serviços",
+                "text": "Nossos Serviços"
+            }
+        }
+    },
+
+    "menu-item#nossas-lojas": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/nossas-lojas",
+                "noFollow": false,
+                "tagTitle": "Nossas Lojas",
+                "text": "Nossas Lojas"
+            }
+        }
+    },
+    "menu-item#trabalhe-conosco": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/trabalhe-conosco",
+                "noFollow": false,
+                "tagTitle": "Trabalhe conosco",
+                "text": "Trabalhe conosco"
+            }
+        }
+    },
+    "menu-item#fornecedores": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/seja-nosso-fornecedor",
+                "noFollow": false,
+                "tagTitle": "Seja nosso fornecedor",
+                "text": "Seja nosso fornecedor"
+            }
+        }
+    }
+}

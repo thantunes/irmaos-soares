@@ -1,0 +1,21 @@
+{
+    "tab-list.item#servicos-eletricos": {
+        "props": {
+            "tabId": "servicos-eletricos",
+            "label": "Serviços de elétricos"
+        }
+    },
+    "tab-content.item#servicos-eletricos": {
+        "children": [
+            "rich-text#servicos-eletricos"
+        ],
+        "props": {
+            "tabId": "servicos-eletricos"
+        }
+    },
+    "rich-text#servicos-eletricos": {
+        "props": {
+            "text": "## Serviços Elétricos\n\nOs serviços elétricos exigem capacitação técnica altamente qualificada, pois falhas na execução podem gerar danos irreparáveis. Para atender esta necessidade e oferecer toda a segurança e garantia, nossos técnicos são especializados e capacitados para atender a todos os projetos e necessidades dos nossos clientes. \n\n*Serviços:*\n\nTroca de fiação completa\nMontagem de quadros de comando\nTroca de luminárias\nInstalação de luminárias e pendentes\nInstalação de fitas em LED em armários, gesso e sancas\nTroca de tomadas e interruptores\nIluminações externas\nExecução de passagem para redes de internet, telefone e interfone"
+        }
+    }
+}

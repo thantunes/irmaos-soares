@@ -1,0 +1,26 @@
+{
+    "store.custom#politica-de-entrega": {
+        "children": [
+            "flex-layout.row#politica-de-entrega"
+        ]
+    },
+    "flex-layout.row#politica-de-entrega": {
+        "props": {
+            "blockClass": "politica-de-entrega"
+        },
+        "children": [
+            "flex-layout.col#politica-de-entrega"
+        ]
+    },
+    "flex-layout.col#politica-de-entrega": {
+        "children": [
+            "rich-text#politica-de-entrega"
+        ]
+    },
+    "rich-text#politica-de-entrega": {
+        "props": {
+            "text": "## politica-de-entrega"
+        }
+    }
+   
+}

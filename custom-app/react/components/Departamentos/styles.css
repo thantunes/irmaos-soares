@@ -1,0 +1,147 @@
+.dropdown,
+.dropend,
+.dropstart,
+.dropup {
+    position: relative;
+}
+
+.dropdownMenuIs {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    list-style: none;
+    align-items: center;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    background-color: #BACD29;
+}
+
+.dropdownMenuIs::before {
+    content: "";
+    height: 13px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9.3' height='15.884' viewBox='0 0 9.3 15.884'%3E%3Cpath id='Caminho_137' data-name='Caminho 137' d='M15.5,7.038,8.846.387a1.329,1.329,0,0,0-1.875,0L.32,7.038A1.33,1.33,0,0,0,2.2,8.913L7.9,3.207l5.719,5.706A1.326,1.326,0,1,0,15.5,7.038Z' transform='translate(9.3) rotate(90)' fill='%23FFF'/%3E%3C/svg%3E%0A");
+    width: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(90deg);
+    margin-right: 5px;
+}
+
+/* .dropdownMenuIs li.navItem:first-child {
+    background-color: #0D6721;
+} */
+
+.dropdownMenuIs li.navItem {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* .navLink {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+} */
+
+.dropdownMenu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 15px;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    font-family: 'Sarabun', sans-serif;
+
+    border-radius: 0;
+    background: #148b2e;
+    border: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .175);
+
+
+}
+
+.dropdownMenuIs>.dropdown>.navLink {
+    color: #FFF;
+    font-weight: bold;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 15px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: pre-wrap;
+}
+
+.dropdownMenuIs:hover>ul.dropdownMenu {
+    display: flex;
+    top: 100%;
+    min-width: 250px;
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+
+}
+
+.dropdownMenu li a {
+    color: #FFF;
+    font-size: 15px;
+}
+
+ul.dropdownMenuIs ul.dropdownMenu ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 250px;
+    display: none;
+}
+
+ul.dropdownMenuIs ul.dropdownMenu li {
+    position: relative;
+}
+
+.dropdownItem {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.dropdownMenuIs ul.dropdownMenu li:hover>ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+ul.dropdownMenu .dropdownMenuFirst::after {
+    content: "";
+    float: right;
+    height: 13px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9.3' height='15.884' viewBox='0 0 9.3 15.884'%3E%3Cpath id='Caminho_137' data-name='Caminho 137' d='M15.5,7.038,8.846.387a1.329,1.329,0,0,0-1.875,0L.32,7.038A1.33,1.33,0,0,0,2.2,8.913L7.9,3.207l5.719,5.706A1.326,1.326,0,1,0,15.5,7.038Z' transform='translate(9.3) rotate(90)' fill='%23FFF'/%3E%3C/svg%3E%0A");
+    width: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+ul.dropdownMenu .dropdownItem:hover {
+    background-color: #bacd29;
+    color: #FFF;
+}

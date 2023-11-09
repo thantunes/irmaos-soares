@@ -1,0 +1,136 @@
+{
+    "store.custom#about-us": {
+        "blocks": [
+            "flex-layout.row#about-us",
+            "flex-layout.row#about-us-2",
+            "flex-layout.row#about-us-3"
+        ]
+    },
+    "flex-layout.row#about-us": {
+        "props":{
+            "horizontalAlign": "center",
+            "blockClass": "aboutUs--is",
+            "maginTop": 5,
+            "maginBottom": 5
+        },
+        "children": [
+            "image#mobile-phone",
+            "flex-layout.col#text-about-us"
+        ]
+    },
+    "flex-layout.col#text-about-us": {
+        "children": [
+            "rich-text#about-us"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "blockclass": "textColumn",
+            "preventVerticalStretch": true,
+            "paddingLeft": 10
+        }
+    },
+    "image#mobile-phone": {
+        "props": {
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/155444/banner-irmaos-soares.jpg?v=637599881657370000",
+            "maxHeight": "",
+            "maxWidth": "",
+            "blockClass": "storePrint"
+        }
+    },
+    "rich-text#about-us": {
+        "props": {
+            "text": "A empresa Irmãos Soares começou suas atividades em 01 de janeiro de 1967, na cidade de Goiânia, Goiás. Em dezembro de 1966, os irmãos Odilon José Soares e Elon José Soares adquiriram a Ferragista São Thomé em Goiânia e entraram para o ramo de material de construção. A história de sucesso da Irmãos Soares coincide com a expansão do Centro-Oeste brasileiro.",
+            "blockClass": "about"
+        }
+    },
+
+    "flex-layout.row#about-us-2": {
+        "props":{
+            "horizontalAlign": "center",
+            "blockClass": "aboutUs-2--is",
+            "maginTop": 5,
+            "maginBottom": 5
+        },
+        "children": [
+            "rich-text#about-us-2"
+        ]
+    },
+
+    "rich-text#about-us-2": {
+        "props": {
+            "text": "O crescimento e a liderança da Irmãos Soares sempre esteve interligada à simplicidade e proximidade que os fundadores da empresa mantiveram com os funcionários. Eles são os responsáveis pela filosofia implantada “o cliente é prioridade”.\n\nO treinamento realizado com a equipe é para assegurar esse tratamento diferenciado ao cliente. Desde o momento em que ele chega à loja até a entrega do produto ele tem que estar totalmente satisfeito.\n\nHoje, a Irmãos Soares é uma das maiores redes de materiais de construção do Centro-Oeste, com várias lojas distribuídas nos estados de Goiás e presente também em Minas Gerais, com quase um milhão de clientes e mais de 10 mil itens, linhas desde o básico ao acabamento.",
+            "blockClass": "about-2",
+            "textAlignment": "center"
+        }
+    },
+
+    "flex-layout.row#about-us-3": {
+        "props":{
+            "horizontalAlign": "center",
+            "blockClass": "aboutUs-slider--is",
+            "maginTop": 5,
+            "maginBottom": 5
+        },
+        "children": [
+            "slider-layout#slider-about-us",
+            "flex-layout.col#text-about-us"
+        ]
+    },
+
+    // Slider 
+    "slider-layout#slider-about-us": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "carousel"
+        },
+        "children": [
+            "image#slider-1",
+            "image#slider-2"
+        ]
+      },
+
+    "image#slider-1": {
+        "props": {
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/155443/foto1.jpg?v=637599877068570000",
+            "maxHeight": "",
+            "maxWidth": ""
+        }
+    },
+    "image#slider-2": {
+        "props": {
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/155443/foto1.jpg?v=637599877068570000",
+            "maxHeight": "",
+            "maxWidth": ""
+        }
+    },
+
+    "flex-layout.col#text-slider": {
+        "children": [
+            "rich-text#text-slider"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "blockclass": "textColumn",
+            "preventVerticalStretch": true,
+            "paddingLeft": 10
+        }
+    },
+
+    "rich-text#text-slider": {
+        "props": {
+            "text": "Eleita 21 vezes a empresa de material de construção mais lembrada pelos consumidores no estado de Goiás através do prêmio Pop List do “O Popular”.\n\nAlém disso, a Irmãos Soares também ficou em primeiro lugar em Uberlândia e Ituiutaba no prêmio “Top Of Mind” de 2010, também por dois anos seguidos foi vencedora na categoria “Empresa de Material de Construção” do prêmio “Os Mais Admirados Comércios em Goiás”.",
+            "blockClass": "about-2",
+            "textAlignment": "center"
+        }
+    }
+
+
+
+
+}

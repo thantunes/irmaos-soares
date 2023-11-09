@@ -1,0 +1,564 @@
+{
+    "store.home": {
+        "blocks": [
+            "responsive-layout.desktop#home",
+            // "responsive-layout.tablet#home",
+            "responsive-layout.mobile#home",
+            // "flex-layout.row#slider-principal",
+            "flex-layout.row#minibanners-1",
+            "rich-text#shelf-title",
+            "flex-layout.row#shelf",
+            "__fold__",
+            "flex-layout.row#banner-1",
+            "rich-text#shelf-title-2",
+            "flex-layout.row#shelf-2",
+            "responsive-layout.desktop#minibanners-2",
+            "responsive-layout.tablet#minibanners-2",
+            "responsive-layout.phone#minibanners-2",
+            "flex-layout.row#shelf-3",
+            "responsive-layout.desktop#minibanners-3",
+            "responsive-layout.tablet#minibanners-3",
+            "responsive-layout.phone#minibanners-3"
+        ]
+    },
+    "list-context.image-list#slider-principal": {
+        "children": [
+            "slider-layout#slider-principal-images"
+        ],
+        "props": {
+            "height": 480,
+            "preload": true,
+            "images": [
+                {
+                    "image": "assets/ISO_CASA_COMPLETA_DESKTOP.webp",
+                    "mobileImage": "assets/ISO_CASA_COMPLETA_MOBILE.webp"
+                },
+                {
+                    "image": "https://irmaossoares.vteximg.com.br/arquivos/ids/164436/ISO_CASA_COMPLETA_02_06_23_banners%20site_1640x480%203%20a.jpg",
+                    "mobileImage": "https://irmaossoares.vteximg.com.br/arquivos/ids/164437/ISO_CASA_COMPLETA_02_06_23_banners%20site_780x520%203%20a.jpg"
+                },
+                {
+                    "image": "https://irmaossoares.vteximg.com.br/arquivos/ids/164439/ISO_CASA_COMPLETA_02_06_23_banners%20site_1640x480%204a.jpg?v=638238683933400000",
+                    "mobileImage": "https://irmaossoares.vteximg.com.br/arquivos/ids/164437/ISO_CASA_COMPLETA_02_06_23_banners%20site_780x520%203%20a.jpg?v=638238671868200000"
+                },
+                {
+                    "image": "https://irmaossoares.vteximg.com.br/arquivos/ids/164434/ISO_CASA_COMPLETA_02_06_23_banners%20site_1640x480%201a.jpg?v=638238660615630000",
+                    "mobileImage": "https://irmaossoares.vteximg.com.br/arquivos/ids/164435/ISO_CASA_COMPLETA_02_06_23_banners%20site_780x520%201a.jpg?v=638238661883030000"
+                }
+            ]
+        }
+    },
+    "slider-layout#slider-principal-images": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": "5000",
+                "stopOnHover": "true"
+            },
+            "infinite": true,
+            // "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "blockClass": "carousel",
+            "fullWidth": false
+        }
+    },
+    "flex-layout.row#slider-principal": {
+        "children": [
+            "list-context.image-list#slider-principal"
+        ],
+        "props": {
+            
+            "colSizing": "auto",
+            // "preventHorizontalStretch": true,
+            // "preventVerticalStretch": true,
+            "fullWidth": false,
+            // "colGap": 1,
+            "marginTop": 5,
+            "marginBottom": 5,
+            "blockClass": "slider-principal"
+        }
+    },
+    // 2 BANNERS - esquerda e direita
+    "flex-layout.row#minibanners-1": {
+        "children": [
+            "flex-layout.col#minibanner-1",
+            "flex-layout.col#minibanner-2"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 6,
+            "rowGap": 6,
+            "blockClass": "minibanners-1",
+            "colJustify": "justify-content"
+        }
+    },
+    "flex-layout.col#minibanner-1": {
+        "children": [
+            "image#minibanner-1"
+        ]
+    },
+    "image#minibanner-1": {
+        "props": {
+            "link": {
+                "url": "/blux"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/164325/Oferta%20de%20tomadas%20pretas.png?v=638201247241600000",
+            "blockClass": "minibanner-1"
+        }
+    },
+    "flex-layout.col#minibanner-2": {
+        "children": [
+            "image#minibanner-2"
+        ]
+    },
+    "image#minibanner-2": {
+        "props": {
+            "link": {
+                "url": "/ralo%20oculto"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/164327/Design%20sem%20nome%20(8).png?v=638201849239730000",
+            "blockClass": "minibanner-2"
+        }
+    },
+    "rich-text#shelf-title": {
+        "props": {
+            "text": "## Produtos em destaque",
+            "blockClass": "shelfTitle"
+        }
+    },
+    "flex-layout.row#shelf": {
+        "children": [
+            "list-context.product-list#produtos-destaque"
+        ]
+    },
+    "list-context.product-list#produtos-destaque": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#produtos-destaque"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "slider-layout#produtos-destaque": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            // "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf"
+
+            // "centerMode": {
+            //     "desktop": false,
+            //     "tablet": false,
+            //     "phone": true
+            // }
+        }
+    },
+    "flex-layout.row#banner-1": {
+        "children": [
+            "flex-layout.col#banner-1"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 6,
+            "rowGap": 10,
+            "blockClass": "banner-1",
+            "colJustify": "justify-content",
+            "marginTop": 5
+        }
+    },
+    "flex-layout.col#banner-1": {
+        "children": [
+            "image#banner-1"
+        ]
+    },
+    "image#banner-1": {
+        "props": {
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/164107/Vasap%20banner.png?v=638155191046930000",
+            "srcMobile": "",
+            "link": {
+                "url": "/152?map=productClusterIds"
+            },
+            "blockClass": "banner-1"
+        }
+    },
+    "rich-text#shelf-title-2": {
+        "props": {
+            "text": "## Ofertas da semana",
+            "blockClass": "shelfTitle"
+        }
+    },
+    "flex-layout.row#shelf-2": {
+        "children": [
+            "list-context.product-list#ofertas-semana"
+        ]
+    },
+    "list-context.product-list#ofertas-semana": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#ofertas-semana"
+        ],
+        "props": {
+            "hideUnavailableItems": true,
+            "orderBy": "OrderByBestDiscountDESC"
+        }
+    },
+    "slider-layout#ofertas-semana": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            // "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf"
+        }
+    },
+    "responsive-layout.desktop#minibanners-2": {
+        "children": [
+            "flex-layout.row#minibanners-2"
+        ],
+        "props": {
+            "maxWidth": 1200,
+            "blockClass": "minibanners-2"
+        }
+    },
+  
+    "flex-layout.row#minibanners-2": {
+        "children": [
+            "image#minibanner-3",
+            "image#minibanner-4",
+            "image#minibanner-5"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 6,
+            "rowGap": 2,
+            "marginTop": 6,
+            "marginBottom": 6,
+            "blockClass": "minibanners-2",
+            "colJustify": "justify-content"
+        }
+    },
+
+    "image#minibanner-3": {
+        "props": {
+            "link": {
+                "url": "/148?map=productClusterIds"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163940/Design%20sem%20nome%20(92).png?v=638138956906600000",
+            "blockClass": "minibanner-3"
+        }
+    },
+    "image#minibanner-4": {
+        "props": {
+            "link": {
+                "url": "/162?map=productClusterIds"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163946/Design%20sem%20nome%20(89).png?v=638138962787200000",
+            "blockClass": "minibanner-4"
+        }
+    },
+    "image#minibanner-5": {
+        "props": {
+            "link": {
+                "url": "/147?map=productClusterIds"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163945/2222.png?v=638138962227500000",
+            "blockClass": "minibanner-5"
+        }
+    },
+
+    "responsive-layout.phone#minibanners-2": {
+        "children": [
+            "flex-layout.row#minibanners-2-mobile"
+        ],
+        "props": {
+            "maxWidth": 1200,
+            "blockClass": "minibanners-2"
+        }
+    },
+
+    "responsive-layout.tablet#minibanners-2": {
+        "children": [
+            "flex-layout.row#minibanners-2-mobile"
+        ],
+        "props": {
+            "maxWidth": 1200,
+            "blockClass": "minibanners-2"
+        }
+    },
+    
+    "flex-layout.row#minibanners-2-mobile": {
+        "children": [
+            "image#minibanner-3-mobile",
+            "image#minibanner-4-mobile",
+            "image#minibanner-5-mobile"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 6,
+            "rowGap": 2,
+            "marginTop": 6,
+            "marginBottom": 6,
+            "blockClass": "minibanners-2",
+            "colJustify": "justify-content"
+        }
+    },
+    "image#minibanner-3-mobile": {
+        "props": {
+             "link": {
+                "url": "/148?map=productClusterIds"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163944/Design sem nome (93).png",
+            "blockClass": "minibanner-3"
+        }
+    },
+    "image#minibanner-4-mobile": {
+        "props": {
+            "link": {
+                "url": "/162?map=productClusterIds"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163943/Tanques e Cubas mobile editado.png",
+            "blockClass": "minibanner-4"
+        }
+    },
+    "image#minibanner-5-mobile": {
+        "props": {
+            "link": {
+                "url": "/147?map=productClusterIds"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163942/Design sem nome (96).png",
+            "blockClass": "minibanner-5"
+        }
+    },
+    "flex-layout.row#shelf-3": {
+        "children": [
+            "list-context.product-list#produtos-destaque-2"
+        ]
+    },
+    "list-context.product-list#produtos-destaque-2": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#produtos-destaque-2"
+        ],
+        "props": {
+            "orderBy": "OrderByReleaseDateDESC"
+        }
+    },
+    "slider-layout#produtos-destaque-2": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+             // "showNavigationArrows": "desktopOnly",
+             "showPaginationDots": "never",
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf"
+        }
+    },
+    "responsive-layout.desktop#minibanners-3": {
+        "children": [
+            "flex-layout.row#minibanners-3"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 6,
+            "rowGap": 2,
+            "marginTop": 6,
+            "marginBottom": 6,
+            "blockClass": "minibanners-3",
+            "colJustify": "justify-content"
+        }
+    },
+    "flex-layout.row#minibanners-3": {
+        "children": [
+            "image#minibanner-6",
+            "image#minibanner-7",
+            "image#minibanner-8"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 6,
+            "rowGap": 2,
+            "marginTop": 6,
+            "marginBottom": 6,
+            "blockClass": "minibanners-3",
+            "colJustify": "justify-content"
+        }
+    },
+    "image#minibanner-6": {
+        "props": {
+            "link": {
+                "url": "https://api.whatsapp.com/send?phone=5562984238195"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163947/CNPJ%20desktop%20valor%20copiar.png?v=638138967061230000",
+            "blockClass": "minibanner-6"
+        }
+    },
+    "image#minibanner-7": {
+        "props": {
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163938/dez%20vezes%20sem%20juros%20desktop.png?v=638138959301700000",
+            "blockClass": "minibanner-7"
+        }
+    },
+    "image#minibanner-8": {
+        "props": {
+            "link": {
+                "url": "/144?map=productClusterIds"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163937/1.png?v=638138946683830000",
+            "blockClass": "minibanner-8"
+        }
+    },
+    "responsive-layout.phone#minibanners-3": {
+        "children": [
+            "flex-layout.row#minibanners-3-mobile"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 6,
+            "rowGap": 2,
+            "marginTop": 6,
+            "marginBottom": 6,
+            "blockClass": "minibanners-3",
+            "colJustify": "justify-content"
+        }
+    },
+    "flex-layout.row#minibanners-3-mobile": {
+        "children": [
+            "image#minibanner-6-mobile",
+            "image#minibanner-7-mobile",
+            "image#minibanner-8-mobile"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 6,
+            "rowGap": 2,
+            "marginTop": 6,
+            "marginBottom": 6,
+            "blockClass": "minibanners-3",
+            "colJustify": "justify-content"
+        }
+    },
+    "image#minibanner-6-mobile": {
+        "props": {
+            "link": {
+                "url": "https://api.whatsapp.com/send?phone=5562984238195"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163936/Cnpj%20mobile%20valor.png",
+            "blockClass": "minibanner-5"
+        }
+    },
+    "image#minibanner-7-mobile": {
+        "props": {
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163935/dez%20vezes%20sem%20juros%20mobile.png",
+            "blockClass": "minibanner-5"
+        }
+    },
+    "image#minibanner-8-mobile": {
+        "props": {
+            "link": {
+                "url": "/144?map=productClusterIds"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163934/Design sem nome (94).png",
+            "blockClass": "minibanner-5"
+        }
+    },
+    "responsive-layout.tablet#minibanners-3": {
+        "children": [
+            "flex-layout.row#minibanners-3-tablet"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 6,
+            "rowGap": 2,
+            "marginTop": 6,
+            "marginBottom": 6,
+            "blockClass": "minibanners-3",
+            "colJustify": "justify-content"
+        }
+    },
+    "flex-layout.row#minibanners-3-tablet": {
+        "children": [
+            "image#minibanner-6-tablet",
+            "image#minibanner-7-tablet",
+            "image#minibanner-8-tablet"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 6,
+            "rowGap": 2,
+            "marginTop": 6,
+            "marginBottom": 6,
+            "blockClass": "minibanners-3",
+            "colJustify": "justify-content"
+        }
+    },
+    "image#minibanner-6-tablet": {
+        "props": {
+            "link": {
+                "url": "https://api.whatsapp.com/send?phone=5562984238195"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163936/Cnpj%20mobile%20valor.png",
+            "blockClass": "minibanner-5"
+        }
+    },
+    "image#minibanner-7-tablet": {
+        "props": {
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163935/dez%20vezes%20sem%20juros%20mobile.png",
+            "blockClass": "minibanner-5"
+        }
+    },
+    "image#minibanner-8-tablet": {
+        "props": {
+            "link": {
+                "url": "/144?map=productClusterIds"
+            },
+            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/163934/Design sem nome (94).png",
+            "blockClass": "minibanner-5"
+        }
+    }
+}

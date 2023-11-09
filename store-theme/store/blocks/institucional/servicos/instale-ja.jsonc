@@ -1,0 +1,22 @@
+{
+    "tab-list.item#instale-ja": {
+        "props": {
+            "tabId": "instale-ja",
+            "label": "Instale Já",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-content.item#instale-ja": {
+        "children": [
+            "rich-text#instale-ja"
+        ],
+        "props": {
+            "tabId": "instale-ja"
+        }
+    },
+    "rich-text#instale-ja": {
+        "props": {
+            "text": "## Instale Já\n\n Irmãos Soares é uma empresa conhecida pela tradição e por buscar sempre a satisfação dos seus clientes. Pensando nisto, foi fundado juntamente com a empresa Araújo Marinho o projeto Instale Já!\n\nO Instale Já! oferece ao cliente mão de obra qualificada e profissionalizada, garantia e segurança no serviço e facilidade na condição de pagamento, além de toda assessoria técnica necessária."
+        }
+    }
+}

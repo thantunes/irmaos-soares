@@ -1,0 +1,104 @@
+{
+    "vtex.menu@2.x:menu#Atendimento": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+			"rich-text#Atendimento",
+            "menu-item#duvidas-frequentes",
+            "menu-item#contato-rodape",
+			"menu-item#minha-conta",
+            "menu-item#trabalhe-conosco",
+            "menu-item#fornecedores"
+		]
+	},
+	"rich-text#Atendimento": {
+		"props": {
+			"text": "Atendimento",
+			"blockClass": "footer-menu-title"
+		}
+	},
+	"menu-item#minha-conta": {
+		"props": {
+			"id": "footer-menu-item",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+            "blockClass": "footer-menu-item",
+			"itemProps": {
+				"type": "internal",
+				"href": "/account/",
+				"noFollow": false,
+				"tagTitle": "Minha Conta",
+				"text": "Minha Conta"
+			}
+		}
+	},
+
+    "menu-item#meus-pedidos": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/account#/orders",
+                "noFollow": false,
+                "tagTitle": "Meus Pedidos",
+                "text": "Meus Pedidos"
+            }
+        }
+    },
+    "menu-item#duvidas-frequentes": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/faq",
+                "noFollow": false,
+                "tagTitle": "Dúvidas Frequentes",
+                "text": "Dúvidas Frequentes"
+            }
+        }
+    },
+    "menu-item#meus-enderecos": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/account#/addresses",
+                "noFollow": false,
+                "tagTitle": "Meus Endereços",
+                "text": "Meus Endereços"
+            }
+        }
+    },
+    "menu-item#contato-rodape": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/contato",
+                "noFollow": false,
+                "tagTitle": "Fale Conosco",
+                "text": "Fale Conosco"
+            }
+        }
+    }
+
+   
+}

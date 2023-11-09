@@ -1,0 +1,210 @@
+{
+    "drawer#menu-mobile": {
+        "props": {
+            "maxWidth": "290px",
+            "blockClass": "menu-mobile"
+        },
+        "children": [
+            "flex-layout.row#mobile-menu"
+        ],
+        "blocks": [
+            "drawer-trigger#menu-mobile"
+        ]
+    },
+    "drawer-trigger#menu-mobile": {
+        "children": [
+            "image#open-menu-icon"
+        ]
+    },
+    "image#open-menu-icon": {
+        "props": {
+            "src": "assets/menuIcon.png",
+            "maxHeight": 24
+        }
+    },
+    "flex-layout.row#mobile-menu": {
+        "props": {
+            "blockClass": "mobile-menu"
+        },
+        "children": [
+            "flex-layout.col#mobile-menu"
+        ]
+    },
+    "flex-layout.col#mobile-menu": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "flex-layout.row#drawer-top",
+            // "flex-layout.row#drawer-options-container",
+            "flex-layout.row#drawer-content"
+        ]
+    },
+    "flex-layout.row#drawer-content": {
+        "children": [
+            "flex-layout.col#drawer-content"
+        ],
+        "props": {
+            "blockClass": "drawer-content-container"
+        }
+    },
+    "flex-layout.col#drawer-content": {
+        "children": [
+            "category-menu#mobile"
+            // "vtex.menu@2.x:menu#category-menu-mobile"
+        ]
+    },
+    "category-menu#mobile": {
+		"props": {
+            "mobileMode": true,
+			"showAllDepartments": true,
+			"showSubcategories": true,
+			"menuDisposition": "center",
+			"departments": [],
+			"sortSubcategories": "name",
+            "blockClass": "category-menu-mobile"
+		}
+	},
+
+ 
+    /* drawer top */
+    "flex-layout.row#drawer-top": {
+        "children": [
+            "flex-layout.col#drawer-top-links"
+        ],
+        "props": {
+            "sticky": true,
+            "blockClass": "drawer-top-content"
+        }
+    },
+    "flex-layout.col#drawer-top-links": {
+        "children": [
+            "flex-layout.row#menu-mobile-header"
+            // "login#menu-mobile"
+        ],
+        "props": {
+            "blockClass": "mobile-links-container"
+        }
+    },
+    /* drawer options container */
+    // "flex-layout.row#drawer-options-container": {
+    //     "children": [
+    //         "flex-layout.col#drawer-options"
+    //     ],
+    //     "props": {
+    //         "blockClass": "mobile-options-container",
+    //         "marginTop": 5
+    //     }
+    // },
+    // "flex-layout.col#drawer-options": {
+    //     "children": [
+    //         "menu-item#my-account",
+    //         "menu-item#my-orders2"
+    //     ],
+    //     "props": {
+    //         "blockClass": [
+    //             "mobile-options",
+    //             "mobile-links-container"
+    //         ]
+    //     }
+    // },
+    /* drawer header*/
+    "flex-layout.row#menu-mobile-header": {
+        "props": {
+            "colSizing": "auto",
+            "preventVerticalStretch": true,
+            "blockClass": "menu-mobile-header"
+        },
+        "children": [
+            "flex-layout.row#logo-mobile"
+            // "drawer-close-button#menu-mobile"
+        ]
+    },
+    "flex-layout.row#logo-mobile": {
+        "props": {
+            "colSizing": "auto",
+            "horizontalAlign": "left",
+            "preventVerticalStretch": true,
+            "blockClass": "menu-mobile-logo-container"
+        },
+        "children": [
+            // "image#open-menu-icon",
+            "image#logo-is-mobile"
+        ]
+    },
+    "image#logo-is-mobile": {
+        "props": {
+            "src": "assets/logo-irmao-soares.png",
+            "maxHeight": 60
+        }
+    },
+    // "drawer-close-button#menu-mobile": {
+    //     "props": {
+    //         "blockClass": [
+    //             "menu-close-button"
+    //         ]
+    //     }
+    // },
+    /* drawer options */
+    "login#menu-mobile": {
+        "props": {
+            "showIconProfile": false,
+            "iconLabel": "Entre ou Cadastre-se",
+            "labelClasses": [
+                "login-icon"
+            ],
+            "providerPasswordButtonLabel": "Entrar com e-mail",
+            "emailAndPasswordTitle": "Entrar com e-mail e senha",
+            "accessCodeTitle": "Receber código de acesso ",
+            "emailPraceholder": "ex: exemplo@mail.com.br",
+            "passwordPlaceholder": "adicionar sua senha",
+            "showPasswordVerificationIntoTooltip": true,
+            "hasGoogleOneTap": false,
+            "blockClass": "menu-mobile"
+        }
+    }
+    // "menu-item#my-account": {
+    //     "props": {
+    //         "blockClass": [
+    //             "menu-mobile-options"
+    //         ],
+    //         "id": "menu-item-my-account",
+    //         "type": "custom",
+    //         "iconId": null,
+    //         "highlight": false,
+    //         "itemProps": {
+    //             "type": "internal",
+    //             "href": "/account",
+    //             "noFollow": true,
+    //             "tagTitle": "/account",
+    //             "text": "Minha conta"
+    //         }
+    //     }
+    // },
+    // "menu-item#my-orders2": {
+    //     "props": {
+    //         "blockClass": [
+    //             "menu-mobile-options"
+    //         ],
+    //         "id": "menu-item-my-orders",
+    //         "type": "custom",
+    //         "iconId": null,
+    //         "highlight": false,
+    //         "itemProps": {
+    //             "type": "internal",
+    //             "href": "/my-orders",
+    //             "noFollow": true,
+    //             "tagTitle": "/my-orders",
+    //             "text": "meus pedidos"
+    //         }
+    //     }
+    // },
+    /* back button */
+    // "drawer-close-button#back-button": {
+    //     "props": {
+    //         "blockClass": [
+    //             "back-button"
+    //         ]
+    //     }
+    // }
+}

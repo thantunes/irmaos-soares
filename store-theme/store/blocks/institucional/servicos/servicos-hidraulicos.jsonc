@@ -1,0 +1,21 @@
+{
+    "tab-list.item#servicos-hidraulicos": {
+        "props": {
+            "tabId": "servicos-hidraulicos",
+            "label": "Serviços Hidráulicos"
+        }
+    },
+    "tab-content.item#servicos-hidraulicos": {
+        "children": [
+            "rich-text#servicos-hidraulicos"
+        ],
+        "props": {
+            "tabId": "servicos-hidraulicos"
+        }
+    },
+    "rich-text#servicos-hidraulicos": {
+        "props": {
+            "text": "## Serviços Hidráulicos\n\nA instalação hidráulica é a etapa da obra que tem o menor custo, porém, se mal feita pode gerar um prejuízo muito grande, como aumento na conta de agua, infiltração e danificar os moveis. Pensando em evitar desperdícios e problemas, o Instale Já! capacitou os seus profissionais para uma execução perfeita, duradoura, com qualidade e garantia.\n\n*Serviços:*\n\nInstalação de louças e metais sanitários\nInstalação de tanques\nInstalação de pias\nColeta de águas pluviais – calhas e destinação final\nInfraestrutura hidráulica"
+        }
+    }
+}

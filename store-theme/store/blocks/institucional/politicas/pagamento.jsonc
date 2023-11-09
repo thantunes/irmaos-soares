@@ -1,0 +1,73 @@
+{
+    "store.custom#politica-de-pagamento": {
+        "children": [
+            "flex-layout.row#politica-de-pagamento"
+        ]
+    },
+    "flex-layout.row#politica-de-pagamento": {
+        "props": {
+            "blockClass": "politica-de-pagamento"
+        },
+        "children": [
+            "flex-layout.col#politica-de-pagamento"
+        ]
+    },
+    "flex-layout.col#politica-de-pagamento": {
+        "children": [
+            "rich-text#politica-de-pagamento"
+        ]
+    },
+
+//     A Política de Pagamentos abaixo constitui parte integrante dos Termos e Condições de Uso.
+
+// Identificação
+// Este site é de propriedade, mantido, e operado por IRMÃOS SOARES S/A, com sede na Avenida Pio XII Lote 11-E Quadra 25, nº 15, Bairro Rodoviário, CEP 74.430-215, Goiânia - GO, inscrita no CNPJ/MF nº. 01.559.046/0001-08, com inscrição estadual nº 10.000.873-9.
+
+// Central de Atendimento Irmãos Soares
+// Caso precise de informações referente a Política de Pagamentos, a Irmãos Soares disponibiliza um atendimento exclusivo para quaisquer dúvidas que deseja elucidar. O atendimento para esclarecimento dessas é realizado pelos seguintes canais: (a) Presencialmente, em qualquer uma das lojas físicas Irmãos Soares, durante os horários de funcionamento; (b) pelo e-mail: sac@irmaossoares.com.br, ou para o whatsapp 62 98423-8195ou ligue para 55 62 3272-3080, de segunda a sexta das 8h às 18h e sábado das 08h às 12h; (c) Por correspondência endereçada à Irmãos Soares, Avenida Pio XII Lote 11-E Quadra 25, nº 15, Bairro Rodoviário, CEP 74.430-215, Goiânia - GO, sempre acompanhada das informações de contato do consumidor, para que possamos finalizar o atendimento. Em todos os casos, receberá uma confirmação pelo mesmo canal em até 5 (cinco) dias úteis. Além disso, a Irmãos Soares disponibiliza neste site uma seção de FAQ (Perguntas mais frequentes), bem como em todas as outras políticas: Política de Trocas e Devoluções, Política de Entrega de Produtos, Política de Privacidade e Segurança, e finalmente, os Termos e Condições de Uso deste Site. Todos esses documentos poderão ser consultados online ou baixados em PDF pelo usuário.
+
+// Meios de pagamento
+// 3.1. Á vista
+
+// 3.1.1. O cliente poderá fazer pagamento a vista, utilizando debito em conta, PIX ou cartão de credito. 
+
+// 3.1.2. O Cliente poderá utilizar 1 (um) cartão de crédito ou debito emitido no Brasil em seu nome, seja como titular ou dependente, com as seguintes bandeiras: Visa®, Mastercard®, Elo, Hiper, Diners e American Express®.
+
+// 3.1.3. O prazo de aceitação do pedido é de até 48 horas a contar da data da aprovação do pagamento pela instituição bancária.
+
+// 3.2. Parcelamento
+
+// 3.2.1. Na loja online parcelamos em até 6 vezes sem juros, com parcelas mínimas de R$100,00 pelos cartões de crédito (Verifique a bandeira em Políticas de Pagamento tópico 3.1.1). 
+
+// O parcelamento está sujeito a alterações e estará sinalizado no produto
+// Pedido de Compra
+// 4.1. A Irmãos Soares disponibiliza uma página descritiva para cada produto, com informações relativas à característica, composição, eventual risco à saúde e segurança, o prazo de validade, origem, condição de pagamento e preço total à vista e parcelado.
+
+// 4.2. Após escolher o produto o cliente será direcionado para o carrinho e poderá visualizar: o produto, a quantidade escolhida, o valor, bem como calcular o frete. Após visualização dos dados será necessário identificar as informações de entrega e escolher o meio de pagamento.
+
+// 4.3. A Irmãos Soares, imediatamente, enviará um e-mail ao cliente indicando o número da compra, o produto, a quantidade, o preço, o valor do frete, o meio de pagamento e o prazo estimado ou o agendamento de entrega.
+
+// 4.4. Após a finalização da compra, por medida de segurança, a Irmãos Soares não aceitará alterações de meio de pagamento, produto, quantidade do produto, local de entrega, dados cadastrais e data ou turno da entrega.
+
+// 4.5. Para alterar o meio de pagamento em compra realizada através de boleto bancário, basta não efetuar seu pagamento que o boleto será automaticamente cancelado. Após, basta refazer a compra e escolher o meio de pagamento de sua preferência dentre os disponíveis no Site.
+
+// 4.6. Durante o processo de compra será informado uma estimativa de prazo para a entrega do produto considerando: o produto, sua quantidade, o estoque disponível e a distância entre nossas centrais de distribuição e o endereço de entrega informado pelo Cliente.
+
+// 4.7. O prazo de entrega será contado a partir da data de aprovação do pagamento pelas instituições bancárias e poderá variar de acordo com o meio e forma de pagamento escolhida.
+
+// 4.8. A escolha da transportadora é de responsabilidade exclusiva da Irmãos Soares.
+
+// Segurança dos Pagamentos
+// 5.1. A compra poderá ser cancelada caso haja qualquer inconformidade relacionada a qualquer dado informado pelo cliente.
+
+// 5.2. Em compras realizadas através de cartão de crédito, por medida de segurança, terceiro credenciado poderá entrar em contato com o cliente solicitando dados de acordo com a necessidade para confirmação da compra.
+
+// 5.3. Para informações mais específicas consulte nossa Política de Privacidade e Segurança.
+    "rich-text#politica-de-pagamento": {
+        "props": {
+                "text": "## Política de Pagamento\n"
+                
+        }
+    }
+   
+}

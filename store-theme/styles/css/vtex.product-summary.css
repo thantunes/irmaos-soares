@@ -1,0 +1,87 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround,
+.skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+    border-radius: 50%;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+    opacity: 1;
+}
+
+@media screen and (max-width: 40em) {
+    .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+        display: none;
+    }
+}
+
+.nameContainer {
+    justify-content: start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.brandName {
+    font-weight: bold;
+    color: #000;
+    font-family: "Sarabun",sans-serif;
+    font-size: 16px;
+    text-align: start;
+}
+.nameWrapper--product-name-shelf {
+    text-align: start;
+    line-height: 16px;
+}
+
+.container {
+    text-align: start;
+}
+
+.imageContainer {
+    text-align: center;
+}
+
+.image {
+    border-radius: 0.25rem;
+}
+
+.container--is-shelf{
+    background-color: #FFF;
+    padding: 22px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container--is-shelf:hover{
+    opacity: .9;
+    box-shadow: 0 0 10px 0px rgba(1,41,22,.2);
+}
+
+.container--is-shelf :global(.vtex-button){
+    font-family: 'Sarabun',sans-serif;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 0;
+    display: none;
+}
+
+
+@media screen and (max-width: 767px){
+    .brandName {
+        font-size: 14px;
+        max-height: 50px;
+        display: block;
+        overflow: hidden;
+    }
+    .container--is-shelf{
+        background-color: #FFF;
+        padding: 0.5rem 1.5rem;
+        border-radius: 15px;
+        margin: 0.5rem auto;
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "menu-item#institucional-mobile": {
+        "props": {
+            "id": "menu-item-category",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Institucional",
+                "text": "Institucional"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#institucional"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#institucional": {
+        "children": [
+            "vtex.menu@2.x:menu#institucional-accordion"
+        ]
+    },
+    "vtex.menu@2.x:menu#institucional-accordion": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#sobre",
+            "menu-item#servicos",
+            "menu-item#lojas",
+            "menu-item#fornecedoresmobile"
+        ]
+    },
+    "menu-item#sobre": {
+        "props": {
+            "id": "menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/quem-somos",
+                "noFollow": false,
+                "tagTitle": "A Irmãos Soares",
+                "text": "A Irmãos Soares"
+            }
+        }
+    },
+    "menu-item#servicos": {
+        "props": {
+            "id": "menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/servicos",
+                "noFollow": false,
+                "tagTitle": "Serviços",
+                "text": "Serviços"
+            }
+        }
+    },
+    "menu-item#lojas": {
+        "props": {
+            "id": "menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/nossas-lojas",
+                "noFollow": false,
+                "tagTitle": "Nossas Lojas",
+                "text": "Nossas Lojas"
+            }
+        }
+    },
+    "menu-item#fornecedoresmobile": {
+        "props": {
+            "id": "menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/fornecedores",
+                "noFollow": false,
+                "tagTitle": "Nossos Fornecedores",
+                "text": "Nossos Fornecedor"
+            }
+        }
+    }
+}

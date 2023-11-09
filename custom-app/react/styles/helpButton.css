@@ -1,0 +1,65 @@
+@keyframes blink {
+  0% {
+    box-shadow: 0 0 15px black;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 0 15px black;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    box-shadow: 0 0 15px black;
+  }
+  50% {
+    box-shadow: 0 0 0;
+  }
+  100% {
+    box-shadow: 0 0 15px black;
+  }
+}
+
+.helpButtonContent {
+  -webkit-animation: blink 1s linear infinite;
+  -moz-animation: blink 1s linear infinite;
+  -ms-animation: blink 1s linear infinite;
+  -o-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+}
+
+.helpButtonContent {
+  bottom: 85px;
+  right: 15px;
+  background: rgb(170, 82, 117);
+  position: fixed;
+  border: 0;
+  padding: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.helpButton {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background-image: url(../assets/atend-icon.png);
+  background-color: #245189;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #fff;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  border: none;
+}
+
+.active {
+  transform: translate(0) !important;
+}

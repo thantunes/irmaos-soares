@@ -1,0 +1,102 @@
+{
+    "vtex.menu@2.x:menu#Politicas": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+			"rich-text#Politicas",
+            "menu-item#politicas-de-trocas",
+			"menu-item#politicas-de-pagamento",
+            "menu-item#politicas-de-entrega",
+            "menu-item#politicas-de-privacidade",
+            "menu-item#politicas-de-cookies"
+		]
+	},
+	"rich-text#Politicas": {
+		"props": {
+			"text": "Dúvidas",
+			"blockClass": "footer-menu-title"
+		}
+	},
+	"menu-item#politicas-de-pagamento": {
+		"props": {
+			"id": "footer-menu-item",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+            "blockClass": "footer-menu-item",
+			"itemProps": {
+				"type": "internal",
+				"href": "/institucional/politicas-de-pagamento",
+				"noFollow": false,
+				"tagTitle": "Políticas de Pagamento",
+				"text": "Políticas de Pagamento"
+			}
+		}
+	},
+
+    "menu-item#politicas-de-trocas": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/politicas-de-trocas",
+                "noFollow": false,
+                "tagTitle": "Políticas de Trocas",
+                "text": "Políticas de Trocas"
+            }
+        }
+    },
+    "menu-item#politicas-de-entrega": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/politicas-de-entrega",
+                "noFollow": false,
+                "tagTitle": "Políticas de Entrega",
+                "text": "Políticas de Entrega"
+            }
+        }
+    },
+    "menu-item#politicas-de-privacidade": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/politicas-de-privacidade",
+                "noFollow": false,
+                "tagTitle": "Políticas de Privacidade",
+                "text": "Políticas de Privacidade"
+            }
+        }
+    },
+    "menu-item#politicas-de-cookies": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/politicas-de-cookies",
+                "noFollow": false,
+                "tagTitle": "Políticas de Cookies",
+                "text": "Políticas de Cookies"
+            }
+        }
+    }
+}

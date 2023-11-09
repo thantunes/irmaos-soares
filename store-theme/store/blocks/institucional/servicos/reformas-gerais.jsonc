@@ -1,0 +1,21 @@
+{
+    "tab-list.item#reformas-gerais": {
+        "props": {
+            "tabId": "reformas-gerais",
+            "label": "Reformas"
+        }
+    },
+    "tab-content.item#reformas-gerais": {
+        "children": [
+            "rich-text#reformas-gerais"
+        ],
+        "props": {
+            "tabId": "reformas-gerais"
+        }
+    },
+    "rich-text#reformas-gerais": {
+        "props": {
+            "text": "## Reformas Gerais\n\nReformas comerciais, residenciais e industriais em geral."
+        }
+    }
+}

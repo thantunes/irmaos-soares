@@ -1,0 +1,39 @@
+{
+    "flex-layout.row#footer-newsletter-mobile": {
+        "children": [
+            "flex-layout.col#newsletter-title-mobile",
+            "flex-layout.col#footer-newsletter-mobile"
+        ],
+        "props": {
+            "blockClass": "footer-newsletter-mobile",
+            //  "preserveLayoutOnMobile": true,
+            // "preventVerticalStretch": true,
+            // "preventHorizontalStretch": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "fullWidth": false
+        }
+    },
+    "flex-layout.col#newsletter-title-mobile": {
+        "children": [
+            "rich-text#newsletter-title"
+        ],
+        "props": {
+            "blockClass": "newsletter-title",
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "width": "100%"
+        }
+    },
+    "flex-layout.col#footer-newsletter-mobile": {
+        "children": [
+            "newsletter-form"
+        ],
+        "props": {
+            "blockClass": "footer-newsletter",
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "width": "100%"
+        }
+    } 
+}

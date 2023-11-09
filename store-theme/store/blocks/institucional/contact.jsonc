@@ -1,0 +1,112 @@
+{
+    "store.custom#contact-us": {
+        "children": [
+            "flex-layout.row#contact-us"
+        ]
+    },
+    "flex-layout.row#contact-us": {
+        "props": {
+            "blockClass": "contact",
+            "colGap": 5,
+            "marginBottom": 5,
+            "marginTop": 5,
+            "rowGap": 5
+        },
+        "children": [
+            "flex-layout.col#contact-us",            
+            "flex-layout.col#image-contact-us"
+        ]
+    },
+    "flex-layout.col#contact-us": {
+        "children": [
+            "rich-text#contact-us",
+            "form#contact-us"
+        ]
+    },
+
+    "flex-layout.col#image-contact-us":{
+        "props": {
+            "blockClass": "image-contact-us",
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "image#image-contact-us"
+        ]
+    },
+
+    "image#image-contact-us": {
+        "props": {
+            "src": "https://www.irmaossoares.com.br/arquivos/conheca-lojas.png?v=637599872498700000",      
+            "link": "/institucional/nossas-lojas",     
+            "alt": "Fale Conosco"
+        }
+    },
+
+    "rich-text#contact-us": {
+        "props": {
+            "text": "## Fale Conosco\nPossuimos equipe qualificada para esclarecer suas dúvidas.\nVai construir ou reformar? Fale conosco!",
+            "blockClass": "title--contact-us"
+        }
+    },
+    "form#contact-us": {
+        "props": {
+            "entity": "contact",
+            "schema": "site-contact"
+        },
+        "blocks": [
+            "form-success#contact-us"
+        ],
+        "children": [
+            "form-input.text#nome-contact",
+            "form-input.text#email-contact",
+            "form-input.text#telefone-contact",
+            "form-input.text#assunto-contact",
+            "form-input.textarea#mensagem-contact",
+            "form-submit#contact"
+        ]
+    },
+    "form-success#contact-us": {
+        "children": [
+            "rich-text#success-submit-contact"
+        ]
+    },
+    "rich-text#success-submit-contact": {
+        "props": {
+            "text": "Obrigado pelo contato, retornaremos em breve!",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "form-input.text#nome-contact": {
+        "props": {
+            "pointer": "#/properties/nome"
+        }
+    },
+    "form-input.text#email-contact": {
+        "props": {
+            "pointer": "#/properties/email"
+        }
+    },    
+    "form-input.text#telefone-contact": {
+        "props": {
+            "pointer": "#/properties/telefone"
+        }
+    },
+    
+    "form-input.text#assunto-contact": {
+        "props": {
+            "pointer": "#/properties/assunto"
+        }
+    },
+    "form-input.textarea#mensagem-contact": {
+        "props": {
+            "pointer": "#/properties/mensagem"
+        }
+    },
+    "form-submit#contact": {
+        "props": {
+            "label": "Enviar mensagem"
+        }
+    }
+}

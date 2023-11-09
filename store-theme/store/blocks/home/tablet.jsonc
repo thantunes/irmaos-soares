@@ -1,0 +1,62 @@
+{
+    "responsive-layout.tablet#home":{
+        "children":[
+          "flex-layout.row#slider-principal-tablet"
+        ]
+    },
+
+    "list-context.image-list#slider-principal-tablet": {
+        "children": [
+            "slider-layout#slider-principal-images-tablet"
+        ],
+        "props": {
+            "height": 480,
+            "preload": true,
+            "images": [
+                {
+                    "image": "https://irmaossoares.vteximg.com.br/arquivos/ids/164436/ISO_CASA_COMPLETA_02_06_23_banners%20site_1640x480%203%20a.jpg"
+                },
+                {
+                    "image": "https://irmaossoares.vteximg.com.br/arquivos/ids/164439/ISO_CASA_COMPLETA_02_06_23_banners%20site_1640x480%204a.jpg?v=638238683933400000"
+                },
+                {
+                    "image": "https://irmaossoares.vteximg.com.br/arquivos/ids/164434/ISO_CASA_COMPLETA_02_06_23_banners%20site_1640x480%201a.jpg?v=638238660615630000"
+                }
+            ]
+        }
+    },
+    "slider-layout#slider-principal-images-tablet": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": "5000",
+                "stopOnHover": "true"
+            },
+            "infinite": true,
+            // "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "blockClass": "carousel",
+            "fullWidth": false
+        }
+    },
+    "flex-layout.row#slider-principal-tablet": {
+        "children": [
+            "list-context.image-list#slider-principal-tablet"
+        ],
+        "props": {
+            
+            "colSizing": "auto",
+            // "preventHorizontalStretch": true,
+            // "preventVerticalStretch": true,
+            "fullWidth": false,
+            // "colGap": 1,
+            "marginTop": 5,
+            "marginBottom": 5,
+            "blockClass": "slider-principal"
+        }
+    }
+}

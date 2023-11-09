@@ -1,0 +1,25 @@
+{
+    "vtex.menu@2.x:menu#FaleConosco": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+			"rich-text#FaleConosco",
+            "rich-text#whatsapp"
+		]
+	},
+	"rich-text#FaleConosco": {
+		"props": {
+			"text": "Compre pelo WhatsApp",
+			"blockClass": "footer-menu-title"
+		}
+	},
+
+    "rich-text#whatsapp": {
+        "props": {
+            "text": "[![Compre pelo WhatsApp](assets/svgs/whatsapp-icon-topbar.svg) 62 98423-8195](https://api.whatsapp.com/send?phone=5562984238195)",
+            "blockClass": "footer-menu-item-whatsapp"
+        }
+    }
+
+}

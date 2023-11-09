@@ -1,0 +1,52 @@
+{
+
+    "rich-text#faq-servicos-is": {
+        "props": {
+            "text": "### Serviços"
+        }
+    },
+
+    "disclosure-layout-group#group-servicos-is": {
+        "children": [
+            "disclosure-layout#is-possui-profissionais"
+        ]
+    },
+
+    "disclosure-layout#is-possui-profissionais": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#is-possui-profissionais",
+            "disclosure-content#is-possui-profissionais"
+        ]
+    },
+    "disclosure-trigger#is-possui-profissionais": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#is-possui-profissionais-pergunta"
+        ]
+    },
+    "disclosure-content#is-possui-profissionais": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#is-possui-profissionais-resposta"
+        ]
+    },
+    "rich-text#is-possui-profissionais-pergunta": {
+        "props": {
+            "text": "Quais são os meios de pagamentos disponíveis?"
+        }
+    },
+    "rich-text#is-possui-profissionais-resposta": {
+        "props": {
+            "text": "No momento, o Site aceita boleto e cartões de crédito emitidos no Brasil de bandeiras Mastercard®, Visa® e American Express®. No futuro, a Irmãos Soares pretende adotar outros meios de pagamento. Essas mudanças serão divulgadas em nosso Site e refletidas em nossa Política de Pagamento."
+        }
+    }
+}

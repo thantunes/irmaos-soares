@@ -1,0 +1,183 @@
+.noticesList {
+    background: white;
+}
+
+.noticeListItem {
+    padding: 11px;
+    font-family: "Sarabun", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    color: #292929;
+    font-weight: 400;
+    border: none;
+}
+
+.confirmationMessage {
+    padding: 0 20px;
+}
+
+.confirmationTitle {
+    font-family: "Sarabun", sans-serif;
+    color: #292929 !important;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    line-height: 29px;
+    font-size: 24px;
+}
+
+/*ajustando fonte das principais fontes de pagina*/
+.customerInfoListContainer,
+.customerInfoListEmail,
+.customerInfoListDocument,
+.customerInfoListPhone,
+.paymentGroup,
+.paymentValue,
+.orderDatetime,
+.orderSoldBy,
+.packageShippingEstimate,
+.packageSLA,
+.addressContainer {
+    color: #292929 !important;
+    font-family: "Sarabun", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+}
+
+.customerInfoListEmail .customerInfoListDocument .customerInfoListPhone {
+    color: #292929 !important;
+}
+
+.noticeListItem :global(.vtex-button) {
+    margin-top: 20px;
+}
+
+.noticeListItem :global(.vtex-button__label) {
+    font-family:"Sarabun", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.orderOptionsWrapper :global(.vtex-button__label) {
+    font-family:"Sarabun", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.package {
+    flex-direction: column;
+}
+
+.bankInvoiceEmbed {
+    width: 100%;
+}
+
+.orderPaymentItem :global(.vtex-button__label) {
+    font-family:"Sarabun", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: #292929;
+}
+
+.orderNumber,
+.packageHeader--delivery {
+    font-family: "Sarabun", sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.orderSeller {
+    font-weight: 700;
+}
+
+.productList {
+    width: 100%;
+}
+
+.productName {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4267b2;
+    /*Alinhando verticalmente (melhorar depois)*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.productPrice {
+    font-family: "Sarabun", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #292929;
+}
+
+.productQuantity {
+    display: none;
+}
+
+.totalListItemValue,
+.totalListItemLabel {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.totalListItemValue {
+    font-weight: normal;
+}
+
+.totalListWrapper {
+    display: contents;
+}
+
+.totalListItem {
+    width: 40%;
+}
+
+.totalListItem:first-child {
+    display: none;
+}
+
+.productImageWrapper {
+    width: 70px;
+    height: auto;
+}
+
+.productListItem {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.section--paymentMethods,
+.section--deliveryPackages {
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.section--pickupPackages {
+    border: none;
+}

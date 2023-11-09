@@ -1,0 +1,28 @@
+{
+    "extends": "@vtex/tsconfig",
+    "compilerOptions": {
+      "noEmitOnError": false,
+      "lib": ["dom"],
+      "module": "esnext",
+      "moduleResolution": "node",
+      "target": "es2022",
+  
+      "alwaysStrict": true,
+      "esModuleInterop": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "strictFunctionTypes": true,
+      "strictNullChecks": true,
+      "strictPropertyInitialization": true,
+      "typeRoots": ["node_modules/@types"]
+    },
+    "typeAcquisition": {
+      "enable": false
+    },
+    "exclude": ["node_modules"],
+    "include": ["./typings/*.d.ts", "./**/*.tsx", "./**/*.ts"]
+  }
+  

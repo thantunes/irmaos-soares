@@ -1,0 +1,91 @@
+{
+    "flex-layout.row#footer-newsletter-desktop": {
+        "children": [
+            "flex-layout.col#newsletter-title",
+            "flex-layout.col#footer-newsletter-desktop"
+        ],
+        "props": {
+            "blockClass": "footer-newsletter",
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "fullWidth": false
+        }
+    },
+
+    "flex-layout.col#newsletter-title": {
+        "children": [
+            "rich-text#newsletter-title"
+        ],
+        "props": {
+            "blockClass": "newsletter-title",
+            "verticalAlign": "middle"
+        }
+    },
+
+    "rich-text#newsletter-title": {
+        "props": {
+            "text": "Cadastre-se e fique por dentro de nossas novidades e ofertas!",
+            "blockClass": "newsletter-title"
+        }
+    },
+
+    "flex-layout.col#footer-newsletter-desktop": {
+        "children": [
+            "newsletter-form"
+        ],
+        "props": {
+            "blockClass": "footer-newsletter",
+            // "horizontalAlign": "center",
+            "verticalAlign": "middle"
+        }
+    },
+    "newsletter-form": {
+        "children": [                   
+            "flex-layout.row#inputs-form",
+            "flex-layout.row#checkbox-confirmation"           
+        ]
+    },
+
+    "flex-layout.row#inputs-form": {
+        "children": [
+            "newsletter-input-name",
+            "newsletter-input-email",
+            "newsletter-input-phone",
+            "newsletter-submit"  
+        ],
+        "props": {
+            "blockClass": "inputs-form",
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "fullWidth": false,
+            "colGap": 5,
+            "marginBottom": 2
+        }
+    },
+
+    "newsletter-input-name": {
+        "props": {
+            "label": "Nome",
+            "name": "name",
+            "required": true,
+            "blockClass": "newsletter-input-name"
+        }
+    },
+
+    "flex-layout.row#checkbox-confirmation": {
+        "children": [
+            "newsletter-checkbox-confirmation"
+        ],
+        "props":{
+            "fullWidth": true,
+            "blockClass": "newsletter-checkbox-confirmation"
+        }
+    },
+
+    "newsletter-checkbox-confirmation":{
+        "props":{
+            "checkboxLabel": "Declaro que li e estou de acordo com a Política de Privacidade.",
+            "blockClass": "newsletter-checkbox-confirmation"
+        }
+    }
+}

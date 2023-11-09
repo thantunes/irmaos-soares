@@ -1,0 +1,58 @@
+.helpBoxLink {
+  color: #333333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.helpBoxIcon {
+    display: block;
+    padding: 9px 10px;
+    background: #245189;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+.helpBoxIcon span {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background:url(../assets/chat.png);
+    background-position: center;
+}
+
+.helpBoxIcon img {
+    width: 30px;
+    height: 30px;
+}
+
+.helpBoxItem {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+  max-width: 213px;
+}
+
+.helpBoxItem h3 {
+    margin: 0;
+    font-family: 'Lato';
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #414141;
+  }
+
+  .helpBoxItem p {
+      font-family: 'Lato';
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      color: #414141;
+      margin: 0;
+  }
+

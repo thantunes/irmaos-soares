@@ -1,0 +1,277 @@
+{
+    "rich-text#faq-cancelamentos": {
+        "props": {
+            "text": "### Cancelamentos, Trocas e Devoluções"
+        }
+    },
+    "disclosure-layout-group#group-cancelamentos": {
+        "children": [
+            "disclosure-layout#como-trocar",
+            "disclosure-layout#trocar-sem-estoque",
+            "disclosure-layout#devolucao-correios",
+            "disclosure-layout#devolucao-loja",
+            "disclosure-layout#cancelar-compra",
+            "disclosure-layout#ressarcimento",
+            "disclosure-layout#produto-com-defeito"
+        ]
+    },
+    "disclosure-layout#como-trocar": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#como-trocar",
+            "disclosure-content#como-trocar"
+        ]
+    },
+    "disclosure-trigger#como-trocar": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#como-trocar-pergunta"
+        ]
+    },
+    "disclosure-content#como-trocar": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#como-trocar-resposta"
+        ]
+    },
+    "rich-text#como-trocar-pergunta": {
+        "props": {
+            "text": "Como trocar um produto do eCommerce?"
+        }
+    },
+    "rich-text#como-trocar-resposta": {
+        "props": {
+            "text": "Para trocar um produto adquirido no Site, vá pessoalmente a uma de nossas lojas físicas ou entre em contato com a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195. Para mais informações, acesse nossa Política de Trocas e Devoluções."
+        }
+    },
+    "disclosure-layout#trocar-sem-estoque": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#trocar-sem-estoque",
+            "disclosure-content#trocar-sem-estoque"
+        ]
+    },
+    "disclosure-trigger#trocar-sem-estoque": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#trocar-sem-estoque-pergunta"
+        ]
+    },
+    "disclosure-content#trocar-sem-estoque": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#trocar-sem-estoque-resposta"
+        ]
+    },
+    "rich-text#trocar-sem-estoque-pergunta": {
+        "props": {
+            "text": "Posso trocar o produto via Televendas?"
+        }
+    },
+    "rich-text#trocar-sem-estoque-resposta": {
+        "props": {
+            "text": "Sim, desde que os Produtos tenham o mesmo valor da compra realizada no Site. Caso contrário, vá pessoalmente a uma de nossas lojas físicas ou entre em contato com a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195."
+        }
+    },
+    "disclosure-layout#devolucao-correios": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#devolucao-correios",
+            "disclosure-content#devolucao-correios"
+        ]
+    },
+    "disclosure-trigger#devolucao-correios": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#devolucao-correios-pergunta"
+        ]
+    },
+    "disclosure-content#devolucao-correios": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#devolucao-correios-resposta"
+        ]
+    },
+    "rich-text#devolucao-correios-pergunta": {
+        "props": {
+            "text": "Quais as normas para devolução por Correios?"
+        }
+    },
+    "rich-text#devolucao-correios-resposta": {
+        "props": {
+            "text": "Para devolver um produto por Correios, entre em contato com a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195. Nosso atendente irá orientá-lo com relação ao processo por completo."
+        }
+    },
+    "disclosure-layout#devolucao-loja": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#devolucao-loja",
+            "disclosure-content#devolucao-loja"
+        ]
+    },
+    "disclosure-trigger#devolucao-loja": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#devolucao-loja-pergunta"
+        ]
+    },
+    "disclosure-content#devolucao-loja": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#devolucao-loja-resposta"
+        ]
+    },
+    "rich-text#devolucao-loja-pergunta": {
+        "props": {
+            "text": "Posso devolver um produto na loja física?"
+        }
+    },
+    "rich-text#devolucao-loja-resposta": {
+        "props": {
+            "text": "Sim, desde que o produto esteja dentro das normas de devolução. Para mais informações, acesse nossa Política de Trocas e Devoluções."
+        }
+    },
+    "disclosure-layout#cancelar-compra": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#cancelar-compra",
+            "disclosure-content#cancelar-compra"
+        ]
+    },
+    "disclosure-trigger#cancelar-compra": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#cancelar-compra-pergunta"
+        ]
+    },
+    "disclosure-content#cancelar-compra": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#cancelar-compra-resposta"
+        ]
+    },
+    "rich-text#cancelar-compra-pergunta": {
+        "props": {
+            "text": "Como faço para cancelar minha compra?"
+        }
+    },
+    "rich-text#cancelar-compra-resposta": {
+        "props": {
+            "text": "Se você quiser cancelar sua compra, pode dirigir-se pessoalmente a uma de nossas lojas físicas ou entrar em contato com a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195. e solicitar o cancelamento. Nos dois casos, nossos atendentes orientarão o Cliente com relação ao processo por completo."
+        }
+    },
+    "disclosure-layout#ressarcimento": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#ressarcimento",
+            "disclosure-content#ressarcimento"
+        ]
+    },
+    "disclosure-trigger#ressarcimento": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#ressarcimento-pergunta"
+        ]
+    },
+    "disclosure-content#ressarcimento": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#ressarcimento-resposta"
+        ]
+    },
+    "rich-text#ressarcimento-pergunta": {
+        "props": {
+            "text": "Ressarcimento de valores de pedidos cancelados?"
+        }
+    },
+    "rich-text#ressarcimento-resposta": {
+        "props": {
+            "text": "O ressarcimento será feito por meio de pedido de estorno do valor cobrado perante a administradora de cartão de crédito."
+        }
+    },
+    "disclosure-layout#produto-com-defeito": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#produto-com-defeito",
+            "disclosure-content#produto-com-defeito"
+        ]
+    },
+    "disclosure-trigger#produto-com-defeito": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#produto-com-defeito-pergunta"
+        ]
+    },
+    "disclosure-content#produto-com-defeito": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#produto-com-defeito-resposta"
+        ]
+    },
+    "rich-text#produto-com-defeito-pergunta": {
+        "props": {
+            "text": "Após o período de troca e devolução, se o produto estiver com defeito o que eu devo fazer?"
+        }
+    },
+    "rich-text#produto-com-defeito-resposta": {
+        "props": {
+            "text": "Se o produto apresentar defeito após o prazo de 7 dias corridos, a contar da data do recebimento, mas dentro do prazo de garantia do fabricante, você deve entrar em contato com o fabricante para comunicar a ocorrência e obter esclarecimentos ou dirigir-se a uma das assistências técnicas credenciadas pelo próprio fabricante, indicadas no manual. Caso não consiga contato com o fabricante, avise a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195."
+        }
+    }
+}

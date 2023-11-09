@@ -1,0 +1,80 @@
+.shopCard {
+  display: inline-block;
+  max-width: 223px;
+  position: relative;
+  padding: 16px 7px 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin: 12px 10px;
+}
+
+.shopInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 11px 0 5px;
+  border-bottom: 1px solid #bebbbb;
+}
+
+.shopInfo img {
+  margin-bottom: 8px;
+  width: 29px;
+  height: 29px;
+}
+
+.shopImage img {
+  width: 192px;
+  height: 114px;
+}
+
+.shopName {
+  font-family: 'Lato';
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+  color: #414141;
+  text-transform: uppercase;
+}
+
+.region {
+  font-family: 'Lato';
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #414141;
+}
+
+.adressContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.adressContent a {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #414141;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 12px;
+  width: 90%;
+}
+
+.adress {
+  display: block;
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  color: #727272;
+  min-height: 40px;
+  margin-bottom: 24px;
+}

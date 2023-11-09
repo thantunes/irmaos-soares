@@ -1,0 +1,524 @@
+{
+    //PAGAMENTO
+
+    // Quais são os meios de pagamentos disponíveis?
+    // No momento, o Site aceita boleto e cartões de crédito emitidos no Brasil de bandeiras Mastercard®, Visa® e American Express®. No futuro, a Irmãos Soares pretende adotar outros meios de pagamento. Essas mudanças serão divulgadas em nosso Site e refletidas em nossa Política de Pagamento.
+
+    // Qual o procedimento se houver pagamento em duplicidade?
+    // O cliente poderá entrar em contato com a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195. Neste contato, você poderá solicitar o cancelamento do pagamento duplicado. Após análise, a Irmãos Soares requererá à operadora do cartão que faça o estorno, se devido.
+
+    // E se o meu pagamento não for aprovado?
+    // Você será notificado em até 48 horas e deverá inserir outro meio de pagamento. Caso contrário, a Compra no Site será cancelada.
+
+    // Qual é o prazo de aprovação da Compra?
+    // O prazo é de até 48 horas.
+
+    // Posso alterar o cartão depois da finalização da Compra?
+    // Não será possível este procedimento.
+
+    // Quais são as formas de parcelamento?
+    // Todas as Compras feitas no cartão de crédito podem ser parceladas em até 10 (seis) vezes com parcela mínima de R$100,00, podendo haver alterações com aviso prévio divulgado no site.
+
+    // Posso efetuar o pagamento com 2 (dois) cartões de crédito, para uma mesma Compra?
+    // Não, o Cliente poderá utilizar 1 (um) cartão de crédito emitido no Brasil em seu nome, seja como titular ou dependente, com as seguintes bandeiras: Visa®, Mastercard®, Elo, Hiper, Diners e American Express®.
+
+    // Como solicito a segunda via do DANFE (Documento Auxiliar da Nota Fiscal Eletrônica)?
+    // Basta entrar em contato com a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195.
+
+    // Como solicitar a segunda via da Nota Fiscal?
+    // Basta entrar em contato com a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195.
+
+    // Posso utilizar meu cartão emitido no exterior?
+    // Não, aceitamos apenas cartões de crédito emitidos no Brasil.
+
+    // Quais são os prazos para estorno?
+    // A Irmãos Soares pedirá o estorno à administradora de cartões em um prazo não superior a 72 (setenta e duas) horas. No entanto, você deverá aguardar o estorno na fatura. O estorno poderá acontecer em até duas faturas, de acordo com a política de cancelamento da administradora do cartão de crédito.
+
+
+    "rich-text#faq-pagamentos": {
+        "props": {
+            "text": "### Pagamentos"
+        }
+    },
+
+    "disclosure-layout-group#group-pagamentos": {
+        "children": [
+            "disclosure-layout#quais-sao-os-meios-de-pagamentos-disponiveis",
+            "disclosure-layout#qual-o-procedimento-se-houver-pagamento-em-duplicidade",
+            "disclosure-layout#e-se-o-meu-pagamento-nao-for-aprovado",
+            "disclosure-layout#qual-e-o-prazo-de-aprovacao-da-compra",
+            "disclosure-layout#posso-alterar-o-cartao-depois-da-finalizacao-da-compra",
+            "disclosure-layout#quais-sao-as-formas-de-parcelamento",
+            "disclosure-layout#posso-efetuar-o-pagamento-com-2-dois-cartoes-de-credito-para-uma-mesma-compra",
+            "disclosure-layout#como-solicito-a-segunda-via-do-danfe-documento-auxiliar-da-nota-fiscal-eletronica",
+            "disclosure-layout#como-solicitar-a-segunda-via-da-nota-fiscal",
+            "disclosure-layout#posso-utilizar-meu-cartao-emitido-no-exterior",
+            "disclosure-layout#quais-sao-os-prazos-para-estorno"
+        ]
+    },
+
+    "disclosure-layout#quais-sao-os-meios-de-pagamentos-disponiveis": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#quais-sao-os-meios-de-pagamentos-disponiveis",
+            "disclosure-content#quais-sao-os-meios-de-pagamentos-disponiveis"
+        ]
+    },
+    "disclosure-trigger#quais-sao-os-meios-de-pagamentos-disponiveis": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#quais-sao-os-meios-de-pagamentos-disponiveis-pergunta"
+        ]
+    },
+    "disclosure-content#quais-sao-os-meios-de-pagamentos-disponiveis": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#quais-sao-os-meios-de-pagamentos-disponiveis-resposta"
+        ]
+    },
+    "rich-text#quais-sao-os-meios-de-pagamentos-disponiveis-pergunta": {
+        "props": {
+            "text": "Quais são os meios de pagamentos disponíveis?"
+        }
+    },
+    "rich-text#quais-sao-os-meios-de-pagamentos-disponiveis-resposta": {
+        "props": {
+            "text": "No momento, o Site aceita boleto e cartões de crédito emitidos no Brasil de bandeiras Mastercard®, Visa® e American Express®. No futuro, a Irmãos Soares pretende adotar outros meios de pagamento. Essas mudanças serão divulgadas em nosso Site e refletidas em nossa Política de Pagamento."
+        }
+    },
+
+
+    "disclosure-layout#qual-o-procedimento-se-houver-pagamento-em-duplicidade": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#qual-o-procedimento-se-houver-pagamento-em-duplicidade",
+            "disclosure-content#qual-o-procedimento-se-houver-pagamento-em-duplicidade"
+        ]
+    },
+
+    "disclosure-trigger#qual-o-procedimento-se-houver-pagamento-em-duplicidade": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#qual-o-procedimento-se-houver-pagamento-em-duplicidade-pergunta"
+        ]
+    },
+
+    "disclosure-content#qual-o-procedimento-se-houver-pagamento-em-duplicidade": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#qual-o-procedimento-se-houver-pagamento-em-duplicidade-resposta"
+        ]
+    },
+
+    "rich-text#qual-o-procedimento-se-houver-pagamento-em-duplicidade-pergunta": {
+        "props": {
+            "text": "Qual o procedimento se houver pagamento em duplicidade?"
+        }
+    },
+
+    "rich-text#qual-o-procedimento-se-houver-pagamento-em-duplicidade-resposta": {
+        "props": {
+            "text": "O cliente poderá entrar em contato com a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195. Neste contato, você poderá solicitar o cancelamento do pagamento duplicado. Após análise, a Irmãos Soares requererá à operadora do cartão que faça o estorno, se devido."
+        }
+    },
+
+
+    "disclosure-layout#e-se-o-meu-pagamento-nao-for-aprovado": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#e-se-o-meu-pagamento-nao-for-aprovado",
+            "disclosure-content#e-se-o-meu-pagamento-nao-for-aprovado"
+        ]
+    },
+
+    "disclosure-trigger#e-se-o-meu-pagamento-nao-for-aprovado": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#e-se-o-meu-pagamento-nao-for-aprovado-pergunta"
+        ]
+    },
+
+    "disclosure-content#e-se-o-meu-pagamento-nao-for-aprovado": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#e-se-o-meu-pagamento-nao-for-aprovado-resposta"
+        ]
+    },
+
+    "rich-text#e-se-o-meu-pagamento-nao-for-aprovado-pergunta": {
+        "props": {
+            "text": "E se o meu pagamento não for aprovado?"
+        }
+    },
+
+    "rich-text#e-se-o-meu-pagamento-nao-for-aprovado-resposta": {
+        "props": {
+            "text": "Você será notificado em até 48 horas e deverá inserir outro meio de pagamento. Caso contrário, a Compra no Site será cancelada.."
+        }
+    },
+
+
+    "disclosure-layout#qual-e-o-prazo-de-aprovacao-da-compra":{
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#qual-e-o-prazo-de-aprovacao-da-compra",
+            "disclosure-content#qual-e-o-prazo-de-aprovacao-da-compra"
+        ]
+    },
+
+    "disclosure-trigger#qual-e-o-prazo-de-aprovacao-da-compra": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#qual-e-o-prazo-de-aprovacao-da-compra-pergunta"
+        ]
+    },
+
+    "disclosure-content#qual-e-o-prazo-de-aprovacao-da-compra": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#qual-e-o-prazo-de-aprovacao-da-compra-resposta"
+        ]
+    },
+
+    "rich-text#qual-e-o-prazo-de-aprovacao-da-compra-pergunta": {
+        "props": {
+            "text": "Qual é o prazo de aprovação da compra?"
+        }
+    },
+
+    "rich-text#qual-e-o-prazo-de-aprovacao-da-compra-resposta": {
+        "props": {
+            "text": "O prazo de aprovação da compra é de até 48 horas. Caso o pagamento não seja aprovado, você será notificado e deverá inserir outro meio de pagamento. Caso contrário, a Compra no Site será cancelada."
+        }
+    },
+
+    "disclosure-layout#posso-alterar-o-cartao-depois-da-finalizacao-da-compra":{
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#posso-alterar-o-cartao-depois-da-finalizacao-da-compra",
+            "disclosure-content#posso-alterar-o-cartao-depois-da-finalizacao-da-compra"
+        ]
+    },
+
+    "disclosure-trigger#posso-alterar-o-cartao-depois-da-finalizacao-da-compra": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#posso-alterar-o-cartao-depois-da-finalizacao-da-compra-pergunta"
+        ]
+    },
+
+    "disclosure-content#posso-alterar-o-cartao-depois-da-finalizacao-da-compra": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#posso-alterar-o-cartao-depois-da-finalizacao-da-compra-resposta"
+        ]
+    },
+
+    "rich-text#posso-alterar-o-cartao-depois-da-finalizacao-da-compra-pergunta": {
+        "props": {
+            "text": "Posso alterar o cartão depois da finalização da compra?"
+        }
+    },
+
+    "rich-text#posso-alterar-o-cartao-depois-da-finalizacao-da-compra-resposta": {
+        "props": {
+            "text": "Não. Após a finalização da compra, não é possível alterar o cartão de crédito."
+        }
+    },
+
+
+    "disclosure-layout#quais-sao-as-formas-de-parcelamento":{
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#quais-sao-as-formas-de-parcelamento",
+            "disclosure-content#quais-sao-as-formas-de-parcelamento"
+        ]
+    },
+
+    "disclosure-trigger#quais-sao-as-formas-de-parcelamento": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#quais-sao-as-formas-de-parcelamento-pergunta"
+        ]
+    },
+
+    "disclosure-content#quais-sao-as-formas-de-parcelamento": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#quais-sao-as-formas-de-parcelamento-resposta"
+        ]
+    },
+
+    "rich-text#quais-sao-as-formas-de-parcelamento-pergunta": {
+        "props": {
+            "text": "Quais são as formas de parcelamento?"
+        }
+    },
+
+    "rich-text#quais-sao-as-formas-de-parcelamento-resposta": {
+        "props": {
+            "text": "Todas as Compras feitas no cartão de crédito podem ser parceladas em até 10 (dez) vezes com parcela mínima de R$100,00, podendo haver alterações com aviso prévio divulgado no site."
+        }
+    },
+
+    "disclosure-layout#posso-efetuar-o-pagamento-com-2-dois-cartoes-de-credito-para-uma-mesma-compra":{
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#posso-efetuar-o-pagamento-com-2-dois-cartoes-de-credito-para-uma-mesma-compra",
+            "disclosure-content#posso-efetuar-o-pagamento-com-2-dois-cartoes-de-credito-para-uma-mesma-compra"
+        ]
+    },
+
+    "disclosure-trigger#posso-efetuar-o-pagamento-com-2-dois-cartoes-de-credito-para-uma-mesma-compra": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#posso-efetuar-o-pagamento-com-2-dois-cartoes-de-credito-para-uma-mesma-compra-pergunta"
+        ]
+    },
+
+    "disclosure-content#posso-efetuar-o-pagamento-com-2-dois-cartoes-de-credito-para-uma-mesma-compra": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#posso-efetuar-o-pagamento-com-2-dois-cartoes-de-credito-para-uma-mesma-compra-resposta"
+        ]
+    },
+
+    "rich-text#posso-efetuar-o-pagamento-com-2-dois-cartoes-de-credito-para-uma-mesma-compra-pergunta": {
+        "props": {
+            "text": "Posso efetuar o pagamento com 2 (dois) cartões de crédito para uma mesma compra?"
+        }
+    },
+
+    "rich-text#posso-efetuar-o-pagamento-com-2-dois-cartoes-de-credito-para-uma-mesma-compra-resposta": {
+        "props": {
+            "text": "Não. No momento, não é possível efetuar o pagamento com 2 (dois) cartões de crédito para uma mesma compra."
+        }
+    },
+
+    
+
+    "disclosure-layout#como-solicito-a-segunda-via-do-danfe-documento-auxiliar-da-nota-fiscal-eletronica":{
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#como-solicito-a-segunda-via-do-danfe-documento-auxiliar-da-nota-fiscal-eletronica",
+            "disclosure-content#como-solicito-a-segunda-via-do-danfe-documento-auxiliar-da-nota-fiscal-eletronica"
+        ]
+    },
+
+    "disclosure-trigger#como-solicito-a-segunda-via-do-danfe-documento-auxiliar-da-nota-fiscal-eletronica": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#como-solicito-a-segunda-via-do-danfe-documento-auxiliar-da-nota-fiscal-eletronica-pergunta"
+        ]
+    },
+
+    "disclosure-content#como-solicito-a-segunda-via-do-danfe-documento-auxiliar-da-nota-fiscal-eletronica": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#como-solicito-a-segunda-via-do-danfe-documento-auxiliar-da-nota-fiscal-eletronica-resposta"
+        ]
+    },
+
+    "rich-text#como-solicito-a-segunda-via-do-danfe-documento-auxiliar-da-nota-fiscal-eletronica-pergunta": {
+        "props": {
+            "text": "Como solicito a segunda via do DANFE (Documento Auxiliar da Nota Fiscal Eletrônica)?"
+        }
+    },
+
+    "rich-text#como-solicito-a-segunda-via-do-danfe-documento-auxiliar-da-nota-fiscal-eletronica-resposta": {
+        "props": {
+            "text": "Basta entrar em contato com a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195."
+        }
+    },
+
+    "disclosure-layout#como-solicitar-a-segunda-via-da-nota-fiscal":{
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#como-solicitar-a-segunda-via-da-nota-fiscal",
+            "disclosure-content#como-solicitar-a-segunda-via-da-nota-fiscal"
+        ]
+    },
+
+    "disclosure-trigger#como-solicitar-a-segunda-via-da-nota-fiscal": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#como-solicitar-a-segunda-via-da-nota-fiscal-pergunta"
+        ]
+    },
+
+    "disclosure-content#como-solicitar-a-segunda-via-da-nota-fiscal": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#como-solicitar-a-segunda-via-da-nota-fiscal-resposta"
+        ]
+    },
+
+    "rich-text#como-solicitar-a-segunda-via-da-nota-fiscal-pergunta": {
+        "props": {
+            "text": "Como solicitar a segunda via da nota fiscal?"
+        }
+    },
+
+    "rich-text#como-solicitar-a-segunda-via-da-nota-fiscal-resposta": {
+        "props": {
+            "text": "Basta entrar em contato com a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195."
+        }
+    },
+
+    "disclosure-layout#posso-utilizar-meu-cartao-emitido-no-exterior":{
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#posso-utilizar-meu-cartao-emitido-no-exterior",
+            "disclosure-content#posso-utilizar-meu-cartao-emitido-no-exterior"
+        ]
+    },
+
+    "disclosure-trigger#posso-utilizar-meu-cartao-emitido-no-exterior": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#posso-utilizar-meu-cartao-emitido-no-exterior-pergunta"
+        ]
+    },
+
+    "disclosure-content#posso-utilizar-meu-cartao-emitido-no-exterior": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#posso-utilizar-meu-cartao-emitido-no-exterior-resposta"
+        ]
+    },
+
+    "rich-text#posso-utilizar-meu-cartao-emitido-no-exterior-pergunta": {
+        "props": {
+            "text": "Posso utilizar meu cartão emitido no exterior?"
+        }
+    },
+
+    "rich-text#posso-utilizar-meu-cartao-emitido-no-exterior-resposta": {
+        "props": {
+            "text": "Não, aceitamos apenas cartões de crédito emitidos no Brasil."
+        }
+    },
+
+
+    "disclosure-layout#quais-sao-os-prazos-para-estorno":{
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#quais-sao-os-prazos-para-estorno",
+            "disclosure-content#quais-sao-os-prazos-para-estorno"
+        ]
+    },
+
+    "disclosure-trigger#quais-sao-os-prazos-para-estorno": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#quais-sao-os-prazos-para-estorno-pergunta"
+        ]
+    },
+
+    "disclosure-content#quais-sao-os-prazos-para-estorno": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#quais-sao-os-prazos-para-estorno-resposta"
+        ]
+    },
+
+    "rich-text#quais-sao-os-prazos-para-estorno-pergunta": {
+        "props": {
+            "text": "Quais são os prazos para estorno?"
+        }
+    },
+
+    "rich-text#quais-sao-os-prazos-para-estorno-resposta": {
+        "props": {
+            "text": "A Irmãos Soares pedirá o estorno à administradora de cartões em um prazo não superior a 72 (setenta e duas) horas. No entanto, você deverá aguardar o estorno na fatura. O estorno poderá acontecer em até duas faturas, de acordo com a política de cancelamento da administradora do cartão de crédito."
+        }
+    }
+}

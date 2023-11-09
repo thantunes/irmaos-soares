@@ -1,0 +1,52 @@
+{
+
+    "rich-text#faq-produtos-is": {
+        "props": {
+            "text": "### Produtos"
+        }
+    },
+
+    "disclosure-layout-group#group-ofertas-relampago": {
+        "children": [
+            "disclosure-layout#ofertas-relampago"
+        ]
+    },
+
+    "disclosure-layout#ofertas-relampago": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#ofertas-relampago",
+            "disclosure-content#ofertas-relampago"
+        ]
+    },
+    "disclosure-trigger#ofertas-relampago": {
+        "props": {
+            "blockClass": "question",
+            "as": "div"
+        },
+        "children": [
+            "disclosure-state-indicator#faq",
+            "rich-text#ofertas-relampago-pergunta"
+        ]
+    },
+    "disclosure-content#ofertas-relampago": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": [
+            "rich-text#ofertas-relampago-resposta"
+        ]
+    },
+    "rich-text#ofertas-relampago-pergunta": {
+        "props": {
+            "text": "O Site da Irmãos Soares pratica ofertas relâmpago?"
+        }
+    },
+    "rich-text#ofertas-relampago-resposta": {
+        "props": {
+            "text": "Sim, você pode ver o item Promoções dos nossos Termos e Condições de Uso. Além disso, essas promoções serão sempre anunciadas em nosso Site com destaque, indicando o tempo e as condições de validade, e por e-mail para todos os cadastrados para receber essas informações. Fique atento às ofertas disponíveis no Site fora do horário comercial e cadastre seu e-mail para receber estas notificações."
+        }
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "menu-item#duvidas-mobile": {
+        "props": {
+            "id": "menu-item-category",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Dúvidas",
+                "text": "Dúvidas"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#duvidas"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#duvidas": {
+        "children": [
+            "vtex.menu@2.x:menu#duvidas-accordion"
+        ]
+    },
+    "vtex.menu@2.x:menu#duvidas-accordion": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#trocas",
+            "menu-item#pagamento",
+            "menu-item#entrega",
+            "menu-item#privacidade",
+            "menu-item#cookies"
+        ]
+    },
+    "menu-item#trocas": {
+        "props": {
+            "id": "menu-item-politicas-de-trocas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/politicas-de-trocas",
+                "noFollow": false,
+                "tagTitle": "Política de Trocas",
+                "text": "Política de Trocas"
+            }
+        }
+    },
+    "menu-item#pagamento": {
+        "props": {
+            "id": "menu-item-politicas-de-pagamento",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/politicas-de-pagamento",
+                "noFollow": false,
+                "tagTitle": "Políticas de Pagamento",
+                "text": "Políticas de Pagamento"
+            }
+        }
+    },
+    "menu-item#entrega": {
+        "props": {
+            "id": "menu-item-politicas-de-entrega",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/politicas-de-entrega",
+                "noFollow": false,
+                "tagTitle": "Políticas de Entrega",
+                "text": "Políticas de Entrega"
+            }
+        }
+    },
+
+    "menu-item#privacidade": {
+        "props": {
+            "id": "menu-item-politicas-de-privacidade",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/politicas-de-privacidade",
+                "noFollow": false,
+                "tagTitle": "Políticas de Privacidade",
+                "text": "Políticas de Privacidade"
+            }
+        }
+    },
+    "menu-item#cookies": {
+        "props": {
+            "id": "menu-item-politicas-de-cookies",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/politicas-de-cookies",
+                "noFollow": false,
+                "tagTitle": "Políticas de Cookies",
+                "text": "Políticas de Cookies"
+            }
+        }
+    }
+}

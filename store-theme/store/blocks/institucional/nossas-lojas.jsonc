@@ -1,0 +1,39 @@
+{
+    "store.custom#nossas-lojas": {
+        "children": [
+            "flex-layout.row#nossas-lojas"
+        ]
+    },
+    "flex-layout.row#nossas-lojas": {
+        "props": {
+            "blockClass": "nossas-lojas"
+        },
+        "children": [
+            "flex-layout.col#nossas-lojas"
+        ]
+    },
+    "flex-layout.col#nossas-lojas": {
+        "children": [
+            "rich-text#nossas-lojas",
+            // "nossas-lojas",
+            "Lojas"
+        ]
+    },
+    "rich-text#nossas-lojas": {
+        "props": {
+            "text": "### Nossas Lojas"
+        }
+    }
+    
+    // "flex-layout.col#shops-list": {
+    //     "props": {
+    //         "blockClass": "nossas-lojas",
+    //         "paddingRight": 0,
+    //         "paddingLeft": 0
+    //     },
+    //     "children": [
+    //         "nossas-lojas"
+    //     ]
+    // }
+   
+}

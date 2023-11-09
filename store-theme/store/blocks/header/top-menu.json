@@ -1,0 +1,26 @@
+{
+	"vtex.menu@2.x:menu#topbar": {
+		"props":{
+			"blockClass": "topbar"	
+		},
+		"children": [
+			"menu-item#buy-whatsapp"
+		]
+	},
+	"menu-item#buy-whatsapp": {
+		"props": {
+			"id": "menu-item-buy-whatsapp",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"blockClass": ["topbar-buy-whatsapp", "topbar-link"],
+			"itemProps": {
+				"type": "internal",
+				"href": "https://api.whatsapp.com/send?phone=5562984238195",
+				"noFollow": false,
+				"tagTitle": "Compre pelo Whatsapp",
+				"text": "Compre pelo Whatsapp"
+			}
+		}
+	}
+}

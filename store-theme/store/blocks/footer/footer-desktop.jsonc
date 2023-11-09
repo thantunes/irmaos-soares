@@ -1,0 +1,270 @@
+{
+    "footer-layout.desktop": {
+		"children": [
+            "flex-layout.row#footer-newsletter-desktop",
+			"flex-layout.row#footer-1-desktop",
+			"flex-layout.row#footer-2-desktop",
+			"flex-layout.row#footer-3-desktop"
+		],
+        "props":{
+			"blockClass": "footer--is"
+		}
+	},
+	"flex-layout.row#footer-1-desktop": {
+		"children": [
+			"vtex.menu@2.x:menu#Politicas",
+			"vtex.menu@2.x:menu#Institucional",
+			"vtex.menu@2.x:menu#Atendimento",
+			// "vtex.menu@2.x:menu#Links",
+			"footer-spacer",
+			"vtex.menu@2.x:menu#FaleConosco"
+		],
+		"props": {
+			"blockClass": "menu-row",
+			"paddingTop": 6,
+			"paddingBottom": 4
+		}
+	},
+
+    "image#formas-de-pagamento": {
+        "props": {
+            "src": "assets/bandeiras-credito.png",
+            "maxHeight": 31,
+            "blockClass": "image--formas-de-pagamento"
+        }
+    },
+    "image#formas-de-pagamento-debito": {
+        "props": {
+            "src": "assets/bandeiras-debito.png",
+            "maxHeight": 31,
+            "blockClass": "image--formas-de-pagamento-debito"
+        }
+    },
+
+    "flex-layout.row#footer-2-desktop": {
+		"children": [
+            // 4 col
+            "flex-layout.col#footer-1-desktop",
+            "flex-layout.col#footer-2-desktop",
+            "flex-layout.col#footer-3-desktop",
+            "flex-layout.col#footer-4-desktop"
+			// "rich-text#footer"
+		],
+        "props": {
+            "blockClass": "footer-final-is",
+            "colSizing": "auto",
+			"paddingBottom": 4
+        }
+	},
+
+    "flex-layout.col#footer-1-desktop": {
+        "children": [
+            "image#logo-footer"
+        ],
+        "props": {            
+            // "width": "10%",
+            "blockClass": "footer-logo",
+            "verticalAlign": "middle"
+        }
+    },
+
+    "flex-layout.col#footer-2-desktop": {
+        "children": [
+            "rich-text#footer-copyright"
+        ],
+        "props": {
+            "blockClass": "footer-copyright",
+            "horizontalAlign": "left",
+            "verticalAlign": "middle"
+        }
+    },
+
+    "flex-layout.col#footer-3-desktop": {
+        "props":{
+            "width": "15%",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "flex-layout.row#redes-sociais-footer"
+        ]
+    },
+
+
+    "flex-layout.row#redes-sociais-footer": {
+        "props": {
+            "blockClass": "redes-sociais-footer",
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": 2
+        },
+        "children": [
+            "image#social-facebook-footer",
+            "image#social-instagram-footer",
+            "image#social-linkedin-footer",
+            "image#social-whatsapp-footer"
+        ]
+    },
+    "image#social-facebook-footer": {
+        "props": {
+            "src": "assets/svgs/icon-face-bg-white.svg",
+            "alt": "Facebook",
+            "link": {
+                "url": "https://www.facebook.com/IrmaosSoares/",
+                "noFollow": false,
+                "openNewTab": true
+            }
+        }
+    },
+    "image#social-instagram-footer": {
+        "props": {
+            "src": "assets/svgs/icon-insta-bg-white.svg",
+            "alt": "Instagram",
+            "link": {
+                "url": "https://www.instagram.com/irmaossoares/",
+                "noFollow": false,
+                "openNewTab": true
+            }
+        }
+    },
+
+    "image#social-linkedin-footer": {
+        "props": {
+            "src": "assets/svgs/icon-linkedin-bg-white.svg",
+            "alt": "Linkedin",
+            "link": {
+                "url": "https://www.linkedin.com/company/irmaos-soares/",
+                "noFollow": false,
+                "openNewTab": true
+            }
+        }
+    },
+
+    "image#social-whatsapp-footer": {
+        "props": {
+            "src": "assets/svgs/icon-whatsapp-bg-white.svg",
+            "alt": "Whatsapp",
+            "link": {
+                "url": "https://api.whatsapp.com/send?phone=5562984238195",
+                "noFollow": false,
+                "openNewTab": true
+            }
+        }
+    },
+
+    "flex-layout.col#footer-4-desktop": {
+        "props":{
+            "width": "5%",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#dev"
+        ]
+    },
+
+    "image#logo-footer": {
+        "props": {
+            "src": "assets/logo-branca.png",
+            "alt": "Irmãos Soares",
+            "maxWidth": "100%",
+            "link": {
+                "url": "/",
+                "page": "store.home"
+            }
+        }
+    },
+
+    "image#dev": {
+        "props": {
+            "src": "assets/svgs/logo-zig.svg",
+            "alt": "Irmãos Soares",
+            "maxWidth": "100%",
+            "link": {
+                "url": "https://www.agenciazig.com.br?utm_source=irmaossoares&utm_medium=footer&utm_campaign=footer",
+                "page": "store.home"
+            }
+        }
+    },
+
+    "rich-text#footer-copyright": {
+        "props": {
+            "text": "COPYRIGHT 2023® IRMÃOS SOARES S/A - 01.559.046/0001-08.",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "blockClass": "footer-copyright"
+        }
+    },
+
+     "flex-layout.row#footer-3-desktop": {
+		"children": [
+            "flex-layout.col#col-left",
+            "flex-layout.col#col-right"
+
+            // "image#formas-de-pagamento-rodape"
+		],
+		"props": {
+			"blockClass": "payment-methods",
+            "paddingTop": 5,
+			"paddingBottom": 5,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "horizontalAlign": "between"
+		}
+	},
+    "flex-layout.col#col-left":{
+        "children": [
+            "image#formas-de-pagamento-rodape"
+        ],
+        "props": {
+            "width": "50%",
+            "horizontalAlign": "left",
+            "verticalAlign": "middle"
+        }
+    },
+
+    "flex-layout.col#col-right":{
+        "children": [
+        //    "image#vtex-logo",
+            "image#ssl-encrypted"
+        ],
+        "props": {
+            "width": "50%",
+            "preventVerticalStretch": true,
+            "horizontalAlign": "right",
+            "verticalAlign": "middle"
+        }
+    },
+    
+
+
+    "image#formas-de-pagamento-rodape": {
+        "props": {
+            "src": "assets/formas-de-pagamento.png",
+            "maxHeight": 32,
+            "blockClass": "image--formas-de-pagamento"
+        }
+    },
+
+
+    "image#vtex-logo": {
+        "props": {
+            "src": "assets/VTEX_pink_RGB.png",
+            "maxHeight": 32,
+            "blockClass": "image--vtex-logo"
+        }
+    },
+
+    "image#ssl-encrypted": {
+        "props": {
+            "src": "assets/svgs/letsencrypt-logo-horizontal.svg",
+            "maxHeight": 32,
+            "blockClass": "image--ssl-encrypted"
+        }
+    }
+
+
+}

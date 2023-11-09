@@ -1,0 +1,34 @@
+.productHighlightWrapper--collection {
+    /* position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 200px; */
+/* 
+    position: relative;
+    top: -16px;
+    left: -30px;
+    width: 290px;
+    background-color: #E54545;
+    text-align: center;
+    padding: 8px; */
+    background-color: #E54545;
+    text-align: center;
+    padding: 8px;
+    border-radius: 1rem;
+    font-size: 12px;
+}
+
+.productHighlightText {
+    /* background: antiquewhite;
+  border-radius: 20px;
+  padding: 5px 10px; */
+
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* @media screen and (max-width: 767px){
+    .productHighlightWrapper--collection{
+        width: 190px;
+    }
+} */

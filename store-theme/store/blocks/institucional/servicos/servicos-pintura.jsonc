@@ -1,0 +1,21 @@
+{
+    "tab-list.item#servicos-pintura": {
+        "props": {
+            "tabId": "servicos-pintura",
+            "label": "Pinturas"
+        }
+    },
+    "tab-content.item#servicos-pintura": {
+        "children": [
+            "rich-text#servicos-pintura"
+        ],
+        "props": {
+            "tabId": "servicos-pintura"
+        }
+    },
+    "rich-text#servicos-pintura": {
+        "props": {
+            "text": "## Serviços de Pintura\n\nA pintura é um dos elementos principais da obra, como se trata do acabamento final, uma pintura de má qualidade e sem o preparo ideal pode comprometer a garantia do produto e a estética final do projeto. Pensando nisso, o Instale Já! trabalha com os melhores e mais capacitados profissionais do mercado. \n\n*Serviços:*\n\nPinturas residenciais\nPinturas comerciais\nPinturas industriais\nPintura de prédios e fachadas\nPinturas especiais (cimento queimado, mármore, textura, grafiato,  entre outros)\nPinturas metálicas\nPinturas em piso"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@media screen and (max-width: 767px){
+    .container--home .listContainer {
+        display: grid;
+        grid: repeat(2, 200);
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+    }
+}

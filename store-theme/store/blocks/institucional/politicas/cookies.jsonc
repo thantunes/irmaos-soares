@@ -1,0 +1,26 @@
+{
+    "store.custom#politica-de-cookies": {
+        "children": [
+            "flex-layout.row#politica-de-cookies"
+        ]
+    },
+    "flex-layout.row#politica-de-cookies": {
+        "props": {
+            "blockClass": "politica-de-cookies"
+        },
+        "children": [
+            "flex-layout.col#politica-de-cookies"
+        ]
+    },
+    "flex-layout.col#politica-de-cookies": {
+        "children": [
+            "rich-text#politica-de-cookies"
+        ]
+    },
+    "rich-text#politica-de-cookies": {
+        "props": {
+            "text": "## politica-de-cookies"
+        }
+    }
+   
+}

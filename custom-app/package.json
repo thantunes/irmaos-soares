@@ -1,0 +1,46 @@
+{
+  "name": "custom",
+  "private": true,
+  "license": "Private",
+  "scripts": {
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "format": "prettier --write \"**/*.{ts,js,jsx,json}\"",
+    "install:react": "cd react && yarn",
+    "install:node": "cd node && yarn",
+    "install:all": "concurrently \"yarn install\" \"yarn install:node\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix"
+    ],
+    "*.{json,graphql,gql}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint-plugin-react": "^7.22.0",
+    "@types/node": "^14.14.9",
+    "@vtex/prettier-config": "^0.3.5",
+    "eslint": "^7.14.0",
+    "eslint-config-vtex": "^12.8.10",
+    "eslint-config-vtex-react": "^6.8.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.2.0",
+    "react": "^16.13.1",
+    "typescript": "^4.0.2"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "@types/react-input-mask": "^3.0.0",
+    "react-input-mask": "^2.0.4",
+    "react-markdown": "^5.0.3"
+  }
+}

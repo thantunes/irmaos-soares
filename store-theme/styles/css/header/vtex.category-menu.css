@@ -1,0 +1,109 @@
+.firstLevelLink {
+    color: #0d6721;
+    font-weight: 900;
+    font-family: 'Sarabun',sans-serif;
+    font-size: 16px;
+}
+
+.secondLevelLink {
+    color: #091690;
+    font-weight: 400;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.secondLevelLink:hover {
+    color: #f7b512;
+    text-decoration: none;
+}
+
+.itemContainer {
+    max-height: 25rem;
+}
+.departmentLink {
+    color:#FFF;
+    font-weight: 400;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border: 0;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1400px){
+    .departmentLink {
+        width: min-content;        
+        white-space: pre-wrap;
+    }
+}
+
+.departmentLink:hover{
+    opacity: .5;
+}
+
+.submenuList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.itemContainer--category {
+    background: #FFF;
+}
+
+@media screen and (max-width: 767px) {
+
+    .sidebarHeader,
+    .menuIcon {
+        display: none;
+    }
+
+    .animation {
+        left: 0.5rem;
+        transform: translateX(0%) !important;
+        z-index: 2;
+    }
+
+    .sidebar {
+        max-height: 40rem;
+        top: 7rem;
+        position: relative;
+        background: none;
+        box-shadow: none;
+        background: #FFF;
+        border-radius: 0;
+        /* width: 19rem; */
+    }
+
+    .sidebarItemContainer {
+        font-family: 'Sarabun', sans-serif  !important;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #00511c;
+        width: 100%;
+        
+    }
+
+    .plusIcon,
+    .minusIcon  {
+        color: #0D6721;
+    }
+
+    .sidebarItem {
+        font-size: 14px;
+        font-family: 'Sarabun',sans-serif!important;
+        color: #0D6721;
+        font-weight: 600;
+        /* height: 55px; */
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        border-bottom: 1px solid #DCDCDC;
+    }
+}

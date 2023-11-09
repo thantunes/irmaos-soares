@@ -1,0 +1,11 @@
+.unitPriceMeasurementUnit{
+    font-size: 0;
+}
+.unitPrice {
+    font-style: italic;
+    color: #4d4d4d;
+}
+.unitPriceMeasurementUnit::before {
+    content: " por unidade";
+    font-size: 12px;
+}

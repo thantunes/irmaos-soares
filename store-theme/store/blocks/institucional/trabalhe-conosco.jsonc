@@ -1,0 +1,110 @@
+{
+    "store.custom#trabalhe-conosco": {
+        "children": [
+            "flex-layout.row#trabalhe-conosco"
+        ]
+    },
+    "flex-layout.row#trabalhe-conosco": {
+        "props": {
+            "blockClass": "contact",
+            "colGap": 5,
+            "marginBottom": 5,
+            "marginTop": 5,
+            "rowGap": 5
+        },
+        "children": [
+            "flex-layout.col#trabalhe-conosco",            
+            "flex-layout.col#image-contact-us"
+        ]
+    },
+    "flex-layout.col#trabalhe-conosco": {
+        "children": [
+            "rich-text#trabalhe-conosco",
+            "form#trabalhe-conosco"
+        ]
+    },
+    "rich-text#trabalhe-conosco": {
+        "props": {
+            "text": "## Trabalhe Conosco\nDeseja fazer parte dessa equipe? Preencha o formulário e aguarde.",
+            "blockClass": "title--contact-us"
+        }
+    },
+    "form#trabalhe-conosco": {
+        "props": {
+            "entity": "trabalhe",
+            "schema": "v1"
+        },
+        "blocks": [
+            "form-success#trabalhe-conosco"
+        ],
+        "children": [
+            "form-input.text#nome-trabalhe-conosco",
+            "form-input.text#email-trabalhe-conosco",
+            "form-input.text#telefone-trabalhe-conosco",
+            "form-input.text#linkedin-trabalhe-conosco",
+            "form-input.dropdown#cargos-trabalhe-conosco",
+            "form-input.upload#curriculo-trabalhe-conosco",
+            "form-input.textarea#mensagem-trabalhe-conosco",
+
+            "form-submit#trabalhe-conosco"
+        ]
+    },
+    "form-success#trabalhe-conosco": {
+        "children": [
+            "rich-text#success-submit-trabalhe-conosco"
+        ]
+    },
+    "rich-text#success-submit-trabalhe-conosco": {
+        "props": {
+            "text": "## Obrigado por se candidatar!\n\nEm breve entraremos em contato.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "form-input.text#nome-trabalhe-conosco": {
+        "props": {
+            "pointer": "#/properties/nome"
+        }
+    },
+    "form-input.text#email-trabalhe-conosco": {
+        "props": {
+            "pointer": "#/properties/email"
+        }
+    },
+
+    "form-input.text#telefone-trabalhe-conosco": {
+        "props": {
+            "pointer": "#/properties/telefone"
+        }
+    },
+
+    "form-input.text#linkedin-trabalhe-conosco": {
+        "props": {
+            "pointer": "#/properties/linkedin"
+        }
+    },
+
+    "form-input.dropdown#cargos-trabalhe-conosco": {
+        "props": {
+            "pointer": "#/properties/cargos"
+        }
+    },
+
+    "form-input.upload#curriculo-trabalhe-conosco": {
+        "props": {
+            "pointer": "#/properties/curriculo"
+        }
+    },
+
+    "form-input.textarea#mensagem-trabalhe-conosco": {
+        "props": {
+            "pointer": "#/properties/mensagem"
+        }
+    },
+    "form-submit#trabalhe-conosco": {
+        "props": {
+            "label": "Enviar candidatura"
+        }
+    }
+}

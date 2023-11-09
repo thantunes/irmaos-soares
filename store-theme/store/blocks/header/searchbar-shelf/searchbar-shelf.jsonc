@@ -1,0 +1,24 @@
+{
+    "product-summary.shelf#seachbar-shelf": {
+        "props": {
+            "blockClass": "m3-seachbar-shelf"
+        },
+        "children": [
+            "product-summary-image#seachbar-shelf",
+            "product-summary-name#seachbar-shelf"
+        ]
+    },
+    "product-summary-image#seachbar-shelf": {
+        "props": {
+            "blockClass": "seachbar-shelf",
+            "showBadge": false,
+            "height": 70
+        }
+    },
+    "product-summary-name#seachbar-shelf": {
+        "props": {
+            "blockClass": "seachbar-shelf",
+            "tag": "h3"
+        }
+    }
+}

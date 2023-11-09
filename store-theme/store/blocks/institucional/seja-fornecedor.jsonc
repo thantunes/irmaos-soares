@@ -1,0 +1,98 @@
+{
+    "store.custom#seja-fornecedor": {
+        "children": [
+            "flex-layout.row#seja-fornecedor"
+        ]
+    },
+    "flex-layout.row#seja-fornecedor": {
+        "props": {
+            "blockClass": "contact",
+            "colGap": 5,
+            "marginBottom": 5,
+            "marginTop": 5,
+            "rowGap": 5
+        },
+        "children": [
+            "flex-layout.col#seja-fornecedor",            
+            "flex-layout.col#image-contact-us"
+        ]
+    },
+    "flex-layout.col#seja-fornecedor": {
+        "children": [
+            "rich-text#seja-fornecedor",
+            "form#seja-fornecedor"
+        ]
+    },
+    "rich-text#seja-fornecedor": {
+        "props": {
+            "text": "## Seja um fornecedor"
+        }
+    },
+    "form#seja-fornecedor": {
+        "props": {
+            "entity": "fornecedor",
+            "schema": "v1"
+        },
+        "blocks": [
+            "form-success#seja-fornecedor"
+        ],
+        "children": [
+            "form-input.text#nome-fornecedor",
+            "form-input.text#email-fornecedor",
+            "form-input.text#telefone-fornecedor",
+            "form-input.text#cnpj-fornecedor",
+            "form-input.upload#anexo-fornecedor",
+            "form-input.textarea#mensagem",
+            "form-submit#fornecedor"
+        ]
+    },
+    "form-success#seja-fornecedor": {
+        "children": [
+            "rich-text#success-submit"
+        ]
+    },
+    "rich-text#success-submit": {
+        "props": {
+            "text": "Obriagado por entrar em contato conosco, em breve entraremos em contato.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "form-input.text#nome-fornecedor": {
+        "props": {
+            "pointer": "#/properties/nome"
+        }
+    },
+    "form-input.text#email-fornecedor": {
+        "props": {
+            "pointer": "#/properties/email"
+        }
+    },
+    "form-input.text#telefone-fornecedor": {
+        "props": {
+            "pointer": "#/properties/telefone"
+        }
+    },
+    "form-input.text#cnpj-fornecedor": {
+        "props": {
+            "pointer": "#/properties/cnpj"
+        }
+    },
+    "form-input.upload#anexo-fornecedor": {
+        "props": {
+            "title": "Anexar arquivo",
+            "uploadLabel": "Anexar arquivo",
+            "pointer": "#/properties/anexo"
+        }
+    },
+    "form-input.textarea#mensagem": {
+        "props": {
+            "pointer": "#/properties/mensagem"
+        }
+    },
+    "form-submit#fornecedor": {
+        "props": {
+            "label": "Enviar"
+        }
+    }
+}

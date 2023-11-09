@@ -1,0 +1,35 @@
+.link--servicos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 0;
+    padding: 15px 22px;
+    font-weight: bold;
+    font-style: italic;
+    height: 50px;
+    font-size: 16px;
+    /* line-height: 35px;     */
+    color: #0D6721;
+    background-color: #BACD29;
+    border-color: #BACD29;
+    border-radius: 8px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.link--servicos::before{
+    content: "";
+    background-image: url(assets/svgs/icon-helmet-servicos.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 24px;
+    margin-right: .5rem;
+}
+
+.link--servicos:hover{
+    background-color: #148B2E;
+    border-color: #148B2E;
+    color:#FFF
+}

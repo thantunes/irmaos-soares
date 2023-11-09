@@ -1,0 +1,39 @@
+.styledLinkContainer--menu-links-item{
+    padding: 0;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+    position: relative;
+    margin: 0 8px;
+}
+
+.styledLinkContent--menu-links-item{
+    color:#FFF;
+    font-weight: bold;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 15px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    white-space: pre-wrap;
+
+}
+
+.styledLinkContent--menu-links-item:hover{
+    color:#BACD29;
+}
+
+
+.styledLink--menu-links-item--highlight .styledLinkContent--menu-links-item{
+    color:#BACD29;
+}
+.menuItem--menu-links-item:hover{
+    background-color: #148B2E;
+}
+
+.styledLink--topbar-buy-whatsapp{
+    font-size:16px
+}

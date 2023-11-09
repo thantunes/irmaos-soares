@@ -1,0 +1,148 @@
+/* button */
+.online-support {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  bottom: 38px;
+}
+.online-support-postThreshold {
+  position: fixed;
+}
+
+@media only screen and (max-width: 992px) {
+  .online-support {
+    bottom: 30px;
+  }
+}
+
+.support {
+  position: relative;
+}
+.support-openIcon {
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.support-openIcon:hover {
+  filter: brightness(1.3);
+}
+
+/* content dropdown */
+.supportContent-wrapper {
+  position: absolute;
+  right: calc(0% + 10px);
+  bottom: 0;
+  display: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  min-width: 300px;
+}
+.supportContent-wrapper--open {
+  display: block;
+}
+.supportContent-container {
+  padding: 26px 24px 30px;
+}
+
+/*top*/
+.supportContent-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.supportContent-close {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.supportContent-close:hover {
+  filter: brightness(1.5);
+}
+.supportContent-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #414141;
+  margin: 0;
+}
+
+/* middle */
+.supportContent-middle {
+  margin-bottom: 24px;
+}
+.supporContent-paragraph {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #414141;
+  margin: 0;
+  max-width: 252px;
+}
+.supporContent-paragraphHighlight {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 12px 0 0;
+}
+
+/* bottom */
+.supportContent-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.supportItem-container {
+  display: flex;
+  align-items: center;
+}
+.supportItem-link {
+  text-decoration: none !important;
+  transition: 0.2s all;
+}
+
+.supportItem-link:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 992px) {
+  .supportItem-link:hover {
+    filter: brightness(0.9);
+    transform: scale(1.05);
+  }
+}
+.supportItem-title,
+.supportItem-subtitle {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #414141;
+  margin: 0;
+}
+.supportItem-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+.supportItem-subtitle {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+.supportItem-icon {
+  background: #245189;
+  border-radius: 5px;
+  width: 53px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}

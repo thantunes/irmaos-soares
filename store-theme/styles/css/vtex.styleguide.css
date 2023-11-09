@@ -1,0 +1,26 @@
+ @media screen and (min-width: 768px){
+    .mh100 {
+        max-width: 500px;
+        border-radius: 15px;
+    }
+}
+
+
+@media screen and (device-aspect-ratio: 2 / 3) {
+    .input {
+      font-size: 16px; } }
+  
+  @media screen and (device-aspect-ratio: 40 / 71) {
+    .input {
+      font-size: 16px; } }
+  
+  @media screen and (device-aspect-ratio: 375 / 667) {
+    .input {
+      font-size: 16px; } }
+  
+  @media screen and (device-aspect-ratio: 9 / 16) {
+    .input {
+      font-size: 16px; } }
+  
+  :global(.vtex-dropdown__button) {
+    width: 93px; }

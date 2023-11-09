@@ -1,0 +1,71 @@
+{
+    "header-layout.mobile": {
+		"children": [
+            "header-row#topbar",
+			"header-row#1-mobile"
+		],
+        "props": {
+            "blockClass": "mobile-header"
+        }
+	},
+	
+    "header-row#1-mobile": {
+		"children": [
+			// "drawer#menu-mobile",
+            "menu-mobile",
+			"logo#mobile",			
+            "header-spacer",
+            "toggle-search",
+			"login#mobile",
+			"minicart.v2"
+		],
+		"props": {
+            "sticky": true,
+			"blockClass": "main-header-mobile",
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true
+		}
+	},
+
+    "toggle-search": {
+        "props": {
+            "openSearchIcon": "assets/svgs/icon-lupa.svg",
+            "closeSearchIcon": "assets/svgs/close-icon.svg"
+        },
+
+        "children": ["search-bar#mobile"]
+    },
+    "search-bar#mobile": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "blockClass": "mobile",
+            "openAutocompleteOnFocus": true,
+            "maxWidth": "355px",
+            "placeholder": "Faça sua busca aqui",
+            "displayMode": "clear-button"
+        }
+    },
+    "login#mobile": {
+        "props": {
+            "showIconProfile": false,
+            "hideIconLabel": true,
+            "labelClasses": ["login-icon"],
+            "providerPasswordButtonLabel": "Entrar com e-mail",
+            "emailAndPasswordTitle": "Entrar com e-mail e senha",
+            "accessCodeTitle": "Receber código de acesso ",
+            "emailPraceholder": "ex: exemplo@mail.com.br",
+            "passwordPlaceholder": "adicionar sua senha",
+            "showPasswordVerificationIntoTooltip": true,
+            "hasGoogleOneTap": false
+        }
+    },
+	"logo#mobile": {
+		"props": {
+			"title": "Logo Irmãos Soares",
+			"href": "/",
+			"url": "assets/logo-irmao-soares.png",
+			"width": "130"
+		}
+	}
+}

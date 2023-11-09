@@ -1,0 +1,21 @@
+{
+    "tab-list.item#assentamento-ceramico": {
+        "props": {
+            "tabId": "assentamento-ceramico",
+            "label": "Assentamento Cerâmico"
+        }
+    },
+    "tab-content.item#assentamento-ceramico": {
+        "children": [
+            "rich-text#assentamento-ceramico"
+        ],
+        "props": {
+            "tabId": "assentamento-ceramico"
+        }
+    },
+    "rich-text#assentamento-ceramico": {
+        "props": {
+            "text": "## Assentamento Cerâmico\n\nO assentamento cerâmico é um dos serviços que exigem grande capacidade técnica do profissional, uma vez que se o profissional não seguir as instruções do fabricante e normas técnicas, implica na perda da garantia do produto.\n\nPensando nisso a parceria Instale Já! tem profissionais altamente capacitados para instalar qualquer produto, garantindo a durabilidade, garantia e perfeito acabamento do seu revestimento. \n\n*Serviços:* \n\nInstalação de pisos cerâmicos\nInstalação de porcelanatos\nInstalação de revestimentos\nInstalação de produtos cerâmicos de grande formato\nInstalação de mármores e granitos"
+        }
+    }
+}

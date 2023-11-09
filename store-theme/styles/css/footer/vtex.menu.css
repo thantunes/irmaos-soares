@@ -1,0 +1,9 @@
+.menuContainer--footer-menu-mobile :global(.vtex-menu-2-x-styledLinkContent){
+    color:#FFF;
+    font-weight: bold;
+}
+
+.menuContainer--footer-menu-mobile :global(.vtex-menu-2-x-menuItem--isClosed){
+    padding: 1rem 0.5rem;
+    
+}

@@ -1,0 +1,127 @@
+.closeIconButton--keeping-buy{
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+    width: 100%;
+    font-family: 'Sarabun', sans-serif;
+}
+
+
+.drawerContent {
+	position: relative;
+}
+
+.openIconContainer {
+	padding: 0;
+}
+
+.drawerTriggerContainer {
+	font-size: 0;
+	outline: none !important;
+}
+
+.closeIconContainer {
+	position: absolute;
+	right: 0;
+}
+
+.openIconContainer .menuIcon {
+	opacity: 0;
+}
+
+.closeIconContainer {
+	justify-content: flex-end;
+}
+
+.closeIconButton {
+	background: url(assets/svgs/close-icon.svg) no-repeat center center !important;
+	background-size: contain;
+	outline: none !important;
+}
+
+.closeIconButton--keeping-buy {
+	background: none !important;
+	font-family: "Sarabun", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.05em;
+	text-decoration-line: underline;
+	color: #727272;
+	width: 100%;
+	padding-top: 0;
+}
+
+.closeIconButton--keeping-buy:hover {
+	color: #bebbbb;
+}
+
+.closeIconButton .closeIcon {
+	opacity: 0;
+}
+
+/* MENU MOBILE */
+.drawer--menu-mobile {
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.26);
+}
+
+.childrenContainer--menu-mobile {
+	padding: 22px 8px;
+}
+
+.childrenContainer--menu-mobile :global(.vtex-store-components-3-x-container) {
+	padding: 0 !important;
+	margin: 0;
+}
+/* 
+.drawer--menu-mobile .closeIconButton {
+	display: none;
+}
+
+.closeIcon--menu-close-button {
+	display: none;
+} */
+
+/* .closeIconButton--menu-close-button {
+	display: block !important;
+	width: 29px !important;
+	height: 30px;
+	background: url(assets/imgs/closeIcon.png) no-repeat center center !important;
+	padding: 0;
+	filter: brightness(100);
+} */
+
+/* back button */
+.closeIcon--back-button {
+	display: none;
+}
+
+.closeIconButton--back-button {
+	display: flex !important;
+	background: none !important;
+	padding: 0;
+	margin: 0;
+	column-gap: 6px;
+}
+
+.closeIconButton--back-button::before {
+	content: "";
+	display: flex;
+	width: 8px;
+	height: 12px;
+	background: url(assets/leftIcon.png) no-repeat center center !important;
+}
+
+.closeIconButton--back-button::after {
+	content: "Voltar";
+	font-family: "Sarabun", sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 1;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #727272;
+}

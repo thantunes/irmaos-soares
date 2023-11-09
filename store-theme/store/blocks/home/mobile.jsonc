@@ -1,0 +1,59 @@
+{
+    "responsive-layout.mobile#home":{
+        "children":[
+           "flex-layout.row#slider-principal-mobile"
+        ]
+    },
+
+    "list-context.image-list#slider-principal-mobile": {
+        "children": [
+            "slider-layout#slider-principal-images-mobile"
+        ],
+        "props": {
+            "height": 520,
+            "preload": true,
+            "images": [
+                {
+                    "image": "https://irmaossoares.vteximg.com.br/arquivos/ids/164437/ISO_CASA_COMPLETA_02_06_23_banners%20site_780x520%203%20a.jpg"
+                },
+                {
+                   
+                    "image": "https://irmaossoares.vteximg.com.br/arquivos/ids/164437/ISO_CASA_COMPLETA_02_06_23_banners%20site_780x520%203%20a.jpg?v=638238671868200000"
+                },
+                {
+                    "image": "https://irmaossoares.vteximg.com.br/arquivos/ids/164435/ISO_CASA_COMPLETA_02_06_23_banners%20site_780x520%201a.jpg?v=638238661883030000"
+                }
+            ]
+        }
+    },
+    "slider-layout#slider-principal-images-mobile": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": "5000",
+                "stopOnHover": "true"
+            },
+            "infinite": true,
+            // "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "blockClass": "carousel",
+            "fullWidth": false
+        }
+    },
+    "flex-layout.row#slider-principal-mobile": {
+        "children": [
+            "list-context.image-list#slider-principal-mobile"
+        ],
+        "props": {
+            "colSizing": "auto",
+            "fullWidth": true,
+            "marginTop": 0,
+            "marginBottom": 5,
+            "blockClass": ["slider-principal", "mobile-slider-irmaosoares"]
+        }
+    }
+}

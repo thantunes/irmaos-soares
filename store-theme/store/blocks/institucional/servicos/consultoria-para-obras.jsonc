@@ -1,0 +1,21 @@
+{
+    "tab-list.item#consultoria-para-obras": {
+        "props": {
+            "tabId": "consultoria-para-obras",
+            "label": "Consultoria"
+        }
+    },
+    "tab-content.item#consultoria-para-obras": {
+        "children": [
+            "rich-text#consultoria-para-obras"
+        ],
+        "props": {
+            "tabId": "consultoria-para-obras"
+        }
+    },
+    "rich-text#consultoria-para-obras": {
+        "props": {
+            "text": "## Consultoria para Obras\n\nAqui no Instale Já! trazemos a você cliente facilidade e segurança oferecendo uma consultoria técnica com um engenheiro experiente, esclarecendo suas dúvidas e passando as informações necessárias sobre obras, reformas, legalização e demais serviços dentro da área de engenharia. \n\nCaso tenha dúvidas e dificuldades em sua reforma ou construção, entre em contato com nossa equipe, nós podemos ajudar! Listamos abaixo principais situações abordadas em nossa consultoria:\n\n* Elaboração de projetos\n* Visita técnica\n* Laudo de vistoria\n* Legalização e aprovação de projetos em órgãos municipais\n* Orçamento de obras e reformas\n* Levantamento de materiais e insumo de obra\n* Estudo de custos de obra\n\nAproveite essa parceria, será um prazer trazer segurança a você cliente. tire suas duvidas, faça seus orçamentos e consulte valores pelo contato.\n\nQualidade e garantia, juntos a gente constrói!"
+        }
+    }
+}

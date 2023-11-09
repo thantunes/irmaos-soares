@@ -1,0 +1,197 @@
+.galleryLayoutOptionButton {
+    background-color: #F0F0F0;
+    color: #3F3F40;
+    padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+}
+
+.galleryLayoutOptionButton--selected {
+    background-color: #3F3F40;
+    color: #FFFFFF;
+}
+
+.galleryLayoutSwitcher {
+    border-radius: 4px 4px 4px 4px;
+    justify-content: center;
+    overflow: hidden;
+    width: auto !important;
+    align-self: center
+}
+
+.galleryItem--list {
+    border-bottom: 1px #E7E9EE solid;
+}
+
+
+.filters--layout {
+    background-color: #FFF;
+    border-radius: 15px;
+    max-width: 320px;
+}
+
+.filter__container {
+    padding: 0 1rem;
+}
+
+.filter__container--title {
+    border-radius: 15px 15px 0 0;
+    padding: 15px;
+    background: #0D6721;
+}
+
+.filterMessage {
+    margin: 0;
+    color: #FFF;
+    font-weight: bold;
+    font-family: "Sarabun", sans-serif;
+}
+
+.filterTitleSpan {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+    color: #0D6721;
+}
+
+.caretIcon {
+    color: #0D6721;
+}
+
+/* .filterTemplateOverflow {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #0D6721 #FFF
+
+} */
+
+.filterTemplateOverflow::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar-track {
+    background: #FFF;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar-thumb {
+    background-color: #0D6721;
+    border-radius: 20px;
+}
+
+
+
+.filterItem {
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.seeMoreButton {
+    background-color: #0D6721;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0.4rem;
+}
+
+@media screen and (min-width: 1441px) {
+    .galleryTitle--layout {
+        position: absolute;
+        top: -12rem;
+        color: #FFF;
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .galleryTitle--layout {
+        position: absolute;
+        top: -10rem;
+        color: #FFF;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .galleryTitle--layout {
+        top: -8rem;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .galleryTitle--layout {
+        top: 0;
+        color: #000;
+        position: relative;
+        margin: 0.67em 0;
+        color: #000;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .filters--layout {
+        background-color: #FFF;
+        border-radius: 15px;
+    }
+
+    .filterAccordionItemBox {
+        min-height: 1.75rem;
+    }
+
+    .sidebar {
+        max-width: 300px;
+        background: #FFF;
+    }
+
+    .filterAccordionBreadcrumbs {
+        height: 4.25rem;
+        background: #FFF;
+    }
+
+    .accordionFilterContent {
+        padding: .5rem 0;
+    }
+
+
+    .filterPopupButton,.orderByButton  {
+        
+        background: #005a1e;
+        border-radius: 15px;
+    }
+
+    .filterPopupTitle{
+        color:#FFF
+    }
+
+    .filterIcon,.caretIcon{
+        color:#FFF;
+        fill:#FFF;
+    }
+
+    .vtex-search-result-3-x-accordionFilterItemOptions {
+        overflow: visible;
+    }
+    .filter__container--priceRange{
+        margin-left:-3rem
+    }
+
+    .galleryItem--grid{
+        padding:.3rem;
+    }
+    
+
+
+}

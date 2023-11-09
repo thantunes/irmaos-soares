@@ -1,0 +1,42 @@
+.searchButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    outline: 0;
+    background: transparent;
+}
+
+.searchWrapper {
+    display: none;
+    position: fixed;
+    top: 108px;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    background: #fff;
+    padding-bottom: 22px;
+}
+
+.activeSearchWrapper {
+    display: block;
+}
+
+.searchOverlay {
+    position: fixed;
+    top: 118px;
+    bottom: 0;
+    left: 0;
+    z-index: 19;
+    width: 100%;
+    background: #727272;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.activeSearchOverlay {
+    opacity: 0.5;
+    pointer-events: all;
+}

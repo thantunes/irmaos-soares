@@ -1,0 +1,47 @@
+{
+    "definitions": {
+        "Lojas": {
+            "type": "object",
+            "properties": {
+                "lojas": {
+                    "title": "Lojas Físicas",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "nameStore": {
+                                "title": "Nome da Loja",
+                                "type": "string",
+                                "default": ""
+                            },
+                            "addressStore": {
+                                "title": "Endereço da Loja",
+                                "type": "string",
+                                "default": ""
+                            },
+                            "phoneStore": {
+                                "title": "Telefone da Loja",
+                                "type": "string",
+                                "default": ""
+                            },
+                            "photoStore": {
+                                "title": "Foto da Loja",
+                                "description": "Foto da Loja",
+                                "$ref": "app:vtex.native-types#/definitions/url",
+                                "default": "",
+                                "widget": {
+                                    "ui:widget": "image-uploader"
+                                }
+                            },
+                            "linkStore": {
+                                "title": "Link Maps",
+                                "type": "string",
+                                "default": ""
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

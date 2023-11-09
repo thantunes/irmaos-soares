@@ -1,0 +1,96 @@
+{
+    "menu-item#atendimento-mobile": {
+        "props": {
+            "id": "menu-item-category",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Atendimento",
+                "text": "Atendimento"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#atendimento"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#atendimento": {
+        "children": [
+            "vtex.menu@2.x:menu#atendimento-accordion"
+        ]
+    },
+    "vtex.menu@2.x:menu#atendimento-accordion": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#faq-menu-mobile",
+            "menu-item#fale-conosco",
+            "menu-item#trabalhe",
+            "menu-item#fornecedor"
+        ]
+    },
+    "menu-item#faq-menu-mobile": {
+        "props": {
+            "id": "menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/politicas-de-trocas",
+                "noFollow": false,
+                "tagTitle": "Dúvidas Frequentes",
+                "text": "Dúvidas Frequentes"
+            }
+        }
+    },
+    "menu-item#fale-conosco": {
+        "props": {
+            "id": "menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/politicas-de-pagamento",
+                "noFollow": false,
+                "tagTitle": "Fale Conosco",
+                "text": "Fale Conosco"
+            }
+        }
+    },
+    "menu-item#trabalhe": {
+        "props": {
+            "id": "menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/trabalhe-conosco",
+                "noFollow": false,
+                "tagTitle": "Trabalhe Conosco",
+                "text": "Trabalhe Conosco"
+            }
+        }
+    },
+    "menu-item#fornecedor": {
+        "props": {
+            "id": "menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/institucional/seja-nosso-fornecedor",
+                "noFollow": false,
+                "tagTitle": "Seja nosso fornecedor",
+                "text": "Seja nosso fornecedor"
+            }
+        }
+    }
+}

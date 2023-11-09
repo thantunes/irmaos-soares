@@ -1,0 +1,39 @@
+{
+    "store.custom#about-us": {
+        "path": "/institucional/quem-somos"
+    },
+    "store.custom#faq": {
+        "path": "/institucional/faq"
+    },
+    "store.custom#contact-us": {
+        "path": "/institucional/contato"
+    },
+    "store.custom#servicos": {
+        "path": "/servicos"
+    },
+    "store.custom#nossas-lojas": {
+        "path": "/institucional/nossas-lojas"
+    },
+    "store.custom#seja-fornecedor": {
+        "path": "/institucional/seja-nosso-fornecedor"
+    },
+    "store.custom#trabalhe-conosco": {
+        "path": "/institucional/trabalhe-conosco"
+    },
+
+    "store.custom#politica-de-troca": {
+        "path": "/institucional/politica-de-troca"
+    },
+    "store.custom#politica-de-pagamento": {
+        "path": "/institucional/politica-de-pagamento"
+    },
+    "store.custom#politica-de-entrega": {
+        "path": "/institucional/politica-de-entrega"
+    },
+    "store.custom#politica-de-privacidade": {
+        "path": "/institucional/politica-de-privacidade"
+    },
+    "store.custom#politica-de-cookies": {
+        "path": "/institucional/politica-de-cookies"
+    }
+}

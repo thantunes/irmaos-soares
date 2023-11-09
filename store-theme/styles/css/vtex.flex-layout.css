@@ -1,0 +1,181 @@
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+    padding: 0 0.5rem;
+}
+
+@media screen and (min-width: 40em) {
+
+    .flexRowContent--menu-link,
+    .flexRowContent--main-header {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+
+    .flexRowContent--menu-link,
+    .flexRowContent--main-header {
+        padding: 0 0.25rem;
+    }
+}
+
+.flexRowContent--menu-link {
+    background-color: #03044e;
+    color: #fff;
+}
+
+.flexRowContent--main-header {
+    background-color: #EBEBEB;
+}
+
+.flexRowContent--main-header-mobile {
+    align-items: center;
+    padding: 0.625rem 0.5rem;
+    background-color: #EBEBEB;
+}
+
+.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+    color: #727273;
+    font-size: 14px;
+}
+
+.flexRow--deals {
+    background-color: #0F3E99;
+    padding: 14px 0px;
+}
+
+.flexRow--deals .stretchChildrenWidth {
+    align-items: center;
+}
+
+.flexRow--deals .flexCol {
+    align-items: center;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+.flexCol--filterCol {
+    max-width: 500px;
+    min-width: 230px;
+}
+
+.flexCol--productCountCol {
+    align-items: flex-start;
+}
+
+.flexCol--orderByCol {
+    align-items: flex-end;
+}
+
+.flexCol--orderByMobileCol {
+    width: 42%;
+}
+
+.flexCol--filterMobileCol {
+    width: 38%;
+}
+
+.flexRow--quickviewMainRow {
+    display: flex;
+    max-height: 100%;
+}
+
+.flexColChild--quickviewDetails:first-child {
+    overflow-y: auto;
+    height: 66% !important;
+    overflow-x: hidden;
+}
+
+.flexColChild--quickviewDetails:last-child {
+    height: 34% !important;
+}
+
+.flexRow--addToCartRow {
+    padding-bottom: 1rem;
+}
+
+
+
+.flexRowContent--aboutUs--is {
+    background-color: #FFF;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    margin-top: 2rem;
+    z-index: 2;
+    position: relative;
+
+}
+
+.flexRow--aboutUs-2--is {
+    background-color: #0D6721;
+
+}
+
+.flexRowContent--aboutUs-2--is {
+    background-color: #0D6721;
+    padding: 5rem;
+    position: relative;
+    margin-top: -2rem;
+    z-index: 1;
+}
+
+.flexRow--aboutUs-2--is :global(.vtex-rich-text-0-x-paragraph--about-2) {
+    color: #FFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.flexRowContent--aboutUs-slider--is {
+    background-color: #FFF;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    margin-top: -3rem;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 3rem;
+
+}
+
+.flexRowContent--servicos :global(.vtex-rich-text-0-x-heading) {
+    color: #0D6721;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.flexRowContent--servicos :global(.vtex-rich-text-0-x-paragraph) {
+    color: #0D6721;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.flexRowContent--servicos :global(.vtex-rich-text-0-x-link--servicos--contact) {
+    color: #0D6721;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width:1440px) {
+    /* .flexRow--minibanners-2 */
+
+    .vtex-flex-layout-0-x-flexRow {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .flexRowContent--mobile-slider-irmaosoares{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1150px) {
+    .flexRow--conheca-nossos-servicos {
+        display: none;
+    }
+}

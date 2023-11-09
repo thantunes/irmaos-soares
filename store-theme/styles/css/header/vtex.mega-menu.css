@@ -1,0 +1,13 @@
+.triggerContainer{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sarabun', sans-serif;
+    color:#FFF;
+    font-weight: bold;
+}
+
+.triggerContainer::after {
+    content: 'Departamentos';
+}

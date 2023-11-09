@@ -1,0 +1,14 @@
+.flexRow--main-header-menu,
+.flexRow--main-header-menu :global(.vtex-category-menu-2-x-section--department){
+    background-color: #0D6721;
+}
+
+.flexRowContent--main-header-menu :global(.vtex-flex-layout-0-x-flexCol--is-trigger-mega-menu){
+    background-color: #BACD29;
+    padding: 0 1rem;
+}
+
+.flexRow--minicart-footer {
+    box-shadow:none;
+    border-top:1px solid #e2e2e2;
+}

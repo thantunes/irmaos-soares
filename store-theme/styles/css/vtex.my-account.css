@@ -1,0 +1,169 @@
+.userImage {
+    display: none;
+}
+
+.menuLinks :global(.b--action-primary) {
+    border-color: #292929;
+    color: #292929;
+}
+
+.boxContainer {
+    border: 1px solid #c4c4c4;
+}
+
+.boxContainerFooter {
+    background-color: #148B2E !important;
+    max-height: 36px;
+}
+
+.boxContainerFooter :global(.vtex-button) {
+    color: #fff;
+    margin-top: 2px;
+    transition: ease-in 0.22s all;
+}
+
+.boxContainerFooter :global(.vtex-button):hover {
+    background-color: #bacd29;
+}
+
+:global(.vtex-pageHeader__container) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1rem;
+}
+
+:global(.vtex-pageHeader__title) {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #6d6e70;
+}
+
+:global(.vtex-pageHeader-link__container) {
+    padding-bottom: 2rem;
+}
+
+/* my-accont*/
+
+.menuLinks :global(.b--action-primary) {
+    border-color: #148B2E;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 500;
+    color: #6d6e70;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 16px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin: 0px;
+}
+
+.menuLinks :global(.b--transparent) {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 500;
+    color: #6d6e70;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 16px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin: 0px;
+}
+
+.userGreeting,
+.userName {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #148B2E;
+    position: relative;
+}
+
+.userGreeting {
+    padding-top: 5px;
+}
+
+.dataEntryLabel {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #6d6e70;
+}
+
+.dataEntryChildren {
+    font-family: "Sarabun", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #848484;
+}
+
+.newsletterBoxContainer {
+    display: none;
+}
+
+.boxContainer {
+    border: 1px solid #c4c4c4;
+}
+
+.boxContainerBody {
+    font-family: "Sarabun", sans-serif;
+    background-color: #FFF;
+    font-size: 14px;
+}
+
+.boxContainerFooter {
+    background-color: #292929;
+    max-height: 36px;
+}
+
+.boxContainerFooter :global(.vtex-button) {
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 2px;
+    transition: ease-in 0.22s all;
+}
+
+.boxContainerFooter :global(.vtex-button):hover {
+    background-color: #bacd29;
+}
+
+
+:global(.vtex-pageHeader__container) {
+    padding-top: 1.3rem;
+    padding-bottom: 0;
+    padding-left: 1rem;
+}
+
+
+/* :global(.vtex-account__page-body) {
+    margin: 0px !important;
+} */
+
+:global(.vtex-pageHeader-link__container) {
+    padding-bottom: 20px;
+}
+
+.pageHeader__children :global(.t-action--small) {
+    font-family: "Sarabun", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #6d6e70;
+}
+
+
+
+:global(.vtex-account__orders-list) :global(.vtex-my-orders-app-3-x-orderBody){
+    background-color: #FFF;
+}

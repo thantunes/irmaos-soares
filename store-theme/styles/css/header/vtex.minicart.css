@@ -1,0 +1,260 @@
+/*MINICART BUTTON*/
+.openIconContainer,
+.openIconContainer :global(.vtex-button__label),
+.openIconContainer :global(.vtex-button) {
+	padding: 0 !important;
+	margin: 0;
+	background: transparent !important;
+	outline: none;
+	border: none;
+}
+
+.minicartIconContainer .imageElement {
+	width: 30px;
+	height: 26px;
+}
+
+.minicartQuantityBadge,
+.minicartQuantityBadge::after {
+	background: #FFF;
+    font-family: "Sarabun",sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #0D6721;
+}
+
+.minicartQuantityBadgeDefault{
+    top: 0rem;
+    right: 0rem;
+}
+
+/* ------ */
+/* MINCART CONTENT */
+.drawer {
+	width: 100% !important;
+    background-color: #FFF;
+}
+
+.drawerContent {
+	position: relative;
+	padding: 18px 10px;
+	height: 100%;
+}
+
+.childrenContainer,
+.minicartSideBarContentWrapper,
+.minicartContentContainer {
+	height: 100% !important;
+}
+
+.closeIconContainer {
+	position: absolute;
+	right: 0;
+	padding: 0 16px;
+}
+
+.closeIconButton {
+	background: url(assets/closeIcon.png) no-repeat center center !important;
+	background-size: contain;
+	padding: 0;
+	height: 30px;
+	width: 30px;
+	outline: none;
+}
+
+.closeIconButton:hover {
+	filter: opacity(0.8);
+}
+
+.closeIconButton .closeIcon,
+.cartIcon {
+	display: none;
+}
+
+
+.minicartTitle {
+	display: flex;
+	align-items: center;
+	content: "Meu carrinho";
+	font-family: "Sarabun", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.05em;
+	color: #0D6721;
+	text-transform: uppercase;
+	visibility: hidden;
+	position: relative;
+	margin: 0;
+	padding: 0 6px;
+}
+
+.minicartTitle::before {
+	content: " ";
+	background: url("assets/svgs/shopping-cart-icon.svg") center no-repeat;
+	width: 30px;
+	height: 26px;
+	display: block;
+	visibility: visible;
+    background-size: contain;
+}
+
+.minicartTitle::after {
+	content: "Meu carrinho";
+	display: block;
+	visibility: visible;
+	position: absolute;
+	left: 45px;
+}
+
+.drawerContent :global(.vtex-product-list-0-x-productName) {
+	font-family: "Sarabun", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+	color: #0D6721;
+	/* max-width: 190px; */
+}
+
+.minicartProductListContainer {
+	padding: 0;
+	margin-top: 46px;
+}
+
+.minicartProductListContainer:global(.vtex-flex-layout-0-x-flexRowContent--product) {
+	border: none;
+	padding: 0;
+	align-items: center;
+}
+
+.minicartProductListContainer:global(.vtex-product-list-0-x-productImageContainer) {
+	width: 101px !important;
+	height: 101px;
+	border: 1px solid #bebbbb;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+.minicartProductListContainer:global(.vtex-product-list-0-x-productImageAnchor) {
+	display: block;
+}
+
+.minicartProductListContainer :global(.vtex-product-list-0-x-productImage) {
+	width: 100%;
+	height: 100%;
+}
+
+.minicartProductListContainer :global(.vtex-product-list-0-x-removeButton) {
+	outline: none;
+	border: none;
+	padding: 0;
+}
+
+.minicartProductListContainer:global(.vtex-product-list-0-x-currencyContainer) {
+	font-family: "Sarabun", sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.05em;
+	text-decoration-line: line-through;
+	text-transform: uppercase;
+	color: #727272;
+}
+
+.minicartProductListContainer :global(.vtex-product-list-0-x-price) {
+	width: max-content;
+}
+
+.minicartProductListContainer :global(.vtex-dropdown__button) {
+	width: 58px !important;
+}
+
+.minicartProductListContainer:global(.vtex-product-list-0-x-currencyContainer)::before {
+	content: "De";
+	font-size: 12px;
+	margin-right: 4px;
+}
+
+.drawerContent :global(.vtex-product-list-0-x-productPrice) {
+	font-family: "Sarabun", sans-serif;
+	font-weight: 900;
+	font-size: 22px;
+	line-height: 22px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #0D6721;
+}
+
+.minicartProductListContainer:global(.vtex-product-list-0-x-removeButton):hover {
+	filter: opacity(0.8);
+}
+
+.minicartProductListContainer:global(.vtex-product-list-0-x-removeButton)::after {
+	content: " ";
+	background: url("assets/closeIconSmall.png") center no-repeat;
+	width: 23px;
+	height: 23px;
+	display: block;
+}
+
+/*footer*/
+.minicartSummary {
+	padding: 0;
+}
+
+.minicartSummary :global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
+	display: none;
+}
+
+.minicartCheckoutButton {
+	padding: 0;
+	margin: 0;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+	border: none;
+	outline: none;
+	transition: ease-in 0.22s all;
+	background: #0D6721;
+	border-radius: 15px;
+	height: 46px;
+	width: 100%;
+}
+
+.minicartCheckoutButton :global(.vtex-button)::after {
+	content: "Finalizar compra";
+	font-family: "Sarabun", sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label) {
+	display: none;
+}
+
+.minicartCheckoutButton :global(.vtex-button):hover {
+	background-color: #67c497;
+}
+
+.unitListPrice {
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	text-decoration-line: line-through;
+	color: #7d7d7d;
+}
+
+
+.minicartProductListContainer :global(.vtex-product-price-1-x-installments) {
+	display: none;
+
+
+}

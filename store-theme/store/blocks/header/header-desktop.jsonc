@@ -1,0 +1,165 @@
+{
+    "header-layout.desktop": {
+        "children": [
+            "header-row#topbar",
+            "sticky-layout#4-desktop"
+        ]
+    },
+    "header-row#topbar": {
+        "props": {
+            "blockClass": "topbar",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false
+        },
+        "children": [
+            // "shopper-location",
+            "geolocalizacao",
+            "header-spacer",
+            "vtex.menu@2.x:menu#topbar"
+        ]
+    },
+
+    "sticky-layout#4-desktop": {
+        "children": [
+            "header-row#header-principal",
+            // "flex-layout.row#3-desktop",
+            "flex-layout.row#4-desktop-menu"
+            // "header-row#menu-principal",
+            // "flex-layout.row#mega-menu"
+        ]
+    },
+    "flex-layout.col#spacer": {
+        "props": {
+          "width": "grow"
+        }
+      },
+    "header-row#header-principal": {
+        "props": {
+            "blockClass": "main-header",
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "sticky": true
+        },
+        "children": [
+            "logo#desktop",
+            "header-spacer",
+            "search-bar",
+            "header-spacer",
+            "flex-layout.row#conheca-nossos-servicos",
+            "header-spacer",
+            "flex-layout.row#login-wrapper",
+            "minicart.v2"
+        ]
+    },
+
+    "flex-layout.row#3-desktop":{
+        "children": [
+            "flex-layout.col#logo-desktop",
+            "flex-layout.col#spacer",
+            "flex-layout.col#search-desktop",  
+            "flex-layout.col#spacer",
+            // "flex-layout.col#spacer",
+            "rich-text#servicos",
+            "login",
+            "minicart.v2"
+        ],
+        "props":{  
+            "blockClass": "main-header",
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+
+    "flex-layout.col#search-desktop": {
+		"props": {
+			"verticalAlign": "middle"
+		},
+		"children": [
+			"search-bar"
+		]
+	},
+
+    "flex-layout.row#conheca-nossos-servicos": {
+        "props": {
+            "blockClass": "conheca-nossos-servicos",
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false,
+            "colGap": "auto"
+        },
+        "children": [
+            "rich-text#servicos"
+        ]
+    },
+    "rich-text#servicos": {
+        "props": {
+            "text": " [Nossos serviços](/servicos)",
+            "blockClass": "servicos"
+        }
+    },
+    "flex-layout.row#login-wrapper": {
+        "children": [
+            "login"
+        ],
+        "props": {
+            "preventHorizontalStretch": false,
+            "colSizing": "2",
+            "blockClass": "login-wrapper"
+        }
+    },
+    "login": {
+        "props": {
+            "showIconProfile": false,
+            "iconLabel": "Entre ou Cadastre-se",
+            "labelClasses": [
+                "login-icon"
+            ],
+            "providerPasswordButtonLabel": "Entrar com e-mail",
+            "emailAndPasswordTitle": "Entrar com e-mail e senha",
+            "accessCodeTitle": "Receber código de acesso ",
+            "emailPraceholder": "ex: exemplo@mail.com.br",
+            "passwordPlaceholder": "adicionar sua senha",
+            "showPasswordVerificationIntoTooltip": true
+        }
+    },
+    "header-row#menu-desktop": {
+        "props": {
+            "sticky": true,
+            "blockClass": "main-header-menu"
+        },
+        "children": [
+            "category-menu"
+        ]
+    },
+
+    "flex-layout.row#4-desktop-menu": {
+        "props":{
+            "blockClass": "main-header-menu",
+            "horizontalAlign": "left",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "menu-departamentos",
+            "flex-layout.col#categorias-menu"
+        ]
+    },
+    "flex-layout.col#categorias-menu": {
+        "props": {
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-menu"
+        ]
+    }
+}

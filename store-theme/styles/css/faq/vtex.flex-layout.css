@@ -1,0 +1,9 @@
+.flexRowContent--faq {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.flexRowContent--faq :global(.vtex-rich-text-0-x-headingLevel3) {
+    color: #0D6721;
+}

@@ -1,0 +1,204 @@
+{
+    "vtex.menu@2.x:menu#category-menu": {
+        "props": {
+            "blockClass": "menu-links"
+        },
+        "children": [
+            "menu-item#category-pisos-revestimentos",
+            "menu-item#category-banheiro",
+            "menu-item#category-portas-janelas",
+            "menu-item#category-ferragens",
+            "menu-item#category-iluminacao",
+            "menu-item#category-hidraulica",
+            "menu-item#category-tintas",
+            "menu-item#category-ofertas"            
+            
+        ]
+    },
+    "menu-item#category-pisos-revestimentos": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-pisos-e-revestimentos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/pisos-e-revestimentos",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Pisos e Revestimentos",
+                "text": "Pisos e Revestimentos"
+            },
+            "iconProps": {
+              "id": "sti-pisos",
+              "size": 24,
+              "viewBox": "0 0 25 25",
+              "activeClassName": "",
+              "mutedClassName": ""
+            }
+        }
+    },
+    "menu-item#category-banheiro": {
+        "props": {
+            "blockClass": ["menu-links-item","menu-link-banheiro"],
+            "id": "menu-item-banheiro",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Banheiros",
+                "text": "Banheiros"
+            },
+            "iconProps": {
+              "id": "sti-banheiro",
+              "size": 24,
+              "viewBox": "0 0 19 29",
+              "activeClassName": "",
+              "mutedClassName": ""
+            }
+        }
+    },
+    "menu-item#category-portas-janelas": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-portas-e-janelas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/portas-e-janelas",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Portas e Janelas",
+                "text": "Portas e Janelas"
+            },
+            "iconProps": {
+              "id": "sti-portas",
+              "size": 24,
+              "viewBox": "0 0 18 27",
+              "activeClassName": "",
+              "mutedClassName": ""
+            }
+        }
+    },
+    "menu-item#category-ferragens": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-ferragens",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/ferragens",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Ferragens",
+                "text": "Ferragens"
+            },
+            "iconProps": {
+              "id": "sti-ferragens",
+              "size": 24,
+              "viewBox": "0 0 24 24",
+              "activeClassName": "",
+              "mutedClassName": ""
+            }
+        }
+    },
+    "menu-item#category-iluminacao": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-iluminacao",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/iluminacao",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Iluminação",
+                "text": "Iluminação"
+            },
+            "iconProps": {
+              "id": "sti-iluminacao",
+              "size": 24,
+              "viewBox": "0 0 22 30",
+              "activeClassName": "",
+              "mutedClassName": ""
+            }
+        }
+    },
+    "menu-item#category-hidraulica": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-hidraulica",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/hidraulica",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Hidráulica",
+                "text": "Hidráulica"
+            },
+            "iconProps": {
+              "id": "sti-hidraulica",
+              "size": 24,
+              "viewBox": "0 0 16 27",
+              "activeClassName": "",
+              "mutedClassName": ""
+            }
+        }
+    },
+    "menu-item#category-tintas": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-tintas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/tintas",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Tintas",
+                "text": "Tintas"
+            },
+            "iconProps": {
+              "id": "sti-tintas",
+              "size": 24,
+              "viewBox": "0 0 18 28",
+              "activeClassName": "",
+              "mutedClassName": ""
+            }
+        }
+    },
+    "menu-item#category-ofertas": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-ofertas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": true,
+            "itemProps": {
+                "href": "/139?map=productClusterIds&order=OrderByPriceDESC",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Ofertas",
+                "text": "Ofertas"
+            },
+            "iconProps": {
+              "id": "sti-discount",
+              "size": 24,
+              "viewBox": "0 0 16 16",
+              "activeClassName": "",
+              "mutedClassName": ""
+            }
+        }
+    }
+
+  
+}

@@ -1,0 +1,68 @@
+{
+    "vtex.menu@2.x:menu#Links": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+			"rich-text#Links",
+			"menu-item#cdc",
+            "menu-item#carga-tributaria",
+            "menu-item#consumidor"
+		]
+	},
+	"rich-text#Links": {
+		"props": {
+			"text": "Links Úteis",	
+			"blockClass": "footer-menu-title"
+		}
+	},
+	"menu-item#cdc": {
+		"props": {
+			"id": "footer-menu-item",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+            "blockClass": "footer-menu-item",
+			"itemProps": {
+				"type": "external",
+				"href": "https://www2.senado.leg.br/bdsf/bitstream/handle/id/533814/cdc_e_normas_correlatas_2ed.pdf",
+				"noFollow": false,
+				"tagTitle": "Código de Defesa do Consumidor",
+				"text": "Código de Defesa do Consumidor"
+			}
+		}
+	},
+
+    "menu-item#carga-tributaria": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "external",
+                "href": "https://pt.wikipedia.org/wiki/Carga_tribut%C3%A1ria",
+                "noFollow": false,
+                "tagTitle": "Carga Tributária",
+                "text": "Carga Tributária"
+            }
+        }
+    },
+    "menu-item#consumidor": {
+        "props": {
+            "id": "footer-menu-item",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "footer-menu-item",
+            "itemProps": {
+                "type": "external",
+                "href": "http://www.consumidor.gov.br/",
+                "noFollow": false,
+                "tagTitle": "Consumidor",
+                "text": "Consumidor"
+            }
+        }
+    }
+}
