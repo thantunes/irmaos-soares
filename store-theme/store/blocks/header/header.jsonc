@@ -32,7 +32,8 @@
             "verticalAlign": "middle"
         },
         "children": [
-            "logo#desktop"
+            "logo#desktop",
+            "wppButton"
         ]
     },
     "logo#desktop": {

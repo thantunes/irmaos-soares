@@ -7,7 +7,8 @@
             "flex-layout.row#conheca-nossos-servicos-rodape-mobile",
 			"flex-layout.row#2-footer-mobile-copyright",
             "flex-layout.row#3-footer-mobile-redes",
-            "flex-layout.row#4-footer-mobile-selos"
+            "flex-layout.row#4-footer-mobile-selos",
+            "wppButton"
 		],
         "props":{
 			"blockClass": "footer--is"

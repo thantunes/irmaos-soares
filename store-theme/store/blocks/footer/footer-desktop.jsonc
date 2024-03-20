@@ -4,7 +4,8 @@
             "flex-layout.row#footer-newsletter-desktop",
 			"flex-layout.row#footer-1-desktop",
 			"flex-layout.row#footer-2-desktop",
-			"flex-layout.row#footer-3-desktop"
+			"flex-layout.row#footer-3-desktop",
+            "wppButton"
 		],
         "props":{
 			"blockClass": "footer--is"

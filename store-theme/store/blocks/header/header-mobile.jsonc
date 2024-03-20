@@ -17,7 +17,8 @@
             "header-spacer",
             "toggle-search",
 			"login#mobile",
-			"minicart.v2"
+			"minicart.v2",
+            "wppButton"
 		],
 		"props": {
             "sticky": true,

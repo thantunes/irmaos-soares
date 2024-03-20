@@ -59,13 +59,21 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = () => {
     useEffect(() => {
         recalculate();
     }, [boxValue, addPercent]);
-
+    useEffect(() => {
+        setInterval(() => {
+            document.querySelector('div[class="vtex-product-quantity-1-x-quantitySelectorStepper vtex-product-quantity-1-x-quantitySelectorStepper--product-quantity"]')?.querySelector('input')?.value == document.querySelector('div[class="vtex-product-quantity-1-x-quantitySelectorStepper vtex-product-quantity-1-x-quantitySelectorStepper--product-quantity"]')?.querySelector('input')?.value.replace('um', 'un')
+            //@ts-expect-error
+            console.log(document.querySelector('div[class="vtex-product-quantity-1-x-quantitySelectorStepper vtex-product-quantity-1-x-quantitySelectorStepper--product-quantity"]')?.querySelector('input')?.value =`${document.querySelector('div[class="vtex-product-quantity-1-x-quantitySelectorStepper vtex-product-quantity-1-x-quantitySelectorStepper--product-quantity"]').querySelector('input').value.replace('um', 'un')}` )
+        }, 5)
+    }, [])
 
 
     const checkCategory = () => {
         const categories = product?.categories;
+        console.log(categories, 'epaaa')
         if (categories) {
-            if (categories.includes("/Pisos e Revestimentos/")) {
+            console.log(categories.find((e: string) => e == "/Pisos e Revestimentos/Pisos e Revestimentos/"))
+            if (categories.find((e: string) => e == "/Pisos e Revestimentos/Pisos e Revestimentos/")?.length > 0 || categories.find((e: string) => e == "/Pisos e Revestimentos/Porcelanato/")?.length > 0) {
                 setShowCalculator(true)
                 const sellingPrice = document.querySelector(".vtex-product-price-1-x-sellingPrice");
                 if (sellingPrice) {
@@ -114,7 +122,7 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = () => {
 
 
     if (!showCalculator) return null;
-    
+
 
     return (
         <>
@@ -160,10 +168,10 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = () => {
 
 
             <p
-                className={styles.productPrice}            
+                className={styles.productPrice}
             >{formatPrice(pricePerSquareMeter)}/m² <span>à vista</span></p>
             <p
-                className={styles.productUnitMultiplier}            
+                className={styles.productUnitMultiplier}
             >({unitMultiplier}m²/caixa)</p>
         </>
     );

@@ -24,6 +24,9 @@
         "component": "ToggleSearch",
         "composition": "children"
     },
+    "wppButton":{
+        "component":"WppButton"
+    },
     "Lojas": {
         "component": "Lojas",
         "composition": "children",
