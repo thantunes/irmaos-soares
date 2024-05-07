@@ -1,0 +1,36 @@
+{
+    "vtex.menu@2.x:menu#LinkBoleto": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+			"rich-text#LinksBoleto",
+			"menu-item#boleto"
+		]
+	},
+	"rich-text#LinksBoleto": {
+		"props": {
+			"text": "Boleto",	
+			"blockClass": "footer-menu-title"
+		}
+	},
+
+
+
+    "menu-item#boleto": {
+		"props": {
+			"id": "footer-menu-item",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+            "blockClass": "footer-menu-item",
+			"itemProps": {
+				"type": "external",
+				"href": "https://sigcol.netsuprema.com.br/secovicred/segunda-via/",
+				"noFollow": false,
+				"tagTitle": "Segunda via de boletos",
+				"text": "Segunda via de boletos"
+			}
+		}
+	}
+}
