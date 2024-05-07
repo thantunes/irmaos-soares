@@ -15,6 +15,7 @@
 			"vtex.menu@2.x:menu#Politicas",
 			"vtex.menu@2.x:menu#Institucional",
 			"vtex.menu@2.x:menu#Atendimento",
+            "vtex.menu@2.x:menu#LinkBoleto",
 			// "vtex.menu@2.x:menu#Links",
 			"footer-spacer",
 			"vtex.menu@2.x:menu#FaleConosco"
