@@ -7,7 +7,8 @@
         "children": [
             "menu-item#duvidas-mobile",
             "menu-item#institucional-mobile",
-            "menu-item#atendimento-mobile"
+            "menu-item#atendimento-mobile",
+            "menu-item#boleto-mobile"
         ]
     }
 }
