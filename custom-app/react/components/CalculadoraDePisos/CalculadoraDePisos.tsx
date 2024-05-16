@@ -22,6 +22,7 @@ interface CalculatorProps {
                 }[];
             }[];
             categories: string[];
+            
         };
     };
 }
