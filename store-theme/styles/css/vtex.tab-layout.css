@@ -8,3 +8,7 @@
         align-content: center;
     }
 }
+
+:global(.vtex-product-price-1-x-sellerNameContainer) {
+    display: none;
+}

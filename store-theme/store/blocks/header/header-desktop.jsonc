@@ -61,14 +61,14 @@
         "children": [
             "flex-layout.col#logo-desktop",
             "flex-layout.col#spacer",
-            "flex-layout.col#search-desktop",  
+            "flex-layout.col#search-desktop",
             "flex-layout.col#spacer",
             // "flex-layout.col#spacer",
             "rich-text#servicos",
             "login",
             "minicart.v2"
         ],
-        "props":{  
+        "props":{
             "blockClass": "main-header",
             "horizontalAlign": "center",
             "verticalAlign": "center",

@@ -10,6 +10,7 @@
             // "product-summary-space",
             "product-list-price#summary",
             "flex-layout.row#selling-price-savings",
+            "product-seller-name",
             "custom-parcelamento"
             // "product-installments#summary",
             // "add-to-cart-button#shelf"
@@ -38,7 +39,7 @@
         ]
     },
     "stack-layout#prodsum": {
-        "children": [ 
+        "children": [
             "product-summary-image#shelf",
             "vtex.product-highlights@2.x:product-highlights#collection"
             // "modal-trigger#quickview" // Check quickview.jsonc
