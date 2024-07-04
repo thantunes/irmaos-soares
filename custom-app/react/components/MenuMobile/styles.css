@@ -247,6 +247,11 @@
     visibility: visible;
 }
 
+.menu .navExpandContentOffer.show {
+    transform: initial;
+    visibility: visible;
+}
+
 .menu li .navItem.navBack {
     background: #F5F5F5;
     -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14);
@@ -265,6 +270,16 @@
 
 }
 .menu .more>a::after {
+    content: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.78125 0.1875C0.84375 0.125 0.90625 0.09375 1.03125 0.09375C1.125 0.09375 1.21875 0.125 1.3125 0.1875L7.84375 6.75C7.90625 6.8125 7.96875 6.90625 7.96875 7C7.96875 7.125 7.90625 7.1875 7.84375 7.25L1.3125 13.8125C1.21875 13.875 1.125 13.9062 1.03125 13.9062C0.90625 13.9062 0.84375 13.875 0.78125 13.8125L0.15625 13.1875C0.0625 13.125 0.03125 13.0625 0.03125 12.9375C0.03125 12.8438 0.0625 12.75 0.15625 12.6562L5.8125 7L0.15625 1.34375C0.0625 1.28125 0.03125 1.1875 0.03125 1.0625C0.03125 0.96875 0.0625 0.875 0.15625 0.8125L0.78125 0.1875Z' fill='%232A2A2A'/%3E%3C/svg%3E%0A");
+    float: right;
+    vertical-align: middle;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-top: 2px;
+}
+
+.menu .navLinkOffer::after {
     content: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.78125 0.1875C0.84375 0.125 0.90625 0.09375 1.03125 0.09375C1.125 0.09375 1.21875 0.125 1.3125 0.1875L7.84375 6.75C7.90625 6.8125 7.96875 6.90625 7.96875 7C7.96875 7.125 7.90625 7.1875 7.84375 7.25L1.3125 13.8125C1.21875 13.875 1.125 13.9062 1.03125 13.9062C0.90625 13.9062 0.84375 13.875 0.78125 13.8125L0.15625 13.1875C0.0625 13.125 0.03125 13.0625 0.03125 12.9375C0.03125 12.8438 0.0625 12.75 0.15625 12.6562L5.8125 7L0.15625 1.34375C0.0625 1.28125 0.03125 1.1875 0.03125 1.0625C0.03125 0.96875 0.0625 0.875 0.15625 0.8125L0.78125 0.1875Z' fill='%232A2A2A'/%3E%3C/svg%3E%0A");
     float: right;
     vertical-align: middle;

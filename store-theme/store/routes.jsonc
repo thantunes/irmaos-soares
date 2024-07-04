@@ -35,5 +35,8 @@
     },
     "store.custom#politica-de-cookies": {
         "path": "/institucional/politica-de-cookies"
+    },
+    "store.custom#cupons-de-descontos": {
+        "path": "/cupons-de-descontos"
     }
 }

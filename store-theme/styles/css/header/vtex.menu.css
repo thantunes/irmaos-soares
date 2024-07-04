@@ -37,3 +37,36 @@
 .styledLink--topbar-buy-whatsapp{
     font-size:16px
 }
+
+.submenuWrapper--ofertas {
+    background-color: #148b2e;
+    left: -69px;
+    padding: 0;
+    border: none;
+}
+
+.submenuWrapper--ofertas .menuContainer {
+    flex-direction: column;
+}
+
+.styledLinkContainer--ofertas {
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0 15px;
+    transition: none;
+}
+
+.styledLinkContainer--ofertas:hover {
+    background-color: #BACD29;
+}
+
+.styledLinkContent--ofertas {
+    color: #FFF !important;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.styledLink--ofertas {
+    height: 100%;
+    display: flex;
+}

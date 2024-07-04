@@ -21,7 +21,7 @@
 			"shelf.relatedProducts#products-similares"
 		]
 	},
-	"shelf.relatedProducts#products-similares": {		
+	"shelf.relatedProducts#products-similares": {
 		"blocks": ["product-summary.shelf"],
 		"props": {
 			"blockClass": "is-shelf-product",
@@ -32,7 +32,7 @@
 				"itemsPerPage": 5,
 				"hideUnavailableItems": true
 			}
-		}		
+		}
 	},
 
     "flex-layout.row#vitrine-quem-viu-viu-tambem": {
@@ -43,7 +43,7 @@
 			"shelf.relatedProducts#product"
 		]
 	},
-	"shelf.relatedProducts#product": {		
+	"shelf.relatedProducts#product": {
 		"blocks": ["product-summary.shelf"],
 		"props": {
 			"blockClass": "is-shelf-product",
@@ -56,7 +56,7 @@
 				"titleText": "Quem viu, viu também",
 				"hideUnavailableItems": true
 			}
-		}		
+		}
 	},
 
     "flex-layout.row#product-breadcrumb": {
@@ -103,7 +103,7 @@
             "colGap": 7,
             "rowGap": 7,
             "marginTop": 7,
-            "marginBottom": 7           
+            "marginBottom": 7
         },
         "children": [
             "flex-layout.col#stack",
@@ -185,14 +185,14 @@
             "product-identifier.product",
             "vtex.store-components:product-brand",
             "flex-layout.row#product-name",
-            // "product-rating-summary",  
-            "calculadora-de-pisos",    
+            // "product-rating-summary",
+            "calculadora-de-pisos",
             "flex-layout.row#list-price-savings",
             "flex-layout.row#selling-price",
             "custom-parcelamento",
             // "product-installments",
-            // "product-separator",   
-            // "is-product-fixedBuy",    
+            // "product-separator",
+            // "is-product-fixedBuy",
             "sku-selector",
             "product-quantity",
             "product-assembly-options",
@@ -205,7 +205,7 @@
     },
 
     "product-installments":{
-       "props":{ 
+       "props":{
         "installmentsCriteria": "max-quantity-without-interest"}
     },
 

@@ -3105,10 +3105,9 @@ ip-regex@^2.1.0:
   resolved "https://registry.npmjs.org/ip-regex/-/ip-regex-2.1.0.tgz"
   integrity sha1-+ni/XS5pE8kRzp+BnuUUa7bYROk=
 
-"irmaossoares.zig-custom@https://dev--irmaossoares.myvtex.com/_v/private/typings/linked/v1/irmaossoares.zig-custom@0.0.5+build1694637531/public/@types/irmaossoares.zig-custom":
-  version "0.0.5"
-  resolved "https://dev--irmaossoares.myvtex.com/_v/private/typings/linked/v1/irmaossoares.zig-custom@0.0.5+build1694637531/public/@types/irmaossoares.zig-custom"
-  integrity sha512-CT8KY9cL9l9BSKu23VDutd701x6pcLrTWZWITiF4RfW8YSFKXlzEPsKwlhMtWCZ52r9Rp61+tcGsMDxNl/Vanw==
+"irmaossoares.zig-custom@https://dev--irmaossoares.myvtex.com/_v/private/typings/linked/v1/irmaossoares.zig-custom@0.0.12+build1706015591/public/@types/irmaossoares.zig-custom":
+  version "0.0.12"
+  resolved "https://dev--irmaossoares.myvtex.com/_v/private/typings/linked/v1/irmaossoares.zig-custom@0.0.12+build1706015591/public/@types/irmaossoares.zig-custom#ccd48102f097d104f9e5916b4cd85190388538cc"
 
 is-accessor-descriptor@^0.1.6:
   version "0.1.6"
@@ -5539,10 +5538,9 @@ vtex-tachyons@^3.2.2:
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.30.2/public/@types/vtex.add-to-cart-button"
   integrity sha512-EMZJ3A12akkVRJQIOV6WFMo6q0dcRTvxIQyUzyj0xcCgYWwPBXOHJdFbi09EvejW3Xw6spfNJ9LV5mCd3Rkn6Q==
 
-"vtex.checkout-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-graphql@0.66.3/public/@types/vtex.checkout-graphql":
-  version "0.66.3"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-graphql@0.66.3/public/@types/vtex.checkout-graphql"
-  integrity sha512-vXr+d0mTGdgnEwPLYHrvoa1Q9Izrg0ifgY1qQXocEFNm4Ln0AJYaGeawQMSeCPWQ3TED0YsfPXWnQBuPzkSAPQ==
+"vtex.checkout-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-graphql@0.67.1/public/@types/vtex.checkout-graphql":
+  version "0.67.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-graphql@0.67.1/public/@types/vtex.checkout-graphql#28a28b8e5b1f39e45ac7fd57a06f05a2468e192e"
 
 "vtex.checkout-resources@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-resources@0.49.0/public/@types/vtex.checkout-resources":
   version "0.49.0"
@@ -5559,6 +5557,10 @@ vtex-tachyons@^3.2.2:
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles"
   integrity sha512-QHSMD4rq2nKtJ1f1tH/RPqj4cYu2gKdghYHBdJSYzGh0e7AGD8ByCPzSdHyVnlO2OIRKAAqPHI05baN6neLYFg==
 
+"vtex.order-items@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.13.23/public/@types/vtex.order-items":
+  version "0.13.23"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.13.23/public/@types/vtex.order-items#282f1dffe38cfb96ad1c225ebb252bfa0e5b1912"
+
 "vtex.order-manager@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager":
   version "0.12.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager"
@@ -5569,25 +5571,22 @@ vtex-tachyons@^3.2.2:
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-shipping@0.8.0/public/@types/vtex.order-shipping"
   integrity sha512-uzD3sMTKJlQsXSWGTYsjimp4JEGeNmGGQwgdTcP81rCC6nvtD6C9S/E64ulH13lPF/qwLPPGbU6045gmQazTow==
 
-"vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context":
-  version "0.10.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context"
-  integrity sha512-wib/8sXnd5mYRaYxL0NlCTAbyhq02VQLzhHPjW3ixA5uJn8+7TGTloBMpW2g0Pz3Avj/Y1Z98NDFSWz+nUKM6w==
+"vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context":
+  version "0.10.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context#86ceba68085420edcf54749f07e51a257d2e5d94"
 
 "vtex.product-price@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.31.0/public/@types/vtex.product-price":
   version "1.31.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.31.0/public/@types/vtex.product-price"
   integrity sha512-40EmQWfuk1G/LGH8vkhf+VETmeQxeHsGAK68RKRTbJEIMd+ifytZLqdPrCizOWrG7coae09Ou7lldG0e6EyyJA==
 
-"vtex.product-summary-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.9.0/public/@types/vtex.product-summary-context":
-  version "0.9.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.9.0/public/@types/vtex.product-summary-context"
-  integrity sha512-bPhUpMy4Iac7jlKGFYbSyYzBShjJZE7/4KKYHEHOtRyZj6B35EWWLqgUj9un3d5fwFEFLkUwa3HkF/j504DZVQ==
+"vtex.product-summary-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.12.0/public/@types/vtex.product-summary-context":
+  version "0.12.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.12.0/public/@types/vtex.product-summary-context#423c6d700447d0a443ca64a5374dc97928727ff0"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.1/public/@types/vtex.render-runtime":
-  version "8.134.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.1/public/@types/vtex.render-runtime"
-  integrity sha512-7/gZzv11xGU9LyPLH4u71CNK+ZCJLyNvSB+F9TElwNkN0julRsJMUIzgQfMnxW+45dVZfRePTfD38sWd6rbQCw==
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.2/public/@types/vtex.render-runtime":
+  version "8.134.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.2/public/@types/vtex.render-runtime#ae69e2b2a471291c6c6b155e17510150fbfc2d0e"
 
 "vtex.seller-selector@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.seller-selector@0.5.0/public/@types/vtex.seller-selector":
   version "0.5.0"
@@ -5599,25 +5598,22 @@ vtex-tachyons@^3.2.2:
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.session-client@1.0.2/public/@types/vtex.session-client"
   integrity sha512-BqVPfeoUbaQUwmf3ydErAVqSiqeCGaQEusVKdH6MuM1vHTh9yq1ZhDgAU/rpFZrHwJBlWFx0U13azObloWsa0Q==
 
-"vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.24.3/public/@types/vtex.slider-layout":
-  version "0.24.3"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.24.3/public/@types/vtex.slider-layout"
-  integrity sha512-SPFW7e9hsy1okh8YufS7UXdWTUSVqzUVWn+QjsO/cXKhq2v2zXunJPIn1ksBXI4fhtLeQEQzvHDcBX+3wHTBTA==
+"vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.24.4/public/@types/vtex.slider-layout":
+  version "0.24.4"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.24.4/public/@types/vtex.slider-layout#81731b60025929589adeea1ffd3e12eb1d9480e1"
 
-"vtex.store-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.169.0/public/@types/vtex.store-graphql":
-  version "2.169.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.169.0/public/@types/vtex.store-graphql"
-  integrity sha512-VWhhdcKGY4kEvG5VkSvBgPQsVR7/LsCvXl6PNl0U9QkIQnaohBPfOmIwi70YikCP8mih4Jn2yNX5oMoHKmd5jA==
+"vtex.store-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.170.2/public/@types/vtex.store-graphql":
+  version "2.170.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.170.2/public/@types/vtex.store-graphql#18cb23b99445e8027822218812143a6ffed8541e"
 
 "vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.9/public/@types/vtex.styleguide":
   version "9.146.9"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.9/public/@types/vtex.styleguide"
   integrity sha512-m0goQx6BF9Ne2DfLRdoqJf0NRMfs1kIogbpL4ZQ/3l1UDvVVMT/oqiw7OcMCDMH8YX08h8HV+h98fopqR+y+8A==
 
-"vtex.tab-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.tab-layout@0.4.5/public/@types/vtex.tab-layout":
-  version "0.4.5"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.tab-layout@0.4.5/public/@types/vtex.tab-layout"
-  integrity sha512-GnD/5n1B4UNoSjCUvluTeWP2hkK0BCR7e1YR5G0fcLo3sCb3txsWzz6F0qrgtepYfcpijjp0/eDMAyceXXqfAg==
+"vtex.tab-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.tab-layout@0.4.6/public/@types/vtex.tab-layout":
+  version "0.4.6"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.tab-layout@0.4.6/public/@types/vtex.tab-layout#d0331c51239c0f677e1e405a967eb3e7dcad5cb9"
 
 w3c-hr-time@^1.0.1:
   version "1.0.2"

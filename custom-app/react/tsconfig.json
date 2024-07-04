@@ -1,12 +1,13 @@
 {
     "extends": "@vtex/tsconfig",
     "compilerOptions": {
+      "jsx": "react",
       "noEmitOnError": false,
       "lib": ["dom"],
       "module": "esnext",
       "moduleResolution": "node",
       "target": "es2022",
-  
+
       "alwaysStrict": true,
       "esModuleInterop": true,
       "noImplicitAny": true,
@@ -25,4 +26,3 @@
     "exclude": ["node_modules"],
     "include": ["./typings/*.d.ts", "./**/*.tsx", "./**/*.ts"]
   }
-  

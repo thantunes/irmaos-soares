@@ -1,0 +1,404 @@
+.howToContainer {
+  padding: 56px 49px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 24px;
+  position: relative;
+  height: 360px;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.howToContainer.isOpen {
+  height: 462px;
+}
+
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #f5f5f500 30%, #f5f5f5 60%);
+  border-radius: 0 0 16px 16px;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.gradientOverlay.isOpen {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.howToHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.howToHeader h2 {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #0d6721;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.howToHeaderButton {
+  min-width: 204px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  justify-content: space-between;
+  border-radius: 16px;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  border: 1px solid #000;
+  cursor: pointer;
+  position: relative;
+  z-index: 11;
+}
+
+.howToHeaderButtonIcon {
+  transition: all 0.2s ease-in-out;
+}
+
+.howToHeaderButtonIcon.isOpen {
+  transform: rotate(180deg);
+}
+
+.howToHeaderButton div {
+  max-height: 33px;
+}
+
+.howToSteps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 19px;
+}
+
+.howToSteps .stepCard:last-child .divider {
+    display: none;
+}
+
+.stepCard {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  min-height: 174px;
+  position: relative;
+}
+
+.divider {
+    position: absolute;
+    right: -36px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+.stepCard .title {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.stepCard .number {
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 50%;
+  background: #bacd29;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepId {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.stepCard .instruction {
+  display: flex;
+  gap: 16px;
+}
+
+.stepCard .instruction div {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  max-width: 270px;
+}
+
+.generalRule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.generalRule div {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.generalRule p {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 -5px;
+}
+
+.availableCoupons {
+  padding: 56px 49px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 28px;
+}
+
+.availableCoupons h2 {
+  margin: 0;
+  color: #0d6721;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.couponCard {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  column-gap: 24px;
+}
+
+.logoContainer {
+  height: 100%;
+}
+
+.logoContainer img {
+  min-width: 100px;
+}
+
+.infoContainer {
+  width: 100%;
+  border-left: 1px dashed #979899;
+  padding-left: 24px;
+}
+
+.infoContainer h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  cursor: initial;
+}
+
+.infoContainer button {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  color: #bacd29;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 24px 0 8px;
+  padding: 0;
+}
+
+.rulesContainer {
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.expireDateContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #3f3f40;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.buttonsContainer button {
+  width: 100%;
+  padding: 16px 0;
+  min-width: 243px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.codeBtn {
+  border: 1px dashed #000;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  background: transparent;
+  text-align: center;
+  padding: 16px 0;
+  border-radius: 8px;
+}
+
+.copyCodeBtn {
+  border: 1px solid #000;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+}
+
+.buyProductsBtn {
+  background: #bacd29;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.buyProductsBtn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 10px;
+  color: #fff;
+}
+
+.buyProductsBtn img {
+  filter: invert(100%) sepia(79%) saturate(13%) hue-rotate(183deg)
+    brightness(103%) contrast(103%);
+}
+
+.couponsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.rulesBtn {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .couponCard {
+    flex-direction: column;
+  }
+
+  .howToSteps {
+    flex-direction: column;
+  }
+
+  .howToContainer {
+    height: 360px;
+    padding: 36px 30px;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  .howToContainer.isOpen {
+    height: auto;
+  }
+
+  .howToHeader {
+    gap: 20px;
+  }
+
+  .howToHeader h2 {
+    position: initial;
+    transform: none;
+  }
+
+  .howToHeaderButton {
+    font-size: 0;
+    min-width: initial;
+  }
+
+  .generalRule {
+    flex-direction: column;
+    margin-top: 26px;
+  }
+
+  .generalRule p {
+    text-align: center;
+  }
+
+  .availableCoupons {
+    padding: 36px 30px;
+  }
+
+  .infoContainer {
+    padding: 0;
+    border: none;
+    margin: 15px 0 30px;
+  }
+
+  .rulesBtn {
+    line-height: 34px;
+    font-size: 22px;
+  }
+
+  .divider {
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    bottom: -38px;
+    top: initial;
+    right: initial;
+  }
+}

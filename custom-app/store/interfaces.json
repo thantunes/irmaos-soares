@@ -1,34 +1,38 @@
 {
-    "is-product-fixedBuy": {
-        "component": "ProductFixedBuy"
-    },
-    "calculadora-de-pisos": {
-        "component": "CalculadoraDePisos"
-    },
-    "geolocalizacao": {
-        "component": "Geolocalizacao"
-    },
-    "menu-mobile": {
-        "component": "MenuMobile"
-    },
-    "menu-departamentos": {
-        "component": "Departamentos"
-    },
-    "custom-parcelamento": {
-        "component": "CustomParcelamento"
-    },
-    "nossas-lojas": {
-        "component": "NossasLojas"
-    },
-    "toggle-search": {
-        "component": "ToggleSearch",
-        "composition": "children"
-    },
-    "Lojas": {
-        "component": "Lojas",
-        "composition": "children",
-        "content": {
-            "$ref": "app:irmaossoares.zig-custom#/definitions/Lojas"
-        }
+  "is-product-fixedBuy": {
+    "component": "ProductFixedBuy"
+  },
+  "calculadora-de-pisos": {
+    "component": "CalculadoraDePisos"
+  },
+  "geolocalizacao": {
+    "component": "Geolocalizacao"
+  },
+  "menu-mobile": {
+    "component": "MenuMobile"
+  },
+  "menu-departamentos": {
+    "component": "Departamentos"
+  },
+  "custom-parcelamento": {
+    "component": "CustomParcelamento"
+  },
+  "nossas-lojas": {
+    "component": "NossasLojas"
+  },
+  "toggle-search": {
+    "component": "ToggleSearch",
+    "composition": "children"
+  },
+  "Lojas": {
+    "component": "Lojas",
+    "composition": "children",
+    "content": {
+      "$ref": "app:irmaossoares.zig-custom#/definitions/Lojas"
     }
+  },
+  "coupons": {
+    "component": "Coupons",
+    "composition": "children"
+  }
 }

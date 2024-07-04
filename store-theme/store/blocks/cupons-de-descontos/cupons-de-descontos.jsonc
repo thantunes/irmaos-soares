@@ -1,0 +1,97 @@
+{
+    "store.custom#cupons-de-descontos": {
+        "children": [
+            "flex-layout.row#discounts-container"
+        ]
+    },
+    "flex-layout.row#discounts-container": {
+        "title": "Cupons de descontos",
+        "children": [
+            "flex-layout.col#discounts-content"
+        ],
+        "props": {
+            "blockClass": [
+                "discounts-container"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "coupons": {
+        "children": [
+            "rich-text#coupons-usage-rules"
+        ],
+        "props": {
+            "coupons": [
+                {
+                    "title": "PIX3 - 3% de desconto",
+                    "rules": "Não inclui produtos que já tenham desconto à vista, outras promoções e cimento. Apenas para o meio de pagamento PIX, pode ser usado mais de uma vez seguindo suas regras, o desconto aparecerá assim que for selecionado o meio de pagamento PIX.",
+                    "code": "PIX3",
+                    "expireDate": "31/07/2024",
+                    "href": "/"
+                },
+                {
+                    "title": "Primeiracompra - 3% de desconto",
+                    "rules": "Apenas para primeira compra, podendo ser usado apenas uma vez por cadastro, na primeira compra. Pode ser usado em qualquer mercadoria e em qualquer meio de pagamento, desde que atenda a condição citada, o desconto aparece assim que inserido o cupom no carrinho.",
+                    "code": "Primeiracompra",
+                    "expireDate": "31/07/2024",
+                    "href": "/"
+                }
+            ]
+        }
+    },
+    "rich-text#coupons-usage-rules": {
+        "title": "Regras de cupom",
+        "props": {
+            "blockClass": [
+                "coupons-usage-rules"
+            ],
+            "text": "**PRIMEIRACOMPRA** (3%OFF) – cupom valido apenas para a primeira compra no site, pode ser aplicado em qualquer produto e pode ser usado até o dia 31/07/2024. O cliente deve copiar o código: PRIMEIRACOMPRA, ou digitar no carrinho. O cupom PRIMEIRACOMPRA só pode ser usado uma vez, na primeira compra por cadastro.\n\n **PIX3** (3%OFF) - cupom valido apenas para compras com meio de pagamento PIX, não se aplica a mercadorias que já possuem desconto à vista, promoção à vista ou cimento. Deve ser copiado ou digitado o código: PIX3, e inserido no carrinho, o desconto vai aparecer assim que selecionar o meio de pagamento PIX. O cupom PIX3 não possui limitação de vezes, pode ser usado várias vezes desde que esteja de acordo com suas regras. Valido até 31/07/2024. \n\n *Os cupons devem ser usados um de cada vez, não sendo possível inserir dois, em caso de primeira compra use o cupom primeira compra antes do PIX. Nenhum dos cupons são acumulativos."
+        }
+    },
+    "flex-layout.col#discounts-content": {
+        "children": [
+            "flex-layout.col#discounts-title",
+            "coupons"
+        ],
+        "props": {
+            "blockClass": [
+                "discounts-content"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.col#discounts-title": {
+        "children": [
+            "rich-text#discounts-title",
+            "rich-text#discounts-subtitle"
+        ],
+        "props": {
+            "blockClass": [
+                "discounts-title"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#discounts-title": {
+        "title": "Título principal",
+        "props": {
+            "blockClass": [
+                "discounts-title"
+            ],
+            "text": "## Cupons de desconto IRMÃOS SOARES",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#discounts-subtitle": {
+        "title": "Subtítulo principal",
+        "props": {
+            "blockClass": [
+                "discounts-subtitle"
+            ],
+            "text": "Ofertas de descontos, frete grátis e brindes. Consulte os cupons disponíveis e aproveite.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    }
+}

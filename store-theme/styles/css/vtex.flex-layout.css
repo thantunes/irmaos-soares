@@ -4,7 +4,6 @@
 }
 
 @media screen and (min-width: 40em) {
-
     .flexRowContent--menu-link,
     .flexRowContent--main-header {
         padding: 0 1rem;
@@ -12,7 +11,6 @@
 }
 
 @media screen and (min-width: 80rem) {
-
     .flexRowContent--menu-link,
     .flexRowContent--main-header {
         padding: 0 0.25rem;
@@ -25,13 +23,13 @@
 }
 
 .flexRowContent--main-header {
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
 }
 
 .flexRowContent--main-header-mobile {
     align-items: center;
     padding: 0.625rem 0.5rem;
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -45,7 +43,7 @@
 }
 
 .flexRow--deals {
-    background-color: #0F3E99;
+    background-color: #0f3e99;
     padding: 14px 0px;
 }
 
@@ -99,24 +97,20 @@
     padding-bottom: 1rem;
 }
 
-
-
 .flexRowContent--aboutUs--is {
-    background-color: #FFF;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    background-color: #fff;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     margin-top: 2rem;
     z-index: 2;
     position: relative;
-
 }
 
 .flexRow--aboutUs-2--is {
-    background-color: #0D6721;
-
+    background-color: #0d6721;
 }
 
 .flexRowContent--aboutUs-2--is {
-    background-color: #0D6721;
+    background-color: #0d6721;
     padding: 5rem;
     position: relative;
     margin-top: -2rem;
@@ -124,43 +118,50 @@
 }
 
 .flexRow--aboutUs-2--is :global(.vtex-rich-text-0-x-paragraph--about-2) {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-weight: 400;
     font-size: 1.2rem;
 }
 
 .flexRowContent--aboutUs-slider--is {
-    background-color: #FFF;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    background-color: #fff;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     margin-top: -3rem;
     z-index: 2;
     position: relative;
     margin-bottom: 3rem;
-
 }
 
 .flexRowContent--servicos :global(.vtex-rich-text-0-x-heading) {
-    color: #0D6721;
+    color: #0d6721;
     font-weight: bold;
     font-size: 2rem;
 }
 
 .flexRowContent--servicos :global(.vtex-rich-text-0-x-paragraph) {
-    color: #0D6721;
+    color: #0d6721;
     font-weight: 400;
     font-size: 1.2rem;
 }
 
 .flexRowContent--servicos :global(.vtex-rich-text-0-x-link--servicos--contact) {
-    color: #0D6721;
+    color: #0d6721;
     font-weight: 900;
     font-size: 1.5rem;
     text-decoration: none;
 }
 
+.flexCol--discounts-title {
+    padding: 60px 0;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 40px 0 24px;
+    height: auto;
+}
 
-@media screen and (min-width: 1024px) and (max-width:1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
     /* .flexRow--minibanners-2 */
 
     .vtex-flex-layout-0-x-flexRow {
@@ -168,14 +169,17 @@
         padding-right: 2rem;
     }
 
-    .flexRowContent--mobile-slider-irmaosoares{
+    .flexRowContent--mobile-slider-irmaosoares {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .flexRow--conheca-nossos-servicos {
         display: none;
     }
 
-}
-
-@media screen and (max-width:1150px) {
-    .flexRow--conheca-nossos-servicos {
-        display: none;
+    .flexCol--discounts-title {
+        padding: 35px 0;
     }
 }
