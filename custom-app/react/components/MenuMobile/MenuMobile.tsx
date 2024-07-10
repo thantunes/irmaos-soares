@@ -186,7 +186,7 @@ const MenuMobile: FC = () => {
                             </a>
                           </li>
                           <li className={`${styles.navItem}`}>
-                            <a href="/cupons-de-descontos">
+                            <a href="/cupons-de-desconto">
                               Cupons de descontos
                             </a>
                           </li>
