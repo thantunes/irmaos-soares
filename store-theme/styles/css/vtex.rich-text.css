@@ -135,6 +135,15 @@
     margin: 0;
 }
 
+.paragraph--footer-copyright-evision {
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Sarabun', sans-serif;
+    margin-top: -7px;
+}
+
 @media screen and (max-width: 768px) {
     .headingLevel2--shelfTitle {
         font-size: 22px;

@@ -161,6 +161,16 @@
     height: auto;
 }
 
+.flexRow--footer-copyright {
+    background-color: #f0f0f0;
+}
+
+.flexRowContent--footer-copyright {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     /* .flexRow--minibanners-2 */
 

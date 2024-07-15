@@ -1,32 +1,32 @@
 {
     "footer-layout.desktop": {
-		"children": [
+        "children": [
             "flex-layout.row#footer-newsletter-desktop",
-			"flex-layout.row#footer-1-desktop",
-			"flex-layout.row#footer-2-desktop",
-			"flex-layout.row#footer-3-desktop"
-		],
-        "props":{
-			"blockClass": "footer--is"
-		}
-	},
-	"flex-layout.row#footer-1-desktop": {
-		"children": [
-			"vtex.menu@2.x:menu#Politicas",
-			"vtex.menu@2.x:menu#Institucional",
-			"vtex.menu@2.x:menu#Atendimento",
+            "flex-layout.row#footer-1-desktop",
+            "flex-layout.row#footer-2-desktop",
+            "flex-layout.row#footer-3-desktop",
+            "flex-layout.row#footer-copyright"
+        ],
+        "props": {
+            "blockClass": "footer--is"
+        }
+    },
+    "flex-layout.row#footer-1-desktop": {
+        "children": [
+            "vtex.menu@2.x:menu#Politicas",
+            "vtex.menu@2.x:menu#Institucional",
+            "vtex.menu@2.x:menu#Atendimento",
             "vtex.menu@2.x:menu#LinkBoleto",
-			// "vtex.menu@2.x:menu#Links",
-			"footer-spacer",
-			"vtex.menu@2.x:menu#FaleConosco"
-		],
-		"props": {
-			"blockClass": "menu-row",
-			"paddingTop": 6,
-			"paddingBottom": 4
-		}
-	},
-
+            // "vtex.menu@2.x:menu#Links",
+            "footer-spacer",
+            "vtex.menu@2.x:menu#FaleConosco"
+        ],
+        "props": {
+            "blockClass": "menu-row",
+            "paddingTop": 6,
+            "paddingBottom": 4
+        }
+    },
     "image#formas-de-pagamento": {
         "props": {
             "src": "assets/bandeiras-credito.png",
@@ -41,34 +41,31 @@
             "blockClass": "image--formas-de-pagamento-debito"
         }
     },
-
     "flex-layout.row#footer-2-desktop": {
-		"children": [
+        "children": [
             // 4 col
             "flex-layout.col#footer-1-desktop",
             "flex-layout.col#footer-2-desktop",
             "flex-layout.col#footer-3-desktop",
             "flex-layout.col#footer-4-desktop"
-			// "rich-text#footer"
-		],
+            // "rich-text#footer"
+        ],
         "props": {
             "blockClass": "footer-final-is",
             "colSizing": "auto",
-			"paddingBottom": 4
+            "paddingBottom": 4
         }
-	},
-
+    },
     "flex-layout.col#footer-1-desktop": {
         "children": [
             "image#logo-footer"
         ],
-        "props": {            
+        "props": {
             // "width": "10%",
             "blockClass": "footer-logo",
             "verticalAlign": "middle"
         }
     },
-
     "flex-layout.col#footer-2-desktop": {
         "children": [
             "rich-text#footer-copyright"
@@ -79,9 +76,8 @@
             "verticalAlign": "middle"
         }
     },
-
     "flex-layout.col#footer-3-desktop": {
-        "props":{
+        "props": {
             "width": "15%",
             "verticalAlign": "middle",
             "horizontalAlign": "center"
@@ -90,8 +86,6 @@
             "flex-layout.row#redes-sociais-footer"
         ]
     },
-
-
     "flex-layout.row#redes-sociais-footer": {
         "props": {
             "blockClass": "redes-sociais-footer",
@@ -131,7 +125,6 @@
             }
         }
     },
-
     "image#social-linkedin-footer": {
         "props": {
             "src": "assets/svgs/icon-linkedin-bg-white.svg",
@@ -143,7 +136,6 @@
             }
         }
     },
-
     "image#social-whatsapp-footer": {
         "props": {
             "src": "assets/svgs/icon-whatsapp-bg-white.svg",
@@ -155,9 +147,8 @@
             }
         }
     },
-
     "flex-layout.col#footer-4-desktop": {
-        "props":{
+        "props": {
             "width": "5%",
             "verticalAlign": "middle",
             "horizontalAlign": "center"
@@ -166,7 +157,6 @@
             "image#dev"
         ]
     },
-
     "image#logo-footer": {
         "props": {
             "src": "assets/logo-branca.png",
@@ -178,7 +168,6 @@
             }
         }
     },
-
     "image#dev": {
         "props": {
             "src": "assets/svgs/logo-zig.svg",
@@ -190,7 +179,6 @@
             }
         }
     },
-
     "rich-text#footer-copyright": {
         "props": {
             "text": "COPYRIGHT 2023® IRMÃOS SOARES S/A - 01.559.046/0001-08.",
@@ -199,24 +187,22 @@
             "blockClass": "footer-copyright"
         }
     },
-
-     "flex-layout.row#footer-3-desktop": {
-		"children": [
+    "flex-layout.row#footer-3-desktop": {
+        "children": [
             "flex-layout.col#col-left",
             "flex-layout.col#col-right"
-
             // "image#formas-de-pagamento-rodape"
-		],
-		"props": {
-			"blockClass": "payment-methods",
+        ],
+        "props": {
+            "blockClass": "payment-methods",
             "paddingTop": 5,
-			"paddingBottom": 5,
+            "paddingBottom": 5,
             "preventHorizontalStretch": true,
             "preventVerticalStretch": true,
             "horizontalAlign": "between"
-		}
-	},
-    "flex-layout.col#col-left":{
+        }
+    },
+    "flex-layout.col#col-left": {
         "children": [
             "image#formas-de-pagamento-rodape"
         ],
@@ -226,10 +212,9 @@
             "verticalAlign": "middle"
         }
     },
-
-    "flex-layout.col#col-right":{
+    "flex-layout.col#col-right": {
         "children": [
-        //    "image#vtex-logo",
+            //    "image#vtex-logo",
             "image#ssl-encrypted"
         ],
         "props": {
@@ -239,9 +224,6 @@
             "verticalAlign": "middle"
         }
     },
-    
-
-
     "image#formas-de-pagamento-rodape": {
         "props": {
             "src": "assets/formas-de-pagamento.png",
@@ -249,8 +231,6 @@
             "blockClass": "image--formas-de-pagamento"
         }
     },
-
-
     "image#vtex-logo": {
         "props": {
             "src": "assets/VTEX_pink_RGB.png",
@@ -258,14 +238,49 @@
             "blockClass": "image--vtex-logo"
         }
     },
-
     "image#ssl-encrypted": {
         "props": {
             "src": "assets/svgs/letsencrypt-logo-horizontal.svg",
             "maxHeight": 32,
             "blockClass": "image--ssl-encrypted"
         }
+    },
+    "flex-layout.row#footer-copyright": {
+        "children": [
+            "rich-text#footer-copyright-evision",
+            "image#footer-evision-logo",
+            "image#footer-vtex-logo"
+        ],
+        "props": {
+            "blockClass": [
+                "footer-copyright"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#footer-copyright-evision": {
+        "props": {
+            "blockClass": [
+                "footer-copyright-evision"
+            ],
+            "text": "Feito com orgulho por"
+        }
+    },
+    "image#footer-evision-logo": {
+        "props": {
+            "src": "/arquivos/footer-logo-evision.png",
+            "link": {
+                "url": "https://www.evision.com.br"
+            }
+        }
+    },
+    "image#footer-vtex-logo": {
+        "props": {
+            "src": "/arquivos/footer-logo-vtex.png",
+            "link": {
+                "url": "https://www.evision.com.br"
+            }
+        }
     }
-
-
 }
