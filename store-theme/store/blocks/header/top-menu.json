@@ -1,7 +1,7 @@
 {
 	"vtex.menu@2.x:menu#topbar": {
 		"props":{
-			"blockClass": "topbar"	
+			"blockClass": "topbar"
 		},
 		"children": [
 			"menu-item#buy-whatsapp"
@@ -16,8 +16,8 @@
 			"blockClass": ["topbar-buy-whatsapp", "topbar-link"],
 			"itemProps": {
 				"type": "internal",
-				"href": "https://api.whatsapp.com/send?phone=5562984238195",
-				"noFollow": false,
+				"href": "https://api.whatsapp.com/send/?phone=5562992245318&text&type=phone_number&app_absent=0",
+                "noFollow": false,
 				"tagTitle": "Compre pelo Whatsapp",
 				"text": "Compre pelo Whatsapp"
 			}
