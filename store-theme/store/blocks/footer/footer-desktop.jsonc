@@ -1,6 +1,7 @@
 {
     "footer-layout.desktop": {
         "children": [
+            "image#floating-btn-whatsapp",
             "flex-layout.row#footer-newsletter-desktop",
             "flex-layout.row#footer-1-desktop",
             "flex-layout.row#footer-2-desktop",

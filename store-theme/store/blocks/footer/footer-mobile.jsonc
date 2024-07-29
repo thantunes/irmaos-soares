@@ -2,6 +2,7 @@
 
 	"footer-layout.mobile": {
 		"children": [
+            "image#floating-btn-whatsapp",
             "flex-layout.row#footer-newsletter-mobile",
 			"flex-layout.row#1-footer-mobile-menu",
             "flex-layout.row#conheca-nossos-servicos-rodape-mobile",
@@ -78,6 +79,16 @@
             "image#social-linkedin-footer",
             "image#social-whatsapp-footer-1"
         ]
+    },
+    "image#floating-btn-whatsapp": {
+      "props": {
+        "src": "/arquivos/whatsapp-logo.svg",
+        "link": {
+            "url": "https://api.whatsapp.com/send/?phone=5562992245318&text&type=phone_number&app_absent=0",
+            "openNewTab": true
+        },
+        "blockClass": "floating-btn-whatsapp"
+      }
     },
     "flex-layout.row#4-footer-mobile-selos":{
 		"children": [

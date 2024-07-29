@@ -3,13 +3,12 @@
     /* padding: 0; */
 }
 
-@media screen and (max-width: 1270px){
-    .container{
+@media screen and (max-width: 1270px) {
+    .container {
         max-width: 1200px;
         margin: 0 auto;
     }
 }
-
 
 .logoContainer {
     padding: 0;
@@ -133,7 +132,6 @@
     image-rendering: -webkit-optimize-contrast;
 }
 
-
 /* new */
 
 /* seach header */
@@ -147,7 +145,7 @@
     border: 0;
     border-radius: 5px;
     padding: 16px 18px;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 .searchBarContainer :global(.vtex-input-prefix__group) {
@@ -165,7 +163,7 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     padding: 0 !important;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 .autoCompleteOuterContainer :global(.vtex-input__suffix) {
@@ -178,12 +176,12 @@
 
 .searchBarIcon--search {
     min-width: 28px;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 .searchBarIcon--search::before {
     /* content: url(assets/svgs/icon-lupa.svg); */
-    content: '';
+    content: "";
     display: block;
     height: 25px;
     width: 25px;
@@ -213,10 +211,6 @@
         padding: 0 10px;
     }
 }
-
-
-
-
 
 .notificationBarContainer {
     background-color: #e6f1e6;
@@ -337,20 +331,19 @@
 }
 
 .discountInsideContainer {
-    background-color: #0D6721;
+    background-color: #0d6721;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Sarabun', sans-serif;
+    font-family: "Sarabun", sans-serif;
     border-radius: 5px;
-    color: #FFF;
+    color: #fff;
 }
-
 
 .productDescriptionText {
     color: #000;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Sarabun', sans-serif;
+    font-family: "Sarabun", sans-serif;
 }
 
 .productDescriptionTitle::before {
@@ -361,13 +354,6 @@
     display: block;
     margin: 0;
 }
-
-
-
-
-
-
-
 
 /* .carouselGaleryThumbs {
     max-width: 90px;
@@ -386,7 +372,7 @@
     box-sizing: border-box;
     border-radius: 15px;
 } */
-.productImagesThumb--product-image{
+.productImagesThumb--product-image {
     border: 2px solid #ebe9e9;
     box-sizing: border-box;
     border-radius: 15px;
@@ -395,10 +381,9 @@
     margin-bottom: 0;
 }
 
-.productImagesThumbActive--product-image{
-    border-color: #148B2E;
+.productImagesThumbActive--product-image {
+    border-color: #148b2e;
 }
-
 
 @media only screen and (max-width: 767px) {
     .productImagesGallerySwiperContainer--product-image {
@@ -454,7 +439,7 @@
 } */
 
 @media only screen and (max-width: 767px) {
-    .imageElement--bannerTopo{
+    .imageElement--bannerTopo {
         display: none;
     }
     .carouselContainer--product-image {
@@ -534,11 +519,15 @@
     margin-bottom: 17px;
 }
 
-.shippingContainer :global(.vtex-address-form__postalCode) :last-child:not(:global(.vtex-input-prefix__group)):not(:global(.vtex-input__suffix)) {
+.shippingContainer
+    :global(.vtex-address-form__postalCode)
+    :last-child:not(:global(.vtex-input-prefix__group)):not(
+        :global(.vtex-input__suffix)
+    ) {
     font-size: 10px;
     line-height: 13px;
     text-decoration-line: underline;
-    color: #0D6721;
+    color: #0d6721;
     font-family: "Sarabun", sans-serif;
 }
 
@@ -557,20 +546,28 @@
     width: 100%;
 }
 
-.shippingContainer :global(.vtex-address-form__postalCode) :global(.vtex-input) :global(.vtex-input__label) {
+.shippingContainer
+    :global(.vtex-address-form__postalCode)
+    :global(.vtex-input)
+    :global(.vtex-input__label) {
     position: absolute;
     bottom: 100%;
     margin: 0 0 8px;
 }
 
-.shippingContainer :global(.vtex-address-form__postalCode) :global(.vtex-input-prefix__group) {
+.shippingContainer
+    :global(.vtex-address-form__postalCode)
+    :global(.vtex-input-prefix__group) {
     height: 56px;
     border-width: 1px;
     box-sizing: border-box;
     border-radius: 5px;
 }
 
-.shippingContainer :global(.vtex-address-form__postalCode) :global(.vtex-input-prefix__group) :global(.vtex-address-form-4-x-input) {
+.shippingContainer
+    :global(.vtex-address-form__postalCode)
+    :global(.vtex-input-prefix__group)
+    :global(.vtex-address-form-4-x-input) {
     padding-right: 97px;
 }
 
@@ -581,7 +578,7 @@
     top: 0;
     right: 0;
     border: none;
-    background: #0D6721;
+    background: #0d6721;
     border-radius: 0px 5px 5px 0px;
 }
 
@@ -605,10 +602,11 @@
 }
 
 .shippingTable {
-    border-color: #D0D0D0;
+    border-color: #d0d0d0;
 }
 
-.skuSelectorItem--m3-custom-sku-selector--selected .frameAround--m3-custom-sku-selector {
+.skuSelectorItem--m3-custom-sku-selector--selected
+    .frameAround--m3-custom-sku-selector {
     border: 2px solid #7d7d7d;
     border-radius: 5px;
 }
@@ -672,9 +670,22 @@
     align-items: center;
 }
 
+.imageElementLink--floating-btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 2rem;
+    max-width: 64px;
+    z-index: 20;
+}
+
 @media only screen and (max-width: 767px) {
     .skuSelectorNameContainer {
         justify-content: center;
+    }
+
+    .imageElementLink--floating-btn-whatsapp {
+        bottom: 10px;
+        right: 13px;
     }
 }
 
@@ -745,7 +756,9 @@
     border-radius: 5px;
 }
 
-.skuSelectorSubcontainer--cor .skuSelectorItem--selected .frameAround--m3-custom-sku-selector {
+.skuSelectorSubcontainer--cor
+    .skuSelectorItem--selected
+    .frameAround--m3-custom-sku-selector {
     border: 1px solid #245189;
 }
 
@@ -753,9 +766,7 @@
     margin-right: 8px;
 }
 
-
-
-/* @media screen and (min-width: 1024px) and 
+/* @media screen and (min-width: 1024px) and
 (max-width: 1439px)
 {
     .container {
