@@ -1,5 +1,5 @@
 {
-    
+
 	"footer-layout.mobile": {
 		"children": [
             "flex-layout.row#footer-newsletter-mobile",
@@ -67,7 +67,7 @@
         "props": {
             "blockClass": "redes-sociais-footer-mobile",
             "horizontalAlign": "center",
-            "verticalAlign": "center",            
+            "verticalAlign": "center",
             "preventHorizontalStretch": true,
             "preventVerticalStretch": true,
 			"paddingBottom": 5
@@ -76,7 +76,7 @@
             "image#social-facebook-footer",
             "image#social-instagram-footer",
             "image#social-linkedin-footer",
-            "image#social-whatsapp-footer"
+            "image#social-whatsapp-footer-1"
         ]
     },
     "flex-layout.row#4-footer-mobile-selos":{
