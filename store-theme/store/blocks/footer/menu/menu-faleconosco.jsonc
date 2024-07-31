@@ -17,7 +17,7 @@
 
     "rich-text#whatsapp": {
         "props": {
-            "text": "[![Compre pelo WhatsApp](assets/svgs/whatsapp-icon-topbar.svg) 62 99224-5318](https://api.whatsapp.com/send/?phone=5562992245318&text&type=phone_number&app_absent=0)",
+            "text": "[![Compre pelo WhatsApp](assets/svgs/whatsapp-icon-topbar.svg) 62 98423-8195](https://api.whatsapp.com/send/?phone=5562984238195&text&type=phone_number&app_absent=0)",
             "blockClass": "footer-menu-item-whatsapp"
         }
     }

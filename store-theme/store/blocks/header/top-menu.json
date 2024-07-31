@@ -16,7 +16,7 @@
 			"blockClass": ["topbar-buy-whatsapp", "topbar-link"],
 			"itemProps": {
 				"type": "internal",
-				"href": "https://api.whatsapp.com/send/?phone=5562992245318&text&type=phone_number&app_absent=0",
+				"href": "https://api.whatsapp.com/send/?phone=5562984238195&text&type=phone_number&app_absent=0",
                 "noFollow": false,
 				"tagTitle": "Compre pelo Whatsapp",
 				"text": "Compre pelo Whatsapp"

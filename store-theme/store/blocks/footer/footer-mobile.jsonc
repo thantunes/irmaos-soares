@@ -84,7 +84,7 @@
       "props": {
         "src": "/arquivos/whatsapp-logo.svg",
         "link": {
-            "url": "https://api.whatsapp.com/send/?phone=5562992245318&text&type=phone_number&app_absent=0",
+            "url": "https://api.whatsapp.com/send/?phone=5562984238195&text&type=phone_number&app_absent=0",
             "openNewTab": true
         },
         "blockClass": "floating-btn-whatsapp"
