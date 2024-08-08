@@ -14,8 +14,8 @@
             "fullWidth": false
         },
         "children": [
-            // "shopper-location",
-            "geolocalizacao",
+            "shopper-location",
+            // "geolocalizacao",
             "header-spacer",
             "vtex.menu@2.x:menu#topbar"
         ]
