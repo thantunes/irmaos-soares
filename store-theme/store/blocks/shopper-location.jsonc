@@ -52,7 +52,7 @@
     "change-location": {
         "props": {
             "postalCode": "first",
-            "autocomplete": true,
+            "autocomplete": false,
             "notRequired": [
                 "street",
                 "number",
