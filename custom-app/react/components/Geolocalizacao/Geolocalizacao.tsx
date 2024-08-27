@@ -39,6 +39,7 @@ function Geolocalizacao() {
             method: 'GET',
             headers: { 'Content-Type': 'application/json', Accept: 'application/json' }
         }).then((response) => response.json());
+        console.log({response, postalCode})
         return response[0].IdPoliticaComercial || null;
     }
 
@@ -78,13 +79,13 @@ function Geolocalizacao() {
                             }
                         }
                     })
-                    console.info('Sessão atualizada com sucesso.');
+                    console.info('Sessão atualizada com sucesso.', {response});
 
                 } else {
                     console.error('Falha ao limpar o carrinho.');
                 }
             }).catch((error) => console.error(error));
-            // redirectToScParameter(policy ? `sc=${policy.IdPoliticaComercial}` : 'sc=1');          
+            // redirectToScParameter(policy ? `sc=${policy.IdPoliticaComercial}` : 'sc=1');
         } catch (error) {
             console.error("Erro ao obter a política comercial:", error);
         }
@@ -122,10 +123,12 @@ function Geolocalizacao() {
             }
 
             const cepFormatted = cep.replace('-', '');
-            Cookies.set('userLocation', response.localidade);  // Salvar o nome da cidade no cookie            
+            Cookies.set('userLocation', response.localidade);  // Salvar o nome da cidade no cookie
             Cookies.set('userPostalCode', cep); // Salvar o CEP no cookie
             handleCepChange(cepFormatted);
-            // handleModalToggle();
+            handleModalToggle();
+            setIsLoading(false);
+            window.location.reload()
         } catch (error) {
             setIsLoading(false);
             console.log("error: ", error);

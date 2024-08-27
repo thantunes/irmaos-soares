@@ -30,6 +30,8 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = () => {
   const dispatch = useProductDispatch()
   const { product } = useProduct()
 
+  console.log({product})
+
   const [boxValue, setBoxValue] = useState(1)
   const [countBoxes, setCountBoxes] = useState(1)
   const [countBoxesPrice, setCountBoxesPrice] = useState(0)
