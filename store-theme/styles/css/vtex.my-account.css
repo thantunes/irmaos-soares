@@ -167,3 +167,19 @@
 :global(.vtex-account__orders-list) :global(.vtex-my-orders-app-3-x-orderBody){
     background-color: #FFF;
 }
+
+:global(.vtex-reviews-and-ratings-3-x-container) {
+    max-width: 1330px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    padding: 2rem 2.5rem;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-summaryTotalReviews) {
+    margin-bottom: -4px;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-summaryContainer) {
+    margin-bottom: 20px;
+}

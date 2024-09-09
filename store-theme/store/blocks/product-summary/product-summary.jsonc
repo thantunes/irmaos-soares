@@ -5,6 +5,7 @@
         },
         "children": [
             "stack-layout#prodsum",
+            "product-rating-inline",
             "product-summary-name#product-name",
             //   "flex-layout.col#productRating",
             // "product-summary-space",

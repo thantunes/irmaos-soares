@@ -7,8 +7,8 @@
             // "flex-layout.row#description",
             "product-specification-group#table",
             // "flex-layout.row#vitrine-similares",
+            "product-reviews",
             "flex-layout.row#vitrine-quem-viu-viu-tambem",
-            // "product-reviews",
             "product-questions-and-answers"
         ],
 		"props": {
@@ -185,7 +185,7 @@
             "product-identifier.product",
             "vtex.store-components:product-brand",
             "flex-layout.row#product-name",
-            // "product-rating-summary",
+            "product-rating-summary",
             "calculadora-de-pisos",
             "flex-layout.row#list-price-savings",
             "flex-layout.row#selling-price",
