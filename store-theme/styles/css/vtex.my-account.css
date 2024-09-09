@@ -12,7 +12,7 @@
 }
 
 .boxContainerFooter {
-    background-color: #148B2E !important;
+    background-color: #148b2e !important;
     max-height: 36px;
 }
 
@@ -47,7 +47,7 @@
 /* my-accont*/
 
 .menuLinks :global(.b--action-primary) {
-    border-color: #148B2E;
+    border-color: #148b2e;
     font-family: "Sarabun", sans-serif;
     font-weight: 500;
     color: #6d6e70;
@@ -78,7 +78,7 @@
     font-size: 16px;
     text-align: left;
     text-transform: uppercase;
-    color: #148B2E;
+    color: #148b2e;
     position: relative;
 }
 
@@ -115,7 +115,7 @@
 
 .boxContainerBody {
     font-family: "Sarabun", sans-serif;
-    background-color: #FFF;
+    background-color: #fff;
     font-size: 14px;
 }
 
@@ -137,13 +137,11 @@
     background-color: #bacd29;
 }
 
-
 :global(.vtex-pageHeader__container) {
     padding-top: 1.3rem;
     padding-bottom: 0;
     padding-left: 1rem;
 }
-
 
 /* :global(.vtex-account__page-body) {
     margin: 0px !important;
@@ -162,10 +160,8 @@
     color: #6d6e70;
 }
 
-
-
-:global(.vtex-account__orders-list) :global(.vtex-my-orders-app-3-x-orderBody){
-    background-color: #FFF;
+:global(.vtex-account__orders-list) :global(.vtex-my-orders-app-3-x-orderBody) {
+    background-color: #fff;
 }
 
 :global(.vtex-reviews-and-ratings-3-x-container) {
@@ -182,4 +178,11 @@
 
 :global(.vtex-reviews-and-ratings-3-x-summaryContainer) {
     margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    :global(.vtex-reviews-and-ratings-3-x-container) {
+        margin: 0 8px !important;
+        padding: 8px 20px;
+    }
 }
