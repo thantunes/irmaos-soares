@@ -7,7 +7,6 @@ import { ButtonWithIcon, IconClear, IconPlusLines } from 'vtex.styleguide'
 
 import IconRefresh from './IconRefresh'
 import styles from './styles.css'
-import { Product } from 'vtex.product-context/react/ProductTypes'
 
 interface Props {
   product: Product

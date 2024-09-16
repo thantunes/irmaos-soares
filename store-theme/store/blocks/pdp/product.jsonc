@@ -2,6 +2,7 @@
     "store.product": {
         "children": [
             "condition-layout.product#availability",
+            "buy-together",
             "flex-layout.row#descriptions-produto",
             // "tab-layout#product-details",
             // "flex-layout.row#description",
