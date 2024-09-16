@@ -6,4 +6,9 @@ declare module 'vtex.styleguide' {
   interface InputProps {
     [key: string]: any
   }
+
+  export const ButtonWithIcon
+  export const ButtonPlain
+  export const IconClear
+  export const IconPlusLines
 }

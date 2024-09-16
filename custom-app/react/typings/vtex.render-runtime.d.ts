@@ -35,4 +35,9 @@ declare module 'vtex.render-runtime' {
   export const withRuntimeContext: <TOriginalProps extends GenericObject>(
     Component: ComponentType<TOriginalProps & RenderContextProps>
   ) => ComponentType<TOriginalProps>
+
+  export const ExtensionPoint
+  export const useTreePath
+  export const Loading
+  export const useRuntime
 }
