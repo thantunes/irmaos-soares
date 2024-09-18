@@ -34,5 +34,8 @@
   "coupons": {
     "component": "Coupons",
     "composition": "children"
+  },
+  "buy-together": {
+    "component": "BuyTogether"
   }
 }

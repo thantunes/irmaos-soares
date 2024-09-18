@@ -1,0 +1,131 @@
+.buyTogether {
+  max-width: 1209px;
+  margin: 0 auto 47px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.buyTogether h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 46.8px;
+  color: #727273;
+  margin: 47px 0 24px;
+}
+
+.product {
+  max-width: 309px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 22px;
+  transition: .2s all ease-in-out;
+  text-decoration: none;
+}
+
+.product:hover {
+  box-shadow: 0 0 10px 0px rgba(1, 41, 22, 0.2);
+}
+
+.product h3 {
+  font-weight: bold;
+  color: #000;
+  font-size: 16px;
+}
+
+.product .price {
+  display: flex;
+  gap: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #0d6721;
+  align-items: flex-end;
+  margin-bottom: 14px;
+}
+
+.product span {
+  font-size: 16px;
+}
+
+.product .installments {
+  font-size: 14px;
+  color: #0d6721;
+}
+
+.addToCartContainer {
+  max-width: 353px;
+  margin-left: 29.5px;
+  width: 100%;
+}
+
+.addToCartContainer button {
+  box-shadow: 0px 2px 4px 0px #00000040;
+  border-radius: 8px;
+  background-color: #bacd29;
+  font-size: 24px;
+  line-height: 31.2px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Sarabun';
+  padding: 16px 30px;
+  border: none;
+  margin-top: 32px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transition: .2s all ease-in-out;
+}
+
+.addToCartContainer button:hover {
+  background-color: #148b2e;
+}
+
+.productsCount {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
+  color: #1e1e1e;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.finalPrice {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46.8px;
+  color: #0d6721;
+  text-align: center;
+}
+
+.finalPrice strong {
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .addToCartContainer {
+    margin: 0;
+  }
+  .productsCount {
+    margin-top: 24px;
+  }
+}

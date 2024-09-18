@@ -25,10 +25,12 @@
     "vtex.checkout-resources": "0.x",
     "vtex.store-graphql": "2.x",
     "vtex.product-price": "1.x",
+    "vtex.pixel-manager": "1.x",
     "vtex.session-client": "1.x",
     "vtex.checkout-graphql": "0.x",
     "vtex.checkout-splunk": "0.x",
-    "vtex.order-items": "0.x"
+    "vtex.order-items": "0.x",
+    "vtex.format-currency": "0.x"
   },
   "registries": [
     "smartcheckout"

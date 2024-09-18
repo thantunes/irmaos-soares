@@ -5,7 +5,6 @@ import AvailableCoupons from './AvailableCoupons'
 import { CouponProps } from './Coupons.types'
 
 const Coupons = ({ coupons, children }: CouponProps) => {
-  console.log({ coupons })
 
   return (
     <>
