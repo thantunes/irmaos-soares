@@ -1,47 +1,43 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback } from 'react'
 
-import styles from "./toggle-search.css";
+import styles from './toggle-search.css'
 
 interface Props {
-    openSearchIcon: string;
-    closeSearchIcon: string;
+  openSearchIcon: string
+  closeSearchIcon: string
 }
 
-const ToggleSearch: StorefrontFunctionComponent<Props> = (props) => {
-    const [openedSearch, setOpenedSearch] = useState(false);
+const ToggleSearch: StorefrontFunctionComponent<Props> = (props: any) => {
+  const [openedSearch, setOpenedSearch] = useState(false)
 
-    const toggleSearch = useCallback(() => {
-        setOpenedSearch(!openedSearch);
-    }, [openedSearch]);
+  const toggleSearch = useCallback(() => {
+    setOpenedSearch(!openedSearch)
+  }, [openedSearch])
 
-    return (
-        <>
-            <button className={styles.searchButton} onClick={toggleSearch}>
-                <img
-                    src={
-                        openedSearch
-                            ? props.closeSearchIcon
-                            : props.openSearchIcon
-                    }
-                />
-            </button>
+  return (
+    <>
+      <button className={styles.searchButton} onClick={toggleSearch}>
+        <img
+          src={openedSearch ? props.closeSearchIcon : props.openSearchIcon}
+        />
+      </button>
 
-            <div
-                className={`${styles.searchWrapper} ${
-                    openedSearch ? styles.activeSearchWrapper : ""
-                }`}
-            >
-                {props.children}
-            </div>
+      <div
+        className={`${styles.searchWrapper} ${
+          openedSearch ? styles.activeSearchWrapper : ''
+        }`}
+      >
+        {props.children}
+      </div>
 
-            <div
-                className={`${styles.searchOverlay} ${
-                    openedSearch ? styles.activeSearchOverlay : ""
-                }`}
-                onClick={toggleSearch}
-            ></div>
-        </>
-    );
-};
+      <div
+        className={`${styles.searchOverlay} ${
+          openedSearch ? styles.activeSearchOverlay : ''
+        }`}
+        onClick={toggleSearch}
+      ></div>
+    </>
+  )
+}
 
-export default ToggleSearch;
+export default ToggleSearch

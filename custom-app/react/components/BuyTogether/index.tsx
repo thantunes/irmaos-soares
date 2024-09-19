@@ -50,6 +50,10 @@ const BuyTogether = () => {
     }
   }, [mainProductId])
 
+  useEffect(() => {
+    console.log({ similarProducts })
+  }, [similarProducts])
+
   const itemsToAdd = useMemo(
     () => [
       {
