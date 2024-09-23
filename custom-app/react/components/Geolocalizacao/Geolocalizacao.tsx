@@ -3,10 +3,11 @@ import styles from "./styles.css";
 //@ts-ignore
 import { Modal, Button, Input, InputButton } from 'vtex.styleguide'
 import InputMask from "react-input-mask";
-import { useUpdateSession } from 'vtex.session-client'
+import { useUpdateSession, useRenderSession  } from 'vtex.session-client'
 import Cookies from 'js-cookie';
 
 function Geolocalizacao() {
+    const { session } = useRenderSession()
     // const { loading, data } = useFullSession()
     const updateSession = useUpdateSession()
     const cepDefault = "74573260";
@@ -20,6 +21,7 @@ function Geolocalizacao() {
         setisModalOpen(!isModalOpen)
     }
 
+    console.log({session})
 
 
     const getLocation = async (cep: string) => {
@@ -59,6 +61,8 @@ function Geolocalizacao() {
         try {
             const policy = await getPolicyForPostalCode(cep).then((policy) => policy).catch((error) => console.error(error));
             if (!policy) return;
+
+            console.log({policy})
 
             // Limpar o carrinho quando houver uma alteração no CEP
             await fetch('/api/checkout/pub/orderForm?forceNewCart=true', {
@@ -128,7 +132,7 @@ function Geolocalizacao() {
             handleCepChange(cepFormatted);
             handleModalToggle();
             setIsLoading(false);
-            window.location.reload()
+            // window.location.reload()
         } catch (error) {
             setIsLoading(false);
             console.log("error: ", error);
