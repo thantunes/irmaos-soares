@@ -1,6 +1,7 @@
 {
     "header": {
         "blocks": [
+           
             "header-layout.desktop",
             "header-layout.mobile"
         ]
@@ -42,5 +43,48 @@
             "url": "assets/logo-irmao-soares.png",
             "width": "200"
         }
-    }
+    },
+    "modal-header#aceitecookies":{
+   
+        "props": {
+    
+          "showCloseButton":"true",
+          "iconCloseSize":"32",
+          "label":"Cancelar",
+          "blockClass": "modal-aceite-cookies-header"
+       
+        }
+      },
+    
+      "modal-trigger#aceitecookies": {
+        "children": ["modal-layout#aceitecookies"],
+        "props": {
+          "trigger":"load-session",
+    
+          "fullScreen":"true",
+          "blockClass": "modal-aceite-cookies"
+        }
+        
+      },
+    
+      "modal-layout#aceitecookies": {
+        "children": ["rich-text#modal-content-aceitecookies","modal-header#aceitecookies"],
+    
+        "props": {
+          "scroll":"body",
+          "disableEscapeKeyDown":"true",
+      
+          "backdrop":"clickable"
+        }
+        
+    
+    
+      },
+      "rich-text#modal-content-aceitecookies": {
+        "props": {
+          "text": "Coletamos dados para melhorar o desempenho e segurança do site, além de personalizar conteúdo e anúncios. Para mais informações, você pode consultar nossas [Políticas do site](/institucional/politicas-de-cookies).",
+          "blockClass": "conteudo-modal-cookies"
+        }
+      }
+    
 }
