@@ -1,6 +1,7 @@
 {
     "header-layout.desktop": {
         "children": [
+            //"modal-trigger#aceitecookies",
             "header-row#topbar",
             "sticky-layout#4-desktop"
         ]
