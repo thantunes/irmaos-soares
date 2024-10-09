@@ -181,8 +181,77 @@
 }
 
 @media (max-width: 768px) {
+
+
+    :global(.vtex-modal-layout-0-x-paper.bg-base.relative.br2.vtex-modal-layout-0-x-paperNotFullScreen.dib.tl.v-mid) {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        max-width: 80%;
+        right: 0;
+    }
+
     :global(.vtex-reviews-and-ratings-3-x-container) {
         margin: 0 8px !important;
         padding: 8px 20px;
     }
+}
+
+
+:global(.vtex-rich-text-0-x-link--conteudo-modal-cookies){
+    font-weight: bold;
+    color: #000;
+    text-transform: lowercase;
+
+}
+
+:global(.vtex-rich-text-0-x-wrapper--conteudo-modal-cookies)
+:global(.vtex-rich-text-0-x-paragraph){
+
+    padding: 20px;
+    max-width: 700px;
+    padding-bottom: 0px;
+    font-family: Sarabun, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+:global(.vtex-modal-layout-0-x-headerContainer--modal-aceite-cookies-header)
+:global(.vtex-modal-layout-0-x-closeButton)::before{
+
+    content: 'Aceitar';
+}
+:global(.vtex-modal-layout-0-x-headerContainer--modal-aceite-cookies-header)
+:global(.vtex-modal-layout-0-x-closeButton) svg{display:none;}
+
+:global(.vtex-modal-layout-0-x-headerContainer--modal-aceite-cookies-header)
+:global(.vtex-modal-layout-0-x-closeButton){
+    background-color: #bacd29;
+    color: #fff;
+    width: 110px;
+    margin-right: 36px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-family: Sarabun, sans-serif;
+    text-align: center;
+
+}
+
+:global(.vtex-modal-layout-0-x-headerContainer--modal-aceite-cookies-header)
+:global(.vtex-modal-layout-0-x-closeButton):hover{
+    background-color:#148b2e;
+    color: #fff;
+    width: 110px;
+    margin-right: 36px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+:global(.vtex-modal-layout-0-x-paper.bg-base.relative.br2.vtex-modal-layout-0-x-paperNotFullScreen.dib.tl.v-mid) {
+    bottom: 0;
+    position: absolute;
+    background-color: #fff;
 }
