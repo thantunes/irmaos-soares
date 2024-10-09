@@ -1,6 +1,7 @@
 {
     "header-layout.mobile": {
 		"children": [
+           // "modal-trigger#aceitecookies",
             "header-row#topbar",
 			"header-row#1-mobile"
 		],
