@@ -255,3 +255,12 @@
     position: absolute;
     background-color: #fff;
 }
+
+:global(article[data-status="payment-pending"]) :global(.c-on-warning) {
+    font-size: 0;
+}
+
+:global(article[data-status="payment-pending"]) :global(.c-on-warning)::before {
+    content: 'Aguardando aprovação';
+    font-size: .75rem;
+}
