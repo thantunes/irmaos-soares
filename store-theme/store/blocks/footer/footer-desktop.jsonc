@@ -47,8 +47,7 @@
             // 4 col
             "flex-layout.col#footer-1-desktop",
             "flex-layout.col#footer-2-desktop",
-            "flex-layout.col#footer-3-desktop",
-            "flex-layout.col#footer-4-desktop"
+            "flex-layout.col#footer-3-desktop"
             // "rich-text#footer"
         ],
         "props": {
@@ -193,7 +192,7 @@
     },
     "rich-text#footer-copyright": {
         "props": {
-            "text": "COPYRIGHT 2023® IRMÃOS SOARES S/A - 01.559.046/0001-08.",
+            "text": "COPYRIGHT 2025® IRMÃOS SOARES S/A - 01.559.046/0001-08.",
             "textPosition": "CENTER",
             "textAlignment": "CENTER",
             "blockClass": "footer-copyright"
