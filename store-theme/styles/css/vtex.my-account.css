@@ -264,3 +264,7 @@
     content: 'Aguardando aprovação';
     font-size: .75rem;
 }
+
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper) {
+    display: none!important;
+}
