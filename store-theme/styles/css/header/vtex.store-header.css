@@ -1,7 +1,7 @@
 /* TOPBAR */
 
 .headerRowBackground--topbar {
-    background: #BACD29;
+    background: linear-gradient(90deg, #A9B900 0%, #0D6721 100%);
 }
 
 .headerRow--topbar :global(.vtex-menu-2-x-styledLinkContainer--topbar-buy-whatsapp){

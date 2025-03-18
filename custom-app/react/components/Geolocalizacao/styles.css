@@ -1,20 +1,39 @@
-.locationInfo{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: .5rem;
-
+.locationInfo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.locationInfoText{
-    flex:1;
-    font-size: 16px;
-    color: #0D6721;
-    font-weight: 600;
-    text-decoration: underline;
+.locationInfoText {
+  flex: 1;
+  font-size: 16px;
+  color: #0d6721;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
-.modal-localizacao__link{
-    display: block;
+.modal-localizacao__link {
+  display: block;
+}
+
+.locationWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.locationWrapper a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.locationWrapper span {
+    color: #fff;
 }

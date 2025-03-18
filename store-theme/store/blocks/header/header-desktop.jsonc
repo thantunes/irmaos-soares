@@ -17,9 +17,23 @@
         "children": [
             // "shopper-location",
             "geolocalizacao",
-            "header-spacer",
-            "vtex.menu@2.x:menu#topbar"
+            "rich-text#top-bar-whatsapp",
+            "rich-text#top-bar-fale-conosco"
         ]
+    },
+
+    "rich-text#top-bar-whatsapp": {
+      "props": {
+        "blockClass": ["top-bar-whatsapp"],
+        "text": "Compre pelo WhatsApp +55 62 98423-8195 (somente vendas)"
+      }
+    },
+
+    "rich-text#top-bar-fale-conosco": {
+      "props": {
+        "blockClass": ["top-bar-fale-conosco"],
+        "text": "[Fale Conosco](/institucional/contato)"
+      }
     },
 
     "sticky-layout#4-desktop": {

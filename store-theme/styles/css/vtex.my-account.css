@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 .userImage {
     display: none;
 }
@@ -181,9 +183,9 @@
 }
 
 @media (max-width: 768px) {
-
-
-    :global(.vtex-modal-layout-0-x-paper.bg-base.relative.br2.vtex-modal-layout-0-x-paperNotFullScreen.dib.tl.v-mid) {
+    :global(
+            .vtex-modal-layout-0-x-paper.bg-base.relative.br2.vtex-modal-layout-0-x-paperNotFullScreen.dib.tl.v-mid
+        ) {
         bottom: 0;
         position: absolute;
         width: 100%;
@@ -198,17 +200,14 @@
     }
 }
 
-
-:global(.vtex-rich-text-0-x-link--conteudo-modal-cookies){
+:global(.vtex-rich-text-0-x-link--conteudo-modal-cookies) {
     font-weight: bold;
     color: #000;
     text-transform: lowercase;
-
 }
 
 :global(.vtex-rich-text-0-x-wrapper--conteudo-modal-cookies)
-:global(.vtex-rich-text-0-x-paragraph){
-
+    :global(.vtex-rich-text-0-x-paragraph) {
     padding: 20px;
     max-width: 700px;
     padding-bottom: 0px;
@@ -217,15 +216,17 @@
     font-size: 14px;
 }
 :global(.vtex-modal-layout-0-x-headerContainer--modal-aceite-cookies-header)
-:global(.vtex-modal-layout-0-x-closeButton)::before{
-
-    content: 'Aceitar';
+    :global(.vtex-modal-layout-0-x-closeButton)::before {
+    content: "Aceitar";
 }
 :global(.vtex-modal-layout-0-x-headerContainer--modal-aceite-cookies-header)
-:global(.vtex-modal-layout-0-x-closeButton) svg{display:none;}
+    :global(.vtex-modal-layout-0-x-closeButton)
+    svg {
+    display: none;
+}
 
 :global(.vtex-modal-layout-0-x-headerContainer--modal-aceite-cookies-header)
-:global(.vtex-modal-layout-0-x-closeButton){
+    :global(.vtex-modal-layout-0-x-closeButton) {
     background-color: #bacd29;
     color: #fff;
     width: 110px;
@@ -236,21 +237,21 @@
     letter-spacing: 0;
     font-family: Sarabun, sans-serif;
     text-align: center;
-
 }
 
 :global(.vtex-modal-layout-0-x-headerContainer--modal-aceite-cookies-header)
-:global(.vtex-modal-layout-0-x-closeButton):hover{
-    background-color:#148b2e;
+    :global(.vtex-modal-layout-0-x-closeButton):hover {
+    background-color: #148b2e;
     color: #fff;
     width: 110px;
     margin-right: 36px;
     border-radius: 5px;
     margin-bottom: 20px;
-
 }
 
-:global(.vtex-modal-layout-0-x-paper.bg-base.relative.br2.vtex-modal-layout-0-x-paperNotFullScreen.dib.tl.v-mid) {
+:global(
+        .vtex-modal-layout-0-x-paper.bg-base.relative.br2.vtex-modal-layout-0-x-paperNotFullScreen.dib.tl.v-mid
+    ) {
     bottom: 0;
     position: absolute;
     background-color: #fff;
@@ -261,10 +262,14 @@
 }
 
 :global(article[data-status="payment-pending"]) :global(.c-on-warning)::before {
-    content: 'Aguardando aprovação';
-    font-size: .75rem;
+    content: "Aguardando aprovação";
+    font-size: 0.75rem;
 }
 
 :global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper) {
-    display: none!important;
+    display: none !important;
+}
+
+:global(body *) {
+    font-family: "Poppins", sans-serif !important;
 }
