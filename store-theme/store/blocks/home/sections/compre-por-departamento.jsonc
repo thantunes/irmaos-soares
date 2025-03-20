@@ -1,0 +1,272 @@
+{
+    "flex-layout.row#home-compre-por-departamento": {
+        "children": [
+            "flex-layout.col#home-compre-por-departamento-item-1",
+            "flex-layout.col#home-compre-por-departamento-item-2",
+            "flex-layout.col#home-compre-por-departamento-item-3",
+            "flex-layout.col#home-compre-por-departamento-item-4",
+            "flex-layout.col#home-compre-por-departamento-item-5",
+            "flex-layout.col#home-compre-por-departamento-item-6",
+            "flex-layout.col#home-compre-por-departamento-item-7",
+            "flex-layout.col#home-compre-por-departamento-item-8",
+            "flex-layout.col#home-compre-por-departamento-item-9"
+        ],
+        "props": {
+            "blockClass": [
+                "home-compre-por-departamento"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#compre-por-departamento-title": {
+        "props": {
+            "text": "## Compre por departamento",
+            "blockClass": ["shelfTitle", "home-compre-por-departamento-title"]
+        }
+    },
+    "flex-layout.col#home-compre-por-departamento-item-1": {
+        "children": [
+            "image#home-compre-por-departamento-item-1",
+            "link#home-compre-por-departamento-item-1-title"
+        ],
+        "props": {
+            "blockClass": [
+                "home-compre-por-departamento-item"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-compre-por-departamento-item-1": {
+        "props": {
+            "src": "/arquivos/departamento-organizacao.png",
+            "link": {
+                "url": "/"
+            },
+            "blockClass": ["first-img"]
+        }
+    },
+    "link#home-compre-por-departamento-item-1-title": {
+      "props": {
+        "label": "Casa & Organização",
+        "href": "/",
+        "blockClass": ["home-compre-por-departamento-item-title"]
+       }
+    },
+    "flex-layout.col#home-compre-por-departamento-item-2": {
+        "children": [
+            "image#home-compre-por-departamento-item-2",
+            "link#home-compre-por-departamento-item-2-title"
+        ],
+        "props": {
+            "blockClass": [
+                "home-compre-por-departamento-item"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-compre-por-departamento-item-2": {
+        "props": {
+            "src": "/arquivos/departamento-portas.png",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "link#home-compre-por-departamento-item-2-title": {
+      "props": {
+        "label": "Portas & Janelas",
+        "href": "/",
+        "blockClass": ["home-compre-por-departamento-item-title"]
+       }
+    },
+    "flex-layout.col#home-compre-por-departamento-item-3": {
+        "children": [
+            "image#home-compre-por-departamento-item-3",
+            "link#home-compre-por-departamento-item-3-title"
+        ],
+        "props": {
+            "blockClass": [
+                "home-compre-por-departamento-item"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-compre-por-departamento-item-3": {
+        "props": {
+            "src": "/arquivos/departamento-tintas.png",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "link#home-compre-por-departamento-item-3-title": {
+      "props": {
+        "label": "Tintas",
+        "href": "/",
+        "blockClass": ["home-compre-por-departamento-item-title"]
+       }
+    },
+    "flex-layout.col#home-compre-por-departamento-item-4": {
+        "children": [
+            "image#home-compre-por-departamento-item-4",
+            "link#home-compre-por-departamento-item-4-title"
+        ],
+        "props": {
+            "blockClass": [
+                "home-compre-por-departamento-item"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-compre-por-departamento-item-4": {
+        "props": {
+            "src": "/arquivos/departamento-pisos.png",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "link#home-compre-por-departamento-item-4-title": {
+      "props": {
+        "label": "Pisos",
+        "href": "/",
+        "blockClass": ["home-compre-por-departamento-item-title"]
+       }
+    },
+    "flex-layout.col#home-compre-por-departamento-item-5": {
+        "children": [
+            "image#home-compre-por-departamento-item-5",
+            "link#home-compre-por-departamento-item-5-title"
+        ],
+        "props": {
+            "blockClass": [
+                "home-compre-por-departamento-item"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-compre-por-departamento-item-5": {
+        "props": {
+            "src": "/arquivos/departamento-loucas.png",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "link#home-compre-por-departamento-item-5-title": {
+      "props": {
+        "label": "Louças",
+        "href": "/",
+        "blockClass": ["home-compre-por-departamento-item-title"]
+       }
+    },
+    "flex-layout.col#home-compre-por-departamento-item-6": {
+        "children": [
+            "image#home-compre-por-departamento-item-6",
+            "link#home-compre-por-departamento-item-6-title"
+        ],
+        "props": {
+            "blockClass": [
+                "home-compre-por-departamento-item"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-compre-por-departamento-item-6": {
+        "props": {
+            "src": "/arquivos/departamento-ferramentas.png",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "link#home-compre-por-departamento-item-6-title": {
+      "props": {
+        "label": "Ferramentas",
+        "href": "/",
+        "blockClass": ["home-compre-por-departamento-item-title"]
+       }
+    },
+    "flex-layout.col#home-compre-por-departamento-item-7": {
+        "children": [
+            "image#home-compre-por-departamento-item-7",
+            "link#home-compre-por-departamento-item-7-title"
+        ],
+        "props": {
+            "blockClass": [
+                "home-compre-por-departamento-item"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-compre-por-departamento-item-7": {
+        "props": {
+            "src": "/arquivos/departamento-metais.png",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "link#home-compre-por-departamento-item-7-title": {
+      "props": {
+        "label": "Metais",
+        "href": "/",
+        "blockClass": ["home-compre-por-departamento-item-title"]
+       }
+    },
+    "flex-layout.col#home-compre-por-departamento-item-8": {
+        "children": [
+            "image#home-compre-por-departamento-item-8",
+            "link#home-compre-por-departamento-item-8-title"
+        ],
+        "props": {
+            "blockClass": [
+                "home-compre-por-departamento-item"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-compre-por-departamento-item-8": {
+        "props": {
+            "src": "/arquivos/departamento-iluminacao.png",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "link#home-compre-por-departamento-item-8-title": {
+      "props": {
+        "label": "Iluminação",
+        "href": "/",
+        "blockClass": ["home-compre-por-departamento-item-title"]
+       }
+    },
+    "flex-layout.col#home-compre-por-departamento-item-9": {
+        "children": [
+            "image#home-compre-por-departamento-item-9",
+            "link#home-compre-por-departamento-item-9-title"
+        ],
+        "props": {
+            "blockClass": [
+                "home-compre-por-departamento-item"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-compre-por-departamento-item-9": {
+        "props": {
+            "src": "/arquivos/departamento-decoracao.png",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "link#home-compre-por-departamento-item-9-title": {
+      "props": {
+        "label": "Decoração",
+        "href": "/",
+        "blockClass": ["home-compre-por-departamento-item-title"]
+       }
+    }
+}

@@ -1,31 +1,23 @@
 .productHighlightWrapper--collection {
-    /* position: absolute;
-  top: 10px;
-  left: 5px;
-  width: 200px; */
-/* 
-    position: relative;
-    top: -16px;
-    left: -30px;
-    width: 290px;
-    background-color: #E54545;
+    background-color: #e54545;
     text-align: center;
-    padding: 8px; */
-    background-color: #E54545;
-    text-align: center;
-    padding: 8px;
-    border-radius: 1rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600 !important;
     font-size: 12px;
+    line-height: 100%;
+    color: #fff;
+    max-width: fit-content;
 }
 
-.productHighlightText {
-    /* background: antiquewhite;
-  border-radius: 20px;
-  padding: 5px 10px; */
-
-    color: #FFF;
-    font-weight: bold;
+.productHighlightWrapper--collection[data-highlight-name="Desconto à vista"] {
+    background-color: #000;
 }
+
+.productHighlightWrapper--collection[data-highlight-name="Saldão"], .productHighlightWrapper--collection[data-highlight-name="Pisos do mês"] {
+    background-color: #7EA30A;
+}
+
 
 /* @media screen and (max-width: 767px){
     .productHighlightWrapper--collection{

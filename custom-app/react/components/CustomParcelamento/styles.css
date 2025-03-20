@@ -1,4 +1,13 @@
-.parcelamentoIS{
-    color: #0D6721;
-    margin-top:0;
+.parcelamentoIS {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262626;
+  margin-top: 0;
+  margin-bottom: 22px;
+  min-height: 40px;
+}
+
+.parcelamentoIS b {
+  font-weight: 600;
 }

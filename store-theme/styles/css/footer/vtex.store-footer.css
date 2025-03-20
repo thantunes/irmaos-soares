@@ -82,7 +82,6 @@
 .footerLayout--footer--is :global(.vtex-flex-layout-0-x-flexRow--footer-newsletter) {
     background-color: #148B2E;
     padding: 1rem 0;
-    margin-top:2rem;
 }
 
 .footerLayout--footer--is :global(.vtex-rich-text-0-x-paragraph--newsletter-title) {
@@ -161,7 +160,7 @@
         margin-bottom: .9rem;
     }
 
-    
+
     .footerLayout--footer--is :global(.vtex-flex-layout-0-x-flexRow--footer-newsletter-mobile){
         margin-top:2rem;
     }

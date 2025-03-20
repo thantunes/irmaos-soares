@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+    --gradient: linear-gradient(90deg, #a9b900 0%, #0d6721 100%);
+}
+
 .userImage {
     display: none;
 }
@@ -272,4 +276,18 @@
 
 :global(body *) {
     font-family: "Poppins", sans-serif !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--submenuContainer) > :global(.pr0.flex):not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    min-height: 100%;
+    background-color: #DFDFDF;
+    margin-left: 46px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-menu) > :global(.pr0.flex):last-child {
+    width: 100% !important;
 }

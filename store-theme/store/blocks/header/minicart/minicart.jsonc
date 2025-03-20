@@ -49,7 +49,7 @@
     },
     "image#minicart-icon": {
         "props": {
-            "src": "assets/svgs/shopping-cart-icon.svg",
+            "src": "/arquivos/new-cart-icon.svg",
             "maxHeight": 35
         }
     },
@@ -323,7 +323,7 @@
     "flex-layout.col#main-container.mobile": {
         "children": [
             "flex-layout.row#top-container-mobile",
-            "flex-layout.row#middle-container-mobile",            
+            "flex-layout.row#middle-container-mobile",
             "flex-layout.row#unit-price.mobile"
         ],
         "props": {

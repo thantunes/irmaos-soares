@@ -21,21 +21,22 @@
             "rich-text#top-bar-fale-conosco"
         ]
     },
-
     "rich-text#top-bar-whatsapp": {
-      "props": {
-        "blockClass": ["top-bar-whatsapp"],
-        "text": "Compre pelo WhatsApp +55 62 98423-8195 (somente vendas)"
-      }
+        "props": {
+            "blockClass": [
+                "top-bar-whatsapp"
+            ],
+            "text": "Compre pelo WhatsApp +55 62 98423-8195 (somente vendas)"
+        }
     },
-
     "rich-text#top-bar-fale-conosco": {
-      "props": {
-        "blockClass": ["top-bar-fale-conosco"],
-        "text": "[Fale Conosco](/institucional/contato)"
-      }
+        "props": {
+            "blockClass": [
+                "top-bar-fale-conosco"
+            ],
+            "text": "[Fale Conosco](/institucional/contato)"
+        }
     },
-
     "sticky-layout#4-desktop": {
         "children": [
             "header-row#header-principal",
@@ -43,13 +44,16 @@
             "flex-layout.row#4-desktop-menu"
             // "header-row#menu-principal",
             // "flex-layout.row#mega-menu"
-        ]
+        ],
+        "props": {
+            "blockClass": "header-sticky"
+        }
     },
     "flex-layout.col#spacer": {
         "props": {
-          "width": "grow"
+            "width": "grow"
         }
-      },
+    },
     "header-row#header-principal": {
         "props": {
             "blockClass": "main-header",
@@ -62,17 +66,37 @@
         },
         "children": [
             "logo#desktop",
-            "header-spacer",
+            // "header-spacer",
             "search-bar",
-            "header-spacer",
-            "flex-layout.row#conheca-nossos-servicos",
-            "header-spacer",
-            "flex-layout.row#login-wrapper",
-            "minicart.v2"
+            // "header-spacer",
+            // "flex-layout.row#conheca-nossos-servicos",
+            // "header-spacer",
+            "flex-layout.row#header-principal-right"
         ]
     },
-
-    "flex-layout.row#3-desktop":{
+    "flex-layout.row#header-principal-right": {
+        "children": [
+            "flex-layout.row#login-wrapper",
+            "image#wishlist-header",
+            "minicart.v2"
+        ],
+        "props": {
+            "blockClass": [
+                "header-principal-right"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#wishlist-header": {
+        "props": {
+            "src": "/arquivos/wishlist.svg",
+            "link": {
+                "url": "/account#/wishlist"
+            }
+        }
+    },
+    "flex-layout.row#3-desktop": {
         "children": [
             "flex-layout.col#logo-desktop",
             "flex-layout.col#spacer",
@@ -83,7 +107,7 @@
             "login",
             "minicart.v2"
         ],
-        "props":{
+        "props": {
             "blockClass": "main-header",
             "horizontalAlign": "center",
             "verticalAlign": "center",
@@ -91,16 +115,14 @@
             "preventVerticalStretch": true
         }
     },
-
     "flex-layout.col#search-desktop": {
-		"props": {
-			"verticalAlign": "middle"
-		},
-		"children": [
-			"search-bar"
-		]
-	},
-
+        "props": {
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "search-bar"
+        ]
+    },
     "flex-layout.row#conheca-nossos-servicos": {
         "props": {
             "blockClass": "conheca-nossos-servicos",
@@ -155,9 +177,8 @@
             "category-menu"
         ]
     },
-
     "flex-layout.row#4-desktop-menu": {
-        "props":{
+        "props": {
             "blockClass": "main-header-menu",
             "horizontalAlign": "left",
             "verticalAlign": "center",

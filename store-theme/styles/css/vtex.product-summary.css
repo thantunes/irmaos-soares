@@ -20,16 +20,19 @@
 
 .nameContainer {
     justify-content: start;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 8px !important;
+    padding-bottom: 11px !important;
+}
+
+.productNameContainer {
+    min-height: 92px;
 }
 
 .brandName {
-    font-weight: bold;
-    color: #000;
-    font-family: "Sarabun",sans-serif;
-    font-size: 16px;
-    text-align: start;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 23px;
+    color: #000005 !important;
 }
 .nameWrapper--product-name-shelf {
     text-align: start;
@@ -48,38 +51,59 @@
     border-radius: 0.25rem;
 }
 
-.container--is-shelf{
-    background-color: #FFF;
-    padding: 22px;
-    border-radius: 15px;
-    transition: all 0.3s ease-in-out;
+.container--is-shelf {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #cecece;
 }
 
-.container--is-shelf:hover{
-    opacity: .9;
-    box-shadow: 0 0 10px 0px rgba(1,41,22,.2);
+.container--is-shelf:hover {
+    border-color: #7ea30a;
 }
 
-.container--is-shelf :global(.vtex-button){
-    font-family: 'Sarabun',sans-serif;
-    font-weight: bold;
-    border-radius: 15px;
+.container--is-shelf :global(.vtex-button) {
+    border-radius: 6px;
+    font-weight: 600;
     font-size: 16px;
-    text-transform: capitalize;
+    line-height: 100%;
+    text-transform: uppercase;
     padding: 0;
-    display: none;
+    color: #fff;
+    height: 52px;
+    background-color: #0d6721;
+    border: none;
 }
 
+.container--is-shelf :global(.vtex-button__label)::after {
+    content: "";
+    display: block;
+    background-image: url(/arquivos/summary-icon.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 32px;
+}
 
-@media screen and (max-width: 767px){
+.container--is-shelf :global(.vtex-button__label) {
+    gap: 16px;
+}
+
+.element--is-shelf{
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
     .brandName {
         font-size: 14px;
         max-height: 50px;
         display: block;
         overflow: hidden;
     }
-    .container--is-shelf{
-        background-color: #FFF;
+    .container--is-shelf {
+        background-color: #fff;
         padding: 0.5rem 1.5rem;
         border-radius: 15px;
         margin: 0.5rem auto;

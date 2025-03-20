@@ -19,13 +19,13 @@
 } */
 
 .biggy-autocomplete-wrapper {
-    width: 500px
+    width: 868px
 }
 
 
 .biggy-autocomplete{
-    top: 10px;
-    left: 18px;
+    top: 25px;
+    left: 10px;
     box-shadow: 0 8px 7px rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;

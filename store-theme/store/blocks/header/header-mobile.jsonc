@@ -9,12 +9,12 @@
             "blockClass": "mobile-header"
         }
 	},
-	
+
     "header-row#1-mobile": {
 		"children": [
 			// "drawer#menu-mobile",
             "menu-mobile",
-			"logo#mobile",			
+			"logo#mobile",
             "header-spacer",
             "toggle-search",
 			"login#mobile",
@@ -43,7 +43,7 @@
             "blockClass": "mobile",
             "openAutocompleteOnFocus": true,
             "maxWidth": "355px",
-            "placeholder": "Faça sua busca aqui",
+            "placeholder": "O que você precisa?",
             "displayMode": "clear-button"
         }
     },

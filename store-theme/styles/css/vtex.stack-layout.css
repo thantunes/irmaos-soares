@@ -7,3 +7,18 @@
   top: 0;
   left: auto;
 } */
+
+.stackContainer--flags {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    width: 100%;
+}
+
+.stackItem--flags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 6px;
+    max-width: 265px;
+}

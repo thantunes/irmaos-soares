@@ -4,154 +4,169 @@
     padding-left: 0;
 }
 .container :global(.vtex-button__label) {
-	outline: none;
-	border: none;
-	width: 100%;
-	padding: 0 !important;
-	column-gap: 8px;
-	display: flex;
-	align-items: center;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
 }
 
 .container :global(.vtex-button) {
-	width: 100%;
-	padding: 0;
-	border: none;
-	transition: ease-in 0.22s all;
+    width: 100%;
+    padding: 0;
+    border: none;
+    transition: ease-in 0.22s all;
 }
 
 .container :global(.vtex-button):focus,
 .container :global(.vtex-button):hover,
 .container :global(.vtex-button):hover .label {
-	outline: none;
-	background: transparent !important;
-	color: #BACD29 ;
-    opacity: .8;
+    outline: none;
+    background: transparent !important;
+    color: #000;
 }
 
 .container :global(.vtex-button__label)::before {
-	content: "";
-	background: url("assets/svgs/user-login-icon.svg") center no-repeat;
-	width: 40px;
-	height: 40px;
-	display: block;
+    content: "";
+    background: url("assets/svgs/user-login-icon.svg") center no-repeat;
+    width: 24px;
+    height: 28px;
+    display: block;
+}
+
+.label,
+.profile {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    text-transform: initial;
+    padding-left: 10px;
+    max-width: 120px;
+    text-align: left;
 }
 
 .label {
-	max-width: 100px;
-	font-family: "Sarabun", sans-serif;
-	font-weight: bold;
-	color: #0D6721;
-	text-transform: initial;
-	text-align: left;
-	padding: 0;
-	border-bottom: 0;
-	transition: 0.2s linear;
-    font-size:16px;
+    max-width: 91px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.profile::after {
+    content: "Minha conta";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
 }
 
 /* LOGIN CONTENT */
 .box {
-	min-width: 288px;
+    min-width: 288px;
 }
 
 .content {
-	/* padding: 32px 22px; */
+    /* padding: 32px 22px; */
     padding: 1rem;
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 15px;
 }
 
 @media only screen and (max-width: 600px) {
-	.options {
-		margin-top: 10px;
-	}
+    .options {
+        margin-top: 10px;
+    }
 }
 
 .formTitle {
-	font-family: "Sarabun", sans-serif;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
-	text-align: center;
-	color: #727272;
-	margin: 0 0 24px;
-	padding: 0;
+    font-family: "Sarabun", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #727272;
+    margin: 0 0 24px;
+    padding: 0;
 }
 
 .optionsList {
-	margin: 0;
+    margin: 0;
 }
 
 .button :global(.vtex-button) {
-	font-family: "Sarabun", sans-serif;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 14px;
-	text-align: center;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: #ffffff;
-	min-height: 42px;
-	border-radius: 20px;
-	outline: none;
-	border: none;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    min-height: 42px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
 }
 
 .buttonSocial :global(.vtex-button) {
-	border: 1px solid #bebbbb !important;
+    border: 1px solid #bebbbb !important;
 }
 
 .buttonSocial .oauthLabel {
-	font-family: "Sarabun", sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 14px;
-	text-align: center;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: #727272;
-	margin: 0 8px !important;
+    font-family: "Sarabun", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #727272;
+    margin: 0 8px !important;
 }
 
 .contentContainer :global(.vtex-button__label) {
-	padding: 0 !important;
-	margin: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .accessCodeOptionBtn :global(.vtex-button) {
-	background: #727272;
-	transition: 0.2s linear;
+    background: #727272;
+    transition: 0.2s linear;
 }
 
 .accessCodeOptionBtn :global(.vtex-button__label) {
-	display: none;
+    display: none;
 }
 
 .accessCodeOptionBtn :global(.vtex-button)::after {
-	content: "Receber código de acesso";
-	color: white;
-	font-size: 12px;
-	display: block;
+    content: "Receber código de acesso";
+    color: white;
+    font-size: 12px;
+    display: block;
 }
 
 .accessCodeOptionBtn :global(.vtex-button):hover {
-	background: #a6a6a6;
+    background: #a6a6a6;
 }
 
 .emailPasswordOptionBtn :global(.vtex-button) {
-	background: #0D6721;
-	transition: 0.2s linear;
+    background: #0d6721;
+    transition: 0.2s linear;
 }
 
 .emailPasswordOptionBtn :global(.vtex-button):hover {
-	background:#bacd29;
+    background: #bacd29;
 }
 
 .accountOptions .button,
 .accountOptions :global(.vtex-button) {
-    color: #0D6721;
+    color: #0d6721;
     padding: 0;
     background: transparent;
 }
@@ -162,378 +177,377 @@
 }
 /* form */
 .contentForm {
-	min-width: 260px;
-	padding: 0;
+    min-width: 260px;
+    padding: 0;
 }
 
 .contentForm :global(.vtex-input-prefix__group) {
-	height: 52px;
-	border: 1px solid #bebbbb;
-	border-radius: 5px;
+    height: 52px;
+    border: 1px solid #bebbbb;
+    border-radius: 5px;
 }
 
 .contentForm :global(.vtex-input-prefix__group) {
-	padding: 18px;
+    padding: 18px;
 }
 
 .contentForm :global(.vtex-styleguide-9-x-input),
 .contentForm :global(.vtex-styleguide-9-x-input)::-webkit-input-placeholder {
-	font-family: "Sarabun", sans-serif;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 18px;
-	color: #d0d0d0 !important;
-	background: white;
-	padding: 0;
+    font-family: "Sarabun", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #d0d0d0 !important;
+    background: white;
+    padding: 0;
 }
 
-.contentForm .emailVerification .inputContainer :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
-    color: #0D6721 !important;
+.contentForm
+    .emailVerification
+    .inputContainer
+    :global(.vtex-input)
+    :global(.vtex-input-prefix__group)
+    :global(.vtex-styleguide-9-x-input) {
+    color: #0d6721 !important;
 }
 
 /* form footer*/
 .formFooter {
-	border: none;
-	padding: 0;
-	margin: 16px 0 0;
-	min-height: unset;
-	align-items: center;
+    border: none;
+    padding: 0;
+    margin: 16px 0 0;
+    min-height: unset;
+    align-items: center;
 }
 
 .sendButton :global(.vtex-button) {
-	background: #0D6721;
-	transition: 0.2s linear;
-	border-radius: 30px;
-	width: 128px;
-	height: 36px;
-	border: none;
-	outline: none;
+    background: #0d6721;
+    transition: 0.2s linear;
+    border-radius: 30px;
+    width: 128px;
+    height: 36px;
+    border: none;
+    outline: none;
 }
 
 .sendButton :global(.vtex-button):hover {
-	background: #67c497;
+    background: #67c497;
 }
 
 .sendButton :global(.t-small) {
-	font-family: "Sarabun", sans-serif;
-	text-align: center;
-	font-weight: 900;
-	font-size: 16px;
-	line-height: 19px;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: #ffffff;
+    font-family: "Sarabun", sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
 .sendButton :global(.t-small):focus,
 .sendButton :global(.vtex-button__label):focus {
-	outline: none;
+    outline: none;
 }
 
 .backButton {
-	height: max-content;
+    height: max-content;
 }
 
 .backButton :global(.vtex-button) {
-	height: max-content;
-	min-height: unset;
-	background: transparent !important;
-	outline: none;
+    height: max-content;
+    min-height: unset;
+    background: transparent !important;
+    outline: none;
 }
 
 .backButton :global(.t-small) {
-	font-family: "Sarabun", sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	line-height: 1;
-	letter-spacing: 0.05em;
-	text-transform: capitalize;
-	color: #727272;
-	text-transform: uppercase;
-	display: flex;
-	align-items: center;
-	column-gap: 4px;
-	transition: 0.2s linear;
+    font-family: "Sarabun", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #727272;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    transition: 0.2s linear;
 }
 
 .arrowBackIcon {
-	display: none;
+    display: none;
 }
 
 .backButton :global(.t-small)::before {
-	content: "";
-	background: url("assets/leftIcon.png") center no-repeat;
-	width: 16px;
-	height: 16px;
-	display: block;
+    content: "";
+    background: url("assets/leftIcon.png") center no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
 }
 
 .backButton :global(.t-small):hover {
-	color: #4b4b4b;
+    color: #4b4b4b;
 }
 
 .formLinkContainer {
-	padding: 0;
+    padding: 0;
 }
 
 .forgotPasswordLink {
-	font-family: "Sarabun", sans-serif;
-	font-weight: normal;
-	font-size: 11px;
-	line-height: 12px;
-	text-align: center;
-	text-decoration-line: underline;
-	color: #727272;
-	text-transform: uppercase;
-	outline: none !important;
+    font-family: "Sarabun", sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #727272;
+    text-transform: uppercase;
+    outline: none !important;
 }
 
 .dontHaveAccount {
-	font-family: "Sarabun", sans-serif;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
-	text-align: center;
-	color: #727272;
-	border-top: 1px solid #e5e5e5;
-	padding-top: 16px;
-	margin-top: 12px;
-	width: 100%;
-	outline: none;
+    font-family: "Sarabun", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #727272;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 16px;
+    margin-top: 12px;
+    width: 100%;
+    outline: none;
 }
-
-
 
 /* LOGIN CONTENT */
 .box {
-	min-width: 288px;
+    min-width: 288px;
 }
 
-.contentContainer{
+.contentContainer {
     box-shadow: none;
 }
 .content {
-	/* padding: 32px 22px; */
-    box-shadow: 0px 6px 6px 0px rgba(0,0,0,.2);
+    /* padding: 32px 22px; */
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .arrowUp {
-    background: #FFF;
+    background: #fff;
     box-shadow: none;
 }
 
-
 .formTitle {
-	font-family: "Sarabun", sans-serif;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
-	text-align: center;
-	color: #727272;
-	margin: 0 0 24px;
-	padding: 0;
+    font-family: "Sarabun", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #727272;
+    margin: 0 0 24px;
+    padding: 0;
 }
 
 .optionsList {
-	margin: 0;
+    margin: 0;
 }
 
 .button :global(.vtex-button) {
-	font-family: "Sarabun", sans-serif;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 14px;
-	text-align: center;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: #ffffff;
-	min-height: 42px;
-	border-radius: 20px;
-	outline: none;
-	border: none;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    min-height: 42px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
 }
 
-
 .accessCodeOptionBtn :global(.vtex-button) {
-	background: #727272;
-	transition: 0.2s linear;
+    background: #727272;
+    transition: 0.2s linear;
 }
 
 .accessCodeOptionBtn :global(.vtex-button):hover {
-	background: #a6a6a6;
+    background: #a6a6a6;
 }
-
 
 /* form */
 .contentForm {
-	min-width: 260px;
-	padding: 0;
+    min-width: 260px;
+    padding: 0;
 }
 
 .contentForm :global(.vtex-input-prefix__group) {
-	height: 52px;
-	border: 1px solid #bebbbb;
-	border-radius: 5px;
+    height: 52px;
+    border: 1px solid #bebbbb;
+    border-radius: 5px;
 }
 
 .contentForm :global(.vtex-input-prefix__group) {
-	padding: 18px;
+    padding: 18px;
 }
 
 .contentForm :global(.vtex-styleguide-9-x-input),
 .contentForm :global(.vtex-styleguide-9-x-input)::-webkit-input-placeholder {
-	font-family: "Sarabun", sans-serif;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 18px;
-	color: #d0d0d0 !important;
-	background: white;
-	padding: 0;
+    font-family: "Sarabun", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #d0d0d0 !important;
+    background: white;
+    padding: 0;
 }
 
 /* form footer*/
 .formFooter {
-	border: none;
-	padding: 0;
-	margin: 16px 0 0;
-	min-height: unset;
-	align-items: center;
+    border: none;
+    padding: 0;
+    margin: 16px 0 0;
+    min-height: unset;
+    align-items: center;
 }
 
-
 .sendButton :global(.vtex-button):hover {
-	background: #67c497;
+    background: #67c497;
 }
 
 .sendButton :global(.t-small) {
-	font-family: "Sarabun", sans-serif;
-	text-align: center;
-	font-weight: 900;
-	font-size: 16px;
-	line-height: 19px;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: #ffffff;
+    font-family: "Sarabun", sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
 .sendButton :global(.t-small):focus,
 .sendButton :global(.vtex-button__label):focus {
-	outline: none;
+    outline: none;
 }
 
 .backButton {
-	height: max-content;
+    height: max-content;
 }
 
 .backButton :global(.vtex-button) {
-	height: max-content;
-	min-height: unset;
-	background: transparent !important;
-	outline: none;
+    height: max-content;
+    min-height: unset;
+    background: transparent !important;
+    outline: none;
 }
 
 .backButton :global(.t-small) {
-	font-family: "Sarabun", sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	line-height: 1;
-	letter-spacing: 0.05em;
-	text-transform: capitalize;
-	color: #727272;
-	text-transform: uppercase;
-	display: flex;
-	align-items: center;
-	column-gap: 4px;
-	transition: 0.2s linear;
+    font-family: "Sarabun", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #727272;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    transition: 0.2s linear;
 }
 
 .arrowBackIcon {
-	display: none;
+    display: none;
 }
 
 .backButton :global(.t-small)::before {
-	content: "";
-	/* background: url("assets/imgs/leftIcon.png") center no-repeat; */
-	width: 16px;
-	height: 16px;
-	display: block;
+    content: "";
+    /* background: url("assets/imgs/leftIcon.png") center no-repeat; */
+    width: 16px;
+    height: 16px;
+    display: block;
 }
 
 .backButton :global(.t-small):hover {
-	color: #4b4b4b;
+    color: #4b4b4b;
 }
 
 .formLinkContainer {
-	padding: 0;
+    padding: 0;
 }
 
 .forgotPasswordLink {
-	font-family: "Sarabun", sans-serif;
-	font-weight: normal;
-	font-size: 11px;
-	line-height: 12px;
-	text-align: center;
-	text-decoration-line: underline;
-	color: #727272;
-	text-transform: uppercase;
-	outline: none !important;
+    font-family: "Sarabun", sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #727272;
+    text-transform: uppercase;
+    outline: none !important;
 }
 
 .dontHaveAccount {
-	font-family: "Sarabun", sans-serif;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
-	text-align: center;
-	color: #727272;
-	border-top: 1px solid #e5e5e5;
-	padding-top: 16px;
-	margin-top: 12px;
-	width: 100%;
-	outline: none;
+    font-family: "Sarabun", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #727272;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 16px;
+    margin-top: 12px;
+    width: 100%;
+    outline: none;
 }
 
 @media only screen and (max-width: 1026px) {
-	.container {
-		float: none;
-	}
+    .container {
+        float: none;
+    }
 
-	.buttonLink :global(.vtex-button) {
-		width: auto;
-	}
+    .buttonLink :global(.vtex-button) {
+        width: auto;
+    }
 
-	.buttonLink :global(.vtex-button):focus {
-		outline: none;
-		border: none;
-		background: none;
-		width: 100%;
-	}
+    .buttonLink :global(.vtex-button):focus {
+        outline: none;
+        border: none;
+        background: none;
+        width: 100%;
+    }
 
-	.label,
-	.profile {
-		display: block;
-		max-width: 100%;
-		font-family: "Sarabun", sans-serif;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 16px;
-		color: #0D6721;
-		border: none;
-	}
+    .label,
+    .profile {
+        display: block;
+        max-width: 100%;
+        font-family: "Sarabun", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #0d6721;
+        border: none;
+    }
 
-	.buttonLink :global(.vtex-button__label) {
-		padding-left: 0;
-	}
+    .buttonLink :global(.vtex-button__label) {
+        padding-left: 0;
+    }
 
-	.container :global(.vtex-button) {
-		width: 100%;
-		min-height: unset;
-	}
+    .container :global(.vtex-button) {
+        width: 100%;
+        min-height: unset;
+    }
 
-	.container :global(.vtex-button__label):focus {
-		outline: none;
-		border: none;
-	}
+    .container :global(.vtex-button__label):focus {
+        outline: none;
+        border: none;
+    }
 }

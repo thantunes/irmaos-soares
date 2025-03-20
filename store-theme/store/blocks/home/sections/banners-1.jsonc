@@ -1,0 +1,64 @@
+{
+    "flex-layout.row#home-banners-1": {
+        "children": [
+            "image#home-banner-1-1",
+            "flex-layout.col#home-banners-1-middle",
+            "image#home-banner-1-4"
+        ],
+        "props": {
+            "blockClass": [
+                "home-banners-1"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-banner-1-1": {
+        "props": {
+            "src": "/arquivos/banners-1-1.png",
+            "maxWidth": "469px",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "flex-layout.col#home-banners-1-middle": {
+        "children": [
+            "image#home-banner-1-2",
+            "image#home-banner-1-3"
+        ],
+        "props": {
+            "blockClass": [
+                "home-banners-1-middle"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-banner-1-2": {
+        "props": {
+            "src": "/arquivos/banners-1-2.png",
+            "maxWidth": "470px",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#home-banner-1-3": {
+        "props": {
+            "src": "/arquivos/banners-1-3.png",
+            "maxWidth": "470px",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#home-banner-1-4": {
+        "props": {
+            "src": "/arquivos/banners-1-4.png",
+            "maxWidth": "469px",
+            "link": {
+                "url": "/"
+            }
+        }
+    }
+}

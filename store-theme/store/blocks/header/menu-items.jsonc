@@ -4,189 +4,91 @@
             "blockClass": "menu-links"
         },
         "children": [
-            "menu-item#category-pisos-revestimentos",
-            "menu-item#category-banheiro",
-            "menu-item#category-portas-janelas",
-            "menu-item#category-ferragens",
-            "menu-item#category-iluminacao",
-            "menu-item#category-hidraulica",
-            "menu-item#category-tintas",
-            "menu-item#category-ofertas"
+            "menu-item#category-externas",
+            "menu-item#category-internas",
+            "menu-item#category-seguranca-e-conectividade",
+            "menu-item#category-servicos",
+            "menu-item#category-ofertas",
+            "menu-item#category-blog",
+            "menu-item#category-empresas"
         ]
     },
-    "menu-item#category-pisos-revestimentos": {
-        "props": {
-            "blockClass": [
-                "menu-links-item"
-            ],
-            "id": "menu-item-pisos-e-revestimentos",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "href": "/pisos-e-revestimentos",
-                "type": "internal",
-                "noFollow": true,
-                "tagTitle": "Pisos e Revestimentos",
-                "text": "Pisos e Revestimentos"
-            },
-            "iconProps": {
-                "id": "sti-pisos",
-                "size": 24,
-                "viewBox": "0 0 25 25",
-                "activeClassName": "",
-                "mutedClassName": ""
-            }
-        }
-    },
-    "menu-item#category-banheiro": {
+    "menu-item#category-externas": {
         "props": {
             "blockClass": [
                 "menu-links-item",
-                "menu-link-banheiro"
+                "hasSubmenu"
             ],
-            "id": "menu-item-banheiro",
+            "id": "menu-item-externas",
             "type": "custom",
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/banheiros",
+                "href": "/externas",
                 "type": "internal",
                 "noFollow": true,
-                "tagTitle": "Banheiros",
-                "text": "Banheiros"
-            },
-            "iconProps": {
-                "id": "sti-banheiro",
-                "size": 24,
-                "viewBox": "0 0 19 29",
-                "activeClassName": "",
-                "mutedClassName": ""
+                "tagTitle": "Externas",
+                "text": "Externas"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#externas"
+        ]
+    },
+    "menu-item#category-internas": {
+        "props": {
+            "blockClass": [
+                "menu-links-item",
+                "hasSubmenu"
+            ],
+            "id": "menu-item-internas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/internas",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Internas",
+                "text": "Internas"
             }
         }
     },
-    "menu-item#category-portas-janelas": {
+    "menu-item#category-seguranca-e-conectividade": {
         "props": {
             "blockClass": [
-                "menu-links-item"
+                "menu-links-item",
+                "hasSubmenu"
             ],
-            "id": "menu-item-portas-e-janelas",
+            "id": "menu-item-seguranca-e-conectividade",
             "type": "custom",
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/portas-e-janelas",
+                "href": "/seguranca-e-conectividade",
                 "type": "internal",
                 "noFollow": true,
-                "tagTitle": "Portas e Janelas",
-                "text": "Portas e Janelas"
-            },
-            "iconProps": {
-                "id": "sti-portas",
-                "size": 24,
-                "viewBox": "0 0 18 27",
-                "activeClassName": "",
-                "mutedClassName": ""
+                "tagTitle": "Segurança e Conectividade",
+                "text": "Segurança e Conectividade"
             }
         }
     },
-    "menu-item#category-ferragens": {
+    "menu-item#category-servicos": {
         "props": {
             "blockClass": [
-                "menu-links-item"
+                "menu-links-item",
+                "hasSubmenu"
             ],
-            "id": "menu-item-ferragens",
+            "id": "menu-item-servicos",
             "type": "custom",
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/ferragens",
+                "href": "/servicos",
                 "type": "internal",
                 "noFollow": true,
-                "tagTitle": "Ferragens",
-                "text": "Ferragens"
-            },
-            "iconProps": {
-                "id": "sti-ferragens",
-                "size": 24,
-                "viewBox": "0 0 24 24",
-                "activeClassName": "",
-                "mutedClassName": ""
-            }
-        }
-    },
-    "menu-item#category-iluminacao": {
-        "props": {
-            "blockClass": [
-                "menu-links-item"
-            ],
-            "id": "menu-item-iluminacao",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "href": "/iluminacao",
-                "type": "internal",
-                "noFollow": true,
-                "tagTitle": "Iluminação",
-                "text": "Iluminação"
-            },
-            "iconProps": {
-                "id": "sti-iluminacao",
-                "size": 24,
-                "viewBox": "0 0 22 30",
-                "activeClassName": "",
-                "mutedClassName": ""
-            }
-        }
-    },
-    "menu-item#category-hidraulica": {
-        "props": {
-            "blockClass": [
-                "menu-links-item"
-            ],
-            "id": "menu-item-hidraulica",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "href": "/hidraulica",
-                "type": "internal",
-                "noFollow": true,
-                "tagTitle": "Hidráulica",
-                "text": "Hidráulica"
-            },
-            "iconProps": {
-                "id": "sti-hidraulica",
-                "size": 24,
-                "viewBox": "0 0 16 27",
-                "activeClassName": "",
-                "mutedClassName": ""
-            }
-        }
-    },
-    "menu-item#category-tintas": {
-        "props": {
-            "blockClass": [
-                "menu-links-item"
-            ],
-            "id": "menu-item-tintas",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-                "href": "/tintas",
-                "type": "internal",
-                "noFollow": true,
-                "tagTitle": "Tintas",
-                "text": "Tintas"
-            },
-            "iconProps": {
-                "id": "sti-tintas",
-                "size": 24,
-                "viewBox": "0 0 18 28",
-                "activeClassName": "",
-                "mutedClassName": ""
+                "tagTitle": "Serviços",
+                "text": "Serviços"
             }
         }
     },
@@ -198,73 +100,50 @@
             "id": "menu-item-ofertas",
             "type": "custom",
             "iconId": null,
-            "highlight": true,
+            "highlight": false,
             "itemProps": {
                 "href": "/139?map=productClusterIds&order=OrderByPriceDESC",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Ofertas",
                 "text": "Ofertas"
-            },
-            "iconProps": {
-                "id": "sti-discount",
-                "size": 24,
-                "viewBox": "0 0 16 16",
-                "activeClassName": "",
-                "mutedClassName": ""
             }
-        },
-        "blocks": [
-            "vtex.menu@2.x:submenu#ofertas"
-        ]
+        }
     },
-    "vtex.menu@2.x:submenu#ofertas": {
-        "props": {
-            "blockClass": "ofertas"
-        },
-        "children": [
-            "vtex.menu@2.x:menu#submenuOfertas"
-        ]
-    },
-    "vtex.menu@2.x:menu#submenuOfertas": {
-        "children": [
-            "menu-item#ofertas-1",
-            "menu-item#ofertas-2"
-        ]
-    },
-    "menu-item#ofertas-1": {
+    "menu-item#category-blog": {
         "props": {
             "blockClass": [
-                "menu-links-item", "ofertas"
+                "menu-links-item"
             ],
-            "id": "menu-item-ofertas",
+            "id": "menu-item-blog",
             "type": "custom",
             "iconId": null,
-            "highlight": true,
+            "highlight": false,
             "itemProps": {
                 "href": "/139?map=productClusterIds&order=OrderByPriceDESC",
                 "type": "internal",
                 "noFollow": true,
-                "tagTitle": "Produtos em oferta",
-                "text": "Produtos em oferta"
+                "tagTitle": "Blog dos Irmãos",
+                "text": "Blog dos Irmãos"
             }
         }
     },
-    "menu-item#ofertas-2": {
+    "menu-item#category-empresas": {
         "props": {
             "blockClass": [
-                "menu-links-item", "ofertas"
+                "menu-links-item",
+                "empresas"
             ],
-            "id": "menu-item-ofertas",
+            "id": "menu-item-empresas",
             "type": "custom",
             "iconId": null,
-            "highlight": true,
+            "highlight": false,
             "itemProps": {
-                "href": "/cupons-de-desconto",
+                "href": "/para-empresas",
                 "type": "internal",
                 "noFollow": true,
-                "tagTitle": "Cupons de descontos",
-                "text": "Cupons de descontos"
+                "tagTitle": "Para Empresas",
+                "text": "Para Empresas"
             }
         }
     }

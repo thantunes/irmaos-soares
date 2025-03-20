@@ -1,11 +1,11 @@
 .listPrice {
     color: #727273;
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
     font-size: 1rem;
 }
 
 .sellingPrice {
-    color: #0D6721;
+    color: #0d6721;
     font-size: 1.25rem;
 }
 
@@ -15,36 +15,35 @@
 }
 
 .installments {
-    color: #0D6721;
+    color: #0d6721;
     margin-bottom: 1rem;
 }
 
-.currencyContainer{
+.currencyContainer {
     font-weight: bold;
 }
 
 .savings {
     font-weight: 500;
-    color: #79B03A;
+    color: #79b03a;
 }
 
-.sellingPriceValue--summary {
+/* .sellingPriceValue--summary {
     font-size: 28px;
     font-weight: bold;
-    color: #0D6721;
+    color: #0d6721;
     font-family: "Sarabun", sans-serif;
-}
+} */
 .sellingPriceValue::after,
-.sellingPriceValue--summary::after{    
+.sellingPriceValue--summary::after {
     content: " à vista";
-    font-size: 16px;
-    font-weight: bold;
-    color: #0D6721; 
-    font-family: "Sarabun", sans-serif;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #7EA30A !important;
 }
 
 .savings--summary {
-    background: #8BC34A;
+    background: #8bc34a;
     border-radius: 1000px;
     align-items: center;
     display: flex;
@@ -54,34 +53,36 @@
     font-size: 0.875rem;
     font-weight: 600;
     vertical-align: baseline;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .savings-discount--summary {
     font-size: 0.875rem;
     font-weight: 600;
     vertical-align: baseline;
-    color: #FFFFFF;
+    color: #ffffff;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
 .listPrice--summary {
     margin-bottom: 0.25rem;
-    font-size: .875rem;
+    font-size: 0.875rem;
 }
 
 .installments--summary {
     margin-bottom: 2rem;
     font-size: 0.875rem;
-    color:#0D6721;
+    color: #0d6721;
     font-family: "Sarabun", sans-serif;
 }
 
-.currencyContainer--summary{
-    font-weight: bold;
+.currencyContainer--summary {
+    font-weight: 600 !important;
+    font-size: 24px;
+    line-height: 100%;
+    color: #7EA30A;
 }
-
 
 .savings--summaryPercentage {
     background: #0f3e99;
@@ -94,16 +95,16 @@
     font-size: 0.875rem;
     font-weight: 600;
     vertical-align: baseline;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 
-@media screen and (max-width: 767px){    
+@media screen and (max-width: 767px) {
     .sellingPriceValue--summary {
-        font-size: 1.5rem
+        font-size: 1.5rem;
     }
-    .sellingPriceValue--summary::after{    
-        font-size: .7rem;
+    .sellingPriceValue--summary::after {
+        font-size: 0.7rem;
         content: " à vista";
         display: block;
     }
@@ -112,5 +113,4 @@
         margin-bottom: 1rem;
         font-size: 0.8rem;
     }
-    
 }
