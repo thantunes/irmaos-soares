@@ -268,3 +268,18 @@
 :global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper) {
     display: none!important;
 }
+
+:global(.irmaossoares-zig-custom-0-x-calculadora_countBoxesPrice){
+
+    font-style: italic;
+    line-height: 18px;
+    font-size: 36px;
+    color: #888;
+    display: block;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+:global(.irmaossoares-zig-custom-0-x-productPrice) {
+    font-size: 1.8rem;
+}
