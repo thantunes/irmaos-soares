@@ -10,97 +10,113 @@
     padding-top: 16px;
 }
 
-
 .footerLayout--footer--is {
-    background: #0D6721;
-    font-family: 'Sarabun', sans-serif;
+    background: #fff;
 }
 
-.footerLayout--footer--is :global(.vtex-rich-text-0-x-paragraph--footer-copyright) {
-    font-size: 14px;
-    font-weight: 300;
+.footerLayout--footer--is
+    :global(.vtex-rich-text-0-x-paragraph--footer-copyright) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
     color: #fff;
-    font-family: 'Sarabun', sans-serif;
-}
-
-.footerLayout--footer--is :global(.vtex-flex-layout-0-x-flexRow--footer-final-is) {
-    border-top: 1px solid #148B2E;
-    padding-top: 20px;
-}
-
-.footerLayout--footer--is :global(.vtex-rich-text-0-x-paragraph--footer-menu-title) {
-    color: #FFF;
-    font-weight: 600;
-    font-size: 1.2rem;
-    font-family: 'Sarabun', sans-serif;
     margin: 0;
 }
 
-.footerLayout--footer--is :global(.vtex-store-components-3-x-imageElement--image--formas-de-pagamento) {
+.footerLayout--footer--is
+    :global(.vtex-flex-layout-0-x-flexRow--footer-final-is) {
+    border-top: 1px solid #148b2e;
+    padding-top: 20px;
+}
+
+.footerLayout--footer--is
+    :global(.vtex-rich-text-0-x-paragraph--footer-menu-title) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #000005;
+    margin: 0 0 20px;
+}
+
+.footerLayout--footer--is
+    :global(
+        .vtex-store-components-3-x-imageElement--image--formas-de-pagamento
+    ) {
     margin-top: 10px;
 }
 
-.footerLayout--footer--is :global(.vtex-store-components-3-x-imageElement--image--formas-de-pagamento-debito) {
+.footerLayout--footer--is
+    :global(
+        .vtex-store-components-3-x-imageElement--image--formas-de-pagamento-debito
+    ) {
     margin: 5px 0;
 }
 
-.footerLayout--footer--is :global(.vtex-menu-2-x-styledLinkContainer--footer-menu-item) {
+.footerLayout--footer--is
+    :global(.vtex-menu-2-x-styledLinkContainer--footer-menu-item) {
     margin-left: 0;
     margin-right: 0;
 }
 
-.footerLayout--footer--is :global(.vtex-menu-2-x-styledLinkContent--footer-menu-item),
+.footerLayout--footer--is
+    :global(.vtex-menu-2-x-styledLinkContent--footer-menu-item),
 .footerLayout--footer--is :global(.vtex-rich-text-0-x-link--footer-menu-item) {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 100;
-    font-family: 'Sarabun', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #000005;
     text-decoration: none;
+    transition: 0.2s all ease-in-out;
 }
 
-.footerLayout--footer--is :global(.vtex-menu-2-x-styledLinkContent--footer-menu-item):hover,
-.footerLayout--footer--is :global(.vtex-rich-text-0-x-link--footer-menu-item):hover {
-    color: #148B2E;
+.footerLayout--footer--is
+    :global(.vtex-menu-2-x-styledLinkContent--footer-menu-item):hover,
+.footerLayout--footer--is
+    :global(.vtex-rich-text-0-x-link--footer-menu-item):hover {
+    color: #7ea30a;
 }
 
-.footerLayout--footer--is :global(.vtex-rich-text-0-x-link--footer-menu-item-whatsapp) {
+.footerLayout--footer--is
+    :global(.vtex-rich-text-0-x-link--footer-menu-item-whatsapp) {
     color: #fff;
     font-size: 1.2rem;
-    font-family: 'Sarabun', sans-serif;
+    font-family: "Sarabun", sans-serif;
     text-decoration: none;
     font-weight: 900;
     font-style: italic;
 }
 
-.footerLayout--footer--is :global(.vtex-flex-layout-0-x-flexRow--payment-methods) {
+.footerLayout--footer--is
+    :global(.vtex-flex-layout-0-x-flexRow--payment-methods) {
     background-color: #f0f0f0;
 }
 
-
-
-
-.footerLayout--footer--is :global(.vtex-flex-layout-0-x-flexRow--footer-newsletter) {
-    background-color: #148B2E;
-    padding: 1rem 0;
+.footerLayout--footer--is
+    :global(.vtex-flex-layout-0-x-flexRow--footer-newsletter) {
+    background: var(--gradient);
+    height: 152px;
+    display: flex;
+    align-items: center;
 }
 
-.footerLayout--footer--is :global(.vtex-rich-text-0-x-paragraph--newsletter-title) {
-    font-family: 'Sarabun', sans-serif;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-style: italic;
+:global(.vtex-flex-layout-0-x-flexRow--footer-newsletter)
+    :global(.vtex-store-components-3-x-container),
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-newsletter) {
+    height: 100%;
 }
 
-.footerLayout--footer--is :global(.vtex-store-newsletter-1-x-confirmationCheckboxContainer--newsletter-checkbox-confirmation) {
+.footerLayout--footer--is
+    :global(
+        .vtex-store-newsletter-1-x-confirmationCheckboxContainer--newsletter-checkbox-confirmation
+    ) {
     font-size: 12px;
     margin-top: 5px;
     font-weight: 500;
-    font-family: 'Sarabun', sans-serif;
+    font-family: "Sarabun", sans-serif;
 }
 
 .footerLayout--footer--is :global(.vtex-checkbox__label) {
-    color: #FFF;
+    color: #fff;
 }
 
 .footerLayout--footer--is :global(.vtex-input-prefix__group) {
@@ -110,62 +126,86 @@
 
 .footerLayout--footer--is :global(.vtex-styleguide-9-x-input) {
     background-color: #fff;
-    border-radius: 15px;
-    font-family: 'Sarabun', sans-serif;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #000;
+    min-width: 230px;
 }
 
-.footerLayout--footer--is :global(.vtex-store-newsletter-1-x-formSubmitContainer) :global(.vtex-button) {
-    border-radius: 15px;
-    color: #fff;
+.footerLayout--footer--is :global(.vtex-styleguide-9-x-input)::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #747474;
+}
+
+.footerLayout--footer--is
+    :global(.vtex-store-newsletter-1-x-formSubmitContainer)
+    :global(.vtex-button) {
+    border: 1px solid #a7cb33;
     font-weight: 600;
     font-size: 14px;
-    /* padding: 10px 20px; */
-    text-transform: uppercase;
-    font-family: 'Sarabun', sans-serif;
+    line-height: 100%;
+    color: #fff;
+    background-color: transparent;
+    width: 227px;
+    text-transform: initial;
 }
 
 /* media tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .footerLayout--footer--is  :global(.vtex-flex-layout-0-x-flexRowContent--footer-newsletter-mobile){
+    .footerLayout--footer--is
+        :global(
+            .vtex-flex-layout-0-x-flexRowContent--footer-newsletter-mobile
+        ) {
         display: flex;
         flex-direction: column;
     }
-
 }
 
-
-
-
 @media screen and (max-width: 767px) {
-    .footerLayout--footer--is :global(.vtex-flex-layout-0-x-flexRow--footer-final-is) {
-        border-top: 1px solid #148B2E;
+    .footerLayout--footer--is
+        :global(.vtex-flex-layout-0-x-flexRow--footer-final-is) {
+        border-top: 1px solid #148b2e;
         padding-top: 5px;
     }
 
-    .footerLayout--footer--is :global(.vtex-flex-layout-0-x-flexRowContent--redes-sociais-footer-mobile) {
+    .footerLayout--footer--is
+        :global(
+            .vtex-flex-layout-0-x-flexRowContent--redes-sociais-footer-mobile
+        ) {
         display: flex;
         gap: 2rem;
     }
 
-    .footerLayout--footer--is :global(.vtex-rich-text-0-x-paragraph--footer-copyright) {
+    .footerLayout--footer--is
+        :global(.vtex-rich-text-0-x-paragraph--footer-copyright) {
         font-size: 12px;
     }
 
-    .footerLayout--footer--is :global(.vtex-rich-text-0-x-paragraph--newsletter-title) {
+    .footerLayout--footer--is
+        :global(.vtex-rich-text-0-x-paragraph--newsletter-title) {
         font-size: 1.2rem;
         line-height: 1.2rem;
     }
 
     .footerLayout--footer--is :global(.vtex-input-prefix__group) {
-        margin-bottom: .9rem;
+        margin-bottom: 0.9rem;
     }
 
-
-    .footerLayout--footer--is :global(.vtex-flex-layout-0-x-flexRow--footer-newsletter-mobile){
-        margin-top:2rem;
+    .footerLayout--footer--is
+        :global(.vtex-flex-layout-0-x-flexRow--footer-newsletter-mobile) {
+        margin-top: 2rem;
     }
 
-    .footerLayout--footer--is :global(.vtex-flex-layout-0-x-flexRowContent--conheca-nossos-servicos-rodape-mobile) :global(.vtex-rich-text-0-x-container--servicos){
+    .footerLayout--footer--is
+        :global(
+            .vtex-flex-layout-0-x-flexRowContent--conheca-nossos-servicos-rodape-mobile
+        )
+        :global(.vtex-rich-text-0-x-container--servicos) {
         margin: 0 auto;
         display: block;
     }

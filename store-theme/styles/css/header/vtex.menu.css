@@ -10,7 +10,7 @@
 }
 
 .styledLinkContent--menu-links-item {
-    transition: 0.2 all ease-in-out;
+    transition: .2s all ease-in-out;
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
@@ -114,9 +114,10 @@
     background-repeat: no-repeat;
     display: block;
     margin-left: 6px;
+    transition: .2s all ease-in-out;
 }
 
-.styledLinkContent--hasSubmenu:hover .styledLinkContainer::after {
+.menuItem--hasSubmenu:hover .styledLinkContainer::after {
     filter: invert(51%) sepia(97%) saturate(935%) hue-rotate(38deg)
         brightness(92%) contrast(92%);
 }

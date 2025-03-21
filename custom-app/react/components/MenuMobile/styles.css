@@ -16,7 +16,7 @@
     height: 4px;
     border-radius: 4px;
     background: #0d6721;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .menuToggle span:nth-child(2) {
@@ -44,7 +44,7 @@
 .menuToggle.active span:nth-child(3) {
     width: 30px;
     transform: translateX(0) rotate(-45deg);
-    transition-delay: 0.4s;
+    transition-delay: 0.2s;
 }
 
 .btnClose {
@@ -62,7 +62,7 @@
 }
 
 .fade {
-    transition: opacity .15s linear;
+    transition: opacity .2s linear;
 }
 
 .modalMenu {
@@ -100,7 +100,7 @@
 }
 
 .modalMenu.fade .modalDialog {
-    transition: transform .3s ease-out;
+    transition: transform .2s ease-out;
     transform: translate(0, -50px);
 }
 
@@ -114,10 +114,10 @@
     height: 100%;
     max-width: 300px;
     margin: 0 auto 0 0;
-    transition: -webkit-transform 0.3s ease-out;
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.2s ease-out;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
 .modalMenu.modalLeft.show .modalDialog {
@@ -221,6 +221,7 @@
 
 .menu li .navLink {
     padding: 0;
+    transition: .2s all ease-in-out;
 }
 .navExpand{}
 
@@ -233,8 +234,8 @@
     overflow-y: auto;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
     visibility: hidden;
     background-color: #FFF;
     overflow-x: hidden;
@@ -304,4 +305,8 @@
     display: inline-flex;
     padding-top: 2px;
     transform: rotate(180deg);
+}
+
+.dropdownMenuIs:hover  .navLink {
+    color: #7ea30a !important;
 }

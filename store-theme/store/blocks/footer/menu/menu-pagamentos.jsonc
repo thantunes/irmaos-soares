@@ -1,0 +1,73 @@
+{
+    "vtex.menu@2.x:menu#footer-pagamentos": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": [
+                "pagamentos"
+            ]
+        },
+        "children": [
+            "rich-text#footer-pagamento",
+            "flex-layout.row#pagamentos-bandeiras"
+        ]
+    },
+    "flex-layout.row#pagamentos-bandeiras": {
+        "children": [
+            "image#footer-mastercard",
+            "image#footer-visa",
+            "image#footer-elo",
+            "image#footer-amex",
+            "image#footer-hipercard",
+            "image#footer-pix",
+            "image#footer-boleto"
+        ],
+        "props": {
+            "blockClass": [
+                "pagamentos-bandeiras"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#footer-pagamento": {
+        "props": {
+            "text": "Formas de pagamento",
+            "blockClass": "footer-menu-title"
+        }
+    },
+    "image#footer-mastercard": {
+        "props": {
+            "src": "/arquivos/master.png"
+        }
+    },
+    "image#footer-visa": {
+        "props": {
+            "src": "/arquivos/visa.png"
+        }
+    },
+    "image#footer-elo": {
+        "props": {
+            "src": "/arquivos/ELO.png"
+        }
+    },
+    "image#footer-amex": {
+        "props": {
+            "src": "/arquivos/amex.png"
+        }
+    },
+    "image#footer-hipercard": {
+        "props": {
+            "src": "/arquivos/hipercard.png"
+        }
+    },
+    "image#footer-pix": {
+        "props": {
+            "src": "/arquivos/pix.png"
+        }
+    },
+    "image#footer-boleto": {
+        "props": {
+            "src": "/arquivos/boleto.png"
+        }
+    }
+}

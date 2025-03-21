@@ -8,7 +8,9 @@
             "blockClass": "footer-newsletter",
             "horizontalAlign": "center",
             "verticalAlign": "middle",
-            "fullWidth": false
+            "fullWidth": false,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
         }
     },
 
@@ -40,9 +42,9 @@
         }
     },
     "newsletter-form": {
-        "children": [                   
+        "children": [
             "flex-layout.row#inputs-form",
-            "flex-layout.row#checkbox-confirmation"           
+            "flex-layout.row#checkbox-confirmation"
         ]
     },
 
@@ -51,15 +53,22 @@
             "newsletter-input-name",
             "newsletter-input-email",
             "newsletter-input-phone",
-            "newsletter-submit"  
+            "newsletter-submit"
         ],
         "props": {
             "blockClass": "inputs-form",
             "horizontalAlign": "center",
             "verticalAlign": "middle",
             "fullWidth": false,
-            "colGap": 5,
-            "marginBottom": 2
+            "colGap": 4,
+            "marginBottom": 2,
+            "preventHorizontalStretch": true
+        }
+    },
+
+    "newsletter-submit": {
+        "props": {
+            "submitButtonLabel": "Enviar"
         }
     },
 

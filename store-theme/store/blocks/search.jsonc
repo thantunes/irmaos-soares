@@ -118,12 +118,13 @@
         ],
         "props": {
             "preserveLayoutOnMobile": true,
-            "fullWidth": true
+            "fullWidth": true,
+            "blockClass": "category-banner"
         }
     },
     "image#bannerTopo": {
         "props": {
-            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/161231/PisosRevestimentos.png?v=637716495705900000",
+            "src": "/arquivos/category-main-banner-new.png",
             "blockClass": "bannerTopo",
             "width": "100%",
             "height": "auto",
@@ -155,14 +156,14 @@
         "props": {
             "openFiltersMode": "one",
             "truncateFilters": true,
-            "showClearAllFiltersOnDesktop": true,
-            "showClearByFilter": true,
+            "showClearAllFiltersOnDesktop": false,
+            "showClearByFilter": false,
             "fullWidthOnMobile": true,
             "navigationTypeOnMobile": "collapsible",
             "appliedFiltersOverview": "show",
             "totalProductsOnMobile": "hide",
             "updateOnFilterSelectionOnMobile": true,
-            "priceRangeLayout": "inputAndSlider",
+            "priceRangeLayout": "slider",
             "showQuantityBadgeOnMobile": true
         }
     },
@@ -180,7 +181,6 @@
     },
     "flex-layout.row#searchinfo": {
         "children": [
-            "flex-layout.col#productCount",
             "flex-layout.row#orderByAndSwitcher"
         ]
     },
@@ -194,14 +194,6 @@
             "preventHorizontalStretch": true,
             "blockClass": "orderByAndSwitcher",
             "colGap": 3
-        }
-    },
-    "flex-layout.col#productCount": {
-        "children": [
-            "total-products.v2"
-        ],
-        "props": {
-            "blockClass": "productCountCol"
         }
     },
     "flex-layout.row#fetchprevious": {

@@ -278,16 +278,26 @@
     font-family: "Poppins", sans-serif !important;
 }
 
-:global(.vtex-flex-layout-0-x-flexRowContent--submenuContainer) > :global(.pr0.flex):not(:last-child)::after {
-    content: '';
+:global(.vtex-flex-layout-0-x-flexRowContent--submenuContainer)
+    > :global(.pr0.flex):not(:last-child)::after {
+    content: "";
     display: block;
     width: 1px;
     height: 100%;
     min-height: 100%;
-    background-color: #DFDFDF;
+    background-color: #dfdfdf;
     margin-left: 46px;
 }
 
-:global(.vtex-flex-layout-0-x-flexRowContent--main-header-menu) > :global(.pr0.flex):last-child {
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-menu)
+    > :global(.pr0.flex):last-child {
     width: 100% !important;
+}
+
+:global(.vtex-search-result-3-x-filterTemplateOverflow) {
+    transition: .2s all ease-in-out;
+}
+
+:global(.vtex-search-result-3-x-filterTemplateOverflow[aria-hidden="false"]) {
+    padding-top: 16px;
 }

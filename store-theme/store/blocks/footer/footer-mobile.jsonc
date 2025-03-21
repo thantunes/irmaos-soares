@@ -74,10 +74,10 @@
 			"paddingBottom": 5
         },
         "children": [
-            "image#social-facebook-footer",
-            "image#social-instagram-footer",
-            "image#social-linkedin-footer",
-            "image#social-whatsapp-footer-1"
+            // "image#social-facebook-footer",
+            // "image#social-instagram-footer",
+            // "image#social-linkedin-footer",
+            // "image#social-whatsapp-footer-1"
         ]
     },
     "image#floating-btn-whatsapp": {

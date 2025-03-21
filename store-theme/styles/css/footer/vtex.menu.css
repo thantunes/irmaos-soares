@@ -5,5 +5,9 @@
 
 .menuContainer--footer-menu-mobile :global(.vtex-menu-2-x-menuItem--isClosed){
     padding: 1rem 0.5rem;
-    
+
+}
+
+.menuContainer--pagamentos :global(.vtex-store-components-3-x-imageElement ) {
+    max-width: 36px;
 }

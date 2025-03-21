@@ -4,8 +4,6 @@
             "image#floating-btn-whatsapp",
             "flex-layout.row#footer-newsletter-desktop",
             "flex-layout.row#footer-1-desktop",
-            "flex-layout.row#footer-2-desktop",
-            "flex-layout.row#footer-3-desktop",
             "flex-layout.row#footer-copyright"
         ],
         "props": {
@@ -14,46 +12,51 @@
     },
     "flex-layout.row#footer-1-desktop": {
         "children": [
-            "vtex.menu@2.x:menu#Politicas",
+            "flex-layout.col#footer-logo-container",
             "vtex.menu@2.x:menu#Institucional",
             "vtex.menu@2.x:menu#Atendimento",
+            "vtex.menu@2.x:menu#Politicas",
             "vtex.menu@2.x:menu#LinkBoleto",
-            // "vtex.menu@2.x:menu#Links",
-            "footer-spacer",
-            "vtex.menu@2.x:menu#FaleConosco"
+            "vtex.menu@2.x:menu#footer-pagamentos",
+            "vtex.menu@2.x:menu#footer-seguranca"
         ],
         "props": {
             "blockClass": "menu-row",
             "paddingTop": 6,
-            "paddingBottom": 4
+            "paddingBottom": 4,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
         }
     },
-    "image#formas-de-pagamento": {
-        "props": {
-            "src": "assets/bandeiras-credito.png",
-            "maxHeight": 31,
-            "blockClass": "image--formas-de-pagamento"
-        }
-    },
-    "image#formas-de-pagamento-debito": {
-        "props": {
-            "src": "assets/bandeiras-debito.png",
-            "maxHeight": 31,
-            "blockClass": "image--formas-de-pagamento-debito"
-        }
-    },
-    "flex-layout.row#footer-2-desktop": {
+    "flex-layout.col#footer-logo-container": {
         "children": [
-            // 4 col
-            "flex-layout.col#footer-1-desktop",
-            "flex-layout.col#footer-2-desktop",
-            "flex-layout.col#footer-3-desktop"
-            // "rich-text#footer"
+            "image#logo-new-footer",
+            "flex-layout.row#footer-socials-container"
         ],
         "props": {
-            "blockClass": "footer-final-is",
-            "colSizing": "auto",
-            "paddingBottom": 4
+            "blockClass": [
+                "footer-logo-container"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#logo-new-footer": {
+        "props": {
+            "src": "/arquivos/footer-new-logo.png"
+        }
+    },
+    "flex-layout.row#footer-socials-container": {
+        "children": [
+            "image#social-tiktok-footer",
+            "image#social-instagram-footer",
+            "image#social-facebook-footer"
+        ],
+        "props": {
+            "blockClass": [
+                "footer-socials-container"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
         }
     },
     "flex-layout.col#footer-1-desktop": {
@@ -76,36 +79,9 @@
             "verticalAlign": "middle"
         }
     },
-    "flex-layout.col#footer-3-desktop": {
-        "props": {
-            "width": "15%",
-            "verticalAlign": "middle",
-            "horizontalAlign": "center"
-        },
-        "children": [
-            "flex-layout.row#redes-sociais-footer"
-        ]
-    },
-    "flex-layout.row#redes-sociais-footer": {
-        "props": {
-            "blockClass": "redes-sociais-footer",
-            "horizontalAlign": "center",
-            "verticalAlign": "center",
-            "preventHorizontalStretch": true,
-            "preventVerticalStretch": true,
-            "fullWidth": false,
-            "colGap": 2
-        },
-        "children": [
-            "image#social-facebook-footer",
-            "image#social-instagram-footer",
-            "image#social-linkedin-footer",
-            "image#social-whatsapp-footer-1"
-        ]
-    },
     "image#social-facebook-footer": {
         "props": {
-            "src": "assets/svgs/icon-face-bg-white.svg",
+            "src": "/arquivos/footer-facebook.png",
             "alt": "Facebook",
             "link": {
                 "url": "https://www.facebook.com/IrmaosSoares/",
@@ -116,7 +92,7 @@
     },
     "image#social-instagram-footer": {
         "props": {
-            "src": "assets/svgs/icon-insta-bg-white.svg",
+            "src": "/arquivos/footer-instagram.png",
             "alt": "Instagram",
             "link": {
                 "url": "https://www.instagram.com/irmaossoares/",
@@ -125,34 +101,12 @@
             }
         }
     },
-    "image#social-linkedin-footer": {
+    "image#social-tiktok-footer": {
         "props": {
-            "src": "assets/svgs/icon-linkedin-bg-white.svg",
-            "alt": "Linkedin",
+            "src": "/arquivos/footer-tiktok.png",
+            "alt": "TikTok",
             "link": {
-                "url": "https://www.linkedin.com/company/irmaos-soares/",
-                "noFollow": false,
-                "openNewTab": true
-            }
-        }
-    },
-    // "image#social-whatsapp-footer": {
-    //     "props": {
-    //         "src": "assets/svgs/icon-whatsapp-bg-white.svg",
-    //         "alt": "Whatsapp",
-    //         "link": {
-    //             "url": "https://api.whatsapp.com/send?phone=5562984238195",
-    //             "noFollow": false,
-    //             "openNewTab": true
-    //         }
-    //     }
-    // },
-    "image#social-whatsapp-footer-1": {
-        "props": {
-            "src": "assets/svgs/icon-whatsapp-bg-white.svg",
-            "alt": "Whatsapp",
-            "link": {
-                "url": "https://api.whatsapp.com/send/?phone=5562984238195&text&type=phone_number&app_absent=0",
+                "url": "https://www.tiktok.com/@irmaossoares_oficial",
                 "noFollow": false,
                 "openNewTab": true
             }
@@ -252,14 +206,13 @@
     "image#ssl-encrypted": {
         "props": {
             "src": "assets/svgs/letsencrypt-logo-horizontal.svg",
-            "maxHeight": 32,
             "blockClass": "image--ssl-encrypted"
         }
     },
     "flex-layout.row#footer-copyright": {
         "children": [
-            "image#footer-evision-logo",
-            "image#footer-vtex-logo"
+            "rich-text#footer-copyright-new",
+            "flex-layout.row#footer-copyright-dev"
         ],
         "props": {
             "blockClass": [
@@ -269,9 +222,37 @@
             "preventVerticalStretch": true
         }
     },
+    "flex-layout.row#footer-copyright-dev": {
+        "children": [
+            "rich-text#footer-copyright-text",
+            "image#footer-evision-logo",
+            "image#footer-vtex-logo"
+        ],
+        "props": {
+            "blockClass": [
+                "footer-copyright-dev"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#footer-copyright-text": {
+      "props": {
+        "blockClass": ["footer-copyright-text"],
+        "text": "feito com orgulho por"
+      }
+    },
+    "rich-text#footer-copyright-new": {
+        "props": {
+            "blockClass": [
+                "footer-copyright"
+            ],
+            "text": "COPYRIGHT 2025® IRMÃOS SOARES S/A - 01.559.046/0001-08."
+        }
+    },
     "image#footer-evision-logo": {
         "props": {
-            "src": "/arquivos/footer-logo-evision.png",
+            "src": "/arquivos/footer-new-logo-evision.svg",
             "link": {
                 "url": "https://www.evision.com.br"
             }
@@ -279,7 +260,7 @@
     },
     "image#footer-vtex-logo": {
         "props": {
-            "src": "/arquivos/footer-logo-vtex.png",
+            "src": "/arquivos/footer-new-logo-vtex.svg",
             "link": {
                 "url": "https://www.evision.com.br"
             }

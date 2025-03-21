@@ -1,0 +1,17 @@
+{
+    "vtex.menu@2.x:menu#footer-seguranca": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "rich-text#footer-seguranca",
+            "image#ssl-encrypted"
+        ]
+    },
+    "rich-text#footer-seguranca": {
+        "props": {
+            "text": "Segurança",
+            "blockClass": "footer-menu-title"
+        }
+    }
+}

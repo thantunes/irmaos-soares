@@ -172,6 +172,23 @@
     color: #fff;
 }
 
+.paragraph--newsletter-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+    max-width: 469px;
+}
+
+.paragraph--footer-copyright-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #fff;
+    margin: 0;
+}
+
 @media screen and (max-width: 768px) {
     .headingLevel2--shelfTitle {
         font-size: 22px;
