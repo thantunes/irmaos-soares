@@ -338,7 +338,8 @@
     gap: 16px;
 }
 
-.flexRowContent--footer-copyright-dev :global(.vtex-store-components-3-x-imageElementLink) {
+.flexRowContent--footer-copyright-dev
+    :global(.vtex-store-components-3-x-imageElementLink) {
     display: flex;
     max-width: fit-content;
 }
@@ -346,6 +347,46 @@
 .flexRow--category-banner {
     max-width: 1440px;
     margin: 21px auto 24px;
+}
+
+.flexRowContent--product-id-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.flexRowContent--is-buy-button {
+    margin: 0;
+}
+
+.flexRowContent--is-buy-button :global(.vtex-button) {
+    min-width: 303px;
+    max-height: 40px;
+    border-radius: 6px !important;
+    background-color: #0D6721 !important;
+    border-color: #0D6721 !important;
+}
+
+.flexRow--quantity-buy-container {
+    margin-bottom: 24px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #cecece;
+}
+
+.flexRowContent--quantity-buy-container .stretchChildrenWidth:first-child {
+    width: auto !important;
+}
+
+.flexRowContent--quantity-buy-container .stretchChildrenWidth:last-child {
+    width: 100% !important;
+}
+
+.flexRowContent--product-description {
+    flex-direction: column;
+}
+
+.flexRowContent--product-description .stretchChildrenWidth {
+    width: 100% !important;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {

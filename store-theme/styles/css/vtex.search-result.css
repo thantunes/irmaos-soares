@@ -104,7 +104,7 @@
 }
 
 .seeMoreButton {
-    background-color: #0d6721;
+    background-color: #a7cb33;
     border-radius: 5px;
     color: #fff;
     font-family: "Sarabun", sans-serif;
@@ -139,11 +139,16 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 18.4px;
-    color: #000;
+    color: #979899;
+}
+
+:global(.vtex-breadcrumb-1-x-term) {
+    color: #000000;
 }
 
 :global(.vtex-breadcrumb-1-x-homeLink) {
     color: #979899;
+    max-height: 28px;
 }
 
 :global(.vtex-breadcrumb-1-x-link):hover {
@@ -212,11 +217,12 @@
     :global(.vtex-slider__selector) {
     width: 16px !important;
     height: 16px !important;
-    background-color: #A7CB33;
+    background-color: #a7cb33;
 }
 
-:global(.vtex-search-result-3-x-filter__container) :global(.vtex-slider__base-internal) {
-    background-color: #A7CB33;
+:global(.vtex-search-result-3-x-filter__container)
+    :global(.vtex-slider__base-internal) {
+    background-color: #a7cb33;
 }
 
 :global(.vtex-search-result-3-x-filter__container)

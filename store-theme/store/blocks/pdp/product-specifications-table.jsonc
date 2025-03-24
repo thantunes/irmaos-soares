@@ -33,7 +33,8 @@
     },
     "flex-layout.row#spec-item": {
         "props": {
-            "blockClass": "productSpecification"
+            "blockClass": "productSpecification",
+            "preventHorizontalStretch": true
         },
         "children": [
             "flex-layout.col#spec-name",

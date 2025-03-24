@@ -171,20 +171,20 @@
 }
 
 :global(.vtex-reviews-and-ratings-3-x-container) {
-    max-width: 1330px;
-    margin: 0 auto;
     background: #fff;
     border-radius: 15px;
-    padding: 2rem 2.5rem;
+    padding: 24px;
+    border: 1px solid #CECECE;
+    margin-bottom: 56px !important;
 }
 
 :global(.vtex-reviews-and-ratings-3-x-summaryTotalReviews) {
     margin-bottom: -4px;
 }
 
-:global(.vtex-reviews-and-ratings-3-x-summaryContainer) {
+/* :global(.vtex-reviews-and-ratings-3-x-summaryContainer) {
     margin-bottom: 20px;
-}
+} */
 
 @media (max-width: 768px) {
     :global(
@@ -295,9 +295,70 @@
 }
 
 :global(.vtex-search-result-3-x-filterTemplateOverflow) {
-    transition: .2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
 }
 
 :global(.vtex-search-result-3-x-filterTemplateOverflow[aria-hidden="false"]) {
     padding-top: 16px;
+}
+
+:global(.vtex-render__container-id-product-breadcrumb) {
+    margin-top: 16px;
+}
+
+:global(.swiper-thumbnails-caret-prev)::after {
+    transform: rotate(180deg);
+}
+
+:global(.vtex-product-identifier-0-x-product-identifier__label) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #747474;
+}
+
+:global(.vtex-product-identifier-0-x-product-identifier__separator),
+:global(.vtex-product-identifier-0-x-product-identifier__value) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #000005;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--is-product-main)
+    :global(.irmaossoares-zig-custom-0-x-parcelamentoIS) {
+    min-height: initial;
+    margin-bottom: 40px;
+}
+
+:global(.vtex-add-to-cart-button-0-x-buttonDataContainer) {
+    align-items: center;
+    gap: 16px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--is-product-main)
+    :global(.vtex-add-to-cart-button-0-x-buttonDataContainer)::after {
+    content: "";
+    width: 25px;
+    height: 24px;
+    background-image: url(/arquivos/pdp-buy-btn-icon.svg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:global(.vtex-add-to-cart-button-0-x-buttonText) {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Poppins";
+}
+
+:global(.vtex-product-specifications-1-x-groupName) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000000;
 }

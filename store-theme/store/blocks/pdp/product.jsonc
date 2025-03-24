@@ -1,65 +1,79 @@
 {
     "store.product": {
         "children": [
+            "flex-layout.row#product-breadcrumb",
             "condition-layout.product#availability",
+            "flex-layout.row#product-description",
             "buy-together",
-            "flex-layout.row#descriptions-produto",
             // "tab-layout#product-details",
             // "flex-layout.row#description",
-            "product-specification-group#table",
             // "flex-layout.row#vitrine-similares",
             "product-reviews",
             "flex-layout.row#vitrine-quem-viu-viu-tambem",
             "product-questions-and-answers"
         ],
-		"props": {
-			"blockClass": "product--is"
-		}
+        "props": {
+            "blockClass": "product--is"
+        }
     },
-
+    "flex-layout.row#product-description": {
+        "children": [
+            "product-description",
+            "product-specification-group#table"
+        ],
+        "props": {
+            "blockClass": [
+                "product-description"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
     "flex-layout.row#vitrine-similares": {
-		"children": [
-			"shelf.relatedProducts#products-similares"
-		]
-	},
-	"shelf.relatedProducts#products-similares": {
-		"blocks": ["product-summary.shelf"],
-		"props": {
-			"blockClass": "is-shelf-product",
-			"recommendation": "similars",
-			"productList": {
-				"titleText": "Produtos Similares",
-				"showTitle": true,
-				"itemsPerPage": 5,
-				"hideUnavailableItems": true
-			}
-		}
-	},
-
+        "children": [
+            "shelf.relatedProducts#products-similares"
+        ]
+    },
+    "shelf.relatedProducts#products-similares": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "props": {
+            "blockClass": "is-shelf-product",
+            "recommendation": "similars",
+            "productList": {
+                "titleText": "Produtos Similares",
+                "showTitle": true,
+                "itemsPerPage": 5,
+                "hideUnavailableItems": true
+            }
+        }
+    },
     "flex-layout.row#vitrine-quem-viu-viu-tambem": {
-        "props":{
+        "props": {
             "marginBottom": 10
         },
-		"children": [
-			"shelf.relatedProducts#product"
-		]
-	},
-	"shelf.relatedProducts#product": {
-		"blocks": ["product-summary.shelf"],
-		"props": {
-			"blockClass": "is-shelf-product",
-			"recommendation": "view",
+        "children": [
+            "shelf.relatedProducts#product"
+        ]
+    },
+    "shelf.relatedProducts#product": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "props": {
+            "blockClass": "is-shelf-product",
+            "recommendation": "view",
             "hideOutOfStockItems": true,
-			"productList": {
-				"showTitle": true,
-				"itemsPerPage": 4,
+            "productList": {
+                "showTitle": true,
+                "itemsPerPage": 5,
                 "paginationDotsVisibility": "hidden",
-				"titleText": "Quem viu, viu também",
-				"hideUnavailableItems": true
-			}
-		}
-	},
-
+                "arrows": false,
+                "titleText": "Quem viu, viu também",
+                "hideUnavailableItems": true
+            }
+        }
+    },
     "flex-layout.row#product-breadcrumb": {
         "props": {
             "blockClass": "is-breadcrumb"
@@ -76,17 +90,6 @@
             "product-description"
         ]
     },
-
-    "flex-layout.row#descriptions-produto": {
-        "props": {
-            "blockClass": "is-descriptions-produto",
-            "marginBottom": 7
-        },
-        "children": [
-            "tab-layout#product-details"
-        ]
-    },
-
     "condition-layout.product#availability": {
         "props": {
             "conditions": [
@@ -101,7 +104,7 @@
     "flex-layout.row#product-main": {
         "props": {
             "blockClass": "is-product-main",
-            "colGap": 7,
+            "colGap": 9,
             "rowGap": 7,
             "marginTop": 7,
             "marginBottom": 7
@@ -150,10 +153,11 @@
                 "phone": "1:1"
             },
             "blockClass": "product-image",
-            "displayThumbnailsArrows": false,
+            "displayThumbnailsArrows": true,
             "showPaginationDots": false,
-            "thumbnailMaxHeight": 150,
-            "thumbnailsOrientation": "horizontal"
+            "showNavigationArrows": false,
+            "thumbnailMaxHeight": 468,
+            "thumbnailsOrientation": "vertical"
         }
     },
     // "product-images#product-image": {
@@ -182,48 +186,74 @@
             "rowGap": 0
         },
         "children": [
-            "flex-layout.row#product-breadcrumb",
-            "product-identifier.product",
-            "vtex.store-components:product-brand",
+            "flex-layout.row#product-id-container",
             "flex-layout.row#product-name",
             "product-rating-summary",
-            "calculadora-de-pisos",
             "flex-layout.row#list-price-savings",
             "flex-layout.row#selling-price",
-            "custom-parcelamento",
+            "calculadora-de-pisos",
             // "product-installments",
             // "product-separator",
             // "is-product-fixedBuy",
             "sku-selector",
-            "product-quantity",
+            "flex-layout.row#quantity-buy-container",
             "product-assembly-options",
             "product-gifts",
-            "flex-layout.row#buy-button",
             "availability-subscriber",
-            "shipping-simulator",
-            "share#default"
+            "shipping-simulator"
+            // "share#default"
         ]
     },
-
-    "product-installments":{
-       "props":{
-        "installmentsCriteria": "max-quantity-without-interest"}
+    "flex-layout.row#quantity-buy-container": {
+        "children": [
+            "product-quantity",
+            "flex-layout.row#buy-button"
+        ],
+        "props": {
+            "blockClass": [
+                "quantity-buy-container"
+            ],
+            "preventVerticalStretch": true,
+            "colGap": 6
+        }
     },
-
-    "product-quantity":{
-        "props":{
+    "calculadora-de-pisos": {
+        "children": [
+            "custom-parcelamento"
+        ]
+    },
+    "flex-layout.row#product-id-container": {
+        "children": [
+            "product-identifier.product",
+            "vtex.store-components:product-brand"
+        ],
+        "props": {
+            "blockClass": [
+                "product-id-container"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colGap": 8
+        }
+    },
+    "product-installments": {
+        "props": {
+            "installmentsCriteria": "max-quantity-without-interest"
+        }
+    },
+    "product-quantity": {
+        "props": {
             "blockClass": "product-quantity",
             // "quantitySelectorStep": "singleUnit",
             "showUnit": true,
             "showLabel": false
         }
     },
-
     "product-identifier.product": {
         "props": {
-          "label": "custom", //'default' | 'custom' | 'hide'
-          "customLabel": "Cód", // text if label is custom
-          "idField": "skuReferenceId" //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
+            "label": "custom", //'default' | 'custom' | 'hide'
+            "customLabel": "Cód", // text if label is custom
+            "idField": "skuReferenceId" //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
         }
     },
     "flex-layout.row#product-name": {
@@ -244,11 +274,17 @@
         "props": {
             "marginTop": 4,
             "marginBottom": 7,
-            "blockClass": "is-buy-button"
+            "blockClass": "is-buy-button",
+            "preventVerticalStretch": true
         },
         "children": [
             "add-to-cart-button"
         ]
+    },
+    "add-to-cart-button": {
+        "props": {
+            "text": "Comprar"
+        }
     },
     "flex-layout.row#product-availability": {
         "props": {

@@ -1,172 +1,197 @@
 .calculadora_wrapper {
-    font-family: 'Sarabun', sans-serif;
-    padding: 22px 24px;
-    margin-bottom: 16px;
-    background: #f8f8f8;
+  font-family: 'Sarabun', sans-serif;
+  padding: 13px 14px;
+  margin-bottom: 40px;
+  background: var(--gradient);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.calculadora_title{
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 300;
-    color: #828282;
-    margin-top: 0;
-}
-.calculadora_box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;  
-    gap: 3rem;
-    align-items: center;
-}
-.calculadora_box_right{
-    flex:1;
+.calculadora_title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  margin-top: 0;
 }
 
-.calculadora_box_left{
-    position: relative;
+.calculadora_box_left {
+  position: relative;
 }
 
-.calculadora_box_left input[type=number] {
-    -moz-appearance: textfield;
-    -webkit-appearance: textfield;
-    appearance: textfield;
+.calculadora_box_right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.calculadora_box_left input[type=number]::-webkit-inner-spin-button,
-.calculadora_box_left input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.calculadora_box_left input[type='number'] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+.calculadora_box_left input[type='number']::-webkit-inner-spin-button,
+.calculadora_box_left input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .calculadora_box_left::before {
-    content: "m²";
-    color: #888;
-    padding-top: 0;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    background-color: #fff;
-    font-size: 14px;
-    font-style: italic;
-    height: auto;
-    width: 18px;
-    text-align: center;
+  content: 'm²';
+  color: #000000;
+  padding-top: 0;
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  height: auto;
+  width: 31px;
+  text-align: center;
+  height: 32px;
+  margin-top: -14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  margin-right: -10px;
+  border-radius: 0 6px 6px 0;
 }
 
-.calculadora_box_left::after{
-        content: url('data:image/svg+xml;utf8,<svg width="19" height="10" viewBox="0 0 19 10" xmlns="http://www.w3.org/2000/svg"><path d="M19 0H0V2H19V0Z" fill="%2C4C4C4"/><path d="M19 8H0V10H19V8Z" fill="%2C4C4C4"/></svg>');
-        display: block;
-        width: 19px;
-        height: 10px;
-        position: absolute;
-        margin: -36px 0 0 114px;
+.calculadora_input {
+  height: 34px;
+  width: 78px;
+  padding: 0;
+  text-transform: uppercase;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  max-height: 32px;
+  padding-left: 13px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  outline: none;
+  box-shadow: 0px 0px 2px 0px #00000040;
 }
 
-.calculadora_input{
-    height: 50px;
-    width: 98px;
-    padding: 20px;
-    font-style: italic;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #888;
-    border: 1px solid #c4c4c4;
-    border-radius: 0;
+.calculadora_countBoxes,
+.calculadora_countBoxesPrice {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #ffffff;
 }
 
-
-.calculadora_countBoxes{    
-    font-style: italic;
-    line-height: 18px;
-    font-size: 14px;
-    color: #888;
-    display: block;
+.calculadora_countBoxesPrice {
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .countBoxesPrice {
-    line-height: 18px;
-    font-size: 14px;
-    color: #888;
-    display: block;
-    font-weight: 700;
+  line-height: 18px;
+  font-size: 14px;
+  color: #888;
+  display: block;
+  font-weight: 700;
 }
 
-.calculadora_countBoxesPrice{
-    font-style: italic;
-    line-height: 18px;
-    font-size: 14px;
-    color: #888;
-    display: block;
-    font-weight: 700;
+.percent {
+  width: 100%;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+}
+.percent_input {
+  width: 1px;
+  height: 1px;
+  display: block;
+  background: 0 0;
+  border: 0;
+  opacity: 0;
+  min-height: 15px;
+  line-height: 1;
+  position: absolute;
 }
 
-.percent{
-    width: 100%;
-    font-size: 14px;
-    color: #828282;
-}
-.percent_input{
-    width: 1px;
-    height: 1px;
-    display: block;
-    background: 0 0;
-    border: 0;
-    opacity: 0;
-    min-height: 15px;
-    line-height: 1;
+.percent label[for='add-percent'] {
+  box-shadow: 0px 0px 2px 0px #00000040;
+  border-radius: 4px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3px;
 }
 
-.percent input[type=checkbox]+label[for=add-percent] {
-    display: block;
-    width: 20px;
-    height: 20px;
-    float: left;
-    margin: 0 5px 0 0;
-    background: #fff;
-    border: 1px solid #bacd29;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    cursor: pointer;
+.percent input[type='checkbox'] + label[for='add-percent'] {
+  display: block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
-.percent input[type=checkbox]+label[for=add-percent]:after {
-    display: block;
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    margin: 2px 0 0 2px;
-    content: "";
-    background: #0d6721;
-    opacity: 0;
+.percent input[type='checkbox'] + label[for='add-percent']:after {
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  content: '';
+  background: #bacd29;
+  opacity: 0;
+  border-radius: 2px;
 }
 
-.percent input[type=checkbox]:checked+label[for=add-percent]:after {
-    opacity: 1;
+.percent input[type='checkbox']:checked + label[for='add-percent']:after {
+  opacity: 1;
 }
 
+.productPrice {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: #bacd29;
+  margin: 0;
+}
+.productPrice span,
+.productUnitMultiplier {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000005;
+}
 
-.productPrice{
-    font-weight: bold;
-    color: #0D6721;
-    font-size: 2.25rem;
-    margin: 0;
-}
-.productPrice span{
-    font-size: 1rem;
-    font-weight: 400;
-    color: #0D6721;
+.productUnitMultiplier {
+  margin: 6px 0 0px 5px;
 }
 
-.productUnitMultiplier{
-    font-size: 1rem;
-    font-weight: 400;
-    color: #0D6721;
-    margin: 0;
+.productInstallments {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0d6721;
+  margin: 0;
 }
-.productInstallments{
-    font-size: 1rem;
-    font-weight: 400;
-    color: #0D6721;
-    margin: 0;
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+}
+
+.boxContainer {
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }

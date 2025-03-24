@@ -3,7 +3,8 @@
     "component": "ProductFixedBuy"
   },
   "calculadora-de-pisos": {
-    "component": "CalculadoraDePisos"
+    "component": "CalculadoraDePisos",
+    "composition": "children"
   },
   "geolocalizacao": {
     "component": "Geolocalizacao"
