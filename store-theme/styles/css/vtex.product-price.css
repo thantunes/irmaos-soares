@@ -35,11 +35,11 @@
     font-family: "Sarabun", sans-serif;
 }
 .sellingPriceValue::after,
-.sellingPriceValue--summary::after{    
+.sellingPriceValue--summary::after{
     content: " à vista";
     font-size: 16px;
     font-weight: bold;
-    color: #0D6721; 
+    color: #0D6721;
     font-family: "Sarabun", sans-serif;
 }
 
@@ -98,11 +98,17 @@
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 
-@media screen and (max-width: 767px){    
+.sellingPrice--summary--hasUnitMultiplier .currencyFraction--summary::after {
+    content: '/m²';
+    margin-right: 3px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 767px){
     .sellingPriceValue--summary {
         font-size: 1.5rem
     }
-    .sellingPriceValue--summary::after{    
+    .sellingPriceValue--summary::after{
         font-size: .7rem;
         content: " à vista";
         display: block;
@@ -112,5 +118,5 @@
         margin-bottom: 1rem;
         font-size: 0.8rem;
     }
-    
+
 }
