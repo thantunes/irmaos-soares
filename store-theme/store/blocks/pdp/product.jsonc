@@ -9,7 +9,7 @@
             "product-specification-group#table",
             // "flex-layout.row#vitrine-similares",
             "product-reviews",
-            // "flex-layout.row#vitrine-quem-viu-viu-tambem",
+            "flex-layout.row#vitrine-quem-viu-viu-tambem",
             "product-questions-and-answers"
         ],
 		"props": {
