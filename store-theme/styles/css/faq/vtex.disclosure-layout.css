@@ -3,23 +3,52 @@
     align-items: center;
     cursor: pointer;
     outline: none;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border: 1px solid #cecece;
+    background: linear-gradient(
+        171.31deg,
+        rgba(255, 255, 255, 0) 30.53%,
+        rgba(147, 149, 152, 0.2) 109.02%
+    );
+    border-radius: 6px;
+    padding: 0 24px;
+    margin-bottom: 10px;
+}
+
+.trigger--question--visible {
+    border-color: #a7cb33;
 }
 
 .trigger--question :global(.vtex-rich-text-0-x-paragraph) {
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #000000;
+    margin: 20px 0;
 }
 
 .trigger--question:focus,
 .trigger--question:focus :global(.vtex-rich-text-0-x-paragraph) {
-    color: #0D6721;
+    color: #0d6721;
 }
 
 .trigger :global(.vtex-store-icons-0-x-caretIcon) {
     margin-right: 1rem;
 }
 
+.content--answer :global(.vtex-rich-text-0-x-paragraph) {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    padding: 0 24px;
+    line-height: 24px;
+    margin-top: 6px;
+}
+
 .content--answer {
-    transition: opacity 250ms ease-in-out, height 250ms ease-in-out, transform 250ms ease-in-out;
+    transition: opacity 250ms ease-in-out, height 250ms ease-in-out,
+        transform 250ms ease-in-out;
     opacity: 0;
     height: 0;
     transform: translate3d(0, -10%, 0);

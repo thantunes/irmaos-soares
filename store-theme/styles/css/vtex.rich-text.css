@@ -189,6 +189,18 @@
     margin: 0;
 }
 
+.paragraph--faq-breadcrumb-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.4px;
+    color: #000000;
+    margin: 0;
+}
+
+.container--faq-title {
+    justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
     .headingLevel2--shelfTitle {
         font-size: 22px;

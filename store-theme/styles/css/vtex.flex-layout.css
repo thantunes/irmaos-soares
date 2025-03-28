@@ -363,8 +363,8 @@
     min-width: 303px;
     max-height: 40px;
     border-radius: 6px !important;
-    background-color: #0D6721 !important;
-    border-color: #0D6721 !important;
+    background-color: #0d6721 !important;
+    border-color: #0d6721 !important;
 }
 
 .flexRow--quantity-buy-container {
@@ -388,6 +388,13 @@
 .flexRowContent--product-description .stretchChildrenWidth {
     width: 100% !important;
 }
+
+.flexRowContent--faq-breadcrumb {
+    align-items: center;
+    gap: 8px;
+    margin: 24px 0 31px;
+}
+
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     /* .flexRow--minibanners-2 */

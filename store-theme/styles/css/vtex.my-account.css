@@ -174,7 +174,7 @@
     background: #fff;
     border-radius: 15px;
     padding: 24px;
-    border: 1px solid #CECECE;
+    border: 1px solid #cecece;
     margin-bottom: 56px !important;
 }
 
@@ -361,4 +361,58 @@
     font-size: 24px;
     line-height: 100%;
     color: #000000;
+}
+
+:global(.vtex-shelf-1-x-shelfContentContainer--is-shelf-product) {
+    min-height: 563px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--faq-meus-pedidos-container)
+    :global(.pr0.flex):last-child,
+:global(.vtex-flex-layout-0-x-flexRowContent--faq-pagamentos-container)
+    :global(.pr0.flex):last-child,
+:global(.vtex-flex-layout-0-x-flexRowContent--faq-servicos-container)
+    :global(.pr0.flex):last-child,
+:global(.vtex-flex-layout-0-x-flexRowContent--faq-produtos-container)
+    :global(.pr0.flex):last-child,
+:global(.vtex-flex-layout-0-x-flexRowContent--faq-cancelamento-container)
+    :global(.pr0.flex):last-child {
+    flex-direction: column;
+    width: 100% !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--faq-meus-pedidos-container),
+:global(.vtex-flex-layout-0-x-flexRowContent--faq-pagamentos-container),
+:global(.vtex-flex-layout-0-x-flexRowContent--faq-servicos-container),
+:global(.vtex-flex-layout-0-x-flexRowContent--faq-produtos-container),
+:global(.vtex-flex-layout-0-x-flexRowContent--faq-cancelamento-container) {
+    gap: 60px;
+    margin-bottom: 34px;
+}
+
+
+:global(.vtex-disclosure-layout-1-x-trigger--question) :global(.vtex-store-icons-0-x-caretIcon) {
+    display: none;
+}
+
+:global(.vtex-disclosure-layout-1-x-trigger--hidden)::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-image: url(/arquivos/disclosure-plus.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:global(.vtex-disclosure-layout-1-x-trigger--visible)::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-image: url(/arquivos/disclosure-minus.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
