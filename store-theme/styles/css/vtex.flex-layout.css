@@ -284,6 +284,10 @@
     justify-content: space-between;
 }
 
+.flexRowContent--home-compre-por-departamento .col {
+    width: 100% !important;
+}
+
 .flexRow--home-compre-por-departamento {
     margin-bottom: 48px;
 }
@@ -395,6 +399,20 @@
     margin: 24px 0 31px;
 }
 
+.flexRow--header-topbar-container {
+    width: 100%;
+}
+
+.flexRowContent--header-topbar-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexRowContent--header-topbar-container .col {
+    width: 100% !important;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     /* .flexRow--minibanners-2 */
@@ -416,5 +434,82 @@
 
     .flexCol--discounts-title {
         padding: 35px 0;
+    }
+
+    .flexRowContent--home-pitchbar-item {
+        display: flex;
+    }
+
+    .flexRow--home-pitchbar-item {
+        min-width: fit-content;
+    }
+
+    .flexRow--slider-principal {
+        margin-bottom: 64px;
+    }
+
+    .flexRowContent--home-pitchbar {
+        margin-bottom: 71px;
+    }
+
+    .flexRow--shelf {
+        padding: 0 8px;
+        margin-bottom: 38px;
+    }
+
+    .flexCol--home-banners-1-content-mobile {
+        gap: 16px;
+    }
+
+    .flexCol--home-banners-1-content-mobile
+        :global(.vtex-store-components-3-x-imageElementLink) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flexRowContent--home-compre-por-departamento {
+        padding: 0 7px;
+    }
+
+    .flexRow--home-compre-por-departamento {
+        margin-bottom: 68px;
+    }
+
+    .flexCol--newsletter-title {
+        background-size: 88% 115%;
+    }
+
+    .flexRowContent--menu-row {
+        padding: 32px 0 27px;
+    }
+
+    .flexCol--footer-logo-container .flexColChild {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flexRowContent--footer-socials-container {
+        display: flex;
+        margin-bottom: 44px;
+    }
+
+    .flexRow--menu-row :global(.vtex-menu-2-x-menuContainerNav) {
+        padding-left: 16px;
+        margin-bottom: 16px;
+    }
+
+    .flexRowContent--pagamentos-bandeiras {
+        display: flex;
+        max-width: initial;
+    }
+
+    .flexRowContent--footer-copyright {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .flexRowContent--footer-copyright-dev {
+        display: flex;
     }
 }

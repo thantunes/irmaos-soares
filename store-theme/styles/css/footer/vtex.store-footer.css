@@ -186,12 +186,6 @@
         font-size: 12px;
     }
 
-    .footerLayout--footer--is
-        :global(.vtex-rich-text-0-x-paragraph--newsletter-title) {
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-    }
-
     .footerLayout--footer--is :global(.vtex-input-prefix__group) {
         margin-bottom: 0.9rem;
     }
@@ -199,6 +193,8 @@
     .footerLayout--footer--is
         :global(.vtex-flex-layout-0-x-flexRow--footer-newsletter-mobile) {
         margin-top: 2rem;
+        background: linear-gradient(90deg, #a9b900 0%, #0d6721 100%);
+        padding: 44px 16px 19px;
     }
 
     .footerLayout--footer--is
@@ -208,5 +204,36 @@
         :global(.vtex-rich-text-0-x-container--servicos) {
         margin: 0 auto;
         display: block;
+    }
+
+    .footerLayout--footer--is
+        :global(.vtex-store-newsletter-1-x-formSubmitContainer)
+        :global(.vtex-button) {
+        width: 100%;
+    }
+
+    .footerLayout--footer--is
+        :global(.vtex-store-newsletter-1-x-formSubmitContainer) {
+        margin-top: 7px;
+    }
+
+    :global(
+            .vtex-store-newsletter-1-x-confirmationCheckboxContainer--newsletter-checkbox-confirmation
+        )
+        :global(.vtex-checkbox__line-container) {
+        align-items: center;
+    }
+
+    .footerLayout--footer--is
+        :global(.vtex-rich-text-0-x-paragraph--footer-menu-title) {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .footerLayout--footer--is
+        :global(.vtex-menu-2-x-styledLinkContent--footer-menu-item),
+    .footerLayout--footer--is
+        :global(.vtex-rich-text-0-x-link--footer-menu-item) {
+        font-size: 14px;
     }
 }

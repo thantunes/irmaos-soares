@@ -3,7 +3,8 @@
 		"children": [
            // "modal-trigger#aceitecookies",
             "header-row#topbar",
-			"header-row#1-mobile"
+			"header-row#1-mobile",
+            "search-bar#mobile"
 		],
         "props": {
             "blockClass": "mobile-header"
@@ -16,8 +17,9 @@
             "menu-mobile",
 			"logo#mobile",
             "header-spacer",
-            "toggle-search",
+            // "toggle-search",
 			"login#mobile",
+            "image#wishlist-header",
 			"minicart.v2"
 		],
 		"props": {

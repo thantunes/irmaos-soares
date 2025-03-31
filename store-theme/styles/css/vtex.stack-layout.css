@@ -13,6 +13,7 @@
     top: 11px;
     left: 12px;
     width: 100%;
+    z-index: 10;
 }
 
 .stackItem--flags {
@@ -21,4 +22,14 @@
     width: 100%;
     gap: 6px;
     max-width: 265px;
+}
+
+@media (max-width: 1023px) {
+    .stackItem--flags {
+        max-width: 162px;
+    }
+
+    .stackContainer--flags {
+        position: initial;
+    }
 }

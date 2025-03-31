@@ -15,7 +15,53 @@
             "fullWidth": false
         },
         "children": [
-            // "shopper-location",
+            "flex-layout.row#header-topbar-container"
+        ]
+    },
+    "flex-layout.row#header-topbar-container": {
+        "children": [
+            "responsive-layout.desktop#header-topbar-content",
+            "responsive-layout.mobile#header-topbar-content"
+        ],
+        "props": {
+            "blockClass": [
+                "header-topbar-container"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "experimentalHideEmptyCols": true
+        }
+    },
+    "responsive-layout.desktop#header-topbar-content": {
+        "children": [ // "shopper-location",
+            "geolocalizacao",
+            "rich-text#top-bar-whatsapp",
+            "rich-text#top-bar-fale-conosco"
+        ]
+    },
+    "responsive-layout.mobile#header-topbar-content": {
+        "children": [
+            "slider-layout#slider-header-topbar"
+        ]
+    },
+    "slider-layout#slider-header-topbar": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": "5000",
+                "stopOnHover": "true"
+            },
+            "infinite": true,
+            // "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "blockClass": "carousel",
+            "fullWidth": false
+        },
+        "children": [
             "geolocalizacao",
             "rich-text#top-bar-whatsapp",
             "rich-text#top-bar-fale-conosco"
@@ -91,6 +137,7 @@
     "image#wishlist-header": {
         "props": {
             "src": "/arquivos/wishlist.svg",
+            "blockClass": "wishlist-header",
             "link": {
                 "url": "/account#/wishlist"
             }

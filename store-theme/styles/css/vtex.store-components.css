@@ -198,8 +198,7 @@
 
 @media only screen and (max-width: 1025px) {
     .searchBarInnerContainer {
-        padding: 16px 22px;
-        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.23);
+        padding: 16px 10px;
     }
 
     .searchBarInnerContainer :global(.vtex-styleguide-9-x-input) {
@@ -736,7 +735,7 @@
 
 .showMoreButton {
     background-color: transparent;
-    color: #BACD29;
+    color: #bacd29;
 }
 
 @media only screen and (max-width: 767px) {
@@ -860,6 +859,22 @@
     }
 } */
 
-.shippingTableRadioBtn  {
-    accent-color: #A7CB33;
+.shippingTableRadioBtn {
+    accent-color: #a7cb33;
+}
+
+@media (max-width: 767px) {
+    .imageElementLink--wishlist-header {
+        margin-right: 9px;
+        display: flex;
+    }
+
+    .searchBarContainer {
+        padding: 0 16px 14px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    .imageElement--image--ssl-encrypted{
+        max-width: 174px;
+    }
 }

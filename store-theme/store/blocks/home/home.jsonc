@@ -12,7 +12,7 @@
             "flex-layout.row#home-banners-1",
             "rich-text#shelf-title-2-new",
             "flex-layout.row#shelf-2",
-            "image#home-banner-2",
+            "flex-layout.row#home-banner-2-container",
             "rich-text#compre-por-departamento-title",
             "flex-layout.row#home-compre-por-departamento",
             "rich-text#shelf-title-3",
@@ -20,15 +20,49 @@
             "flex-layout.row#home-banners-3"
         ]
     },
+    "flex-layout.row#home-banner-2-container": {
+        "children": [
+            "responsive-layout.desktop#home-banner-2",
+            "responsive-layout.mobile#home-banner-2"
+        ],
+        "props": {
+            "blockClass": [
+                "home-banner-2-container"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "experimentalHideEmptyCols": true
+        }
+    },
+    "responsive-layout.desktop#home-banner-2": {
+        "children": [
+            "image#home-banner-2"
+        ]
+    },
+    "responsive-layout.mobile#home-banner-2": {
+        "children": [
+            "image#home-banner-2-mobile"
+        ]
+    },
     "image#home-banner-2": {
-      "props": {
-        "src": "/arquivos/banner-2-home.png",
-        "maxWidth": "1440px",
-        "link": {
-            "url": "/"
-        },
-        "blockClass": "home-banner-2"
-      }
+        "props": {
+            "src": "/arquivos/banner-2-home.png",
+            "maxWidth": "1440px",
+            "link": {
+                "url": "/"
+            },
+            "blockClass": "home-banner-2"
+        }
+    },
+    "image#home-banner-2-mobile": {
+        "props": {
+            "src": "/arquivos/banner-meio-mobile.png",
+            "maxWidth": "358px",
+            "link": {
+                "url": "/"
+            },
+            "blockClass": "home-banner-2"
+        }
     },
     "list-context.image-list#slider-principal": {
         "children": [
@@ -80,7 +114,6 @@
             "list-context.image-list#slider-principal"
         ],
         "props": {
-
             "colSizing": "auto",
             // "preventHorizontalStretch": true,
             // "preventVerticalStretch": true,
@@ -91,7 +124,6 @@
             "blockClass": "slider-principal"
         }
     },
-
     "rich-text#shelf-title": {
         "props": {
             "text": "## Produtos em destaque",
@@ -124,12 +156,11 @@
                 "tablet": 3,
                 "phone": 2
             },
-            // "showNavigationArrows": "desktopOnly",
-            "showPaginationDots": "never",
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "mobileOnly",
             "infinite": true,
             "fullWidth": false,
             "blockClass": "shelf"
-
             // "centerMode": {
             //     "desktop": false,
             //     "tablet": false,
@@ -137,7 +168,6 @@
             // }
         }
     },
-
     "rich-text#shelf-title-2-new": {
         "props": {
             "text": "## Lançamentos",
@@ -171,14 +201,13 @@
                 "tablet": 3,
                 "phone": 2
             },
-            // "showNavigationArrows": "desktopOnly",
-            "showPaginationDots": "never",
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "mobileOnly",
             "infinite": true,
             "fullWidth": false,
             "blockClass": "shelf"
         }
     },
-
     "rich-text#shelf-title-3": {
         "props": {
             "text": "## Mais vendidos",
@@ -211,8 +240,8 @@
                 "tablet": 3,
                 "phone": 2
             },
-             // "showNavigationArrows": "desktopOnly",
-             "showPaginationDots": "never",
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "mobileOnly",
             "infinite": true,
             "fullWidth": false,
             "blockClass": "shelf"

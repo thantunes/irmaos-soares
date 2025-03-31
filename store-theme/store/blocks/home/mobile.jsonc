@@ -10,14 +10,14 @@
             "slider-layout#slider-principal-images-mobile"
         ],
         "props": {
-            "height": 520,
+            "height": 230,
             "preload": true,
             "images": [
                 {
                     "image": "https://irmaossoares.vteximg.com.br/arquivos/ids/164437/ISO_CASA_COMPLETA_02_06_23_banners%20site_780x520%203%20a.jpg"
                 },
                 {
-                   
+
                     "image": "https://irmaossoares.vteximg.com.br/arquivos/ids/164437/ISO_CASA_COMPLETA_02_06_23_banners%20site_780x520%203%20a.jpg?v=638238671868200000"
                 },
                 {
@@ -38,8 +38,8 @@
                 "stopOnHover": "true"
             },
             "infinite": true,
-            // "showNavigationArrows": "desktopOnly",
-            "showPaginationDots": "never",
+            "showNavigationArrows": "never",
+            "showPaginationDots": "mobileOnly",
             "blockClass": "carousel",
             "fullWidth": false
         }

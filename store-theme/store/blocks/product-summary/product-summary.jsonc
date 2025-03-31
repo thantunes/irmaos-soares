@@ -4,8 +4,8 @@
             "blockClass": "is-shelf"
         },
         "children": [
-            "stack-layout#prodsum",
             "stack-layout#flags",
+            "stack-layout#prodsum",
             "product-rating-inline",
             "product-summary-name#product-name",
             //   "flex-layout.col#productRating",

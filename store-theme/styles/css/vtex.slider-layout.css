@@ -115,6 +115,16 @@
 
     .slideChildrenContainer--shelf
         :global(.vtex-product-summary-2-x-container--is-shelf) {
-        margin: 0.5rem;
+        margin: 0 8px;
+        max-height: fit-content;
+        height: fit-content;
+    }
+/*
+    .slide--home-pitchbar-mobile {
+        width: fit-content !important;
+    } */
+
+    :global(.vtex-flex-layout-0-x-flexRow--shelf) .paginationDotsContainer {
+        bottom: -7px;
     }
 }

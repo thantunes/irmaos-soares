@@ -1,22 +1,84 @@
 {
     "flex-layout.row#home-banners-1": {
         "children": [
-            "image#home-banner-1-1",
-            "flex-layout.col#home-banners-1-middle",
-            "image#home-banner-1-4"
+            "responsive-layout.desktop#home-banners-1",
+            "responsive-layout.mobile#home-banners-1"
         ],
         "props": {
             "blockClass": [
                 "home-banners-1"
             ],
             "preventHorizontalStretch": true,
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "experimentalHideEmptyCols": true
         }
     },
     "image#home-banner-1-1": {
         "props": {
             "src": "/arquivos/banners-1-1.png",
             "maxWidth": "469px",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "responsive-layout.desktop#home-banners-1": {
+        "children": [
+            "image#home-banner-1-1",
+            "flex-layout.col#home-banners-1-middle",
+            "image#home-banner-1-4"
+        ]
+    },
+    "responsive-layout.mobile#home-banners-1": {
+        "children": [
+            "flex-layout.col#home-banners-1-content-mobile"
+        ]
+    },
+    "flex-layout.col#home-banners-1-content-mobile": {
+        "children": [
+            "image#home-banner-1-1-mobile",
+            "image#home-banner-1-2-mobile",
+            "image#home-banner-1-3-mobile",
+            "image#home-banner-1-4-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "home-banners-1-content-mobile"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-banner-1-1-mobile": {
+        "props": {
+            "src": "/arquivos/mobile-pisos.png",
+            "maxWidth": "358px",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#home-banner-1-2-mobile": {
+        "props": {
+            "src": "/arquivos/mobile-externas.png",
+            "maxWidth": "358px",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#home-banner-1-3-mobile": {
+        "props": {
+            "src": "/arquivos/mobile-banheiro.png",
+            "maxWidth": "358px",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#home-banner-1-4-mobile": {
+        "props": {
+            "src": "/arquivos/mobile-decoracao.png",
+            "maxWidth": "358px",
             "link": {
                 "url": "/"
             }

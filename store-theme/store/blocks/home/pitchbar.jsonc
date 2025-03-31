@@ -1,18 +1,54 @@
 {
     "flex-layout.row#home-pitchbar": {
-        "children": [
-            "flex-layout.row#home-pitchbar-1",
-            "flex-layout.row#home-pitchbar-2",
-            "flex-layout.row#home-pitchbar-3",
-            "flex-layout.row#home-pitchbar-4"
-        ],
+        "children": ["responsive-layout.desktop#home-pitchbar", "responsive-layout.mobile#home-pitchbar"],
         "props": {
             "blockClass": [
                 "home-pitchbar"
             ],
             "preventHorizontalStretch": true,
-            "preventVerticalStretch": true
+            "preventVerticalStretch": true,
+            "experimentalHideEmptyCols": true
         }
+    },
+    "responsive-layout.desktop#home-pitchbar": {
+        "children": [
+            "flex-layout.row#home-pitchbar-1",
+            "flex-layout.row#home-pitchbar-2",
+            "flex-layout.row#home-pitchbar-3",
+            "flex-layout.row#home-pitchbar-4"
+        ]
+    },
+    "responsive-layout.mobile#home-pitchbar": {
+        "children": [
+            "slider-layout#slider-home-pitchbar-mobile"
+        ]
+    },
+    "slider-layout#slider-home-pitchbar-mobile": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": "5000",
+                "stopOnHover": "true"
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "mobileOnly",
+            "blockClass": [
+                "carousel",
+                "home-pitchbar-mobile"
+            ],
+            "fullWidth": false
+        },
+        "children": [
+            "flex-layout.row#home-pitchbar-1",
+            "flex-layout.row#home-pitchbar-2",
+            "flex-layout.row#home-pitchbar-3",
+            "flex-layout.row#home-pitchbar-4"
+        ]
     },
     "flex-layout.row#home-pitchbar-1": {
         "children": [

@@ -1,6 +1,20 @@
 {
     "flex-layout.row#home-compre-por-departamento": {
         "children": [
+            "responsive-layout.desktop#compre-por-departamento",
+            "responsive-layout.mobile#compre-por-departamento"
+        ],
+        "props": {
+            "blockClass": [
+                "home-compre-por-departamento"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "experimentalHideEmptyCols": true
+        }
+    },
+    "responsive-layout.desktop#compre-por-departamento": {
+        "children": [
             "flex-layout.col#home-compre-por-departamento-item-1",
             "flex-layout.col#home-compre-por-departamento-item-2",
             "flex-layout.col#home-compre-por-departamento-item-3",
@@ -10,19 +24,52 @@
             "flex-layout.col#home-compre-por-departamento-item-7",
             "flex-layout.col#home-compre-por-departamento-item-8",
             "flex-layout.col#home-compre-por-departamento-item-9"
-        ],
+        ]
+    },
+    "responsive-layout.mobile#compre-por-departamento": {
+        "children": [
+            "slider-layout#slider-compre-por-departamento-mobile"
+        ]
+    },
+    "slider-layout#slider-compre-por-departamento-mobile": {
         "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 3,
+                "phone": 3
+            },
+            "autoplay": {
+                "timeout": "5000",
+                "stopOnHover": "true"
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "mobileOnly",
             "blockClass": [
-                "home-compre-por-departamento"
+                "carousel",
+                "compre-por-departamento"
             ],
-            "preventHorizontalStretch": true,
-            "preventVerticalStretch": true
-        }
+            "fullWidth": false
+        },
+        "children": [
+            "flex-layout.col#home-compre-por-departamento-item-1",
+            "flex-layout.col#home-compre-por-departamento-item-2",
+            "flex-layout.col#home-compre-por-departamento-item-3",
+            "flex-layout.col#home-compre-por-departamento-item-4",
+            "flex-layout.col#home-compre-por-departamento-item-5",
+            "flex-layout.col#home-compre-por-departamento-item-6",
+            "flex-layout.col#home-compre-por-departamento-item-7",
+            "flex-layout.col#home-compre-por-departamento-item-8",
+            "flex-layout.col#home-compre-por-departamento-item-9"
+        ]
     },
     "rich-text#compre-por-departamento-title": {
         "props": {
             "text": "## Compre por departamento",
-            "blockClass": ["shelfTitle", "home-compre-por-departamento-title"]
+            "blockClass": [
+                "shelfTitle",
+                "home-compre-por-departamento-title"
+            ]
         }
     },
     "flex-layout.col#home-compre-por-departamento-item-1": {
@@ -43,15 +90,19 @@
             "link": {
                 "url": "/"
             },
-            "blockClass": ["first-img"]
+            "blockClass": [
+                "first-img"
+            ]
         }
     },
     "link#home-compre-por-departamento-item-1-title": {
-      "props": {
-        "label": "Casa & Organização",
-        "href": "/",
-        "blockClass": ["home-compre-por-departamento-item-title"]
-       }
+        "props": {
+            "label": "Casa & Organização",
+            "href": "/",
+            "blockClass": [
+                "home-compre-por-departamento-item-title"
+            ]
+        }
     },
     "flex-layout.col#home-compre-por-departamento-item-2": {
         "children": [
@@ -74,11 +125,13 @@
         }
     },
     "link#home-compre-por-departamento-item-2-title": {
-      "props": {
-        "label": "Portas & Janelas",
-        "href": "/",
-        "blockClass": ["home-compre-por-departamento-item-title"]
-       }
+        "props": {
+            "label": "Portas & Janelas",
+            "href": "/",
+            "blockClass": [
+                "home-compre-por-departamento-item-title"
+            ]
+        }
     },
     "flex-layout.col#home-compre-por-departamento-item-3": {
         "children": [
@@ -101,11 +154,13 @@
         }
     },
     "link#home-compre-por-departamento-item-3-title": {
-      "props": {
-        "label": "Tintas",
-        "href": "/",
-        "blockClass": ["home-compre-por-departamento-item-title"]
-       }
+        "props": {
+            "label": "Tintas",
+            "href": "/",
+            "blockClass": [
+                "home-compre-por-departamento-item-title"
+            ]
+        }
     },
     "flex-layout.col#home-compre-por-departamento-item-4": {
         "children": [
@@ -128,11 +183,13 @@
         }
     },
     "link#home-compre-por-departamento-item-4-title": {
-      "props": {
-        "label": "Pisos",
-        "href": "/",
-        "blockClass": ["home-compre-por-departamento-item-title"]
-       }
+        "props": {
+            "label": "Pisos",
+            "href": "/",
+            "blockClass": [
+                "home-compre-por-departamento-item-title"
+            ]
+        }
     },
     "flex-layout.col#home-compre-por-departamento-item-5": {
         "children": [
@@ -155,11 +212,13 @@
         }
     },
     "link#home-compre-por-departamento-item-5-title": {
-      "props": {
-        "label": "Louças",
-        "href": "/",
-        "blockClass": ["home-compre-por-departamento-item-title"]
-       }
+        "props": {
+            "label": "Louças",
+            "href": "/",
+            "blockClass": [
+                "home-compre-por-departamento-item-title"
+            ]
+        }
     },
     "flex-layout.col#home-compre-por-departamento-item-6": {
         "children": [
@@ -182,11 +241,13 @@
         }
     },
     "link#home-compre-por-departamento-item-6-title": {
-      "props": {
-        "label": "Ferramentas",
-        "href": "/",
-        "blockClass": ["home-compre-por-departamento-item-title"]
-       }
+        "props": {
+            "label": "Ferramentas",
+            "href": "/",
+            "blockClass": [
+                "home-compre-por-departamento-item-title"
+            ]
+        }
     },
     "flex-layout.col#home-compre-por-departamento-item-7": {
         "children": [
@@ -209,11 +270,13 @@
         }
     },
     "link#home-compre-por-departamento-item-7-title": {
-      "props": {
-        "label": "Metais",
-        "href": "/",
-        "blockClass": ["home-compre-por-departamento-item-title"]
-       }
+        "props": {
+            "label": "Metais",
+            "href": "/",
+            "blockClass": [
+                "home-compre-por-departamento-item-title"
+            ]
+        }
     },
     "flex-layout.col#home-compre-por-departamento-item-8": {
         "children": [
@@ -236,11 +299,13 @@
         }
     },
     "link#home-compre-por-departamento-item-8-title": {
-      "props": {
-        "label": "Iluminação",
-        "href": "/",
-        "blockClass": ["home-compre-por-departamento-item-title"]
-       }
+        "props": {
+            "label": "Iluminação",
+            "href": "/",
+            "blockClass": [
+                "home-compre-por-departamento-item-title"
+            ]
+        }
     },
     "flex-layout.col#home-compre-por-departamento-item-9": {
         "children": [
@@ -263,10 +328,12 @@
         }
     },
     "link#home-compre-por-departamento-item-9-title": {
-      "props": {
-        "label": "Decoração",
-        "href": "/",
-        "blockClass": ["home-compre-por-departamento-item-title"]
-       }
+        "props": {
+            "label": "Decoração",
+            "href": "/",
+            "blockClass": [
+                "home-compre-por-departamento-item-title"
+            ]
+        }
     }
 }

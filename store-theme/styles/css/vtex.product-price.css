@@ -40,8 +40,8 @@
 .sellingPriceValue--summary::after {
     content: " à vista";
 
-    font-weight: 400!important;
-    font-size: 14px!important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
     color: #000005 !important;
     line-height: 100%;
 
@@ -109,15 +109,20 @@
 @media screen and (max-width: 767px) {
     .sellingPriceValue--summary {
         font-size: 1.5rem;
+        display: flex;
+        align-items: flex-end;
     }
+    .sellingPriceValue::after,
     .sellingPriceValue--summary::after {
-        font-size: 0.7rem;
-        content: " à vista";
-        display: block;
+        margin-bottom: 2px;
     }
 
     .installments--summary {
         margin-bottom: 1rem;
         font-size: 0.8rem;
+    }
+
+    .currencyContainer--summary {
+        font-size: 20px;
     }
 }

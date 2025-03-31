@@ -91,21 +91,26 @@
     gap: 16px;
 }
 
-.element--is-shelf{
+.element--is-shelf {
     padding: 0 !important;
 }
 
 @media screen and (max-width: 767px) {
     .brandName {
-        font-size: 14px;
-        max-height: 50px;
-        display: block;
         overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        max-height: 115px;
+        font-size: 14px !important;
     }
     .container--is-shelf {
         background-color: #fff;
-        padding: 0.5rem 1.5rem;
-        border-radius: 15px;
-        margin: 0.5rem auto;
+        padding: 7px;
+    }
+
+    .container--is-shelf :global(.vtex-button__label)::after {
+        min-width: 33px;
     }
 }
