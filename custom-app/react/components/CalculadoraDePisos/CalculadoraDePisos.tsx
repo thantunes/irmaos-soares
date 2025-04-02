@@ -52,6 +52,7 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
     boxValue: styles.calculadora_input,
     percentInput: styles.percent_input,
     percentLabel: styles.percent_label,
+    eachBoxPrice: styles.eachBoxPrice,
   }
   useEffect(() => {
     if (product) {
@@ -100,6 +101,8 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
     let calculatedPrice = calculatedBoxes * pricePerSquareMeter * unitMultiplier
     calculatedPrice = Math.floor(calculatedPrice * 100) / 100
 
+    console.log({pricePerSquareMeter})
+
     setCountBoxes(calculatedBoxes)
     dispatch?.({
       type: 'SET_QUANTITY',
@@ -117,6 +120,8 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
 
   const handleAddPercentChange = () => {
     setAddPercent(!addPercent)
+
+    console.log(countBoxesPrice)
   }
 
   if (!showCalculator) return null
@@ -153,6 +158,9 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
             <div className={classNames.right}>
               <span className={classNames.countBoxes}>
                 {countBoxes} caixa(s) ({unitMultiplier} m²/caixa)
+              </span>
+              <span className={classNames.eachBoxPrice}>
+                {formatPrice(unitMultiplier * pricePerSquareMeter)} / caixa
               </span>
               <span className={classNames.countBoxesPrice}>
                 {formatPrice(countBoxesPrice)}

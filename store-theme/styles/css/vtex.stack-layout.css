@@ -27,6 +27,7 @@
 @media (max-width: 1023px) {
     .stackItem--flags {
         max-width: 162px;
+        min-height: 60px;
     }
 
     .stackContainer--flags {

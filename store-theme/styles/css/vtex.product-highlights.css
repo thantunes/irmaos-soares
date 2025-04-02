@@ -14,13 +14,20 @@
     background-color: #000;
 }
 
-.productHighlightWrapper--collection[data-highlight-name="Saldão"], .productHighlightWrapper--collection[data-highlight-name="Pisos do mês"] {
-    background-color: #7EA30A;
+.productHighlightWrapper--collection[data-highlight-name="Saldão"],
+.productHighlightWrapper--collection[data-highlight-name="Pisos do mês"] {
+    background-color: #7ea30a;
 }
-
 
 /* @media screen and (max-width: 767px){
     .productHighlightWrapper--collection{
         width: 190px;
     }
 } */
+
+@media (max-width: 1023px) {
+    .productHighlightWrapper--collection {
+        font-size: 11px;
+        max-height: fit-content;
+    }
+}

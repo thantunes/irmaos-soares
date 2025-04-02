@@ -464,9 +464,6 @@
 } */
 
 @media only screen and (max-width: 767px) {
-    .imageElement--bannerTopo {
-        display: none;
-    }
     .carouselContainer--product-image {
         padding-bottom: 30px;
     }

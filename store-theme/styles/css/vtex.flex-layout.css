@@ -71,11 +71,11 @@
 }
 
 .flexCol--orderByMobileCol {
-    width: 42%;
+    width: 200px;
 }
 
 .flexCol--filterMobileCol {
-    width: 38%;
+    width: 140px;
 }
 
 .flexRow--quickviewMainRow {
@@ -511,5 +511,28 @@
 
     .flexRowContent--footer-copyright-dev {
         display: flex;
+    }
+
+    .flexRow--category-banner {
+        padding: 0 16px;
+        display: none;
+    }
+
+    .flexRow--breadcrumb-search-mobile {
+        margin: 24px 0;
+        padding-left: 12px;
+    }
+
+    .flexRowContent--category-banner-mobile {
+        padding: 0 16px;
+    }
+
+    .flexRowContent--searchInfoMobileRow {
+        flex-direction: row-reverse;
+        padding: 0 16px;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 24px;
+        align-items: center;
     }
 }

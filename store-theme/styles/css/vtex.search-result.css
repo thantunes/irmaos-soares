@@ -249,9 +249,9 @@
 
 .filterPopupTitle {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 100%;
-    color: #231f20;
+    font-size: 15px;
+    line-height: 130%;
+    color: #231f20 !important;
     display: flex;
     align-items: center;
 }
@@ -303,8 +303,16 @@
         border-radius: 15px;
     }
 
+    .accordionFilterContainer {
+        padding-left: 0;
+    }
+
     .filterAccordionItemBox {
         min-height: 1.75rem;
+    }
+
+    .accordionFilterItemOptions .filterAccordionItemBox {
+        border: none;
     }
 
     .sidebar {
@@ -318,7 +326,19 @@
     }
 
     .accordionFilterContent {
-        padding: 0.5rem 0;
+        padding: 0.5rem 0 0.5rem 20px;
+    }
+
+    .accordionFilterContent .accordionFilterItemTitle {
+        font-size: 18px;
+    }
+
+    .filter__container--priceRange {
+        margin-left: -3px;
+    }
+
+    .filter__container--priceRange .filterTitleSpan {
+        display: none;
     }
 
     .filterPopupButton,
@@ -327,8 +347,47 @@
         border-radius: 15px;
     }
 
+    .filterClearButtonWrapper :global(.vtex-button__label),
+    .filterApplyButtonWrapper :global(.vtex-button__label) {
+        color: #a7cb33;
+    }
+
+    .orderByText {
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color: #231f20;
+    }
+
+    .filterPopupButton {
+        width: 100%;
+    }
+
+    .orderByButton {
+        justify-content: space-between;
+        height: 68px;
+        align-items: center;
+        padding: 0 24px;
+        border: 1px solid #000000;
+        background-color: transparent;
+        border-radius: 6px;
+    }
+
     .filterPopupTitle {
         color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .orderByDropdown .filterPopupTitle {
+        max-width: 130px;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .orderByDropdown {
+        padding: 0;
     }
 
     .filterIcon,
@@ -337,14 +396,76 @@
         fill: #fff;
     }
 
-    .vtex-search-result-3-x-accordionFilterItemOptions {
+    .accordionFilterItemOptions {
         overflow: visible;
+        padding-left: 0;
+        margin-left: -15px;
+        padding-top: 0;
     }
     .filter__container--priceRange {
         margin-left: -3rem;
     }
 
-    .galleryItem--grid {
-        padding: 0.3rem;
+    .buttonShowMore--layout {
+        margin: 25px 0;
+    }
+
+    .gallery {
+        padding: 0 16px;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .galleryItem :global(.vtex-product-summary-2-x-container),
+    .galleryItem {
+        max-width: 171px !important;
+    }
+
+    .orderByButton .filterPopupArrowIcon .caretIcon {
+        display: none;
+    }
+
+    .orderByButton .filterPopupArrowIcon {
+        background-image: url(/arquivos/order-by-arrow-mobile.svg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 13px;
+        height: 8px;
+        padding: 0;
+    }
+
+    .orderByText::after {
+        display: none;
+    }
+
+    .orderByOptionsContainer {
+        top: 71px;
+    }
+
+    .filterPopupButton {
+        border-radius: 6px;
+        border: 1px solid #000000;
+        background-color: transparent;
+        height: 35px;
+        padding: 0 10px;
+    }
+
+    .filterPopupButton .filterPopupTitle {
+        margin-left: 0;
+    }
+
+    .filterPopupButton .filterIcon {
+        display: none;
+    }
+
+    .filterPopupButton .filterPopupArrowIcon {
+        padding: 0;
+        width: 20.8px;
+        height: 16px;
+        background-image: url(/arquivos/filter-icon-mobile.svg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
 }

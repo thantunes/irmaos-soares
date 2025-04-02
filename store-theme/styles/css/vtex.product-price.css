@@ -125,4 +125,9 @@
     .currencyContainer--summary {
         font-size: 20px;
     }
+
+    .sellingPriceValue::after,
+    .sellingPriceValue--summary::after {
+        font-size: 12px !important;
+    }
 }
