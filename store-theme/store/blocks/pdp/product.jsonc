@@ -50,11 +50,20 @@
     },
     "flex-layout.row#vitrine-quem-viu-viu-tambem": {
         "props": {
-            "marginBottom": 10
+            "marginBottom": 10,
+            "experimentalHideEmptyCols": true
         },
         "children": [
-            "shelf.relatedProducts#product"
+            "responsive-layout.desktop#vitrine-quem-viu-viu-tambem",
+            "responsive-layout.mobile#vitrine-quem-viu-viu-tambem"
         ]
+    },
+    "responsive-layout.desktop#vitrine-quem-viu-viu-tambem": {
+        "children": ["shelf.relatedProducts#product"]
+    },
+
+    "responsive-layout.mobile#vitrine-quem-viu-viu-tambem": {
+        "children": ["shelf.relatedProducts#product-mobile"]
     },
     "shelf.relatedProducts#product": {
         "blocks": [
@@ -67,6 +76,24 @@
             "productList": {
                 "showTitle": true,
                 "itemsPerPage": 5,
+                "paginationDotsVisibility": "hidden",
+                "arrows": false,
+                "titleText": "Quem viu, viu também",
+                "hideUnavailableItems": true
+            }
+        }
+    },
+    "shelf.relatedProducts#product-mobile": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "props": {
+            "blockClass": "is-shelf-product",
+            "recommendation": "view",
+            "hideOutOfStockItems": true,
+            "productList": {
+                "showTitle": true,
+                "itemsPerPage": 2,
                 "paginationDotsVisibility": "hidden",
                 "arrows": false,
                 "titleText": "Quem viu, viu também",
@@ -154,8 +181,8 @@
             },
             "blockClass": "product-image",
             "displayThumbnailsArrows": true,
-            "showPaginationDots": false,
-            "showNavigationArrows": false,
+            "showPaginationDots": true,
+            "showNavigationArrows": true,
             "thumbnailMaxHeight": 468,
             "thumbnailsOrientation": "vertical"
         }

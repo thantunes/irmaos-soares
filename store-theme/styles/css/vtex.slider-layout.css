@@ -127,4 +127,8 @@
     :global(.vtex-flex-layout-0-x-flexRow--shelf) .paginationDotsContainer {
         bottom: -7px;
     }
+
+    :global(.vtex-shelf-1-x-title--is-shelf-product) {
+        padding-left: 16px;
+    }
 }

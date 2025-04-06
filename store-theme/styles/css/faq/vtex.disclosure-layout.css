@@ -64,3 +64,9 @@
     height: 0;
     overflow: hidden;
 }
+
+@media (max-width: 1023px) {
+    .trigger--question {
+        padding: 0 14px;
+    }
+}

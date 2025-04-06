@@ -199,8 +199,8 @@
     }
 
     :global(.vtex-reviews-and-ratings-3-x-container) {
-        margin: 0 8px !important;
         padding: 8px 20px;
+        max-width: calc(100% - 32px) !important;
     }
 }
 
@@ -404,6 +404,7 @@
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    min-width: 12px;
 }
 
 :global(.vtex-disclosure-layout-1-x-trigger--visible)::before {
@@ -464,6 +465,28 @@
     gap: 16px;
 }
 
+:global(.vtex-rich-text-0-x-wrapper--institutional-title)
+    :global(.vtex-rich-text-0-x-paragraph):first-of-type
+    :global(.vtex-rich-text-0-x-strong) {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--institutional-title)
+    :global(.vtex-rich-text-0-x-paragraph) {
+    color: #000000b2;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--institutional-title)
+    :global(.vtex-rich-text-0-x-paragraph):first-of-type {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 50px;
+}
+
 @media (max-width: 1023px) {
     :global(.vtex-add-to-cart-button-0-x-buttonText) {
         margin-bottom: -3px;
@@ -495,5 +518,23 @@
     :global(.vtex-store-newsletter-1-x-phoneInputContainer),
     :global(.vtex-store-newsletter-1-x-formSubmitContainer) {
         width: 100%;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--is-product-main)
+        :global(.irmaossoares-zig-custom-0-x-parcelamentoIS) {
+        margin-bottom: 24px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--faq-meus-pedidos-container)
+        > :global(.pr0-ns.pb0.pb0-ns.flex):last-child,
+    :global(.vtex-flex-layout-0-x-flexRowContent--faq-pagamentos-container)
+        > :global(.pr0-ns.pb0.pb0-ns.flex):last-child,
+    :global(.vtex-flex-layout-0-x-flexRowContent--faq-servicos-container)
+        > :global(.pr0-ns.pb0.pb0-ns.flex):last-child,
+    :global(.vtex-flex-layout-0-x-flexRowContent--faq-produtos-container)
+        > :global(.pr0-ns.pb0.pb0-ns.flex):last-child,
+    :global(.vtex-flex-layout-0-x-flexRowContent--faq-cancelamento-container)
+        > :global(.pr0-ns.pb0.pb0-ns.flex):last-child {
+        flex-direction: column;
     }
 }

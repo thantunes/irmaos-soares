@@ -1,6 +1,7 @@
 {
     "store.custom#politica-de-cookies": {
         "children": [
+            "flex-layout.row#cookies-breadcrumb",
             "flex-layout.row#politica-de-cookies"
         ]
     },
@@ -19,8 +20,43 @@
     },
     "rich-text#politica-de-cookies": {
         "props": {
-            "text": "## politica-de-cookies"
+            "text": "## politica-de-cookies",
+            "blockClass": ["institutional-title"]
+        }
+    },
+    "flex-layout.row#cookies-breadcrumb": {
+        "children": [
+            "image#cookies-breadcrumb-home",
+            "image#cookies-breadcrumb-arrow",
+            "rich-text#cookies-breadcrumb-text"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#cookies-breadcrumb-home": {
+        "props": {
+            "src": "/arquivos/nav-home.svg",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#cookies-breadcrumb-arrow": {
+        "props": {
+            "src": "/arquivos/breadcrumb-arrow.svg"
+        }
+    },
+    "rich-text#cookies-breadcrumb-text": {
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb-text"
+            ],
+            "text": "Política de Cookies"
         }
     }
-
 }

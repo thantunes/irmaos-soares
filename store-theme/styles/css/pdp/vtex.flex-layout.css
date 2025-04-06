@@ -6,12 +6,6 @@
 .flexRow--is-breadcrumb {
     margin-left: -0.5rem;
 }
-@media screen and (max-width: 767px) {
-    .flexRow--is-breadcrumb {
-        display: none;
-    }
-}
-
 .flexRow--is-breadcrumb :global(.vtex-breadcrumb-1-x-link),
 .flexRow--is-breadcrumb :global(.vtex-breadcrumb-1-x-term) {
     font-size: 0.8rem;
@@ -139,4 +133,10 @@
     color: #0d6721;
     border-radius: 15px;
     border: 2px solid #0d6721;
+}
+
+@media (max-width: 767px) {
+    .flexRowContent--is-product-main {
+        padding: 0 16px;
+    }
 }

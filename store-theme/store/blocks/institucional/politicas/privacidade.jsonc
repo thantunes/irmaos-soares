@@ -1,6 +1,7 @@
 {
     "store.custom#politica-de-privacidade": {
         "children": [
+            "flex-layout.row#privacidade-breadcrumb",
             "flex-layout.row#politica-de-privacidade"
         ]
     },
@@ -14,13 +15,59 @@
     },
     "flex-layout.col#politica-de-privacidade": {
         "children": [
+            "rich-text#politica-de-privacidade-title",
             "rich-text#politica-de-privacidade"
         ]
     },
+    "rich-text#politica-de-privacidade-title": {
+        "props": {
+            "text": "## Política de Privacidade",
+            "blockClass": [
+                "institutional-title"
+            ]
+        }
+    },
     "rich-text#politica-de-privacidade": {
         "props": {
-            "text": "## politica-de-privacidade"
+            "text": "## politica-de-privacidade",
+            "blockClass": [
+                "institutional-title"
+            ]
+        }
+    },
+    "flex-layout.row#privacidade-breadcrumb": {
+        "children": [
+            "image#privacidade-breadcrumb-home",
+            "image#privacidade-breadcrumb-arrow",
+            "rich-text#privacidade-breadcrumb-text"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#privacidade-breadcrumb-home": {
+        "props": {
+            "src": "/arquivos/nav-home.svg",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#privacidade-breadcrumb-arrow": {
+        "props": {
+            "src": "/arquivos/breadcrumb-arrow.svg"
+        }
+    },
+    "rich-text#privacidade-breadcrumb-text": {
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb-text"
+            ],
+            "text": "Política de Privacidade"
         }
     }
-   
 }

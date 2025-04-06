@@ -31,3 +31,9 @@
     border: 1px solid #cecece;
     margin-bottom: 56px;
 }
+
+@media (max-width: 1023px) {
+    .flexCol--productSpecificationName {
+        min-width: fit-content;
+    }
+}

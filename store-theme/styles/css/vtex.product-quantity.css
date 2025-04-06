@@ -7,8 +7,7 @@
 
 @media only screen and (max-width: 767px) {
     .quantitySelectorContainer--product-quantity {
-        justify-content: center;
-        margin: 12px auto 29px;
+        margin: 12px auto 21px;
     }
 }
 

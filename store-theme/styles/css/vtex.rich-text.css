@@ -201,6 +201,95 @@
     justify-content: center;
 }
 
+.container--nossas-lojas {
+    justify-content: center;
+}
+
+.container--nossas-lojas .headingLevel3 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 22px;
+    margin-top: 16px;
+}
+
+.container--institutional-title .headingLevel2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 56px 46px;
+    margin-bottom: 56px;
+    border-radius: 16px;
+
+    background: var(--gradient);
+    position: relative;
+    margin-top: 12px;
+}
+
+.container--institutional-title .headingLevel2::after {
+    content: "";
+    display: block;
+    width: 352px;
+    height: 228px;
+    position: absolute;
+    top: -36px;
+    right: 0;
+    background-image: url(/arquivos/institucional-banner-icon.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 85%;
+}
+
+.container--institutional-title .headingLevel2 .strong {
+    font-weight: 600;
+}
+
+.container--institutional-title .paragraph,
+.container--institutional-title .listOrdered, .list--institutional-title {
+    max-width: 1198px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000b2;
+}
+
+.container--institutional-title .listOrdered {
+    list-style: none;
+    padding-left: 0;
+}
+
+.wrapper--institutional-title {
+    width: 100%;
+}
+
+.wrapper--institutional-title .link {
+    text-decoration: none;
+    color: #0d6721;
+}
+
+.wrapper--institutional-title .link .strong {
+    font-weight: 600;
+}
+
+.wrapper--institutional-title .listItem {
+    color: #000000b2;
+}
+
+.wrapper--institutional-title .listOrdered .paragraph {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.wrapper--institutional-title .listOrdered .paragraph .strong {
+    font-weight: 600;
+    font-size: 16px;
+}
+
 @media screen and (max-width: 768px) {
     .headingLevel2--shelfTitle {
         font-size: 22px;

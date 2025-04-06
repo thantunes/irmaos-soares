@@ -535,4 +535,21 @@
         margin-top: 24px;
         align-items: center;
     }
+
+    .flexRow--product-description {
+        padding: 0 16px;
+    }
+
+    .flexRowContent--productSpecification {
+        justify-content: space-between;
+    }
+
+    .flexRowContent--faq-breadcrumb {
+        display: flex;
+        padding-left: 16px;
+    }
+
+    .flexRow--faq {
+        padding: 0 16px;
+    }
 }

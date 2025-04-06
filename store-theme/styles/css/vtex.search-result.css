@@ -124,6 +124,14 @@
     line-height: 100%;
 }
 
+:global(.vtex-breadcrumb-1-x-container) {
+    flex-wrap: wrap;
+}
+
+:global(.vtex-render__container-id-product-breadcrumb) :global(.vtex-breadcrumb-1-x-container) {
+    padding: 0 16px;
+}
+
 :global(.vtex-render__container-id-search-result-layout)
     :global(.vtex-breadcrumb-1-x-container) {
     padding: 0;
@@ -467,5 +475,10 @@
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
+    }
+
+    :global(.vtex-breadcrumb-1-x-arrow) {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
