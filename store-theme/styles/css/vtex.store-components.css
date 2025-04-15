@@ -873,6 +873,14 @@
     accent-color: #a7cb33;
 }
 
+.imageElement--about-us-section-2-image {
+    max-height: 359px;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @media (max-width: 767px) {
     .imageElementLink--wishlist-header {
         margin-right: 9px;

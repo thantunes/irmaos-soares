@@ -5,24 +5,23 @@
             "responsive-layout.phone"
         ]
     },
-
     "responsive-layout.desktop": {
-       "children":[
-            "flex-layout.row#servicos",            
-            "flex-layout.row#tabs-servicos",            
+        "children": [
+            "flex-layout.row#servicos-breadcrumb",
+            "flex-layout.row#servicos",
+            "flex-layout.row#tabs-servicos",
             "flex-layout.row#contact-servicos"
-       ]
-    },
-
-    "responsive-layout.phone": {
-        "children":[
-             "flex-layout.row#servicos-phone",            
-             "flex-layout.row#tabs-servicos",            
-             "flex-layout.row#contact-servicos"
         ]
-     },
-
-     "flex-layout.row#servicos-phone": {
+    },
+    "responsive-layout.phone": {
+        "children": [
+            "flex-layout.row#servicos-breadcrumb",
+            "flex-layout.row#servicos",
+            "flex-layout.row#tabs-servicos",
+            "flex-layout.row#contact-servicos"
+        ]
+    },
+    "flex-layout.row#servicos-phone": {
         "props": {
             "blockClass": "servicos-phone",
             "marginTop": 5
@@ -36,7 +35,6 @@
             "image#banner-servicos-phone"
         ]
     },
-
     "image#banner-servicos-phone": {
         "props": {
             "src": "assets/banner-our-services.png",
@@ -44,7 +42,6 @@
             "maxWidth": ""
         }
     },
-
     "flex-layout.row#servicos": {
         "props": {
             "blockClass": "servicos",
@@ -56,18 +53,18 @@
     },
     "flex-layout.col#servicos": {
         "children": [
-            "image#banner-servicos-desktop"
-            // "rich-text#nossos-servicos"
+            "rich-text#nossos-servicos"
         ]
     },
     "rich-text#nossos-servicos": {
         "props": {
-            "alignment": "center",
-            "text": "## Nossos Serviços",
-            "blockClass": "servicos--title"
+            "text": "## Nossos serviços",
+            "blockClass": [
+                "title--nossos-servicos",
+                "institutional-title"
+            ]
         }
     },
-
     "image#banner-servicos-desktop": {
         "props": {
             "src": "assets/banner-our-services.png",
@@ -75,44 +72,38 @@
             "maxWidth": ""
         }
     },
-
-
     "flex-layout.row#tabs-servicos": {
         "props": {
             "blockClass": "servicos"
         },
-        "children": [            
+        "children": [
             "tab-layout#services-details"
         ]
     },
-
-
     "tab-layout#services-details": {
         "children": [
             "tab-list#services-details",
             "tab-content#services-details"
         ],
         "props": {
-            "blockClass": "home",
+            "blockClass": ["home", "servicos"],
             "defaultActiveTabId": "instale-ja"
         }
     },
     "tab-list#services-details": {
         "children": [
-            "tab-list.item#instale-ja", 
+            "tab-list.item#instale-ja",
             "tab-list.item#assentamento-ceramico",
             "tab-list.item#servicos-pintura",
             "tab-list.item#servicos-eletricos",
             "tab-list.item#servicos-hidraulicos",
             "tab-list.item#reformas-gerais",
             "tab-list.item#consultoria-para-obras"
-
         ]
     },
-
     "tab-content#services-details": {
         "children": [
-            "tab-content.item#instale-ja", 
+            "tab-content.item#instale-ja",
             "tab-content.item#assentamento-ceramico",
             "tab-content.item#servicos-pintura",
             "tab-content.item#servicos-eletricos",
@@ -121,7 +112,6 @@
             "tab-content.item#consultoria-para-obras"
         ]
     },
-    
     "flex-layout.row#contact-servicos": {
         "props": {
             "blockClass": "servicos",
@@ -131,7 +121,6 @@
             "flex-layout.col#contact-servicos"
         ]
     },
-
     "flex-layout.col#contact-servicos": {
         "props": {
             "horizontalAlign": "center"
@@ -140,13 +129,46 @@
             "rich-text#contact-servicos"
         ]
     },
-
     "rich-text#contact-servicos": {
         "props": {
             "alignment": "CENTER",
             "text": "Contrate pelo WhatsApp  [62 98423-8195](https://wa.me/5562984238195)",
             "blockClass": "servicos--contact"
         }
+    },
+    "flex-layout.row#servicos-breadcrumb": {
+        "children": [
+            "image#servicos-breadcrumb-home",
+            "image#servicos-breadcrumb-arrow",
+            "rich-text#servicos-breadcrumb-text"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#servicos-breadcrumb-home": {
+        "props": {
+            "src": "/arquivos/nav-home.svg",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#servicos-breadcrumb-arrow": {
+        "props": {
+            "src": "/arquivos/breadcrumb-arrow.svg"
+        }
+    },
+    "rich-text#servicos-breadcrumb-text": {
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb-text"
+            ],
+            "text": "Nossos Serviços"
+        }
     }
-
 }

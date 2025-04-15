@@ -249,7 +249,8 @@
 }
 
 .container--institutional-title .paragraph,
-.container--institutional-title .listOrdered, .list--institutional-title {
+.container--institutional-title .listOrdered,
+.list--institutional-title {
     max-width: 1198px;
     margin-left: auto;
     margin-right: auto;
@@ -290,6 +291,100 @@
     font-size: 16px;
 }
 
+:global(.vtex-flex-layout-0-x-flexRow--about-us-section-1) .paragraph {
+    max-width: 729px;
+    margin: 0;
+}
+
+.paragraph--about-us-section-1-text-1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000005;
+    margin-bottom: 22px !important;
+}
+
+.paragraph--about-us-section-1-text-2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #7ea30a;
+    margin-bottom: 36px !important;
+}
+
+.paragraph--about-us-section-1-text-3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #000;
+    margin-bottom: 36px !important;
+}
+
+.paragraph--about-us-section-1-text-4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+}
+
+.paragraph--about-us-section-2-text-1 {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 147%;
+    color: #fff;
+}
+
+.paragraph--about-us-section-2-text-1,
+.paragraph--about-us-section-2-text-2 {
+    margin: 0;
+}
+
+.paragraph--about-us-section-2-text-2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.paragraph--about-us-section-3-text {
+    max-width: 551px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.container--seja-fornecedor-title {
+    position: absolute;
+    left: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 267px;
+}
+
+.container--seja-fornecedor-title .heading-level-2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.paragraph--servicos--contact {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #25d366;
+    box-shadow: 0px 0px 4px 0px #00000040;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 @media screen and (max-width: 768px) {
     .headingLevel2--shelfTitle {
         font-size: 22px;
@@ -316,6 +411,40 @@
     .paragraph--newsletter-title {
         text-align: center;
         margin-bottom: 26px;
+    }
+
+    .container--institutional-title .headingLevel2 {
+        font-size: 28px;
+        max-width: calc(100% - 32px);
+        margin: 0px auto 16px;
+        text-align: center;
+        line-height: 31px;
+    }
+
+    .container--institutional-title .headingLevel2::after {
+        top: -31px;
+        right: 30px;
+    }
+
+    .container--institutional-title .paragraph,
+    .container--institutional-title .listOrdered,
+    .list--institutional-title {
+        max-width: calc(100% - 32px);
+    }
+
+    .container--seja-fornecedor-title {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -10px;
+    }
+
+    .container--seja-fornecedor-title .heading-level-2 {
+        text-align: center;
+        line-height: 48px;
+    }
+
+    .paragraph--servicos--contact {
+        font-size: 14px;
     }
 }
 

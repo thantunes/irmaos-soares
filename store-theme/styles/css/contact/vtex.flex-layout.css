@@ -1,4 +1,3 @@
-
 .flexRowContent--contact :global(.vtex-input__label),
 .flexRowContent--contact :global(.vtex-textarea__label) {
     font-size: 1rem;
@@ -8,12 +7,13 @@
 .flexRowContent--contact :global(.vtex-input),
 .flexRowContent--contact :global(.vtex-textarea) {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
-.flexRowContent--contact :global(.vtex-rich-text-0-x-heading--title--contact-us){
-    color: #0D6721;
-    margin:0
+.flexRowContent--contact
+    :global(.vtex-rich-text-0-x-heading--title--contact-us) {
+    color: #0d6721;
+    margin: 0;
 }
 
 .flexRowContent--contact :global(.vtex-styleguide-9-x-input),
@@ -23,5 +23,11 @@
     padding: 0.5rem;
     font-size: 1rem;
     color: #3f3f40;
-     background-color: #FFF;
+    background-color: #fff;
+}
+
+:global(.vtex-rich-text-0-x-heading--title--contact-us),
+:global(.vtex-rich-text-0-x-headingLevel2--title--trabalhe-conosco) {
+    max-width: 1440px;
+    margin: 0 auto;
 }

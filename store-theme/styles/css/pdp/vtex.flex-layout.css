@@ -140,3 +140,11 @@
         padding: 0 16px;
     }
 }
+
+@media (max-width: 376px) {
+    .flexRow--is-breadcrumb :global(.vtex-breadcrumb-1-x-link),
+    .flexRow--is-breadcrumb :global(.vtex-breadcrumb-1-x-term) {
+        font-size: 0.75rem;
+        font-family: "Sarabun", sans-serif;
+    }
+}

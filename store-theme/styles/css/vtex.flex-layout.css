@@ -133,22 +133,12 @@
     margin-bottom: 3rem;
 }
 
-.flexRowContent--servicos :global(.vtex-rich-text-0-x-heading) {
-    color: #0d6721;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.flexRowContent--servicos :global(.vtex-rich-text-0-x-paragraph) {
-    color: #0d6721;
-    font-weight: 400;
-    font-size: 1.2rem;
-}
 
 .flexRowContent--servicos :global(.vtex-rich-text-0-x-link--servicos--contact) {
-    color: #0d6721;
-    font-weight: 900;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -414,6 +404,153 @@
     align-items: center;
 }
 
+.flexColChild--image-contact-us {
+    max-height: 548.5px;
+    margin-left: -90px;
+}
+
+.flexCol--contact-form {
+    margin-left: 120px;
+    min-width: 589px;
+    justify-content: center;
+}
+
+.flexCol--contact-form :global(.vtex-styleguide-9-x-input),
+.flexCol--contact-form :global(.vtex-textarea__input),
+.flexCol--contact-form :global(.vtex-styleguide-9-x-container) {
+    outline: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+}
+
+.flexCol--contact-form :global(.vtex-styleguide-9-x-input)::placeholder,
+.flexCol--contact-form :global(.vtex-textarea__input)::placeholder {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    color: #747474;
+}
+
+.flexCol--contact-form :global(.vtex-styleguide-9-x-input),
+.flexCol--contact-form :global(.vtex-textarea__input) {
+    font-weight: 400;
+    font-size: 10px !important;
+    line-height: 100%;
+}
+
+.flexCol--contact-form :global(.vtex-input-prefix__group) {
+    border: none;
+}
+
+.flexCol--contact-form :global(.vtex-textarea__input) {
+    margin-top: 16px;
+    min-height: 122px;
+}
+
+:global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button) {
+    margin-top: 14px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: initial;
+    border-radius: 6px;
+    background-color: #0d6721;
+    border-color: #0d6721;
+}
+
+.flexRowContent--about-us-section-1 {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 72px;
+    margin-bottom: 64px;
+}
+
+.flexCol--about-us-section-2-text-container {
+    min-height: 359px;
+    justify-content: center;
+    background-color: #a9b900;
+    border-radius: 16px;
+    padding-right: 54px;
+    padding-left: 182px;
+    max-width: 1287px;
+}
+
+.flexRowContent--about-us-section-2 {
+    position: relative;
+    justify-content: flex-end;
+    margin-bottom: 64px;
+}
+
+.flexRowContent--about-us-section-3 {
+    gap: 54px;
+    align-items: center;
+    margin-bottom: 54px;
+}
+
+.flexRow--cargos-trabalhe-conosco-wrapper :global(.vtex-dropdown__label) {
+    display: none;
+}
+
+.flexRow--cargos-trabalhe-conosco-wrapper :global(.vtex-dropdown__button) {
+    width: 100%;
+    padding: 0 8px;
+}
+
+.flexRowContent--trabalhe-conosco {
+    gap: 55px;
+}
+
+.flexCol--image-trabalhe-conosco {
+    max-height: 764px;
+}
+
+.flexRow--seja-fornecedor {
+    max-width: 954px;
+    margin: 0 auto;
+}
+
+.flexRow--seja-fornecedor .flexColChild {
+    padding: 0;
+}
+
+.flexRow--seja-fornecedor-img-title-wrapper {
+    position: relative;
+}
+
+.flexRow--seja-fornecedor-form-wrapper {
+    background: var(--gradient);
+    padding: 39px 45px 35px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.flexCol--seja-fornecedor {
+    margin: 0;
+}
+
+.flexRowContent--seja-fornecedor {
+    margin-bottom: 48px;
+}
+
+.flexRowContent--seja-fornecedor
+    :global(.vtex-store-form-0-x-formSubmitButton)
+    :global(.vtex-button) {
+    width: 190px;
+    height: 41px;
+    padding: 0;
+    border: 1px solid #ffffff;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     /* .flexRow--minibanners-2 */
 
@@ -551,5 +688,27 @@
 
     .flexRow--faq {
         padding: 0 16px;
+    }
+
+    .flexRow--seja-fornecedor {
+        max-width: calc(100% - 32px);
+        margin: 0 auto;
+    }
+
+    .flexRowContent--seja-fornecedor-img-title-wrapper .col {
+        padding: 0;
+    }
+
+    .flexRow--seja-fornecedor-form-wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .flexCol--seja-fornecedor {
+        min-width: initial;
+    }
+
+    .flexRowContent--seja-fornecedor-img-title-wrapper :global(.vtex-store-components-3-x-imageElement) {
+        width: 100%;
     }
 }

@@ -1,10 +1,12 @@
 {
     "store.custom#trabalhe-conosco": {
         "children": [
+            "flex-layout.row#trabalhe-conosco-breadcrumb",
+            "rich-text#trabalhe-conosco",
             "flex-layout.row#trabalhe-conosco"
         ]
     },
-    "flex-layout.row#trabalhe-conosco": {
+    "flex-layout.row#trabalhe-conosco-2": {
         "props": {
             "blockClass": "contact",
             "colGap": 5,
@@ -13,7 +15,7 @@
             "rowGap": 5
         },
         "children": [
-            "flex-layout.col#trabalhe-conosco",            
+            "flex-layout.col#trabalhe-conosco",
             "flex-layout.col#image-contact-us"
         ]
     },
@@ -22,12 +24,6 @@
             "rich-text#trabalhe-conosco",
             "form#trabalhe-conosco"
         ]
-    },
-    "rich-text#trabalhe-conosco": {
-        "props": {
-            "text": "## Trabalhe Conosco\nDeseja fazer parte dessa equipe? Preencha o formulário e aguarde.",
-            "blockClass": "title--contact-us"
-        }
     },
     "form#trabalhe-conosco": {
         "props": {
@@ -42,10 +38,9 @@
             "form-input.text#email-trabalhe-conosco",
             "form-input.text#telefone-trabalhe-conosco",
             "form-input.text#linkedin-trabalhe-conosco",
-            "form-input.dropdown#cargos-trabalhe-conosco",
-            "form-input.upload#curriculo-trabalhe-conosco",
+            "flex-layout.row#cargos-trabalhe-conosco-wrapper",
+            "flex-layout.row#curriculo-trabalhe-conosco-wrapper",
             "form-input.textarea#mensagem-trabalhe-conosco",
-
             "form-submit#trabalhe-conosco"
         ]
     },
@@ -61,50 +56,150 @@
             "textPosition": "CENTER"
         }
     },
-
     "form-input.text#nome-trabalhe-conosco": {
         "props": {
-            "pointer": "#/properties/nome"
+            "pointer": "#/properties/nome",
+            "placeholder": "Nome",
+            "label": ""
         }
     },
     "form-input.text#email-trabalhe-conosco": {
         "props": {
-            "pointer": "#/properties/email"
+            "pointer": "#/properties/email",
+            "placeholder": "E-mail",
+            "label": ""
         }
     },
-
     "form-input.text#telefone-trabalhe-conosco": {
         "props": {
-            "pointer": "#/properties/telefone"
+            "pointer": "#/properties/telefone",
+            "placeholder": "Telefone",
+            "label": ""
         }
     },
-
     "form-input.text#linkedin-trabalhe-conosco": {
         "props": {
-            "pointer": "#/properties/linkedin"
+            "pointer": "#/properties/linkedin",
+            "placeholder": "Linkedin",
+            "label": ""
         }
     },
-
+    "flex-layout.row#cargos-trabalhe-conosco-wrapper": {
+      "children": ["form-input.dropdown#cargos-trabalhe-conosco"],
+      "props": {
+        "blockClass": ["cargos-trabalhe-conosco-wrapper"],
+        "preventVerticalStretch": true
+      }
+    },
     "form-input.dropdown#cargos-trabalhe-conosco": {
         "props": {
-            "pointer": "#/properties/cargos"
+            "pointer": "#/properties/cargos",
+            "label": "Selecione um cargo",
+            "blockClass": "cargos"
         }
     },
-
+    "flex-layout.row#curriculo-trabalhe-conosco-wrapper": {
+        "children": ["form-input.upload#curriculo-trabalhe-conosco"],
+        "props": {
+          "blockClass": ["curriculo-trabalhe-conosco-wrapper"],
+          "preventVerticalStretch": true
+        }
+      },
     "form-input.upload#curriculo-trabalhe-conosco": {
         "props": {
-            "pointer": "#/properties/curriculo"
+            "pointer": "#/properties/curriculo",
+            "label": "Teste",
+            "placeholder": "Currículo"
         }
     },
-
     "form-input.textarea#mensagem-trabalhe-conosco": {
         "props": {
-            "pointer": "#/properties/mensagem"
+            "pointer": "#/properties/mensagem",
+            "placeholder": "Mensagem",
+            "label": ""
         }
     },
     "form-submit#trabalhe-conosco": {
         "props": {
             "label": "Enviar candidatura"
+        }
+    },
+    "flex-layout.row#trabalhe-conosco": {
+        "props": {
+            "blockClass": ["contact", "trabalhe-conosco"],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "flex-layout.col#trabalhe-conosco",
+            "flex-layout.col#image-trabalhe-conosco"
+        ]
+    },
+    "flex-layout.col#trabalhe-conosco": {
+        "children": [
+            "form#trabalhe-conosco"
+        ],
+        "props": {
+            "blockClass": "contact-form",
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.col#image-trabalhe-conosco": {
+        "props": {
+            "blockClass": "image-trabalhe-conosco"
+        },
+        "children": [
+            "image#image-trabalhe-conosco"
+        ]
+    },
+    "image#image-trabalhe-conosco": {
+        "props": {
+            "src": "/arquivos/trabalhe-conosco.png",
+            "alt": "Trabalhe conosco"
+        }
+    },
+    "rich-text#trabalhe-conosco": {
+        "props": {
+            "text": "## Trabalhe conosco",
+            "blockClass": [
+                "title--trabalhe-conosco",
+                "institutional-title"
+            ]
+        }
+    },
+    "flex-layout.row#trabalhe-conosco-breadcrumb": {
+        "children": [
+            "image#trabalhe-conosco-breadcrumb-home",
+            "image#trabalhe-conosco-breadcrumb-arrow",
+            "rich-text#trabalhe-conosco-breadcrumb-text"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#trabalhe-conosco-breadcrumb-home": {
+        "props": {
+            "src": "/arquivos/nav-home.svg",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#trabalhe-conosco-breadcrumb-arrow": {
+        "props": {
+            "src": "/arquivos/breadcrumb-arrow.svg"
+        }
+    },
+    "rich-text#trabalhe-conosco-breadcrumb-text": {
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb-text"
+            ],
+            "text": "Trabalhe Conosco"
         }
     }
 }
