@@ -12,8 +12,8 @@
     },
     "responsive-layout.desktop#home-pitchbar": {
         "children": [
-            "flex-layout.row#home-pitchbar-1",
             "flex-layout.row#home-pitchbar-2",
+            "flex-layout.row#home-pitchbar-1",
             "flex-layout.row#home-pitchbar-3",
             "flex-layout.row#home-pitchbar-4"
         ]

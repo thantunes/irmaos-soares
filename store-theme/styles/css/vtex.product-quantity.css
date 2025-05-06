@@ -61,7 +61,7 @@
 
 .quantitySelectorContainer--product-quantity
     :global(.vtex-numeric-stepper__plus-button) {
-    background-color: #000005;
+    background-color: #BACD29;
 }
 
 .quantitySelectorContainer--product-quantity

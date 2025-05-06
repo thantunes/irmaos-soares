@@ -9,11 +9,12 @@
 } */
 
 .stackContainer--flags {
-    position: absolute;
+    position: initial;
     top: 11px;
     left: 12px;
     width: 100%;
     z-index: 10;
+    min-height: 62px;
 }
 
 .stackItem--flags {
@@ -32,5 +33,6 @@
 
     .stackContainer--flags {
         position: initial;
+        min-height: 93px;
     }
 }

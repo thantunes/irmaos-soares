@@ -6,8 +6,8 @@
         "children": [
             "menu-item#category-externas",
             "menu-item#category-internas",
-            "menu-item#category-seguranca-e-conectividade",
             "menu-item#category-servicos",
+            "menu-item#category-cupons-de-desconto",
             "menu-item#category-ofertas",
             "menu-item#category-blog",
             "menu-item#category-empresas"
@@ -54,22 +54,21 @@
             }
         }
     },
-    "menu-item#category-seguranca-e-conectividade": {
+    "menu-item#category-cupons-de-desconto": {
         "props": {
             "blockClass": [
-                "menu-links-item",
-                "hasSubmenu"
+                "menu-links-item"
             ],
-            "id": "menu-item-seguranca-e-conectividade",
+            "id": "menu-item-cupons-de-desconto",
             "type": "custom",
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/seguranca-e-conectividade",
+                "href": "/cupons-de-desconto",
                 "type": "internal",
                 "noFollow": true,
-                "tagTitle": "Segurança e Conectividade",
-                "text": "Segurança e Conectividade"
+                "tagTitle": "Cupons de Desconto",
+                "text": "Cupons de Desconto"
             }
         }
     },

@@ -573,6 +573,15 @@
     left: 42px;
 }
 
+:global(.vtex-product-highlights-2-x-productHighlightWrapper[data-highlight-name="Ofertas da semana"]) {
+    background: #f8cc1c;
+    color: #000;
+}
+
+:global(.vtex-product-highlights-2-x-productHighlightWrapper[data-highlight-name="Desconto à vista"]) {
+    background-color: #bacd29 !important;
+}
+
 @media (max-width: 1023px) {
     :global(.vtex-add-to-cart-button-0-x-buttonText) {
         margin-bottom: -3px;

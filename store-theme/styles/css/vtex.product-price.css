@@ -23,6 +23,7 @@
 
 .currencyContainer {
     font-weight: bold;
+    color: #0D6721;
 }
 
 .savings {
@@ -46,7 +47,7 @@
     line-height: 100%;
 
     display: inline-block;
-    margin-left: 8px;
+    margin-left: 7px;
 }
 
 .savings--summary {
@@ -123,7 +124,7 @@
     }
 
     .currencyContainer--summary {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .sellingPriceValue::after,
