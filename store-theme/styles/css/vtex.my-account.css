@@ -525,9 +525,7 @@
         .vtex-flex-layout-0-x-flexRowContent--curriculo-trabalhe-conosco-wrapper
     )
     :global(.vtex-dropdown__container)::after,
-:global(
-        .vtex-flex-layout-0-x-flexRowContent--seja-fornecedor-form-wrapper
-    )
+:global(.vtex-flex-layout-0-x-flexRowContent--seja-fornecedor-form-wrapper)
     :global(.vtex-dropdown__container)::after {
     content: "";
     width: 8px;
@@ -546,9 +544,8 @@
 :global(
         .vtex-flex-layout-0-x-flexRowContent--curriculo-trabalhe-conosco-wrapper
     )
-    :global(.vtex-styleguide-9-x-dropdown), :global(
-        .vtex-flex-layout-0-x-flexRowContent--seja-fornecedor-form-wrapper
-    )
+    :global(.vtex-styleguide-9-x-dropdown),
+:global(.vtex-flex-layout-0-x-flexRowContent--seja-fornecedor-form-wrapper)
     :global(.vtex-styleguide-9-x-dropdown) {
     position: relative;
     margin-top: 10px;
@@ -558,9 +555,8 @@
         .vtex-flex-layout-0-x-flexRowContent--curriculo-trabalhe-conosco-wrapper
     )
     :global(.vtex-styleguide-9-x-dropdown)
-    > :global(.db.mb3.w-100.c-on-base.t-small), :global(
-        .vtex-flex-layout-0-x-flexRowContent--seja-fornecedor-form-wrapper
-    )
+    > :global(.db.mb3.w-100.c-on-base.t-small),
+:global(.vtex-flex-layout-0-x-flexRowContent--seja-fornecedor-form-wrapper)
     :global(.vtex-styleguide-9-x-dropdown)
     > :global(.db.mb3.w-100.c-on-base.t-small) {
     font-weight: 400;
@@ -573,13 +569,22 @@
     left: 42px;
 }
 
-:global(.vtex-product-highlights-2-x-productHighlightWrapper[data-highlight-name="Ofertas da semana"]) {
+:global(
+        .vtex-product-highlights-2-x-productHighlightWrapper[data-highlight-name="Ofertas da semana"]
+    ) {
     background: #f8cc1c;
     color: #000;
 }
 
-:global(.vtex-product-highlights-2-x-productHighlightWrapper[data-highlight-name="Desconto à vista"]) {
+:global(
+        .vtex-product-highlights-2-x-productHighlightWrapper[data-highlight-name="Desconto à vista"]
+    ) {
     background-color: #bacd29 !important;
+}
+
+:global(._lgpdy-eye._lgpdy-h-right) {
+    right: 26px !important;
+    bottom: 54px;
 }
 
 @media (max-width: 1023px) {

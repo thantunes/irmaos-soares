@@ -136,6 +136,18 @@
     max-width: 868px !important;
 }
 
+@media (max-width: 1300px) {
+    .searchBarContainer {
+        max-width: 628px !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    .searchBarContainer {
+        max-width: 478px !important;
+    }
+}
+
 .searchBarInnerContainer {
     border: 0;
     border-radius: 8px;
@@ -477,13 +489,13 @@
     .carouselContainer--product-image .swiperBullet {
         width: 18px !important;
         height: 16.77px !important;
-        background: #C9C9C9 !important;
+        background: #c9c9c9 !important;
         border-radius: 50% !important;
         margin: 0 8px !important;
     }
 
     .carouselContainer--product-image .swiperBullet.swiperBullet--active {
-        background: #A7CB33 !important;
+        background: #a7cb33 !important;
         border: none !important;
         border-radius: 50px !important;
         width: 52px !important;
@@ -496,8 +508,6 @@
     .productBrandContainer {
         margin-left: 31px;
     }
-
-
 }
 
 .swiperCaret--product-image {
@@ -615,7 +625,7 @@
     top: 0;
     left: 240px;
     border: none;
-    background: #BACD29;
+    background: #bacd29;
     border-radius: 6px;
 }
 
@@ -710,8 +720,8 @@
 
 .imageElementLink--floating-btn-whatsapp {
     position: fixed;
-    bottom: 20px;
-    right: 2rem;
+    bottom: 109px;
+    right: 20px;
     max-width: 64px;
     z-index: 20;
 }
