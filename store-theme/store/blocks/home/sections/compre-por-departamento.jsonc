@@ -88,7 +88,7 @@
         "props": {
             "src": "/arquivos/departamento-organizacao.png",
             "link": {
-                "url": "/"
+                "url": "/utilidades-do-lar"
             },
             "blockClass": [
                 "first-img"
@@ -98,7 +98,7 @@
     "link#home-compre-por-departamento-item-1-title": {
         "props": {
             "label": "Casa & Organização",
-            "href": "/",
+            "href": "/utilidades-do-lar",
             "blockClass": [
                 "home-compre-por-departamento-item-title"
             ]
@@ -120,14 +120,14 @@
         "props": {
             "src": "/arquivos/departamento-portas.png",
             "link": {
-                "url": "/"
+                "url": "/portas-e-janelas"
             }
         }
     },
     "link#home-compre-por-departamento-item-2-title": {
         "props": {
             "label": "Portas & Janelas",
-            "href": "/",
+            "href": "/portas-e-janelas",
             "blockClass": [
                 "home-compre-por-departamento-item-title"
             ]
@@ -149,14 +149,14 @@
         "props": {
             "src": "/arquivos/departamento-tintas.png",
             "link": {
-                "url": "/"
+                "url": "/tintas"
             }
         }
     },
     "link#home-compre-por-departamento-item-3-title": {
         "props": {
             "label": "Tintas",
-            "href": "/",
+            "href": "/tintas",
             "blockClass": [
                 "home-compre-por-departamento-item-title"
             ]
@@ -178,14 +178,14 @@
         "props": {
             "src": "/arquivos/departamento-pisos.png",
             "link": {
-                "url": "/"
+                "url": "/pisos-e-revestimentos"
             }
         }
     },
     "link#home-compre-por-departamento-item-4-title": {
         "props": {
             "label": "Pisos",
-            "href": "/",
+            "href": "/pisos-e-revestimentos",
             "blockClass": [
                 "home-compre-por-departamento-item-title"
             ]
@@ -207,14 +207,14 @@
         "props": {
             "src": "/arquivos/departamento-loucas.png",
             "link": {
-                "url": "/"
+                "url": "/177?map=productClusterIds"
             }
         }
     },
     "link#home-compre-por-departamento-item-5-title": {
         "props": {
             "label": "Louças",
-            "href": "/",
+            "href": "/177?map=productClusterIds",
             "blockClass": [
                 "home-compre-por-departamento-item-title"
             ]
@@ -236,14 +236,14 @@
         "props": {
             "src": "/arquivos/departamento-ferramentas.png",
             "link": {
-                "url": "/"
+                "url": "/ferragens"
             }
         }
     },
     "link#home-compre-por-departamento-item-6-title": {
         "props": {
-            "label": "Ferramentas",
-            "href": "/",
+            "label": "Ferragens",
+            "href": "/ferragens",
             "blockClass": [
                 "home-compre-por-departamento-item-title"
             ]
@@ -265,14 +265,14 @@
         "props": {
             "src": "/arquivos/departamento-metais.png",
             "link": {
-                "url": "/"
+                "url": "/172?map=productClusterIds"
             }
         }
     },
     "link#home-compre-por-departamento-item-7-title": {
         "props": {
             "label": "Metais",
-            "href": "/",
+            "href": "/172?map=productClusterIds",
             "blockClass": [
                 "home-compre-por-departamento-item-title"
             ]
@@ -294,14 +294,14 @@
         "props": {
             "src": "/arquivos/departamento-iluminacao.png",
             "link": {
-                "url": "/"
+                "url": "/iluminacao"
             }
         }
     },
     "link#home-compre-por-departamento-item-8-title": {
         "props": {
             "label": "Iluminação",
-            "href": "/",
+            "href": "/iluminacao",
             "blockClass": [
                 "home-compre-por-departamento-item-title"
             ]
@@ -323,14 +323,14 @@
         "props": {
             "src": "/arquivos/departamento-decoracao.png",
             "link": {
-                "url": "/"
+                "url": "/material-basico/telhas-e-acessorios"
             }
         }
     },
     "link#home-compre-por-departamento-item-9-title": {
         "props": {
-            "label": "Decoração",
-            "href": "/",
+            "label": "Telhas",
+            "href": "/material-basico/telhas-e-acessorios",
             "blockClass": [
                 "home-compre-por-departamento-item-title"
             ]

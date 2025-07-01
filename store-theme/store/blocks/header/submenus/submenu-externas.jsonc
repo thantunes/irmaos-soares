@@ -111,7 +111,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/kits-e-acessorios",
+                "href": "/banheiros/kits-e-acessorios",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Kits e Acessórios",
@@ -129,7 +129,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/torneiras-e-misturadores",
+                "href": "/banheiros/torneiras-e-misturadores",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Torneiras e Misturadores",
@@ -147,7 +147,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/registros-e-acabamentos",
+                "href": "/banheiros/registros-e-acabamentos",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Registros e Acabamentos",
@@ -165,7 +165,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/cubas-e-pias",
+                "href": "/banheiros/cubas-e-pias",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Cubas e Pias",
@@ -183,7 +183,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/duchas-e-chuveiros",
+                "href": "/banheiros/duchas-e-chuveiros",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Duchas e Chuveiros",
@@ -201,7 +201,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/vasos-sanitarios",
+                "href": "/banheiros/vasos-sanitarios",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Vasos Sanitários",
@@ -219,7 +219,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/assentos-sanitarios",
+                "href": "/banheiros/assentos-sanitarios",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Assentos Sanitários",
@@ -237,7 +237,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/ducha-higienica",
+                "href": "/banheiros/ducha-higienica",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Ducha Higiênica",
@@ -255,7 +255,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/caixa-de-descarga",
+                "href": "/banheiros/caixa-de-descarga",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Caixa de Descarga",
@@ -273,7 +273,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/kits-louca-sanitaria",
+                "href": "/banheiros/kits-louca-sanitaria",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Kits Louça Sanitária",
@@ -291,7 +291,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/nichos",
+                "href": "/banheiros/nichos",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Nichos",
@@ -309,7 +309,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/espelhos",
+                "href": "/banheiros/espelhos",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Espelhos",
@@ -327,7 +327,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/armarios",
+                "href": "/banheiros/armarios",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Armários",
@@ -345,7 +345,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/barra-de-apoio",
+                "href": "/banheiros/barra-de-apoio",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Barra de apoio",
@@ -363,7 +363,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/sifao-valvula-e-engate",
+                "href": "/banheiros/sifao-valvula-e-engate",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Sifão, Válvula e Engate",
@@ -381,7 +381,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/gabinetes",
+                "href": "/banheiros/gabinetes",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Gabinetes",
@@ -399,7 +399,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/renovador-de-ar",
+                "href": "/banheiros/renovador-de-ar",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Renovador de Ar",
@@ -417,7 +417,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/bacia-turca-e-mictorio",
+                "href": "/banheiros/bacia-turca-e-mictorio",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Bacia Turca e Mictório",
@@ -481,11 +481,11 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/pias-e-cubas",
+                "href": "/cozinha/cubas-e-pias",
                 "type": "internal",
                 "noFollow": true,
-                "tagTitle": "Pias e Cubas",
-                "text": "Pias e Cubas"
+                "tagTitle": "Cubas e Pias",
+                "text": "Cubas e Pias"
             }
         }
     },
@@ -499,7 +499,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/gabinetes",
+                "href": "/cozinha/gabinetes",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Gabinetes",
@@ -568,7 +568,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/acessorios",
+                "href": "/utilidades-do-lar/acessorios",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Acessórios",
@@ -586,7 +586,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/caixa-organizadora",
+                "href": "/utilidades-do-lar/caixa-organizadora",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Caixa Organizadora",
@@ -604,7 +604,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/saboneteira",
+                "href": "/utilidades-do-lar/saboneteira",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Saboneteira",
@@ -622,7 +622,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/cestos-e-lixeiras",
+                "href": "/utilidades-do-lar/cestos-e-lixeiras",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Cestos e Lixeiras",
@@ -640,7 +640,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/porta-escova",
+                "href": "/utilidades-do-lar/porta-escova",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Porta Escova",
@@ -658,7 +658,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/quadros-decorativos",
+                "href": "/utilidades-do-lar/quadros-decorativos",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Quadros Decorativos",
@@ -676,7 +676,7 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/vasos-de-plantas",
+                "href": "/utilidades-do-lar/vasos-de-plantas",
                 "type": "internal",
                 "noFollow": true,
                 "tagTitle": "Vasos de Plantas",

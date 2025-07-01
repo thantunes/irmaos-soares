@@ -49,7 +49,7 @@
             "src": "/arquivos/banner-2-home.png",
             "maxWidth": "1440px",
             "link": {
-                "url": "/"
+                "url": "/144?map=productClusterIds"
             },
             "blockClass": "home-banner-2"
         }
@@ -59,7 +59,7 @@
             "src": "/arquivos/banner-meio-mobile.png",
             "maxWidth": "358px",
             "link": {
-                "url": "/"
+                "url": "/144?map=productClusterIds"
             },
             "blockClass": "home-banner-2"
         }

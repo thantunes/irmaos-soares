@@ -4,53 +4,52 @@
             "blockClass": "menu-links"
         },
         "children": [
-            "menu-item#category-externas",
-            "menu-item#category-internas",
+            "menu-item#category-ambientes",
+            "menu-item#category-mais-vendidos",
             "menu-item#category-servicos",
             "menu-item#category-cupons-de-desconto",
             "menu-item#category-ofertas",
-            "menu-item#category-blog",
+            // "menu-item#category-blog",
             "menu-item#category-empresas"
         ]
     },
-    "menu-item#category-externas": {
+    "menu-item#category-ambientes": {
         "props": {
             "blockClass": [
                 "menu-links-item",
                 "hasSubmenu"
             ],
-            "id": "menu-item-externas",
+            "id": "menu-item-ambientes",
             "type": "custom",
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/externas",
+                "href": "/",
                 "type": "internal",
                 "noFollow": true,
-                "tagTitle": "Externas",
-                "text": "Externas"
+                "tagTitle": "Ambientes",
+                "text": "Ambientes"
             }
         },
         "blocks": [
             "vtex.menu@2.x:submenu#externas"
         ]
     },
-    "menu-item#category-internas": {
+    "menu-item#category-mais-vendidos": {
         "props": {
             "blockClass": [
-                "menu-links-item",
-                "hasSubmenu"
+                "menu-links-item"
             ],
-            "id": "menu-item-internas",
+            "id": "menu-item-mais-vendidos",
             "type": "custom",
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/internas",
+                "href": "/171?map=productClusterIds",
                 "type": "internal",
                 "noFollow": true,
-                "tagTitle": "Internas",
-                "text": "Internas"
+                "tagTitle": "Mais vendidos",
+                "text": "Mais vendidos"
             }
         }
     },
@@ -75,8 +74,7 @@
     "menu-item#category-servicos": {
         "props": {
             "blockClass": [
-                "menu-links-item",
-                "hasSubmenu"
+                "menu-links-item"
             ],
             "id": "menu-item-servicos",
             "type": "custom",
@@ -138,8 +136,8 @@
             "iconId": null,
             "highlight": false,
             "itemProps": {
-                "href": "/para-empresas",
-                "type": "internal",
+                "href": "https://api.whatsapp.com/send/?phone=5562984238195&text&type=phone_number&app_absent=0",
+                "type": "external",
                 "noFollow": true,
                 "tagTitle": "Para Empresas",
                 "text": "Para Empresas"

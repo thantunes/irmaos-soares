@@ -385,6 +385,10 @@
     color: #fff;
 }
 
+.paragraph--seo-hidden-text {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .headingLevel2--shelfTitle {
         font-size: 22px;
