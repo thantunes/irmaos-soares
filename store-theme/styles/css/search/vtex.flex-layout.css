@@ -1,6 +1,3 @@
-.flexRow--orderByAndSwitcher {
-  padding-right: 1.5em;
-}
 
 .flexRowContent--savingsSummaryListDesktop {
   justify-content: flex-start;
@@ -31,4 +28,8 @@
 
 .flexCol--summaryUpDetailsListMobile {
   margin-bottom: 0.25rem
+}
+
+.flexRowContent--orderByAndSwitcher {
+    margin-bottom: 14px;
 }

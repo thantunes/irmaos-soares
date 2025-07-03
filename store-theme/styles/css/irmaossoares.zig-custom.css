@@ -1,4 +1,11 @@
-.parcelamentoIS{    
+.parcelamentoIS {
     font-size: 14px;
     /* margin-top: -0.5rem; */
+}
+
+@media (max-width: 1023px) {
+    .parcelamentoIS {
+        font-size: 13px;
+        /* margin-top: -0.5rem; */
+    }
 }

@@ -59,7 +59,7 @@
 
 .flexCol--filterCol {
     max-width: 500px;
-    min-width: 230px;
+    min-width: 243px;
 }
 
 .flexCol--productCountCol {
@@ -71,11 +71,11 @@
 }
 
 .flexCol--orderByMobileCol {
-    width: 42%;
+    width: 200px;
 }
 
 .flexCol--filterMobileCol {
-    width: 38%;
+    width: 140px;
 }
 
 .flexRow--quickviewMainRow {
@@ -133,22 +133,12 @@
     margin-bottom: 3rem;
 }
 
-.flexRowContent--servicos :global(.vtex-rich-text-0-x-heading) {
-    color: #0d6721;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.flexRowContent--servicos :global(.vtex-rich-text-0-x-paragraph) {
-    color: #0d6721;
-    font-weight: 400;
-    font-size: 1.2rem;
-}
 
 .flexRowContent--servicos :global(.vtex-rich-text-0-x-link--servicos--contact) {
-    color: #0d6721;
-    font-weight: 900;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -162,13 +152,403 @@
 }
 
 .flexRow--footer-copyright {
-    background-color: #f0f0f0;
+    background-color: #000005;
+    padding: 22px 0;
 }
 
 .flexRowContent--footer-copyright {
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+}
+
+.flexRowContent--header-principal-right {
+    justify-content: center;
+    gap: 35px;
+}
+
+.flexRowContent--header-principal-right
+    :global(.vtex-store-components-3-x-imageElementLink) {
+    max-height: 27px;
+    margin-top: 9px;
+}
+
+.flexRow--submenuContainer {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.flexRowContent--submenuContainer {
+    justify-content: space-between;
+}
+
+.flexCol--submenuExternasLeftFirstCol,
+.flexCol--submenuExternasMiddleItems,
+.flexCol--submenuExternasRightItems {
+    gap: 16px;
+}
+
+.flexCol--submenuExternasLeftFirstCol {
+    margin-right: 20px;
+}
+
+.flexRow--slider-principal :global(.vtex-store-components-3-x-container) {
+    max-width: 1920px;
+}
+
+.flexRowContent--slider-principal {
+    margin-top: 0;
+}
+
+.flexRow--slider-principal {
+    margin-bottom: 84px;
+}
+
+.flexRowContent--home-pitchbar {
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.flexRow--home-pitchbar-item {
+    padding: 16px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    max-height: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.flexRowContent--home-pitchbar-item {
+    gap: 16px;
+}
+
+.flexCol--home-pitchbar-info {
+    justify-content: center;
+}
+
+.flexRow--green-item {
+    background-color: #bacd29;
+}
+
+.flexRow--green-item
+    :global(.vtex-rich-text-0-x-paragraph--home-pitchbar-title),
+.flexRow--green-item
+    :global(.vtex-rich-text-0-x-paragraph--home-pitchbar-subtitle) {
+    color: #fff;
+}
+
+.flexRow--shelf {
+    margin-bottom: 48px;
+}
+
+.flexRow--home-banners-1 {
+    margin-bottom: 48px;
+}
+
+.flexRowContent--home-banners-1,
+.flexCol--home-banners-1-middle {
+    justify-content: space-between;
+}
+
+.flexColChild--home-banners-1-middle {
+    max-height: 192px;
+}
+
+.flexRowContent--home-banners-1
+    :global(.vtex-store-components-3-x-imageElement) {
+    height: 100%;
+}
+
+.flexColChild--home-compre-por-departamento-item {
+    display: flex;
+    justify-content: center;
+}
+
+.flexColChild--home-compre-por-departamento-item
+    :global(.vtex-store-components-3-x-imageElementLink) {
+    max-height: 107px;
+}
+
+.flexRowContent--home-compre-por-departamento {
+    justify-content: space-between;
+}
+
+.flexRowContent--home-compre-por-departamento .col {
+    width: 100% !important;
+}
+
+.flexRow--home-compre-por-departamento {
+    margin-bottom: 48px;
+}
+
+.flexRow--home-banners-3 {
+    margin-bottom: 48px;
+}
+
+.flexRowContent--home-banners-3
+    :global(.vtex-store-components-3-x-imageElementLink) {
+    max-height: 401px;
+}
+
+.flexCol--newsletter-title {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/arquivos/newsletter-bg.png);
+    background-position: center;
+    background-size: 91% 100%;
+    background-repeat: no-repeat;
+}
+
+.flexColChild--newsletter-title {
+    height: 100%;
+}
+
+.flexRowContent--inputs-form {
+    margin-bottom: 10px;
+}
+
+.flexRowContent--menu-row {
+    padding: 57px 0;
+    justify-content: space-between;
+}
+
+.flexRowContent--footer-socials-container {
+    justify-content: center;
+    gap: 16px;
+    margin-top: 13px;
+}
+
+.flexRowContent--pagamentos-bandeiras {
+    flex-wrap: wrap;
+    max-width: 168px;
+    gap: 8px;
+}
+
+.flexRowContent--footer-copyright-dev {
+    align-items: center;
+    gap: 16px;
+}
+
+.flexRowContent--footer-copyright-dev
+    :global(.vtex-store-components-3-x-imageElementLink) {
+    display: flex;
+    max-width: fit-content;
+}
+
+.flexRow--category-banner {
+    max-width: 1440px;
+    margin: 21px auto 24px;
+}
+
+.flexRowContent--product-id-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.flexRowContent--is-buy-button {
+    margin: 0;
+}
+
+.flexRowContent--is-buy-button :global(.vtex-button) {
+    min-width: 303px;
+    max-height: 40px;
+    border-radius: 6px !important;
+    background-color: #0d6721 !important;
+    border-color: #0d6721 !important;
+}
+
+.flexRow--quantity-buy-container {
+    margin-bottom: 24px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #cecece;
+}
+
+.flexRowContent--quantity-buy-container .stretchChildrenWidth:first-child {
+    width: auto !important;
+}
+
+.flexRowContent--quantity-buy-container .stretchChildrenWidth:last-child {
+    width: 100% !important;
+}
+
+.flexRowContent--product-description {
+    flex-direction: column;
+}
+
+.flexRowContent--product-description .stretchChildrenWidth {
+    width: 100% !important;
+}
+
+.flexRowContent--faq-breadcrumb {
+    align-items: center;
+    gap: 8px;
+    margin: 24px 0 31px;
+}
+
+.flexRow--header-topbar-container {
+    width: 100%;
+}
+
+.flexRowContent--header-topbar-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexRowContent--header-topbar-container .col {
+    width: 100% !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexColChild--image-contact-us {
+    max-height: 548.5px;
+    margin-left: -90px;
+}
+
+.flexCol--contact-form {
+    margin-left: 120px;
+    min-width: 589px;
+    justify-content: center;
+}
+
+.flexCol--contact-form :global(.vtex-styleguide-9-x-input),
+.flexCol--contact-form :global(.vtex-textarea__input),
+.flexCol--contact-form :global(.vtex-styleguide-9-x-container) {
+    outline: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+}
+
+.flexCol--contact-form :global(.vtex-styleguide-9-x-input)::placeholder,
+.flexCol--contact-form :global(.vtex-textarea__input)::placeholder {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    color: #747474;
+}
+
+.flexCol--contact-form :global(.vtex-styleguide-9-x-input),
+.flexCol--contact-form :global(.vtex-textarea__input) {
+    font-weight: 400;
+    font-size: 10px !important;
+    line-height: 100%;
+}
+
+.flexCol--contact-form :global(.vtex-input-prefix__group) {
+    border: none;
+}
+
+.flexCol--contact-form :global(.vtex-textarea__input) {
+    margin-top: 16px;
+    min-height: 122px;
+}
+
+:global(.vtex-store-form-0-x-formSubmitButton) :global(.vtex-button) {
+    margin-top: 14px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: initial;
+    border-radius: 6px;
+    background-color: #0d6721;
+    border-color: #0d6721;
+}
+
+.flexRowContent--about-us-section-1 {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 72px;
+    margin-bottom: 64px;
+}
+
+.flexCol--about-us-section-2-text-container {
+    min-height: 359px;
+    justify-content: center;
+    background-color: #a9b900;
+    border-radius: 16px;
+    padding-right: 54px;
+    padding-left: 182px;
+    max-width: 1287px;
+}
+
+.flexRowContent--about-us-section-2 {
+    position: relative;
+    justify-content: flex-end;
+    margin-bottom: 64px;
+}
+
+.flexRowContent--about-us-section-3 {
+    gap: 54px;
+    align-items: center;
+    margin-bottom: 54px;
+}
+
+.flexRow--cargos-trabalhe-conosco-wrapper :global(.vtex-dropdown__label) {
+    display: none;
+}
+
+.flexRow--cargos-trabalhe-conosco-wrapper :global(.vtex-dropdown__button) {
+    width: 100%;
+    padding: 0 8px;
+}
+
+.flexRowContent--trabalhe-conosco {
+    gap: 55px;
+}
+
+.flexCol--image-trabalhe-conosco {
+    max-height: 764px;
+}
+
+.flexRow--seja-fornecedor {
+    max-width: 954px;
+    margin: 0 auto;
+}
+
+.flexRow--seja-fornecedor .flexColChild {
+    padding: 0;
+}
+
+.flexRow--seja-fornecedor-img-title-wrapper {
+    position: relative;
+}
+
+.flexRow--seja-fornecedor-form-wrapper {
+    background: var(--gradient);
+    padding: 39px 45px 35px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.flexCol--seja-fornecedor {
+    margin: 0;
+}
+
+.flexRowContent--seja-fornecedor {
+    margin-bottom: 48px;
+}
+
+.flexRowContent--seja-fornecedor
+    :global(.vtex-store-form-0-x-formSubmitButton)
+    :global(.vtex-button) {
+    width: 190px;
+    height: 41px;
+    padding: 0;
+    border: 1px solid #ffffff;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -191,5 +571,144 @@
 
     .flexCol--discounts-title {
         padding: 35px 0;
+    }
+
+    .flexRowContent--home-pitchbar-item {
+        display: flex;
+    }
+
+    .flexRow--home-pitchbar-item {
+        min-width: fit-content;
+    }
+
+    .flexRow--slider-principal {
+        margin-bottom: 64px;
+    }
+
+    .flexRowContent--home-pitchbar {
+        margin-bottom: 71px;
+    }
+
+    .flexRow--shelf {
+        padding: 0 8px;
+        margin-bottom: 38px;
+    }
+
+    .flexCol--home-banners-1-content-mobile {
+        gap: 16px;
+    }
+
+    .flexCol--home-banners-1-content-mobile
+        :global(.vtex-store-components-3-x-imageElementLink) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flexRowContent--home-compre-por-departamento {
+        padding: 0 7px;
+    }
+
+    .flexRow--home-compre-por-departamento {
+        margin-bottom: 68px;
+    }
+
+    .flexCol--newsletter-title {
+        background-size: 88% 115%;
+    }
+
+    .flexRowContent--menu-row {
+        padding: 32px 0 27px;
+    }
+
+    .flexCol--footer-logo-container .flexColChild {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flexRowContent--footer-socials-container {
+        display: flex;
+        margin-bottom: 44px;
+    }
+
+    .flexRow--menu-row :global(.vtex-menu-2-x-menuContainerNav) {
+        padding-left: 16px;
+        margin-bottom: 16px;
+    }
+
+    .flexRowContent--pagamentos-bandeiras {
+        display: flex;
+        max-width: initial;
+    }
+
+    .flexRowContent--footer-copyright {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .flexRowContent--footer-copyright-dev {
+        display: flex;
+    }
+
+    .flexRow--category-banner {
+        padding: 0 16px;
+        display: none;
+    }
+
+    .flexRow--breadcrumb-search-mobile {
+        margin: 24px 0;
+        padding-left: 12px;
+    }
+
+    .flexRowContent--category-banner-mobile {
+        padding: 0 16px;
+    }
+
+    .flexRowContent--searchInfoMobileRow {
+        flex-direction: row-reverse;
+        padding: 0 16px;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 24px;
+        align-items: center;
+    }
+
+    .flexRow--product-description {
+        padding: 0 16px;
+    }
+
+    .flexRowContent--productSpecification {
+        justify-content: space-between;
+    }
+
+    .flexRowContent--faq-breadcrumb {
+        display: flex;
+        padding-left: 16px;
+    }
+
+    .flexRow--faq {
+        padding: 0 16px;
+    }
+
+    .flexRow--seja-fornecedor {
+        max-width: calc(100% - 32px);
+        margin: 0 auto;
+    }
+
+    .flexRowContent--seja-fornecedor-img-title-wrapper .col {
+        padding: 0;
+    }
+
+    .flexRow--seja-fornecedor-form-wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .flexCol--seja-fornecedor {
+        min-width: initial;
+    }
+
+    .flexRowContent--seja-fornecedor-img-title-wrapper :global(.vtex-store-components-3-x-imageElement) {
+        width: 100%;
     }
 }

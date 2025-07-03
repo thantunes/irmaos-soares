@@ -1,37 +1,101 @@
 {
     "store.custom#seja-fornecedor": {
         "children": [
+            "flex-layout.row#seja-fornecedor-breadcrumb",
             "flex-layout.row#seja-fornecedor"
         ]
     },
     "flex-layout.row#seja-fornecedor": {
         "props": {
-            "blockClass": "contact",
+            "blockClass": [
+                "contact",
+                "seja-fornecedor"
+            ],
             "colGap": 5,
             "marginBottom": 5,
             "marginTop": 5,
-            "rowGap": 5
+            "rowGap": 5,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
         },
         "children": [
-            "flex-layout.col#seja-fornecedor",            
-            "flex-layout.col#image-contact-us"
+            "flex-layout.col#seja-fornecedor"
         ]
+    },
+    "image#seja-fornecedor-img": {
+        "props": {
+            "src": "/arquivos/seja-um-fornecedor.png"
+        }
     },
     "flex-layout.col#seja-fornecedor": {
         "children": [
-            "rich-text#seja-fornecedor",
-            "form#seja-fornecedor"
+            "flex-layout.row#seja-fornecedor-img-title-wrapper",
+            "flex-layout.row#seja-fornecedor-form-wrapper"
+        ],
+        "props": {
+            "blockClass": [
+                "contact-form",
+                "seja-fornecedor"
+            ]
+        }
+    },
+    "flex-layout.row#seja-fornecedor-img-title-wrapper": {
+        "children": [
+            "responsive-layout.desktop#seja-fornecedor-img",
+            "responsive-layout.mobile#seja-fornecedor-img",
+            "rich-text#seja-fornecedor"
+        ],
+        "props": {
+            "blockClass": [
+                "seja-fornecedor-img-title-wrapper"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "experimentalHideEmptyCols": true,
+            "colGap": 0
+        }
+    },
+    "responsive-layout.desktop#seja-fornecedor-img": {
+        "children": [
+            "image#seja-fornecedor-img"
         ]
+    },
+    "responsive-layout.mobile#seja-fornecedor-img": {
+        "children": [
+            "image#seja-fornecedor-img-mobile"
+        ]
+    },
+    "image#seja-fornecedor-img-mobile": {
+      "props": {
+        "src": "/arquivos/seja-um-fornecedor-mobile.png"
+
+      }
     },
     "rich-text#seja-fornecedor": {
         "props": {
-            "text": "## Seja um fornecedor"
+            "text": "## Seja um fornecedor",
+            "blockClass": [
+                "seja-fornecedor-title"
+            ]
+        }
+    },
+    "flex-layout.row#seja-fornecedor-form-wrapper": {
+        "children": [
+            "form#seja-fornecedor"
+        ],
+        "props": {
+            "blockClass": [
+                "seja-fornecedor-form-wrapper"
+            ]
         }
     },
     "form#seja-fornecedor": {
         "props": {
             "entity": "fornecedor",
-            "schema": "v1"
+            "schema": "v1",
+            "blockClass": [
+                "seja-fornecedor"
+            ]
         },
         "blocks": [
             "form-success#seja-fornecedor"
@@ -60,22 +124,30 @@
     },
     "form-input.text#nome-fornecedor": {
         "props": {
-            "pointer": "#/properties/nome"
+            "pointer": "#/properties/nome",
+            "label": "",
+            "placeholder": "Nome"
         }
     },
     "form-input.text#email-fornecedor": {
         "props": {
-            "pointer": "#/properties/email"
+            "pointer": "#/properties/email",
+            "label": "",
+            "placeholder": "E-mail"
         }
     },
     "form-input.text#telefone-fornecedor": {
         "props": {
-            "pointer": "#/properties/telefone"
+            "pointer": "#/properties/telefone",
+            "label": "",
+            "placeholder": "Telefone"
         }
     },
     "form-input.text#cnpj-fornecedor": {
         "props": {
-            "pointer": "#/properties/cnpj"
+            "pointer": "#/properties/cnpj",
+            "label": "",
+            "placeholder": "CNPJ"
         }
     },
     "form-input.upload#anexo-fornecedor": {
@@ -87,12 +159,49 @@
     },
     "form-input.textarea#mensagem": {
         "props": {
-            "pointer": "#/properties/mensagem"
+            "pointer": "#/properties/mensagem",
+            "label": "",
+            "placeholder": "Mensagem"
         }
     },
     "form-submit#fornecedor": {
         "props": {
             "label": "Enviar"
+        }
+    },
+    "flex-layout.row#seja-fornecedor-breadcrumb": {
+        "children": [
+            "image#seja-fornecedor-breadcrumb-home",
+            "image#seja-fornecedor-breadcrumb-arrow",
+            "rich-text#seja-fornecedor-breadcrumb-text"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#seja-fornecedor-breadcrumb-home": {
+        "props": {
+            "src": "/arquivos/nav-home.svg",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#seja-fornecedor-breadcrumb-arrow": {
+        "props": {
+            "src": "/arquivos/breadcrumb-arrow.svg"
+        }
+    },
+    "rich-text#seja-fornecedor-breadcrumb-text": {
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb-text"
+            ],
+            "text": "Seja um fornecedor"
         }
     }
 }

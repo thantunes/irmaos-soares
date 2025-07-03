@@ -1,33 +1,35 @@
 {
     "store.custom#contact-us": {
         "children": [
+            "flex-layout.row#contact-us-breadcrumb",
+            "rich-text#contact-us",
             "flex-layout.row#contact-us"
         ]
     },
     "flex-layout.row#contact-us": {
         "props": {
             "blockClass": "contact",
-            "colGap": 5,
-            "marginBottom": 5,
-            "marginTop": 5,
-            "rowGap": 5
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
         },
         "children": [
-            "flex-layout.col#contact-us",            
+            "flex-layout.col#contact-us",
             "flex-layout.col#image-contact-us"
         ]
     },
     "flex-layout.col#contact-us": {
         "children": [
-            "rich-text#contact-us",
             "form#contact-us"
-        ]
+        ],
+        "props": {
+            "blockClass": "contact-form",
+            "preventVerticalStretch": true
+        }
     },
 
     "flex-layout.col#image-contact-us":{
         "props": {
-            "blockClass": "image-contact-us",
-            "verticalAlign": "middle"
+            "blockClass": "image-contact-us"
         },
         "children": [
             "image#image-contact-us"
@@ -36,16 +38,16 @@
 
     "image#image-contact-us": {
         "props": {
-            "src": "https://www.irmaossoares.com.br/arquivos/conheca-lojas.png?v=637599872498700000",      
-            "link": "/institucional/nossas-lojas",     
+            "src": "/arquivos/fale-conosco-new.png",
+            "link": "/institucional/nossas-lojas",
             "alt": "Fale Conosco"
         }
     },
 
     "rich-text#contact-us": {
         "props": {
-            "text": "## Fale Conosco\nPossuimos equipe qualificada para esclarecer suas dúvidas.\nVai construir ou reformar? Fale conosco!",
-            "blockClass": "title--contact-us"
+            "text": "## Fale Conosco",
+            "blockClass": ["title--contact-us", "institutional-title"]
         }
     },
     "form#contact-us": {
@@ -80,33 +82,78 @@
 
     "form-input.text#nome-contact": {
         "props": {
-            "pointer": "#/properties/nome"
+            "pointer": "#/properties/nome",
+            "placeholder": "Nome",
+            "label": ""
         }
     },
     "form-input.text#email-contact": {
         "props": {
-            "pointer": "#/properties/email"
-        }
-    },    
-    "form-input.text#telefone-contact": {
-        "props": {
-            "pointer": "#/properties/telefone"
+            "pointer": "#/properties/email",
+            "placeholder": "E-mail",
+            "label": ""
         }
     },
-    
+    "form-input.text#telefone-contact": {
+        "props": {
+            "pointer": "#/properties/telefone",
+            "placeholder": "Telefone",
+            "label": ""
+        }
+    },
+
     "form-input.text#assunto-contact": {
         "props": {
-            "pointer": "#/properties/assunto"
+            "pointer": "#/properties/assunto",
+            "placeholder": "Assunto",
+            "label": ""
         }
     },
     "form-input.textarea#mensagem-contact": {
         "props": {
-            "pointer": "#/properties/mensagem"
+            "pointer": "#/properties/mensagem",
+            "placeholder": "Mensagem",
+            "label": ""
         }
     },
     "form-submit#contact": {
         "props": {
             "label": "Enviar mensagem"
+        }
+    },
+    "flex-layout.row#contact-us-breadcrumb": {
+        "children": [
+            "image#contact-us-breadcrumb-home",
+            "image#contact-us-breadcrumb-arrow",
+            "rich-text#contact-us-breadcrumb-text"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#contact-us-breadcrumb-home": {
+        "props": {
+            "src": "/arquivos/nav-home.svg",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#contact-us-breadcrumb-arrow": {
+        "props": {
+            "src": "/arquivos/breadcrumb-arrow.svg"
+        }
+    },
+    "rich-text#contact-us-breadcrumb-text": {
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb-text"
+            ],
+            "text": "Fale conosco"
         }
     }
 }

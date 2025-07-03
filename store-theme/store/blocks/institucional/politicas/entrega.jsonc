@@ -1,6 +1,7 @@
 {
     "store.custom#politica-de-entrega": {
         "children": [
+            "flex-layout.row#entrega-breadcrumb",
             "flex-layout.row#politica-de-entrega"
         ]
     },
@@ -19,8 +20,43 @@
     },
     "rich-text#politica-de-entrega": {
         "props": {
-            "text": "## politica-de-entrega"
+            "text": "## politica-de-entrega",
+            "blockClass": ["institutional-title"]
+        }
+    },
+    "flex-layout.row#entrega-breadcrumb": {
+        "children": [
+            "image#entrega-breadcrumb-home",
+            "image#entrega-breadcrumb-arrow",
+            "rich-text#entrega-breadcrumb-text"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#entrega-breadcrumb-home": {
+        "props": {
+            "src": "/arquivos/nav-home.svg",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#entrega-breadcrumb-arrow": {
+        "props": {
+            "src": "/arquivos/breadcrumb-arrow.svg"
+        }
+    },
+    "rich-text#entrega-breadcrumb-text": {
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb-text"
+            ],
+            "text": "Política de Entrega"
         }
     }
-   
 }

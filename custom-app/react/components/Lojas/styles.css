@@ -1,95 +1,94 @@
 .stores {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
 }
 
 .store {
-    border: 1px solid #e2e2e2;
-    border-radius: 15px;
-    text-align: center;
-    /* padding: 20px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    overflow: hidden;
-
-    background: #ffffff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  background: linear-gradient(90deg, #a9b900 0%, #0d6721 100%);
+  border-radius: 8px;
 }
 
 .shopInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 11px 0 5px;
-    border-bottom: 1px solid #bebbbb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px 0 0 29px;
 }
 
 .addressContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 15px;
 }
 
-
 .address {
-    display: block;
-    font-family: "Sarabun", sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    text-align: center;
-    color: #727272;
-    min-height: 40px;
-    margin: 0.5rem 0;
+  display: block;
+  color: #fff;
+  min-height: 40px;
+  margin: 0.5rem 0 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 29px;
+  text-align: left;
+  max-width: 370px;
 }
 
 .shopName {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0;
-    font-family: "Sarabun", sans-serif;
-    color: #148b2e;
-    text-transform: uppercase;
+  margin: 0;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+  color: #fff;
+  margin-bottom: 26px;
 }
 
-.phoneStore{
-    font-family: "Sarabun", sans-serif;
-    font-weight: normal;
-    font-size: 1rem;
-    color: #414141;
-    text-decoration: none;
+.phoneStore {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
 }
-
 
 .storeLink {
-    display: flex;
-    background: #148b2e;
-    width: 90%;
-    height: 40px;
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all .3s ease-in-out;
-    align-items: center;
-    border-radius: 15px;
-    justify-content: center;
-    margin-bottom: 0.5rem;
+  display: flex;
+  background: #ffffff;
+  width: calc(100% - 58px);
+  height: 58px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 6px;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #0D6721;
 }
 
-.storeLink:hover {
-    color: #FFF;
-    opacity: .8;
-    background-color: #BACD29;
+.shopImage {
+    max-height: 259px;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
-    .stores {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .stores {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -1,0 +1,126 @@
+{
+    "flex-layout.row#home-banners-1": {
+        "children": [
+            "responsive-layout.desktop#home-banners-1",
+            "responsive-layout.mobile#home-banners-1"
+        ],
+        "props": {
+            "blockClass": [
+                "home-banners-1"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "experimentalHideEmptyCols": true
+        }
+    },
+    "image#home-banner-1-1": {
+        "props": {
+            "src": "/arquivos/banners-1-1.png",
+            "maxWidth": "469px",
+            "link": {
+                "url": "/pisos-e-revestimentos/pisos-e-revestimentos"
+            }
+        }
+    },
+    "responsive-layout.desktop#home-banners-1": {
+        "children": [
+            "image#home-banner-1-1",
+            "flex-layout.col#home-banners-1-middle",
+            "image#home-banner-1-4"
+        ]
+    },
+    "responsive-layout.mobile#home-banners-1": {
+        "children": [
+            "flex-layout.col#home-banners-1-content-mobile"
+        ]
+    },
+    "flex-layout.col#home-banners-1-content-mobile": {
+        "children": [
+            "image#home-banner-1-1-mobile",
+            "image#home-banner-1-2-mobile",
+            "image#home-banner-1-3-mobile",
+            "image#home-banner-1-4-mobile"
+        ],
+        "props": {
+            "blockClass": [
+                "home-banners-1-content-mobile"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-banner-1-1-mobile": {
+        "props": {
+            "src": "/arquivos/mobile-pisos.png",
+            "maxWidth": "358px",
+            "link": {
+                "url": "/pisos-e-revestimentos/pisos-e-revestimentos"
+            }
+        }
+    },
+    "image#home-banner-1-2-mobile": {
+        "props": {
+            "src": "/arquivos/mobile-externas.png",
+            "maxWidth": "358px",
+            "link": {
+                "url": "/piso%20antiderrapante?_q=piso%20antiderrapante&map=ft"
+            }
+        }
+    },
+    "image#home-banner-1-3-mobile": {
+        "props": {
+            "src": "/arquivos/mobile-banheiro.png",
+            "maxWidth": "358px",
+            "link": {
+                "url": "/acessorios%20de%20banheiro?_q=acessorios%20de%20banheiro&map=ft"
+            }
+        }
+    },
+    "image#home-banner-1-4-mobile": {
+        "props": {
+            "src": "/arquivos/mobile-decoracao.png",
+            "maxWidth": "358px",
+            "link": {
+                "url": "/utilidades-do-lar?page=2"
+            }
+        }
+    },
+    "flex-layout.col#home-banners-1-middle": {
+        "children": [
+            "image#home-banner-1-2",
+            "image#home-banner-1-3"
+        ],
+        "props": {
+            "blockClass": [
+                "home-banners-1-middle"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-banner-1-2": {
+        "props": {
+            "src": "/arquivos/banners-1-2.png",
+            "maxWidth": "470px",
+            "link": {
+                "url": "/piso%20antiderrapante?_q=piso%20antiderrapante&map=ft"
+            }
+        }
+    },
+    "image#home-banner-1-3": {
+        "props": {
+            "src": "/arquivos/banners-1-3.png",
+            "maxWidth": "470px",
+            "link": {
+                "url": "/acessorios%20de%20banheiro?_q=acessorios%20de%20banheiro&map=ft"
+            }
+        }
+    },
+    "image#home-banner-1-4": {
+        "props": {
+            "src": "/arquivos/banners-1-4.png",
+            "maxWidth": "469px",
+            "link": {
+                "url": "/utilidades-do-lar?page=2"
+            }
+        }
+    }
+}

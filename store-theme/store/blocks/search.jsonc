@@ -84,6 +84,7 @@
     },
     "search-result-layout.desktop": {
         "children": [
+            "rich-text#seo-hidden-text",
             "flex-layout.row#searchtitle",
             "flex-layout.row#searchbread",
             "flex-layout.row#result"
@@ -94,6 +95,25 @@
             "defaultGalleryLayout": "grid"
         }
     },
+    "rich-text#seo-hidden-text": {
+        "title": "Seo Hidden Text",
+        "props": {
+            "blockClass": [
+                "seo-hidden-text"
+            ],
+            "text": ""
+        }
+    },
+    "flex-layout.row#searchbread-mobile": {
+        "children": [
+            "breadcrumb.search"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true,
+            "blockClass": "breadcrumb-search-mobile"
+        }
+    },
     "flex-layout.row#searchbread": {
         "children": [
             "breadcrumb.search"
@@ -101,6 +121,11 @@
         "props": {
             "preserveLayoutOnMobile": true,
             "fullWidth": true
+        }
+    },
+    "breadcrumb.search": {
+        "props": {
+            "showOnMobile": true
         }
     },
     "flex-layout.row#searchtitle": {
@@ -118,12 +143,22 @@
         ],
         "props": {
             "preserveLayoutOnMobile": true,
-            "fullWidth": true
+            "fullWidth": true,
+            "blockClass": "category-banner"
         }
     },
     "image#bannerTopo": {
         "props": {
-            "src": "https://irmaossoares.vteximg.com.br/arquivos/ids/161231/PisosRevestimentos.png?v=637716495705900000",
+            "src": "/arquivos/category-main-banner-new.png",
+            "blockClass": "bannerTopo",
+            "width": "100%",
+            "height": "auto",
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "image#bannerTopo-mobile": {
+        "props": {
+            "src": "/arquivos/pisos-category-banner.png",
             "blockClass": "bannerTopo",
             "width": "100%",
             "height": "auto",
@@ -155,14 +190,14 @@
         "props": {
             "openFiltersMode": "one",
             "truncateFilters": true,
-            "showClearAllFiltersOnDesktop": true,
-            "showClearByFilter": true,
+            "showClearAllFiltersOnDesktop": false,
+            "showClearByFilter": false,
             "fullWidthOnMobile": true,
             "navigationTypeOnMobile": "collapsible",
             "appliedFiltersOverview": "show",
             "totalProductsOnMobile": "hide",
             "updateOnFilterSelectionOnMobile": true,
-            "priceRangeLayout": "inputAndSlider",
+            "priceRangeLayout": "slider",
             "showQuantityBadgeOnMobile": true
         }
     },
@@ -180,7 +215,6 @@
     },
     "flex-layout.row#searchinfo": {
         "children": [
-            "flex-layout.col#productCount",
             "flex-layout.row#orderByAndSwitcher"
         ]
     },
@@ -194,14 +228,6 @@
             "preventHorizontalStretch": true,
             "blockClass": "orderByAndSwitcher",
             "colGap": 3
-        }
-    },
-    "flex-layout.col#productCount": {
-        "children": [
-            "total-products.v2"
-        ],
-        "props": {
-            "blockClass": "productCountCol"
         }
     },
     "flex-layout.row#fetchprevious": {
@@ -241,11 +267,25 @@
             "not-found"
         ]
     },
+    "flex-layout.row#dep-banner-mobile": {
+        "children": [
+            "image#bannerTopo-mobile"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true,
+            "blockClass": [
+                "category-banner-mobile"
+            ]
+        }
+    },
     "search-result-layout.mobile": {
         "children": [
-            "flex-layout.row#searchtitlemobile",
+            "rich-text#seo-hidden-text",
+            "flex-layout.row#searchbread-mobile",
+            "flex-layout.row#dep-banner-mobile",
+            // "flex-layout.row#searchtitlemobile",
             "flex-layout.row#searchinfomobile",
-            "flex-layout.row#searchbread",
             // "flex-layout.row#productCountMobile",
             "flex-layout.row#fetchprevious",
             "flex-layout.row#contentmobile",
@@ -286,8 +326,8 @@
         ],
         "props": {
             "preserveLayoutOnMobile": true,
-            "colSizing": "auto",
-            "colJustify": "around"
+            "blockClass": "searchInfoMobileRow",
+            "preventHorizontalStretch": true
         }
     },
     "flex-layout.col#orderByMobile": {
@@ -295,7 +335,8 @@
             "order-by.v2"
         ],
         "props": {
-            "blockClass": "orderByMobileCol"
+            "blockClass": "orderByMobileCol",
+            "preventVerticalStretch": true
         }
     },
     "flex-layout.row#productCountMobile": {
@@ -311,7 +352,8 @@
             "filter-navigator.v3"
         ],
         "props": {
-            "blockClass": "filterMobileCol"
+            "blockClass": "filterMobileCol",
+            "preventVerticalStretch": true
         }
     },
     "flex-layout.col#switcherMobile": {

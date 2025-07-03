@@ -1,8 +1,44 @@
 {
     "store.custom#faq": {
         "children": [
+            "flex-layout.row#faq-breadcrumb",
             "flex-layout.row#faq"
         ]
+    },
+    "flex-layout.row#faq-breadcrumb": {
+        "children": [
+            "image#faq-breadcrumb-home",
+            "image#faq-breadcrumb-arrow",
+            "rich-text#faq-breadcrumb-text"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#faq-breadcrumb-home": {
+        "props": {
+            "src": "/arquivos/nav-home.svg",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#faq-breadcrumb-arrow": {
+        "props": {
+            "src": "/arquivos/breadcrumb-arrow.svg"
+        }
+    },
+    "rich-text#faq-breadcrumb-text": {
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb-text"
+            ],
+            "text": "FAQ"
+        }
     },
     "flex-layout.row#faq": {
         "props": {
@@ -15,34 +51,89 @@
     "flex-layout.col#faq": {
         "children": [
             "rich-text#faq",
-            "rich-text#faq-meus-pedidos",
-            "disclosure-layout-group#group-pedidos",
-
-            "rich-text#faq-pagamentos",
-            "disclosure-layout-group#group-pagamentos",
-
-            "rich-text#faq-servicos-is",
-            "disclosure-layout-group#group-servicos-is",
-
-            "rich-text#faq-produtos-is",
-            "disclosure-layout-group#group-ofertas-relampago",
-
-            "rich-text#faq-cancelamentos",
-            "disclosure-layout-group#group-cancelamentos"
+            "flex-layout.row#faq-meus-pedidos-container",
+            "flex-layout.row#faq-pagamentos-container",
+            "flex-layout.row#faq-servicos-container",
+            "flex-layout.row#faq-produtos-container",
+            "flex-layout.row#faq-cancelamento-container"
         ]
     },
     "rich-text#faq": {
         "props": {
-            "text": "## Perguntas Frequentes\nSaiba que a Irmãos Soares se importa muito com o que tem para nos dizer. Mas antes, confirme se a sua dúvida já foi respondida aqui."
+            "text": "## Perguntas Frequentes\nSaiba que a Irmãos Soares se importa muito com o que tem para nos dizer. Mas antes, confirme se a sua dúvida já foi respondida aqui.",
+            "blockClass": "faq-title"
         }
     },
-
     "rich-text#faq-meus-pedidos": {
         "props": {
             "text": "### Meus Pedidos"
         }
     },
-
+    "flex-layout.row#faq-meus-pedidos-container": {
+        "children": [
+            "rich-text#faq-meus-pedidos",
+            "disclosure-layout-group#group-pedidos"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-meus-pedidos-container"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.row#faq-pagamentos-container": {
+        "children": [
+            "rich-text#faq-pagamentos",
+            "disclosure-layout-group#group-pagamentos"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-pagamentos-container"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.row#faq-servicos-container": {
+        "children": [
+            "rich-text#faq-servicos-is",
+            "disclosure-layout-group#group-servicos-is"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-servicos-container"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.row#faq-produtos-container": {
+        "children": [
+            "rich-text#faq-produtos-is",
+            "disclosure-layout-group#group-ofertas-relampago"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-produtos-container"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.row#faq-cancelamento-container": {
+        "children": [
+            "rich-text#faq-cancelamentos",
+            "disclosure-layout-group#group-cancelamentos"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-cancelamento-container"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
     "disclosure-layout-group#group-pedidos": {
         "children": [
             "disclosure-layout#consigo-rastrear-minha-compra",
@@ -99,7 +190,6 @@
             "text": "Sim. Todas as atualizações da sua compra está em “Meus Pedidos” e sempre que houver atualização da etapa de entrega da compra, o cliente será notificado."
         }
     },
-
     "disclosure-layout#qual-a-empresa-responsavel-pela-entrega-da-minha-compra": {
         "props": {
             "animated": true
@@ -109,7 +199,6 @@
             "disclosure-content#qual-a-empresa-responsavel-pela-entrega-da-minha-compra"
         ]
     },
-
     "disclosure-trigger#qual-a-empresa-responsavel-pela-entrega-da-minha-compra": {
         "props": {
             "blockClass": "question",
@@ -120,7 +209,6 @@
             "rich-text#qual-a-empresa-responsavel-pela-entrega-da-minha-compra-pergunta"
         ]
     },
-
     "disclosure-content#qual-a-empresa-responsavel-pela-entrega-da-minha-compra": {
         "props": {
             "blockClass": "answer"
@@ -129,19 +217,16 @@
             "rich-text#qual-a-empresa-responsavel-pela-entrega-da-minha-compra-resposta"
         ]
     },
-
     "rich-text#qual-a-empresa-responsavel-pela-entrega-da-minha-compra-pergunta": {
         "props": {
             "text": "Qual a empresa responsável pela entrega da minha Compra?"
         }
     },
-
     "rich-text#qual-a-empresa-responsavel-pela-entrega-da-minha-compra-resposta": {
         "props": {
             "text": "A empresa responsável pela entrega da sua Compra é a Transportadora contratada pela Irmãos Soares."
         }
     },
-
     "disclosure-layout#posso-adicionar-outro-produto-a-compra-que-eu-fiz": {
         "props": {
             "animated": true
@@ -151,8 +236,7 @@
             "disclosure-content#posso-adicionar-outro-produto-a-compra-que-eu-fiz"
         ]
     },
-
-    "disclosure-trigger#posso-adicionar-outro-produto-a-compra-que-eu-fiz":{
+    "disclosure-trigger#posso-adicionar-outro-produto-a-compra-que-eu-fiz": {
         "props": {
             "blockClass": "question",
             "as": "div"
@@ -162,7 +246,6 @@
             "rich-text#posso-adicionar-outro-produto-a-compra-que-eu-fiz-pergunta"
         ]
     },
-
     "disclosure-content#posso-adicionar-outro-produto-a-compra-que-eu-fiz": {
         "props": {
             "blockClass": "answer"
@@ -171,20 +254,17 @@
             "rich-text#posso-adicionar-outro-produto-a-compra-que-eu-fiz-resposta"
         ]
     },
-
     "rich-text#posso-adicionar-outro-produto-a-compra-que-eu-fiz-pergunta": {
         "props": {
             "text": "Posso adicionar outro produto à compra que eu fiz?"
         }
     },
-
     "rich-text#posso-adicionar-outro-produto-a-compra-que-eu-fiz-resposta": {
         "props": {
             "text": "Não. Após a finalização da compra, não é possível adicionar outro produto. Você deverá realizar uma nova compra."
         }
     },
-
-    "disclosure-layout#nao-recebi-todos-os-itens-da-minha-compra-o-que-faco":{
+    "disclosure-layout#nao-recebi-todos-os-itens-da-minha-compra-o-que-faco": {
         "props": {
             "animated": true
         },
@@ -193,7 +273,6 @@
             "disclosure-content#nao-recebi-todos-os-itens-da-minha-compra-o-que-faco"
         ]
     },
-
     "disclosure-trigger#nao-recebi-todos-os-itens-da-minha-compra-o-que-faco": {
         "props": {
             "blockClass": "question",
@@ -204,7 +283,6 @@
             "rich-text#nao-recebi-todos-os-itens-da-minha-compra-o-que-faco-pergunta"
         ]
     },
-
     "disclosure-content#nao-recebi-todos-os-itens-da-minha-compra-o-que-faco": {
         "props": {
             "blockClass": "answer"
@@ -213,21 +291,16 @@
             "rich-text#nao-recebi-todos-os-itens-da-minha-compra-o-que-faco-resposta"
         ]
     },
-
     "rich-text#nao-recebi-todos-os-itens-da-minha-compra-o-que-faco-pergunta": {
         "props": {
             "text": "Não recebi todos os itens da minha compra. O que faço?"
         }
     },
-
     "rich-text#nao-recebi-todos-os-itens-da-minha-compra-o-que-faco-resposta": {
         "props": {
             "text": "Entre em contato com a nossa Central de Atendimento pelo telefone: (62) 3272-3090 ou pelo whatsapp 62 98423-8195."
         }
     },
-
-
-
     "disclosure-layout#posso-efetuar-uma-compra-no-site-com-cnpj": {
         "props": {
             "animated": true
@@ -237,7 +310,6 @@
             "disclosure-content#posso-efetuar-uma-compra-no-site-com-cnpj"
         ]
     },
-
     "disclosure-trigger#posso-efetuar-uma-compra-no-site-com-cnpj": {
         "props": {
             "blockClass": "question",
@@ -248,7 +320,6 @@
             "rich-text#posso-efetuar-uma-compra-no-site-com-cnpj-pergunta"
         ]
     },
-
     "disclosure-content#posso-efetuar-uma-compra-no-site-com-cnpj": {
         "props": {
             "blockClass": "answer"
@@ -257,19 +328,16 @@
             "rich-text#posso-efetuar-uma-compra-no-site-com-cnpj-resposta"
         ]
     },
-
     "rich-text#posso-efetuar-uma-compra-no-site-com-cnpj-pergunta": {
         "props": {
             "text": "Posso efetuar uma compra no site com CNPJ?"
         }
     },
-
     "rich-text#posso-efetuar-uma-compra-no-site-com-cnpj-resposta": {
         "props": {
             "text": "Sim. Para efetuar uma compra com CNPJ, é necessário que o endereço de entrega seja o mesmo do cadastro do CNPJ. Além disso, o CNPJ precisa ter uma Inscrição Estadual válida."
         }
     },
-
     "disclosure-layout#como-faco-para-confirmar-a-disponibilidade-de-um-produto-no-estoque": {
         "props": {
             "animated": true
@@ -279,7 +347,6 @@
             "disclosure-content#como-faco-para-confirmar-a-disponibilidade-de-um-produto-no-estoque"
         ]
     },
-
     "disclosure-trigger#como-faco-para-confirmar-a-disponibilidade-de-um-produto-no-estoque": {
         "props": {
             "blockClass": "question",
@@ -290,7 +357,6 @@
             "rich-text#como-faco-para-confirmar-a-disponibilidade-de-um-produto-no-estoque-pergunta"
         ]
     },
-
     "disclosure-content#como-faco-para-confirmar-a-disponibilidade-de-um-produto-no-estoque": {
         "props": {
             "blockClass": "answer"
@@ -299,19 +365,16 @@
             "rich-text#como-faco-para-confirmar-a-disponibilidade-de-um-produto-no-estoque-resposta"
         ]
     },
-
     "rich-text#como-faco-para-confirmar-a-disponibilidade-de-um-produto-no-estoque-pergunta": {
         "props": {
             "text": "Como faço para confirmar a disponibilidade de um produto no estoque?"
         }
     },
-
     "rich-text#como-faco-para-confirmar-a-disponibilidade-de-um-produto-no-estoque-resposta": {
         "props": {
             "text": "Para confirmar a disponibilidade de um produto no estoque, basta clicar no botão “Consultar estoque” na página do produto. Você será direcionado para uma página onde poderá consultar a disponibilidade do produto em todas as lojas físicas da Irmãos Soares."
         }
     },
-
     "disclosure-layout#posso-fazer-minha-compra-no-site-e-buscar-os-produtos-adquiridos-na-loja-fisica": {
         "props": {
             "animated": true
@@ -321,7 +384,6 @@
             "disclosure-content#posso-fazer-minha-compra-no-site-e-buscar-os-produtos-adquiridos-na-loja-fisica"
         ]
     },
-
     "disclosure-trigger#posso-fazer-minha-compra-no-site-e-buscar-os-produtos-adquiridos-na-loja-fisica": {
         "props": {
             "blockClass": "question",
@@ -332,7 +394,6 @@
             "rich-text#posso-fazer-minha-compra-no-site-e-buscar-os-produtos-adquiridos-na-loja-fisica-pergunta"
         ]
     },
-
     "disclosure-content#posso-fazer-minha-compra-no-site-e-buscar-os-produtos-adquiridos-na-loja-fisica": {
         "props": {
             "blockClass": "answer"
@@ -341,19 +402,16 @@
             "rich-text#posso-fazer-minha-compra-no-site-e-buscar-os-produtos-adquiridos-na-loja-fisica-resposta"
         ]
     },
-
     "rich-text#posso-fazer-minha-compra-no-site-e-buscar-os-produtos-adquiridos-na-loja-fisica-pergunta": {
         "props": {
             "text": "Posso fazer minha compra no site e buscar os produtos adquiridos na loja física?"
         }
     },
-
     "rich-text#posso-fazer-minha-compra-no-site-e-buscar-os-produtos-adquiridos-na-loja-fisica-resposta": {
         "props": {
             "text": "Sim. Para isso, basta selecionar a opção “Retirar na loja” no momento da compra. Após a confirmação do pagamento, você receberá um e-mail informando que o produto está disponível para retirada. Para retirar o produto, basta ir até a loja selecionada e apresentar o número do pedido e um documento com foto."
         }
     },
-
     "disclosure-layout#qualquer-pessoa-pode-receber-o-produto-que-eu-comprei": {
         "props": {
             "animated": true
@@ -363,8 +421,7 @@
             "disclosure-content#qualquer-pessoa-pode-receber-o-produto-que-eu-comprei"
         ]
     },
-
-    "disclosure-trigger#qualquer-pessoa-pode-receber-o-produto-que-eu-comprei":{
+    "disclosure-trigger#qualquer-pessoa-pode-receber-o-produto-que-eu-comprei": {
         "props": {
             "blockClass": "question",
             "as": "div"
@@ -374,7 +431,6 @@
             "rich-text#qualquer-pessoa-pode-receber-o-produto-que-eu-comprei-pergunta"
         ]
     },
-    
     "disclosure-content#qualquer-pessoa-pode-receber-o-produto-que-eu-comprei": {
         "props": {
             "blockClass": "answer"
@@ -383,19 +439,16 @@
             "rich-text#qualquer-pessoa-pode-receber-o-produto-que-eu-comprei-resposta"
         ]
     },
-
     "rich-text#qualquer-pessoa-pode-receber-o-produto-que-eu-comprei-pergunta": {
         "props": {
             "text": "Qualquer pessoa pode receber o produto que eu comprei?"
         }
     },
-
     "rich-text#qualquer-pessoa-pode-receber-o-produto-que-eu-comprei-resposta": {
         "props": {
             "text": "Sim. Para isso, basta informar o número do pedido e apresentar um documento com foto."
         }
     },
-
     "disclosure-layout#existe-um-valor-minimo-de-pedido": {
         "props": {
             "animated": true
@@ -405,7 +458,6 @@
             "disclosure-content#existe-um-valor-minimo-de-pedido"
         ]
     },
-
     "disclosure-trigger#existe-um-valor-minimo-de-pedido": {
         "props": {
             "blockClass": "question",
@@ -416,7 +468,6 @@
             "rich-text#existe-um-valor-minimo-de-pedido-pergunta"
         ]
     },
-
     "disclosure-content#existe-um-valor-minimo-de-pedido": {
         "props": {
             "blockClass": "answer"
@@ -425,19 +476,16 @@
             "rich-text#existe-um-valor-minimo-de-pedido-resposta"
         ]
     },
-
     "rich-text#existe-um-valor-minimo-de-pedido-pergunta": {
         "props": {
             "text": "Existe um valor mínimo de pedido?"
         }
     },
-
     "rich-text#existe-um-valor-minimo-de-pedido-resposta": {
         "props": {
             "text": "Não. Você pode comprar o que quiser, sem valor mínimo."
         }
     },
-
     "disclosure-layout#a-irmaos-soares-faz-entrega-parcial": {
         "props": {
             "animated": true
@@ -447,7 +495,6 @@
             "disclosure-content#a-irmaos-soares-faz-entrega-parcial"
         ]
     },
-
     "disclosure-trigger#a-irmaos-soares-faz-entrega-parcial": {
         "props": {
             "blockClass": "question",
@@ -458,7 +505,6 @@
             "rich-text#a-irmaos-soares-faz-entrega-parcial-pergunta"
         ]
     },
-
     "disclosure-content#a-irmaos-soares-faz-entrega-parcial": {
         "props": {
             "blockClass": "answer"
@@ -467,19 +513,16 @@
             "rich-text#a-irmaos-soares-faz-entrega-parcial-resposta"
         ]
     },
-
     "rich-text#a-irmaos-soares-faz-entrega-parcial-pergunta": {
         "props": {
             "text": "A Irmãos Soares faz entrega parcial?"
         }
     },
-
     "rich-text#a-irmaos-soares-faz-entrega-parcial-resposta": {
         "props": {
             "text": "Sim. Se você comprou mais de um produto, eles podem ser entregues separadamente. Para isso, basta selecionar a opção “Entrega Parcial” no momento da compra."
         }
     },
-
     "disclosure-layout#posso-alterar-o-endereco-da-entrega": {
         "props": {
             "animated": true
@@ -489,7 +532,6 @@
             "disclosure-content#posso-alterar-o-endereco-da-entrega"
         ]
     },
-
     "disclosure-trigger#posso-alterar-o-endereco-da-entrega": {
         "props": {
             "blockClass": "question",
@@ -500,7 +542,6 @@
             "rich-text#posso-alterar-o-endereco-da-entrega-pergunta"
         ]
     },
-
     "disclosure-content#posso-alterar-o-endereco-da-entrega": {
         "props": {
             "blockClass": "answer"
@@ -509,19 +550,16 @@
             "rich-text#posso-alterar-o-endereco-da-entrega-resposta"
         ]
     },
-
     "rich-text#posso-alterar-o-endereco-da-entrega-pergunta": {
         "props": {
             "text": "Posso alterar o endereço da entrega?"
         }
     },
-
     "rich-text#posso-alterar-o-endereco-da-entrega-resposta": {
         "props": {
             "text": "Sim. Você pode alterar o endereço da entrega antes de finalizar o pedido. Depois de finalizado, não é possível alterar o endereço."
         }
     },
-
     "disclosure-layout#como-e-calculado-o-frete-para-meu-pedido": {
         "props": {
             "animated": true
@@ -531,8 +569,7 @@
             "disclosure-content#como-e-calculado-o-frete-para-meu-pedido"
         ]
     },
-
-    "disclosure-trigger#como-e-calculado-o-frete-para-meu-pedido":{
+    "disclosure-trigger#como-e-calculado-o-frete-para-meu-pedido": {
         "props": {
             "blockClass": "question",
             "as": "div"
@@ -542,7 +579,6 @@
             "rich-text#como-e-calculado-o-frete-para-meu-pedido-pergunta"
         ]
     },
-
     "disclosure-content#como-e-calculado-o-frete-para-meu-pedido": {
         "props": {
             "blockClass": "answer"
@@ -551,19 +587,16 @@
             "rich-text#como-e-calculado-o-frete-para-meu-pedido-resposta"
         ]
     },
-
     "rich-text#como-e-calculado-o-frete-para-meu-pedido-pergunta": {
         "props": {
             "text": "Como é calculado o frete para meu pedido?"
         }
     },
-
     "rich-text#como-e-calculado-o-frete-para-meu-pedido-resposta": {
         "props": {
             "text": "O frete é calculado de acordo com o peso e o volume dos produtos, a distância do local de entrega da mercadoria e a modalidade de entrega escolhida."
         }
     },
-
     "disclosure-layout#eu-consigo-mandar-uma-parte-da-compra-para-um-endereco-e-outra-parte-para-outro": {
         "props": {
             "animated": true
@@ -573,7 +606,6 @@
             "disclosure-content#eu-consigo-mandar-uma-parte-da-compra-para-um-endereco-e-outra-parte-para-outro"
         ]
     },
-
     "disclosure-trigger#eu-consigo-mandar-uma-parte-da-compra-para-um-endereco-e-outra-parte-para-outro": {
         "props": {
             "blockClass": "question",
@@ -584,7 +616,6 @@
             "rich-text#eu-consigo-mandar-uma-parte-da-compra-para-um-endereco-e-outra-parte-para-outro-pergunta"
         ]
     },
-
     "disclosure-content#eu-consigo-mandar-uma-parte-da-compra-para-um-endereco-e-outra-parte-para-outro": {
         "props": {
             "blockClass": "answer"
@@ -593,19 +624,16 @@
             "rich-text#eu-consigo-mandar-uma-parte-da-compra-para-um-endereco-e-outra-parte-para-outro-resposta"
         ]
     },
-
     "rich-text#eu-consigo-mandar-uma-parte-da-compra-para-um-endereco-e-outra-parte-para-outro-pergunta": {
         "props": {
             "text": "Eu consigo mandar uma parte da compra para um endereço e outra parte para outro?"
         }
     },
-
     "rich-text#eu-consigo-mandar-uma-parte-da-compra-para-um-endereco-e-outra-parte-para-outro-resposta": {
         "props": {
             "text": "Não. No momento, não é possível enviar uma parte da compra para um endereço e outra parte para outro."
         }
     },
-
     "disclosure-layout#posso-incluir-ou-excluir-produtos-do-carrinho-de-compras": {
         "props": {
             "animated": true
@@ -615,7 +643,6 @@
             "disclosure-content#posso-incluir-ou-excluir-produtos-do-carrinho-de-compras"
         ]
     },
-
     "disclosure-trigger#posso-incluir-ou-excluir-produtos-do-carrinho-de-compras": {
         "props": {
             "blockClass": "question",
@@ -626,7 +653,6 @@
             "rich-text#posso-incluir-ou-excluir-produtos-do-carrinho-de-compras-pergunta"
         ]
     },
-
     "disclosure-content#posso-incluir-ou-excluir-produtos-do-carrinho-de-compras": {
         "props": {
             "blockClass": "answer"
@@ -635,19 +661,16 @@
             "rich-text#posso-incluir-ou-excluir-produtos-do-carrinho-de-compras-resposta"
         ]
     },
-
     "rich-text#posso-incluir-ou-excluir-produtos-do-carrinho-de-compras-pergunta": {
         "props": {
             "text": "Posso incluir ou excluir produtos do carrinho de compras?"
         }
     },
-
     "rich-text#posso-incluir-ou-excluir-produtos-do-carrinho-de-compras-resposta": {
         "props": {
             "text": "Sim. Você pode incluir ou excluir produtos do carrinho de compras antes de finalizar a compra."
         }
     },
-
     "disclosure-layout#posso-retomar-um-carrinho-de-compras": {
         "props": {
             "animated": true
@@ -657,7 +680,6 @@
             "disclosure-content#posso-retomar-um-carrinho-de-compras"
         ]
     },
-
     "disclosure-trigger#posso-retomar-um-carrinho-de-compras": {
         "props": {
             "blockClass": "question",
@@ -668,7 +690,6 @@
             "rich-text#posso-retomar-um-carrinho-de-compras-pergunta"
         ]
     },
-
     "disclosure-content#posso-retomar-um-carrinho-de-compras": {
         "props": {
             "blockClass": "answer"
@@ -677,22 +698,16 @@
             "rich-text#posso-retomar-um-carrinho-de-compras-resposta"
         ]
     },
-
     "rich-text#posso-retomar-um-carrinho-de-compras-pergunta": {
         "props": {
             "text": "Posso retomar um carrinho de compras?"
         }
     },
-
     "rich-text#posso-retomar-um-carrinho-de-compras-resposta": {
         "props": {
             "text": "Sim. Você pode retomar um carrinho de compras que não foi finalizado em até 30 dias."
         }
     },
-
-
-    
-   
     "disclosure-state-indicator#faq": {
         "props": {
             "Show": "icon-caret#down-faq",

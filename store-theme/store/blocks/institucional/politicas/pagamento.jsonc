@@ -1,6 +1,7 @@
 {
     "store.custom#politica-de-pagamento": {
         "children": [
+            "flex-layout.row#pagamento-breadcrumb",
             "flex-layout.row#politica-de-pagamento"
         ]
     },
@@ -17,6 +18,41 @@
             "rich-text#politica-de-pagamento"
         ]
     },
+    "flex-layout.row#pagamento-breadcrumb": {
+        "children": [
+            "image#pagamento-breadcrumb-home",
+            "image#pagamento-breadcrumb-arrow",
+            "rich-text#pagamento-breadcrumb-text"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#pagamento-breadcrumb-home": {
+        "props": {
+            "src": "/arquivos/nav-home.svg",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#pagamento-breadcrumb-arrow": {
+        "props": {
+            "src": "/arquivos/breadcrumb-arrow.svg"
+        }
+    },
+    "rich-text#pagamento-breadcrumb-text": {
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb-text"
+            ],
+            "text": "Política de Pagamento"
+        }
+    },
 
 //     A Política de Pagamentos abaixo constitui parte integrante dos Termos e Condições de Uso.
 
@@ -29,7 +65,7 @@
 // Meios de pagamento
 // 3.1. Á vista
 
-// 3.1.1. O cliente poderá fazer pagamento a vista, utilizando debito em conta, PIX ou cartão de credito. 
+// 3.1.1. O cliente poderá fazer pagamento a vista, utilizando debito em conta, PIX ou cartão de credito.
 
 // 3.1.2. O Cliente poderá utilizar 1 (um) cartão de crédito ou debito emitido no Brasil em seu nome, seja como titular ou dependente, com as seguintes bandeiras: Visa®, Mastercard®, Elo, Hiper, Diners e American Express®.
 
@@ -37,7 +73,7 @@
 
 // 3.2. Parcelamento
 
-// 3.2.1. Na loja online parcelamos em até 6 vezes sem juros, com parcelas mínimas de R$100,00 pelos cartões de crédito (Verifique a bandeira em Políticas de Pagamento tópico 3.1.1). 
+// 3.2.1. Na loja online parcelamos em até 6 vezes sem juros, com parcelas mínimas de R$100,00 pelos cartões de crédito (Verifique a bandeira em Políticas de Pagamento tópico 3.1.1).
 
 // O parcelamento está sujeito a alterações e estará sinalizado no produto
 // Pedido de Compra
@@ -65,9 +101,10 @@
 // 5.3. Para informações mais específicas consulte nossa Política de Privacidade e Segurança.
     "rich-text#politica-de-pagamento": {
         "props": {
-                "text": "## Política de Pagamento\n"
-                
+                "text": "## Política de Pagamento\n",
+                "blockClass": ["institutional-title"]
+
         }
     }
-   
+
 }

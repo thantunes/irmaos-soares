@@ -1,6 +1,7 @@
 {
     "store.custom#politica-de-troca": {
         "children": [
+            "flex-layout.row#trocas-breadcrumb",
             "flex-layout.row#politica-de-troca"
         ]
     },
@@ -19,7 +20,43 @@
     },
     "rich-text#politica-de-troca": {
         "props": {
-            "text": "## Políticas de Trocas\n\nRegras para trocas e devoluções\nPré-Requisitos:\nSomente serão aceitas trocas e devoluções em até 7 dias uteis a partir da data de emissão da nota fiscal do produto;\nO produto deve estar completo, com a embalagem original, os manuais de instrução, certificados de garantia e acessórios;\nO produto deve estar acompanhado da nota fiscal ou cupom fiscal.\n\n  Não serão aceitos:\nProdutos que tenham sido usados (exceto para os casos de vício ou defeito técnico ou de fabricação, constatado após utilização).\nProdutos que tenham sido adquiridos em saldos, sob medida e/ou personalizados.\n\n   Solicitando Trocas e Devoluções na Irmãos Soares:\nEscolha um dos canais de atendimento abaixo:\nEm caso de defeito técnico, fabricação ou vício, enviar um e-mail com foto ou vídeo do produto danificado para:  sac@irmaossoares.com.br , ou para o WhatsApp  62 98423-8195   ou ligue para  55 62 3272-3080 .\n\nEm caso de troca sem que haja vícios ou defeitos: Procurar a loja mais próxima presencialmente para realizar a troca por um produto com o mesmo valor.\n\n **Trocas e Devoluções por vícios ou defeitos:**\n\nEm até 7 dias uteis: \n Troca por produto idêntico (mesma marca, linha, modelo e versão) ou outro da mesma espécie ou;\n\nEmissão de vale compras no valor do produto para utilização em qualquer loja.\n\n Após 07 dias uteis:\n\nProcure a assistência técnica do fabricante do produto;\n    Período contado do dia da entrega / recebimento do produto.\n\nDevolução de valores pagos:\nA devolução de valores pagos só será realizada após a devolução do produto para a Irmãos Soares em até 7 dias uteis após entrega / recebimento do produto.\nPagamentos com cartão crédito:  Os prazos de estorno dos valores dependem exclusivamente da administradora de cartões de crédito e podem ocorrer em até 2 (duas) faturas posteriores;\n  Pagamentos feitos em dinheiro (espécie) nas lojas:  A devolução será efetuada por meio de depósito bancário, em até 10 (dez) dias úteis, a contar do recebimento do produto e das informações necessárias. O CPF do titular da conta para devolução deverá ser o mesmo CPF do titular da compra.\n\nPara trocas e devoluções de compras feitas na loja para pessoa jurídica, por favor, entre em contato pelo email:  sac@irmaossoares.com.br , ou para o whatsapp  62 98423-8195   ou ligue para  55 62 3272-3080 .\n\nEsperamos que essas informações tenham ajudado! Em caso de dúvidas, fale conosco pelo e-mail: ouvidoria@irmaossoares.com.br."
+            "text": "## Políticas de Trocas\n\nRegras para trocas e devoluções\nPré-Requisitos:\nSomente serão aceitas trocas e devoluções em até 7 dias uteis a partir da data de emissão da nota fiscal do produto;\nO produto deve estar completo, com a embalagem original, os manuais de instrução, certificados de garantia e acessórios;\nO produto deve estar acompanhado da nota fiscal ou cupom fiscal.\n\n  Não serão aceitos:\nProdutos que tenham sido usados (exceto para os casos de vício ou defeito técnico ou de fabricação, constatado após utilização).\nProdutos que tenham sido adquiridos em saldos, sob medida e/ou personalizados.\n\n   Solicitando Trocas e Devoluções na Irmãos Soares:\nEscolha um dos canais de atendimento abaixo:\nEm caso de defeito técnico, fabricação ou vício, enviar um e-mail com foto ou vídeo do produto danificado para:  sac@irmaossoares.com.br , ou para o WhatsApp  62 98423-8195   ou ligue para  55 62 3272-3080 .\n\nEm caso de troca sem que haja vícios ou defeitos: Procurar a loja mais próxima presencialmente para realizar a troca por um produto com o mesmo valor.\n\n **Trocas e Devoluções por vícios ou defeitos:**\n\nEm até 7 dias uteis: \n Troca por produto idêntico (mesma marca, linha, modelo e versão) ou outro da mesma espécie ou;\n\nEmissão de vale compras no valor do produto para utilização em qualquer loja.\n\n Após 07 dias uteis:\n\nProcure a assistência técnica do fabricante do produto;\n    Período contado do dia da entrega / recebimento do produto.\n\nDevolução de valores pagos:\nA devolução de valores pagos só será realizada após a devolução do produto para a Irmãos Soares em até 7 dias uteis após entrega / recebimento do produto.\nPagamentos com cartão crédito:  Os prazos de estorno dos valores dependem exclusivamente da administradora de cartões de crédito e podem ocorrer em até 2 (duas) faturas posteriores;\n  Pagamentos feitos em dinheiro (espécie) nas lojas:  A devolução será efetuada por meio de depósito bancário, em até 10 (dez) dias úteis, a contar do recebimento do produto e das informações necessárias. O CPF do titular da conta para devolução deverá ser o mesmo CPF do titular da compra.\n\nPara trocas e devoluções de compras feitas na loja para pessoa jurídica, por favor, entre em contato pelo email:  sac@irmaossoares.com.br , ou para o whatsapp  62 98423-8195   ou ligue para  55 62 3272-3080 .\n\nEsperamos que essas informações tenham ajudado! Em caso de dúvidas, fale conosco pelo e-mail: ouvidoria@irmaossoares.com.br.",
+            "blockClass": ["politica-de-troca", "institutional-title"]
+        }
+    },
+    "flex-layout.row#trocas-breadcrumb": {
+        "children": [
+            "image#trocas-breadcrumb-home",
+            "image#trocas-breadcrumb-arrow",
+            "rich-text#trocas-breadcrumb-text"
+        ],
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#trocas-breadcrumb-home": {
+        "props": {
+            "src": "/arquivos/nav-home.svg",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "image#trocas-breadcrumb-arrow": {
+        "props": {
+            "src": "/arquivos/breadcrumb-arrow.svg"
+        }
+    },
+    "rich-text#trocas-breadcrumb-text": {
+        "props": {
+            "blockClass": [
+                "faq-breadcrumb-text"
+            ],
+            "text": "Política de Trocas"
         }
     }
 }

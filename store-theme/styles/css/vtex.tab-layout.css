@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .container--home .listContainer {
         display: grid;
         grid: repeat(2, 200);
@@ -11,4 +11,97 @@
 
 :global(.vtex-product-price-1-x-sellerNameContainer) {
     display: none;
+}
+
+.container--servicos {
+    display: flex;
+    gap: 137px;
+}
+
+.container--servicos .listContainer {
+    flex-direction: column;
+    width: auto;
+    min-width: 348px;
+    gap: 10px;
+}
+
+.container--servicos .listItem {
+    padding: 0;
+    margin: 0;
+}
+
+.container--servicos .listItem :global(.vtex-button) {
+    width: 100%;
+    border: 1px solid #cecece;
+    height: 59px;
+}
+
+.container--servicos
+    .listItem
+    :global(.vtex-button)
+    :global(.vtex-button__label) {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #000000;
+}
+
+.container--servicos .listItemActive :global(.vtex-button) {
+    background-color: #0d6721;
+    border-color: #0d6721;
+}
+
+.container--servicos
+    .listItemActive
+    :global(.vtex-button)
+    :global(.vtex-button__label) {
+    color: #fff;
+}
+
+.container--servicos .contentContainer {
+    max-width: 834px;
+}
+
+.container--servicos .contentItem :global(.vtex-rich-text-0-x-heading-level-2) {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #7ea30a;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.container--servicos .contentItem :global(.vtex-rich-text-0-x-paragraph) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #000000B2;
+    line-height: 25px;
+}
+
+@media (max-width: 1023px) {
+    .container--servicos {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .container--servicos .listContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow: auto;
+        padding: 20px 16px 10px;
+    }
+
+    .container--servicos .listItem {
+        min-width: fit-content;
+    }
+
+    .container--servicos .contentContainer  {
+        padding: 0 16px;
+    }
 }

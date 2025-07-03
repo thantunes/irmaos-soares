@@ -12,8 +12,20 @@
 }
 
 .paginationDotsContainer {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    bottom: -30px;
+}
+
+.paginationDot {
+    background-color: #c9c9c9;
+    width: 18px !important;
+    height: 16.77px !important;
+    transition: 0.2s all ease-in-out;
+}
+
+.paginationDot--isActive {
+    background-color: #a7cb33;
+    width: 52px !important;
+    border-radius: 50px;
 }
 
 .layoutContainer--shelf {
@@ -23,17 +35,15 @@
     min-height: 480px;
 }
 
-
-@media screen and (min-width: 768px){   
+@media screen and (min-width: 768px) {
     .slide--shelf {
         margin-bottom: 25px;
-        max-width: 280px!important;
-        margin: 10px 5px;
+        max-width: 280px !important;
+        margin: 0 5px;
         /* padding-left: .5rem;
         padding-right: .5rem; */
         /* min-height: 480px;     */
-    } 
-
+    }
 }
 /* .slideChildrenContainer--shelf{
     background-color: #FFF;
@@ -49,23 +59,76 @@
     padding: 0.4rem;
 } */
 
-.caretIcon{
+.caretIcon {
     color: #0d6721;
     /* background: #FFF;
     border-radius: 100%;
     padding: 0.8rem; */
 }
 
-@media screen and (max-width: 767px){        
-    .sliderLayoutContainer--shelf{
-        padding-left:0 !important;
-        padding-right:0 !important;
-    }
-    .slide--shelf {
-        margin-bottom: 25px;     
-    } 
+.sliderLayoutContainer--shelf {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 
-    .slideChildrenContainer--shelf :global(.vtex-product-summary-2-x-container--is-shelf){
-        margin: 0.5rem;
+.sliderArrows--shelf .caretIcon {
+    display: none;
+}
+
+.sliderArrows--shelf {
+    background-image: url(/arquivos/slider-arrow.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    background-position: center !important;
+    width: 55px;
+    height: 55px;
+}
+
+.sliderLeftArrow--shelf {
+    transform: rotate(180deg);
+    left: -26px;
+}
+
+.sliderRightArrow--shelf {
+    right: -26px;
+}
+
+:global(.vtex-shelf-1-x-relatedProducts) :global(.vtex-slider-0-x-sliderFrame) {
+    gap: 10px;
+}
+
+:global(.vtex-shelf-1-x-title--is-shelf-product) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: left;
+    color: #000000;
+    justify-content: flex-start;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .slide--shelf {
+        margin-bottom: 25px;
+    }
+
+    .slideChildrenContainer--shelf
+        :global(.vtex-product-summary-2-x-container--is-shelf) {
+        margin: 0 8px;
+        max-height: fit-content;
+        height: fit-content;
+    }
+/*
+    .slide--home-pitchbar-mobile {
+        width: fit-content !important;
+    } */
+
+    :global(.vtex-flex-layout-0-x-flexRow--shelf) .paginationDotsContainer {
+        bottom: -7px;
+    }
+
+    :global(.vtex-shelf-1-x-title--is-shelf-product) {
+        padding-left: 16px;
     }
 }

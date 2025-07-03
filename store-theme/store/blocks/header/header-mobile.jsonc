@@ -3,21 +3,23 @@
 		"children": [
            // "modal-trigger#aceitecookies",
             "header-row#topbar",
-			"header-row#1-mobile"
+			"header-row#1-mobile",
+            "search-bar#mobile"
 		],
         "props": {
             "blockClass": "mobile-header"
         }
 	},
-	
+
     "header-row#1-mobile": {
 		"children": [
 			// "drawer#menu-mobile",
             "menu-mobile",
-			"logo#mobile",			
+			"logo#mobile",
             "header-spacer",
-            "toggle-search",
+            // "toggle-search",
 			"login#mobile",
+            "image#wishlist-header",
 			"minicart.v2"
 		],
 		"props": {
@@ -43,7 +45,7 @@
             "blockClass": "mobile",
             "openAutocompleteOnFocus": true,
             "maxWidth": "355px",
-            "placeholder": "Faça sua busca aqui",
+            "placeholder": "O que você precisa?",
             "displayMode": "clear-button"
         }
     },

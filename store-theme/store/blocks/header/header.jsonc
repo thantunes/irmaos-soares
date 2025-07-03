@@ -1,7 +1,7 @@
 {
     "header": {
         "blocks": [
-           
+
             "header-layout.desktop",
             "header-layout.mobile"
         ]
@@ -19,7 +19,7 @@
         "props": {
             "openAutocompleteOnFocus": true,
              "maxWidth": "500px",
-            "placeholder": "Faça sua busca aqui",
+            "placeholder": "O que você precisa?",
             "displayMode": "clear-button"
         }
     },
@@ -45,40 +45,40 @@
         }
     },
     "modal-header#aceitecookies":{
-   
+
         "props": {
-    
+
           "showCloseButton":"true",
           "iconCloseSize":"32",
           "label":"Cancelar",
           "blockClass": "modal-aceite-cookies-header"
-       
+
         }
       },
-    
+
       "modal-trigger#aceitecookies": {
         "children": ["modal-layout#aceitecookies"],
         "props": {
           "trigger":"load-session",
-    
+
           "fullScreen":"true",
           "blockClass": "modal-aceite-cookies"
         }
-        
+
       },
-    
+
       "modal-layout#aceitecookies": {
         "children": ["rich-text#modal-content-aceitecookies","modal-header#aceitecookies"],
-    
+
         "props": {
           "scroll":"body",
           "disableEscapeKeyDown":"true",
-      
+
           "backdrop":"clickable"
         }
-        
-    
-    
+
+
+
       },
       "rich-text#modal-content-aceitecookies": {
         "props": {
@@ -86,5 +86,5 @@
           "blockClass": "conteudo-modal-cookies"
         }
       }
-    
+
 }

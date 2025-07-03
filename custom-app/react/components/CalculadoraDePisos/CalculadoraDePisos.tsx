@@ -26,7 +26,11 @@ interface CalculatorProps {
   }
 }
 
-const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = () => {
+const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
+  children,
+}: {
+  children?: React.ReactNode
+}) => {
   const dispatch = useProductDispatch()
   const { product } = useProduct()
 
@@ -39,6 +43,7 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = () => {
     wrapper: styles.calculadora_wrapper,
     title: styles.calculadora_title,
     calculadora_box: styles.calculadora_box,
+    boxContainer: styles.boxContainer,
     left: styles.calculadora_box_left,
     right: styles.calculadora_box_right,
     countBoxes: styles.calculadora_countBoxes,
@@ -47,6 +52,7 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = () => {
     boxValue: styles.calculadora_input,
     percentInput: styles.percent_input,
     percentLabel: styles.percent_label,
+    eachBoxPrice: styles.eachBoxPrice,
   }
   useEffect(() => {
     if (product) {
@@ -62,7 +68,9 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = () => {
     const categories = product?.categories
 
     if (categories) {
-      if (categories.includes('/Pisos e Revestimentos/Pisos e Revestimentos/')) {
+      if (
+        categories.includes('/Pisos e Revestimentos/Pisos e Revestimentos/')
+      ) {
         setShowCalculator(true)
         const sellingPrice = document.querySelector(
           '.vtex-product-price-1-x-sellingPrice'
@@ -93,6 +101,8 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = () => {
     let calculatedPrice = calculatedBoxes * pricePerSquareMeter * unitMultiplier
     calculatedPrice = Math.floor(calculatedPrice * 100) / 100
 
+    console.log({pricePerSquareMeter})
+
     setCountBoxes(calculatedBoxes)
     dispatch?.({
       type: 'SET_QUANTITY',
@@ -110,58 +120,70 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = () => {
 
   const handleAddPercentChange = () => {
     setAddPercent(!addPercent)
+
+    console.log(countBoxesPrice)
   }
 
   if (!showCalculator) return null
 
   return (
     <>
+      <div className={styles.priceContainer}>
+        <p className={styles.productPrice}>
+          {formatPrice(pricePerSquareMeter)}/m² <span>à vista</span>
+        </p>
+        <p className={styles.productUnitMultiplier}>
+          ({unitMultiplier}m²/caixa)
+        </p>
+      </div>
+
+      {children}
       <section className={classNames.wrapper}>
         <h3 className={classNames.title}>
           Quantos metros quadrados você precisa?
         </h3>
         <div className={classNames.calculadora_box}>
-          <div className={classNames.left}>
+          <div className={classNames.boxContainer}>
+            <div className={classNames.left}>
+              <input
+                className={classNames.boxValue}
+                type="number"
+                name="boxValue"
+                value={boxValue}
+                min="1"
+                step="0.01"
+                onChange={handleBoxValueChange}
+              />
+            </div>
+            <div className={classNames.right}>
+              <span className={classNames.countBoxes}>
+                {countBoxes} caixa(s) ({unitMultiplier} m²/caixa)
+              </span>
+              <span className={classNames.eachBoxPrice}>
+                {formatPrice(unitMultiplier * pricePerSquareMeter)} / caixa
+              </span>
+              <span className={classNames.countBoxesPrice}>
+                {formatPrice(countBoxesPrice)}
+              </span>
+            </div>
+          </div>
+          <div className={classNames.percent}>
             <input
-              className={classNames.boxValue}
-              type="number"
-              name="boxValue"
-              value={boxValue}
-              min="1"
-              step="0.01"
-              onChange={handleBoxValueChange}
+              className={classNames.percentInput}
+              type="checkbox"
+              name="add-percent"
+              id="add-percent"
+              checked={addPercent}
+              onChange={handleAddPercentChange}
             />
+            <label
+              htmlFor="add-percent"
+              className={classNames.percentLabel}
+            ></label>
+            Seja prevenido e <strong>adicione 10%</strong>
           </div>
-          <div className={classNames.right}>
-            <span className={classNames.countBoxes}>
-              {countBoxes} caixa(s) ({unitMultiplier} m²/caixa)
-            </span>
-            <span className={classNames.countBoxesPrice}>
-              {formatPrice(countBoxesPrice)}
-            </span>
-          </div>
-        </div>
-        <div className={classNames.percent}>
-          <input
-            className={classNames.percentInput}
-            type="checkbox"
-            name="add-percent"
-            id="add-percent"
-            checked={addPercent}
-            onChange={handleAddPercentChange}
-          />
-          <label
-            htmlFor="add-percent"
-            className={classNames.percentLabel}
-          ></label>
-          Seja prevenido e adicione 10%
         </div>
       </section>
-
-      <p className={styles.productPrice}>
-        {formatPrice(pricePerSquareMeter)}/m² <span>à vista</span>
-      </p>
-      <p className={styles.productUnitMultiplier}>({unitMultiplier}m²/caixa)</p>
     </>
   )
 }

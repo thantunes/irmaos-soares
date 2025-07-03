@@ -1,5 +1,5 @@
 .itemList {
-    font-family: 'Sarabun', sans-serif;
+    font-family: "Sarabun", sans-serif;
 }
 
 /* @media only screen and (max-width: 991px) {
@@ -19,81 +19,80 @@
 } */
 
 .biggy-autocomplete-wrapper {
-    width: 500px
+    width: 868px;
 }
 
-
-.biggy-autocomplete{
-    top: 10px;
-    left: 18px;
+.biggy-autocomplete {
+    top: 25px;
+    left: 10px;
     box-shadow: 0 8px 7px rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
 .itemList--suggestion {
-    border-bottom: 1px solid #ebebeb
+    border-bottom: 1px solid #ebebeb;
 }
 
 .itemListTitle {
-    margin-bottom: 14px!important
+    margin-bottom: 14px !important;
 }
 
 .tileListItem .vtex-product-summary-2-x-containerNormal {
-    padding: 0 22px
+    padding: 0 22px;
 }
 
 .tileListItem {
-    border-right: 1px solid #ebebeb
+    border-right: 1px solid #ebebeb;
 }
 
 .tileListItem:last-child {
-    border-right: none
+    border-right: none;
 }
 
 .tileListSeeMore {
     color: #0d6a39;
-    transition: .2s;
+    transition: 0.2s;
     line-height: 30px;
-    height: 30px
+    height: 30px;
 }
 
 .tileListSeeMore:hover {
-    opacity: .8
+    opacity: 0.8;
 }
 
 .tileListList {
-    flex-direction: row!important
+    flex-direction: row !important;
 }
 
 @media (max-width: 1650px) {
     .biggy-autocomplete-wrapper {
-        width:500px
+        width: 500px;
     }
 
     .tileListItem .vtex-product-summary-2-x-containerNormal {
-        padding: 0 15px
+        padding: 0 15px;
     }
 }
 
 @media (max-width: 1400px) {
     .biggy-autocomplete-wrapper {
-        width:500px
+        width: 500px;
     }
 }
 
 @media (max-width: 1200px) {
     .biggy-autocomplete-wrapper {
-        width:498px
+        width: 498px;
     }
 }
 
 @media (max-width: 1024px) {
     .biggy-autocomplete-wrapper {
-        width:calc(100vw - 52px)
+        width: calc(100vw - 33px);
     }
 
     .tileListItem .vtex-product-summary-2-x-containerNormal {
-        padding: 0 7.5px
+        padding: 0 7.5px;
     }
 }

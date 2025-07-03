@@ -4,82 +4,13 @@
 		"children": [
             "image#floating-btn-whatsapp",
             "flex-layout.row#footer-newsletter-mobile",
-			"flex-layout.row#1-footer-mobile-menu",
-            "flex-layout.row#conheca-nossos-servicos-rodape-mobile",
-			"flex-layout.row#2-footer-mobile-copyright",
-            "flex-layout.row#3-footer-mobile-redes",
-            "flex-layout.row#4-footer-mobile-selos"
+            "flex-layout.row#footer-1-desktop",
+            "flex-layout.row#footer-copyright"
 		],
         "props":{
 			"blockClass": "footer--is"
 		}
 	},
-
-    "flex-layout.row#conheca-nossos-servicos-rodape-mobile": {
-        "props": {
-            "blockClass": "conheca-nossos-servicos-rodape-mobile",
-            "horizontalAlign": "center",
-            "fullWidth": false
-        },
-        "children": [
-            "rich-text#servicos-rodape-mobile"
-        ]
-    },
-    "rich-text#servicos-rodape-mobile": {
-        "props": {
-            "text": " [Conheça nossos serviços](/servicos)",
-            "blockClass": "servicos"
-        }
-    },
-
-	"flex-layout.row#1-footer-mobile-menu": {
-		"props": {
-			"paddingTop": 4,
-			"paddingBottom": 4
-		},
-		"children": [
-			"vtex.menu@2.x:menu#footer-mobile"
-		]
-	},
-
-    "flex-layout.row#2-footer-mobile-copyright": {
-		"children": [
-			"flex-layout.col#footer-1-mobile"
-		],
-		"props": {
-            "blockClass": "footer-final-is",
-			"paddingTop": 4,
-			"paddingBottom": 4
-		}
-	},
-
-    "flex-layout.col#footer-1-mobile": {
-        "children": [
-            "rich-text#footer-copyright"
-        ],
-        "props": {
-            "blockClass": "footer-copyright",
-            "horizontalAlign": "center",
-            "verticalAlign": "middle"
-        }
-    },
-
-    "flex-layout.row#3-footer-mobile-redes": {
-        "props": {
-            "blockClass": "redes-sociais-footer-mobile",
-            "horizontalAlign": "center",
-            "verticalAlign": "center",
-            "preventHorizontalStretch": true,
-            "preventVerticalStretch": true,
-			"paddingBottom": 5
-        },
-        "children": [
-            "image#social-facebook-footer",
-            "image#social-instagram-footer",
-            "image#social-linkedin-footer",
-            "image#social-whatsapp-footer-1"
-        ]
-    },
     "image#floating-btn-whatsapp": {
       "props": {
         "src": "/arquivos/whatsapp-logo.svg",
@@ -89,31 +20,6 @@
         },
         "blockClass": "floating-btn-whatsapp"
       }
-    },
-    "flex-layout.row#4-footer-mobile-selos":{
-		"children": [
-            "flex-layout.col#col-mobile-selos"
-            // "flex-layout.col#col-right"
-		],
-		"props": {
-			"blockClass": "payment-methods",
-            "paddingTop": 5,
-			"paddingBottom": 5,
-            "preventHorizontalStretch": true,
-            "preventVerticalStretch": true,
-            "horizontalAlign": "between"
-		}
-	},
-    "flex-layout.col#col-mobile-selos":{
-        "children": [
-            "image#formas-de-pagamento-rodape",
-            "image#ssl-encrypted"
-        ],
-        "props": {
-            "width": "50%",
-            "horizontalAlign": "center",
-            "verticalAlign": "middle"
-        }
     }
 
 }

@@ -1,0 +1,254 @@
+{
+    "flex-layout.row#home-pitchbar": {
+        "children": ["responsive-layout.desktop#home-pitchbar", "responsive-layout.mobile#home-pitchbar"],
+        "props": {
+            "blockClass": [
+                "home-pitchbar"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "experimentalHideEmptyCols": true
+        }
+    },
+    "responsive-layout.desktop#home-pitchbar": {
+        "children": [
+            "flex-layout.row#home-pitchbar-2",
+            "flex-layout.row#home-pitchbar-1",
+            "flex-layout.row#home-pitchbar-3",
+            "flex-layout.row#home-pitchbar-4"
+        ]
+    },
+    "responsive-layout.mobile#home-pitchbar": {
+        "children": [
+            "slider-layout#slider-home-pitchbar-mobile"
+        ]
+    },
+    "slider-layout#slider-home-pitchbar-mobile": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": "5000",
+                "stopOnHover": "true"
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "mobileOnly",
+            "blockClass": [
+                "carousel",
+                "home-pitchbar-mobile"
+            ],
+            "fullWidth": false
+        },
+        "children": [
+            "flex-layout.row#home-pitchbar-1",
+            "flex-layout.row#home-pitchbar-2",
+            "flex-layout.row#home-pitchbar-3",
+            "flex-layout.row#home-pitchbar-4"
+        ]
+    },
+    "flex-layout.row#home-pitchbar-1": {
+        "children": [
+            "image#home-pitchbar-1",
+            "flex-layout.col#home-pitchbar-1-info"
+        ],
+        "props": {
+            "blockClass": [
+                "home-pitchbar-1",
+                "home-pitchbar-item"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-pitchbar-1": {
+        "props": {
+            "src": "/arquivos/pitchbar-parcela.svg"
+        }
+    },
+    "flex-layout.col#home-pitchbar-1-info": {
+        "children": [
+            "rich-text#home-pitchbar-1-title",
+            "rich-text#home-pitchbar-1-subtitle"
+        ],
+        "props": {
+            "blockClass": [
+                "home-pitchbar-1-info",
+                "home-pitchbar-info"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#home-pitchbar-1-title": {
+        "props": {
+            "blockClass": [
+                "home-pitchbar-1-title",
+                "home-pitchbar-title"
+            ],
+            "text": "Parcele em 10X sem juros"
+        }
+    },
+    "rich-text#home-pitchbar-1-subtitle": {
+        "props": {
+            "blockClass": [
+                "home-pitchbar-1-title",
+                "home-pitchbar-subtitle"
+            ],
+            "text": "Consulte condições"
+        }
+    },
+    "flex-layout.row#home-pitchbar-2": {
+        "children": [
+            "image#home-pitchbar-2",
+            "flex-layout.col#home-pitchbar-2-info"
+        ],
+        "props": {
+            "blockClass": [
+                "home-pitchbar-2",
+                "home-pitchbar-item",
+                "green-item"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-pitchbar-2": {
+        "props": {
+            "src": "/arquivos/pitchbar-cupom.svg"
+        }
+    },
+    "flex-layout.col#home-pitchbar-2-info": {
+        "children": [
+            "rich-text#home-pitchbar-2-title",
+            "rich-text#home-pitchbar-2-subtitle"
+        ],
+        "props": {
+            "blockClass": [
+                "home-pitchbar-2-info",
+                "home-pitchbar-info"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#home-pitchbar-2-title": {
+        "props": {
+            "blockClass": [
+                "home-pitchbar-2-title",
+                "home-pitchbar-title"
+            ],
+            "text": "Procurando por CUPOM?"
+        }
+    },
+    "rich-text#home-pitchbar-2-subtitle": {
+        "props": {
+            "blockClass": [
+                "home-pitchbar-2-title",
+                "home-pitchbar-subtitle"
+            ],
+            "text": "[Pegue aqui!](/cupons-de-desconto)"
+        }
+    },
+    "flex-layout.row#home-pitchbar-3": {
+        "children": [
+            "image#home-pitchbar-3",
+            "flex-layout.col#home-pitchbar-3-info"
+        ],
+        "props": {
+            "blockClass": [
+                "home-pitchbar-3",
+                "home-pitchbar-item"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-pitchbar-3": {
+        "props": {
+            "src": "/arquivos/pitchbar-pix.svg"
+        }
+    },
+    "flex-layout.col#home-pitchbar-3-info": {
+        "children": [
+            "rich-text#home-pitchbar-3-title",
+            "rich-text#home-pitchbar-3-subtitle"
+        ],
+        "props": {
+            "blockClass": [
+                "home-pitchbar-3-info",
+                "home-pitchbar-info"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#home-pitchbar-3-title": {
+        "props": {
+            "blockClass": [
+                "home-pitchbar-3-title",
+                "home-pitchbar-title"
+            ],
+            "text": "PAGUE NO PIX"
+        }
+    },
+    "rich-text#home-pitchbar-3-subtitle": {
+        "props": {
+            "blockClass": [
+                "home-pitchbar-3-title",
+                "home-pitchbar-subtitle"
+            ],
+            "text": "Rápido, prático e fácil"
+        }
+    },
+    "flex-layout.row#home-pitchbar-4": {
+        "children": [
+            "image#home-pitchbar-4",
+            "flex-layout.col#home-pitchbar-4-info"
+        ],
+        "props": {
+            "blockClass": [
+                "home-pitchbar-4",
+                "home-pitchbar-item"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#home-pitchbar-4": {
+        "props": {
+            "src": "/arquivos/pitchbar-entrega.svg"
+        }
+    },
+    "flex-layout.col#home-pitchbar-4-info": {
+        "children": [
+            "rich-text#home-pitchbar-4-title",
+            "rich-text#home-pitchbar-4-subtitle"
+        ],
+        "props": {
+            "blockClass": [
+                "home-pitchbar-4-info",
+                "home-pitchbar-info"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#home-pitchbar-4-title": {
+        "props": {
+            "blockClass": [
+                "home-pitchbar-4-title",
+                "home-pitchbar-title"
+            ],
+            "text": "Entrega em até 24 horas"
+        }
+    },
+    "rich-text#home-pitchbar-4-subtitle": {
+        "props": {
+            "blockClass": [
+                "home-pitchbar-4-title",
+                "home-pitchbar-subtitle"
+            ],
+            "text": "Consulte condições"
+        }
+    }
+}

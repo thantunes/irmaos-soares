@@ -1,0 +1,693 @@
+{
+    "vtex.menu@2.x:submenu#externas": {
+        "props": {
+            "blockClass": "externas"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenuExternas"
+        ]
+    },
+    "vtex.menu@2.x:menu#submenuExternas": {
+        "children": [
+            "flex-layout.row#submenuExternasContainer"
+        ]
+    },
+    "flex-layout.row#submenuExternasContainer": {
+        "children": [
+            "flex-layout.col#submenuExternasLeft",
+            "flex-layout.col#submenuExternasMiddle",
+            "flex-layout.col#submenuExternasRight",
+            "image#submenuExternasImg"
+        ],
+        "props": {
+            "blockClass": [
+                "submenuExternasContainer",
+                "submenuContainer"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.col#submenuExternasLeft": {
+        "children": [
+            "rich-text#submenuExternasLeftTitle",
+            "flex-layout.row#submenuExternasLeftItemsContainer"
+        ],
+        "props": {
+            "blockClass": [
+                "submenuExternasLeft",
+                "submenuSeparator"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#submenuExternasLeftTitle": {
+        "props": {
+            "blockClass": [
+                "submenuExternasLeftTitle",
+                "submenuTitle"
+            ],
+            "text": "Banheiro impecável"
+        }
+    },
+    "flex-layout.row#submenuExternasLeftItemsContainer": {
+        "children": [
+            "flex-layout.col#submenuExternasLeftFirstCol",
+            "flex-layout.col#submenuExternasLeftSecondCol"
+        ],
+        "props": {
+            "blockClass": [
+                "submenuExternasLeftItemsContainer"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.col#submenuExternasLeftFirstCol": {
+        "children": [
+            "menu-item#submenuExternasItem-1",
+            "menu-item#submenuExternasItem-2",
+            "menu-item#submenuExternasItem-3",
+            "menu-item#submenuExternasItem-4",
+            "menu-item#submenuExternasItem-5",
+            "menu-item#submenuExternasItem-6",
+            "menu-item#submenuExternasItem-7",
+            "menu-item#submenuExternasItem-8",
+            "menu-item#submenuExternasItem-9"
+        ],
+        "props": {
+            "blockClass": [
+                "submenuExternasLeftFirstCol"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.col#submenuExternasLeftSecondCol": {
+        "children": [
+            "menu-item#submenuExternasItem-10",
+            "menu-item#submenuExternasItem-11",
+            "menu-item#submenuExternasItem-12",
+            "menu-item#submenuExternasItem-13",
+            "menu-item#submenuExternasItem-14",
+            "menu-item#submenuExternasItem-15",
+            "menu-item#submenuExternasItem-16",
+            "menu-item#submenuExternasItem-17",
+            "menu-item#submenuExternasItem-18"
+        ],
+        "props": {
+            "blockClass": [
+                "submenuExternasLeftFirstCol"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "menu-item#submenuExternasItem-1": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-1-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/kits-e-acessorios",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Kits e Acessórios",
+                "text": "Kits e Acessórios"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-2": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-2-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/torneiras-e-misturadores",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Torneiras e Misturadores",
+                "text": "Torneiras e Misturadores"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-3": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-3-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/registros-e-acabamentos",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Registros e Acabamentos",
+                "text": "Registros e Acabamentos"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-4": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-4-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/cubas-e-pias",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Cubas e Pias",
+                "text": "Cubas e Pias"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-5": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-5-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/duchas-e-chuveiros",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Duchas e Chuveiros",
+                "text": "Duchas e Chuveiros"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-6": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-6-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/vasos-sanitarios",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Vasos Sanitários",
+                "text": "Vasos Sanitários"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-7": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-7-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/assentos-sanitarios",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Assentos Sanitários",
+                "text": "Assentos Sanitários"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-8": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-8-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/ducha-higienica",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Ducha Higiênica",
+                "text": "Ducha Higiênica"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-9": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-9-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/caixa-de-descarga",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Caixa de Descarga",
+                "text": "Caixa de Descarga"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-10": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-10-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/kits-louca-sanitaria",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Kits Louça Sanitária",
+                "text": "Kits Louça Sanitária"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-11": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-11-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/nichos",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Nichos",
+                "text": "Nichos"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-12": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-12-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/espelhos",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Espelhos",
+                "text": "Espelhos"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-13": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-13-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/armarios",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Armários",
+                "text": "Armários"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-14": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-14-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/barra-de-apoio",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Barra de apoio",
+                "text": "Barra de apoio"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-15": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-15-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/sifao-valvula-e-engate",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Sifão, Válvula e Engate",
+                "text": "Sifão, Válvula e Engate"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-16": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-16-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/gabinetes",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Gabinetes",
+                "text": "Gabinetes"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-17": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-17-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/renovador-de-ar",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Renovador de Ar",
+                "text": "Renovador de Ar"
+            }
+        }
+    },
+    "menu-item#submenuExternasItem-18": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-18-externas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/banheiros/bacia-turca-e-mictorio",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Bacia Turca e Mictório",
+                "text": "Bacia Turca e Mictório"
+            }
+        }
+    },
+    "flex-layout.col#submenuExternasMiddle": {
+        "children": [
+            "rich-text#submenuExternasMiddleTitle",
+            "flex-layout.row#submenuExternasMiddleItemsContainer"
+        ],
+        "props": {
+            "blockClass": [
+                "submenuExternasMiddle",
+                "submenuSeparator"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#submenuExternasMiddleTitle": {
+        "props": {
+            "blockClass": [
+                "submenuExternasLeftTitle",
+                "submenuTitle"
+            ],
+            "text": "Tudo para sua cozinha"
+        }
+    },
+    "flex-layout.row#submenuExternasMiddleItemsContainer": {
+        "children": [
+            "flex-layout.col#submenuExternasMiddleItems"
+        ],
+        "props": {
+            "blockClass": [
+                "submenuExternasLeftItemsContainer"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.col#submenuExternasMiddleItems": {
+        "children": [
+            "menu-item#submenuExternasMiddleItem-1",
+            "menu-item#submenuExternasMiddleItem-2"
+        ],
+        "props": {
+            "blockClass": [
+                "submenuExternasMiddleItems"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "menu-item#submenuExternasMiddleItem-1": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-1-externas-middle",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/cozinha/cubas-e-pias",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Cubas e Pias",
+                "text": "Cubas e Pias"
+            }
+        }
+    },
+    "menu-item#submenuExternasMiddleItem-2": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-2-externas-middle",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/cozinha/gabinetes",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Gabinetes",
+                "text": "Gabinetes"
+            }
+        }
+    },
+    "flex-layout.col#submenuExternasRight": {
+        "children": [
+            "rich-text#submenuExternasRightTitle",
+            "flex-layout.row#submenuExternasRightItemsContainer"
+        ],
+        "props": {
+            "blockClass": [
+                "submenuExternasRight",
+                "submenuSeparator"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#submenuExternasRightTitle": {
+        "props": {
+            "blockClass": [
+                "submenuExternasLeftTitle",
+                "submenuTitle"
+            ],
+            "text": "Decorando com estilo"
+        }
+    },
+    "flex-layout.row#submenuExternasRightItemsContainer": {
+        "children": [
+            "flex-layout.col#submenuExternasRightItems"
+        ],
+        "props": {
+            "blockClass": [
+                "submenuExternasLeftItemsContainer"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.col#submenuExternasRightItems": {
+        "children": [
+            "menu-item#submenuExternasRightItem-1",
+            "menu-item#submenuExternasRightItem-2",
+            "menu-item#submenuExternasRightItem-3",
+            "menu-item#submenuExternasRightItem-4",
+            "menu-item#submenuExternasRightItem-5",
+            "menu-item#submenuExternasRightItem-6",
+            "menu-item#submenuExternasRightItem-7"
+        ],
+        "props": {
+            "blockClass": [
+                "submenuExternasRightItems"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "menu-item#submenuExternasRightItem-1": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-1-externas-right",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/utilidades-do-lar/acessorios",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Acessórios",
+                "text": "Acessórios"
+            }
+        }
+    },
+    "menu-item#submenuExternasRightItem-2": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-2-externas-right",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/utilidades-do-lar/caixa-organizadora",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Caixa Organizadora",
+                "text": "Caixa Organizadora"
+            }
+        }
+    },
+    "menu-item#submenuExternasRightItem-3": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-3-externas-right",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/utilidades-do-lar/saboneteira",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Saboneteira",
+                "text": "Saboneteira"
+            }
+        }
+    },
+    "menu-item#submenuExternasRightItem-4": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-4-externas-right",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/utilidades-do-lar/cestos-e-lixeiras",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Cestos e Lixeiras",
+                "text": "Cestos e Lixeiras"
+            }
+        }
+    },
+    "menu-item#submenuExternasRightItem-5": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-5-externas-right",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/utilidades-do-lar/porta-escova",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Porta Escova",
+                "text": "Porta Escova"
+            }
+        }
+    },
+    "menu-item#submenuExternasRightItem-6": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-6-externas-right",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/utilidades-do-lar/quadros-decorativos",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Quadros Decorativos",
+                "text": "Quadros Decorativos"
+            }
+        }
+    },
+    "menu-item#submenuExternasRightItem-7": {
+        "props": {
+            "blockClass": [
+                "submenu-links-item"
+            ],
+            "id": "submenu-item-7-externas-right",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "href": "/utilidades-do-lar/vasos-de-plantas",
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Vasos de Plantas",
+                "text": "Vasos de Plantas"
+            }
+        }
+    },
+    "image#submenuExternasImg": {
+        "props": {
+            "src": "/arquivos/submenu-externas.png",
+            "blockClass": ["submenu-img"]
+        }
+    }
+}

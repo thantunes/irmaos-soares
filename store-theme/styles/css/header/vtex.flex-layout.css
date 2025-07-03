@@ -1,6 +1,6 @@
 .flexRow--main-header-menu,
 .flexRow--main-header-menu :global(.vtex-category-menu-2-x-section--department){
-    background-color: #0D6721;
+    background-color: #fff;
 }
 
 .flexRowContent--main-header-menu :global(.vtex-flex-layout-0-x-flexCol--is-trigger-mega-menu){

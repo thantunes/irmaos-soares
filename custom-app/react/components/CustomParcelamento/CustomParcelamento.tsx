@@ -24,7 +24,7 @@ const CustomParcelamento: StorefrontFunctionComponent<Product> = () => {
     // Check if product is in category 184 or if it is in cluster 139, 142 or 143
     if (categoryId === "184" || product?.productClusters.some((cluster: { id: string; }) => cluster.id === "142" || cluster.id === "143")) {
         return  (
-            <p className={`${styles.parcelamentoIS}`} >ou <b>{formatPrice(precoJurosReal)}</b> em até <b>10x iguais</b> no cartão</p>
+            <p className={`${styles.parcelamentoIS}`} >ou <b>{formatPrice(precoJurosReal)}</b> em até <b>10x iguais no cartão</b></p>
         )
     }
     return <p className={`${styles.parcelamentoIS}`}>ou <b>{formatPrice(preco)}</b> em até <b>10x</b> sem juros</p>

@@ -15,13 +15,74 @@
             "fullWidth": false
         },
         "children": [
-            // "shopper-location",
-            "geolocalizacao",
-            "header-spacer",
-            "vtex.menu@2.x:menu#topbar"
+            "flex-layout.row#header-topbar-container"
         ]
     },
-
+    "flex-layout.row#header-topbar-container": {
+        "children": [
+            "responsive-layout.desktop#header-topbar-content",
+            "responsive-layout.mobile#header-topbar-content"
+        ],
+        "props": {
+            "blockClass": [
+                "header-topbar-container"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "experimentalHideEmptyCols": true
+        }
+    },
+    "responsive-layout.desktop#header-topbar-content": {
+        "children": [ // "shopper-location",
+            "geolocalizacao",
+            "rich-text#top-bar-whatsapp",
+            "rich-text#top-bar-fale-conosco"
+        ]
+    },
+    "responsive-layout.mobile#header-topbar-content": {
+        "children": [
+            "slider-layout#slider-header-topbar"
+        ]
+    },
+    "slider-layout#slider-header-topbar": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": "5000",
+                "stopOnHover": "true"
+            },
+            "infinite": true,
+            // "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "blockClass": "carousel",
+            "fullWidth": false
+        },
+        "children": [
+            "geolocalizacao",
+            "rich-text#top-bar-whatsapp",
+            "rich-text#top-bar-fale-conosco"
+        ]
+    },
+    "rich-text#top-bar-whatsapp": {
+        "props": {
+            "blockClass": [
+                "top-bar-whatsapp"
+            ],
+            "text": "Compre pelo WhatsApp +55 62 98423-8195 (somente vendas)"
+        }
+    },
+    "rich-text#top-bar-fale-conosco": {
+        "props": {
+            "blockClass": [
+                "top-bar-fale-conosco"
+            ],
+            "text": "[Fale Conosco](/institucional/contato)"
+        }
+    },
     "sticky-layout#4-desktop": {
         "children": [
             "header-row#header-principal",
@@ -29,13 +90,16 @@
             "flex-layout.row#4-desktop-menu"
             // "header-row#menu-principal",
             // "flex-layout.row#mega-menu"
-        ]
+        ],
+        "props": {
+            "blockClass": "header-sticky"
+        }
     },
     "flex-layout.col#spacer": {
         "props": {
-          "width": "grow"
+            "width": "grow"
         }
-      },
+    },
     "header-row#header-principal": {
         "props": {
             "blockClass": "main-header",
@@ -48,17 +112,38 @@
         },
         "children": [
             "logo#desktop",
-            "header-spacer",
+            // "header-spacer",
             "search-bar",
-            "header-spacer",
-            "flex-layout.row#conheca-nossos-servicos",
-            "header-spacer",
-            "flex-layout.row#login-wrapper",
-            "minicart.v2"
+            // "header-spacer",
+            // "flex-layout.row#conheca-nossos-servicos",
+            // "header-spacer",
+            "flex-layout.row#header-principal-right"
         ]
     },
-
-    "flex-layout.row#3-desktop":{
+    "flex-layout.row#header-principal-right": {
+        "children": [
+            "flex-layout.row#login-wrapper",
+            "image#wishlist-header",
+            "minicart.v2"
+        ],
+        "props": {
+            "blockClass": [
+                "header-principal-right"
+            ],
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "image#wishlist-header": {
+        "props": {
+            "src": "/arquivos/wishlist.svg",
+            "blockClass": "wishlist-header",
+            "link": {
+                "url": "/account#/wishlist"
+            }
+        }
+    },
+    "flex-layout.row#3-desktop": {
         "children": [
             "flex-layout.col#logo-desktop",
             "flex-layout.col#spacer",
@@ -69,7 +154,7 @@
             "login",
             "minicart.v2"
         ],
-        "props":{
+        "props": {
             "blockClass": "main-header",
             "horizontalAlign": "center",
             "verticalAlign": "center",
@@ -77,16 +162,14 @@
             "preventVerticalStretch": true
         }
     },
-
     "flex-layout.col#search-desktop": {
-		"props": {
-			"verticalAlign": "middle"
-		},
-		"children": [
-			"search-bar"
-		]
-	},
-
+        "props": {
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "search-bar"
+        ]
+    },
     "flex-layout.row#conheca-nossos-servicos": {
         "props": {
             "blockClass": "conheca-nossos-servicos",
@@ -141,9 +224,8 @@
             "category-menu"
         ]
     },
-
     "flex-layout.row#4-desktop-menu": {
-        "props":{
+        "props": {
             "blockClass": "main-header-menu",
             "horizontalAlign": "left",
             "verticalAlign": "center",

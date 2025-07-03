@@ -7,3 +7,32 @@
   top: 0;
   left: auto;
 } */
+
+.stackContainer--flags {
+    position: initial;
+    top: 11px;
+    left: 12px;
+    width: 100%;
+    z-index: 10;
+    min-height: 62px;
+}
+
+.stackItem--flags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 6px;
+    max-width: 265px;
+}
+
+@media (max-width: 1023px) {
+    .stackItem--flags {
+        max-width: 162px;
+        min-height: 60px;
+    }
+
+    .stackContainer--flags {
+        position: initial;
+        min-height: 93px;
+    }
+}

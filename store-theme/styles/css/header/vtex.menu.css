@@ -1,41 +1,35 @@
-.styledLinkContainer--menu-links-item{
+.styledLinkContainer--menu-links-item {
     padding: 0;
     height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     position: relative;
     margin: 0 8px;
 }
 
-.styledLinkContent--menu-links-item{
-    color:#FFF;
-    font-weight: bold;
-    font-family: 'Sarabun', sans-serif;
-    font-size: 15px;
-    transition: all .5s ease-in-out;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    white-space: pre-wrap;
-
+.styledLinkContent--menu-links-item {
+    transition: .2s all ease-in-out;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #000005;
 }
 
-.styledLinkContent--menu-links-item:hover{
-    color:#BACD29;
+.styledLinkContent--menu-links-item:hover {
+    color: #bacd29;
 }
 
-
-.styledLink--menu-links-item--highlight .styledLinkContent--menu-links-item{
-    color:#BACD29;
+.styledLink--menu-links-item--highlight .styledLinkContent--menu-links-item {
+    color: #bacd29;
 }
-.menuItem--menu-links-item:hover{
-    background-color: #148B2E;
+.menuItem--menu-links-item:hover .styledLinkContent--menu-links-item {
+    color: #7ea30a;
 }
 
-.styledLink--topbar-buy-whatsapp{
-    font-size:16px
+.styledLink--topbar-buy-whatsapp {
+    font-size: 16px;
 }
 
 .submenuWrapper--ofertas {
@@ -57,11 +51,11 @@
 }
 
 .styledLinkContainer--ofertas:hover {
-    background-color: #BACD29;
+    background-color: #bacd29;
 }
 
 .styledLinkContent--ofertas {
-    color: #FFF !important;
+    color: #fff !important;
     font-size: 15px;
     font-weight: 400;
 }
@@ -69,4 +63,77 @@
 .styledLink--ofertas {
     height: 100%;
     display: flex;
+}
+
+.menuContainer {
+    justify-content: center;
+}
+
+.submenuContainer {
+    position: initial;
+}
+
+.submenuWrapper,
+.menuContainerNav {
+    width: 100%;
+}
+
+.submenuWrapper {
+    background-color: #f5f5f5;
+    padding: 24px 0 29px;
+    border: none;
+    box-shadow: 4px 0px 3px 0px #00000026;
+}
+
+.styledLinkContainer--submenu-links-item {
+    margin: 0;
+}
+
+.styledLinkContent--submenu-links-item {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    transition: 0.2s all ease-in-out;
+}
+
+.menuItem--submenu-links-item:hover .styledLinkContent--submenu-links-item {
+    color: #7ea30a;
+}
+
+.styledLinkContainer--menu-links-item {
+    padding-bottom: 7px;
+}
+
+.styledLinkContainer--hasSubmenu::after {
+    content: "";
+    width: 10px;
+    height: 7px;
+    background-image: url(/arquivos/header-arrow.svg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: 6px;
+    transition: .2s all ease-in-out;
+}
+
+.menuItem--hasSubmenu:hover .styledLinkContainer::after {
+    filter: invert(51%) sepia(97%) saturate(935%) hue-rotate(38deg)
+        brightness(92%) contrast(92%);
+}
+
+.menuContainer--menu-links {
+    justify-content: space-between;
+}
+
+.styledLinkContainer--empresas {
+    padding-bottom: 0;
+    background-color: #0D6721;
+    border-radius: 8px;
+    max-height: 41px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.styledLinkContent--empresas {
+    color: #fff;
 }
