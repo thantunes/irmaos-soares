@@ -282,6 +282,7 @@
     "search-result-layout.mobile": {
         "children": [
             "rich-text#seo-hidden-text",
+            "flex-layout.row#searchtitle",
             "flex-layout.row#searchbread-mobile",
             "flex-layout.row#dep-banner-mobile",
             // "flex-layout.row#searchtitlemobile",

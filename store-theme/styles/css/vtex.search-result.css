@@ -115,12 +115,12 @@
 
 .galleryTitle--layout {
     position: absolute;
-    top: -12.1rem;
+    top: -12rem;
     left: 36px;
     color: #fff;
     margin: 0;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 38px;
     line-height: 100%;
 }
 
@@ -128,7 +128,8 @@
     flex-wrap: wrap;
 }
 
-:global(.vtex-render__container-id-product-breadcrumb) :global(.vtex-breadcrumb-1-x-container) {
+:global(.vtex-render__container-id-product-breadcrumb)
+    :global(.vtex-breadcrumb-1-x-container) {
     padding: 0 16px;
 }
 
@@ -297,13 +298,18 @@
 }
 @media screen and (max-width: 767px) {
     .galleryTitle--layout {
-        top: 0;
-        color: #000;
-        position: relative;
-        margin: 0.67em 0;
-        color: #000;
-        text-align: center;
-        font-size: 2rem;
+        position: absolute;
+        margin: 0;
+        text-align: left;
+        line-height: 37px;
+        color: #fff;
+        top: 128px;
+        font-size: 22px;
+        max-width: 180px;
+        left: 26px;
+        min-height: 74px;
+        display: flex;
+        align-items: center;
     }
 
     .filters--layout {
