@@ -79,16 +79,38 @@
   margin-bottom: 24px;
   font-weight: 600;
   font-size: 18px;
-  color: #0D6721;
+  color: #0d6721;
 }
 
 .shopImage {
-    max-height: 259px;
-    overflow: hidden;
+  max-height: 259px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
   .stores {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .shopInfo {
+    padding: 22px 0 0 20px;
+  }
+
+  .address {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .shopName {
+    padding-right: 20px;
+    text-align: left;
+    font-size: 23px;
+    line-height: 44px;
+    margin-bottom: 13px;
+  }
+
+  .phoneStore {
+    font-size: 20px;
   }
 }

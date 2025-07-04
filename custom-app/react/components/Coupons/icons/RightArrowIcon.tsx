@@ -3,20 +3,20 @@ import React from 'react'
 const RightArrowIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="53"
       height="52"
       viewBox="0 0 53 52"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <g filter="url(#filter0_d_4_92)">
+      <g filter="url(#filter0_d_4_84)">
         <rect
           x="10.5"
           y="10"
           width="32"
           height="32"
           rx="16"
-          fill="#BACD29"
+          fill="black"
           shape-rendering="crispEdges"
         />
         <path
@@ -26,7 +26,7 @@ const RightArrowIcon = () => {
       </g>
       <defs>
         <filter
-          id="filter0_d_4_92"
+          id="filter0_d_4_84"
           x="0.5"
           y="0"
           width="52"
@@ -51,12 +51,12 @@ const RightArrowIcon = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_4_92"
+            result="effect1_dropShadow_4_84"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect1_dropShadow_4_92"
+            in2="effect1_dropShadow_4_84"
             result="shape"
           />
         </filter>

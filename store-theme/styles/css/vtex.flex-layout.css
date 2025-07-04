@@ -711,4 +711,8 @@
     .flexRowContent--seja-fornecedor-img-title-wrapper :global(.vtex-store-components-3-x-imageElement) {
         width: 100%;
     }
+
+    .flexRow--nossas-lojas{
+        padding: 0 20px;
+    }
 }
