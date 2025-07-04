@@ -74,6 +74,7 @@
     height: 52px;
     background-color: #0d6721;
     border: none;
+    margin-top: auto;
 }
 
 .container--is-shelf :global(.vtex-button__label)::after {
