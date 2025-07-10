@@ -432,7 +432,7 @@
 
     .galleryItem :global(.vtex-product-summary-2-x-container),
     .galleryItem {
-        max-width: 171px !important;
+        max-width: 160px !important;
     }
 
     .orderByButton .filterPopupArrowIcon .caretIcon {
