@@ -32,6 +32,13 @@
     background-color: #bacd29;
 }
 
+@media screen and (max-width: 767px) {
+     
+    :global(.vtex-search-result-3-x-galleryItem) {
+        max-width: 160px !important;
+       
+    }
+}
 :global(.vtex-pageHeader__container) {
     padding-top: 0;
     padding-bottom: 0;
