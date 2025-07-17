@@ -1,7 +1,7 @@
 {
   "vendor": "irmaossoares",
   "name": "irmaossoares-theme",
-  "version": "6.0.44",
+  "version": "6.0.46",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
