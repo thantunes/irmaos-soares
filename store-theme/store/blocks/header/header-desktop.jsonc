@@ -41,7 +41,30 @@
     },
     "responsive-layout.mobile#header-topbar-content": {
         "children": [
-            "slider-layout#slider-header-topbar"
+            "slider-layout#slider-header-topbar-mobile"
+        ]
+    },
+    "slider-layout#slider-header-topbar-mobile": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": "5000",
+                "stopOnHover": "true"
+            },
+            "infinite": true,
+            // "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "blockClass": "carousel",
+            "fullWidth": false
+        },
+        "children": [
+            "geolocalizacao",
+            "rich-text#top-bar-whatsapp",
+            "rich-text#top-bar-fale-conosco"
         ]
     },
     "slider-layout#slider-header-topbar": {
