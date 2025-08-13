@@ -75,6 +75,7 @@
     "flex-layout.col#home-compre-por-departamento-item-1": {
         "children": [
             "image#home-compre-por-departamento-item-1",
+            "image#home-compre-por-departamento-item-1-hover",
             "link#home-compre-por-departamento-item-1-title"
         ],
         "props": {
@@ -86,12 +87,13 @@
     },
     "image#home-compre-por-departamento-item-1": {
         "props": {
-            "src": "/arquivos/departamento-organizacao.png",
+            "src": "/arquivos/departamento-organizacao-2.png",
             "link": {
                 "url": "/utilidades-do-lar"
             },
             "blockClass": [
-                "first-img"
+                "first-img",
+                "departamento-main"
             ]
         }
     },
@@ -107,6 +109,7 @@
     "flex-layout.col#home-compre-por-departamento-item-2": {
         "children": [
             "image#home-compre-por-departamento-item-2",
+            "image#home-compre-por-departamento-item-2-hover",
             "link#home-compre-por-departamento-item-2-title"
         ],
         "props": {
@@ -121,7 +124,10 @@
             "src": "/arquivos/departamento-portas.png",
             "link": {
                 "url": "/portas-e-janelas"
-            }
+            },
+            "blockClass": [
+                "departamento-main"
+            ]
         }
     },
     "link#home-compre-por-departamento-item-2-title": {
@@ -136,6 +142,7 @@
     "flex-layout.col#home-compre-por-departamento-item-3": {
         "children": [
             "image#home-compre-por-departamento-item-3",
+            "image#home-compre-por-departamento-item-3-hover",
             "link#home-compre-por-departamento-item-3-title"
         ],
         "props": {
@@ -150,7 +157,10 @@
             "src": "/arquivos/departamento-tintas.png",
             "link": {
                 "url": "/tintas"
-            }
+            },
+            "blockClass": [
+                "departamento-main"
+            ]
         }
     },
     "link#home-compre-por-departamento-item-3-title": {
@@ -165,6 +175,7 @@
     "flex-layout.col#home-compre-por-departamento-item-4": {
         "children": [
             "image#home-compre-por-departamento-item-4",
+            "image#home-compre-por-departamento-item-4-hover",
             "link#home-compre-por-departamento-item-4-title"
         ],
         "props": {
@@ -179,7 +190,10 @@
             "src": "/arquivos/departamento-pisos.png",
             "link": {
                 "url": "/pisos-e-revestimentos"
-            }
+            },
+            "blockClass": [
+                "departamento-main"
+            ]
         }
     },
     "link#home-compre-por-departamento-item-4-title": {
@@ -194,6 +208,7 @@
     "flex-layout.col#home-compre-por-departamento-item-5": {
         "children": [
             "image#home-compre-por-departamento-item-5",
+            "image#home-compre-por-departamento-item-5-hover",
             "link#home-compre-por-departamento-item-5-title"
         ],
         "props": {
@@ -208,7 +223,10 @@
             "src": "/arquivos/departamento-loucas.png",
             "link": {
                 "url": "/177?map=productClusterIds"
-            }
+            },
+            "blockClass": [
+                "departamento-main"
+            ]
         }
     },
     "link#home-compre-por-departamento-item-5-title": {
@@ -223,6 +241,7 @@
     "flex-layout.col#home-compre-por-departamento-item-6": {
         "children": [
             "image#home-compre-por-departamento-item-6",
+            "image#home-compre-por-departamento-item-6-hover",
             "link#home-compre-por-departamento-item-6-title"
         ],
         "props": {
@@ -237,7 +256,10 @@
             "src": "/arquivos/departamento-ferramentas.png",
             "link": {
                 "url": "/ferragens"
-            }
+            },
+            "blockClass": [
+                "departamento-main"
+            ]
         }
     },
     "link#home-compre-por-departamento-item-6-title": {
@@ -252,6 +274,7 @@
     "flex-layout.col#home-compre-por-departamento-item-7": {
         "children": [
             "image#home-compre-por-departamento-item-7",
+            "image#home-compre-por-departamento-item-7-hover",
             "link#home-compre-por-departamento-item-7-title"
         ],
         "props": {
@@ -266,7 +289,10 @@
             "src": "/arquivos/departamento-metais.png",
             "link": {
                 "url": "/172?map=productClusterIds"
-            }
+            },
+            "blockClass": [
+                "departamento-main"
+            ]
         }
     },
     "link#home-compre-por-departamento-item-7-title": {
@@ -281,6 +307,7 @@
     "flex-layout.col#home-compre-por-departamento-item-8": {
         "children": [
             "image#home-compre-por-departamento-item-8",
+            "image#home-compre-por-departamento-item-8-hover",
             "link#home-compre-por-departamento-item-8-title"
         ],
         "props": {
@@ -295,7 +322,10 @@
             "src": "/arquivos/departamento-iluminacao.png",
             "link": {
                 "url": "/iluminacao"
-            }
+            },
+            "blockClass": [
+                "departamento-main"
+            ]
         }
     },
     "link#home-compre-por-departamento-item-8-title": {
@@ -310,6 +340,7 @@
     "flex-layout.col#home-compre-por-departamento-item-9": {
         "children": [
             "image#home-compre-por-departamento-item-9",
+            "image#home-compre-por-departamento-item-9-hover",
             "link#home-compre-por-departamento-item-9-title"
         ],
         "props": {
@@ -324,7 +355,10 @@
             "src": "/arquivos/departamento-decoracao.png",
             "link": {
                 "url": "/material-basico/telhas-e-acessorios"
-            }
+            },
+            "blockClass": [
+                "departamento-main"
+            ]
         }
     },
     "link#home-compre-por-departamento-item-9-title": {
@@ -333,6 +367,105 @@
             "href": "/material-basico/telhas-e-acessorios",
             "blockClass": [
                 "home-compre-por-departamento-item-title"
+            ]
+        }
+    },
+    "image#home-compre-por-departamento-item-1-hover": {
+        "props": {
+            "src": "/arquivos/departamento-1-hover.png",
+            "link": {
+                "url": "/utilidades-do-lar"
+            },
+            "blockClass": [
+                "departamento-hover"
+            ]
+        }
+    },
+    "image#home-compre-por-departamento-item-2-hover": {
+        "props": {
+            "src": "/arquivos/departamento-2-hover-1.png",
+            "link": {
+                "url": "/portas-e-janelas"
+            },
+            "blockClass": [
+                "departamento-hover"
+            ]
+        }
+    },
+    "image#home-compre-por-departamento-item-3-hover": {
+        "props": {
+            "src": "/arquivos/departamento-3-hover.png",
+            "link": {
+                "url": "/tintas"
+            },
+            "blockClass": [
+                "departamento-hover"
+            ]
+        }
+    },
+    "image#home-compre-por-departamento-item-4-hover": {
+        "props": {
+            "src": "/arquivos/departamento-4-hover.png",
+            "link": {
+                "url": "/pisos-e-revestimentos"
+            },
+            "blockClass": [
+                "departamento-hover"
+            ]
+        }
+    },
+    "image#home-compre-por-departamento-item-5-hover": {
+        "props": {
+            "src": "/arquivos/departamento-5-hover.png",
+            "link": {
+                "url": "/177?map=productClusterIds"
+            },
+            "blockClass": [
+                "departamento-hover"
+            ]
+        }
+    },
+    "image#home-compre-por-departamento-item-6-hover": {
+        "props": {
+            "src": "/arquivos/departamento-6-hover.png",
+            "link": {
+                "url": "/ferragens"
+            },
+            "blockClass": [
+                "departamento-hover"
+            ]
+        }
+    },
+    "image#home-compre-por-departamento-item-7-hover": {
+        "props": {
+            "src": "/arquivos/departamento-7-hover.png",
+            "link": {
+                "url": "/172?map=productClusterIds"
+            },
+            "blockClass": [
+                "departamento-hover"
+            ]
+        }
+    },
+    "image#home-compre-por-departamento-item-8-hover": {
+        "props": {
+            "src": "/arquivos/departamento-8-hover.png",
+            "link": {
+                "url": "/iluminacao"
+            },
+            "blockClass": [
+                "departamento-hover"
+            ]
+        }
+    },
+    "image#home-compre-por-departamento-item-9-hover": {
+        "props": {
+            "src": "/arquivos/departamento-9-hover.png",
+            "link": {
+                "url": "/material-basico/telhas-e-acessorios"
+            },
+            "blockClass": [
+                "departamento-hover"
             ]
         }
     }

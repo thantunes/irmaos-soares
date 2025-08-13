@@ -133,7 +133,6 @@
     margin-bottom: 3rem;
 }
 
-
 .flexRowContent--servicos :global(.vtex-rich-text-0-x-link--servicos--contact) {
     font-weight: 500;
     font-size: 18px;
@@ -562,6 +561,29 @@
     .flexRowContent--mobile-slider-irmaosoares {
         display: none;
     }
+
+    .flexCol--home-compre-por-departamento-item:hover
+        :global(
+            .vtex-store-components-3-x-imageElementLink--departamento-main
+        ) {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .flexCol--home-compre-por-departamento-item
+        :global(
+            .vtex-store-components-3-x-imageElementLink--departamento-hover
+        ) {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .flexCol--home-compre-por-departamento-item:hover
+        :global(
+            .vtex-store-components-3-x-imageElementLink--departamento-hover
+        ) {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -708,11 +730,12 @@
         min-width: initial;
     }
 
-    .flexRowContent--seja-fornecedor-img-title-wrapper :global(.vtex-store-components-3-x-imageElement) {
+    .flexRowContent--seja-fornecedor-img-title-wrapper
+        :global(.vtex-store-components-3-x-imageElement) {
         width: 100%;
     }
 
-    .flexRow--nossas-lojas{
+    .flexRow--nossas-lojas {
         padding: 0 20px;
     }
 }

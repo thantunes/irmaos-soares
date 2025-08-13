@@ -733,7 +733,7 @@
 }
 
 .imageElement--first-img {
-    margin-top: -3px;
+    /* margin-top: -3px; */
     max-width: 109px;
 }
 

@@ -33,10 +33,8 @@
 }
 
 @media screen and (max-width: 767px) {
-     
     :global(.vtex-search-result-3-x-galleryItem) {
         max-width: 160px !important;
-       
     }
 }
 :global(.vtex-pageHeader__container) {
@@ -646,8 +644,7 @@
     }
 }
 
-:global(.irmaossoares-zig-custom-0-x-calculadora_countBoxesPrice){
-
+:global(.irmaossoares-zig-custom-0-x-calculadora_countBoxesPrice) {
     /* font-style: italic;
     line-height: 18px;
     font-size: 36px;
@@ -659,4 +656,37 @@
 
 :global(.irmaossoares-zig-custom-0-x-productPrice) {
     font-size: 1.8rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--home-compre-por-departamento-item)
+    :global(
+        .vtex-flex-layout-0-x-flexColChild--home-compre-por-departamento-item
+    ):nth-child(2) {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    :global(
+            .vtex-flex-layout-0-x-flexCol--home-compre-por-departamento-item
+        ):hover
+        :global(
+            .vtex-flex-layout-0-x-flexColChild--home-compre-por-departamento-item
+        ):nth-child(2) {
+        display: flex;
+    }
+
+    :global(
+            .vtex-flex-layout-0-x-flexCol--home-compre-por-departamento-item
+        ):hover
+        :global(
+            .vtex-flex-layout-0-x-flexColChild--home-compre-por-departamento-item
+        ):nth-child(1) {
+        display: none;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexCol--home-compre-por-departamento-item)
+        :global(.vtex-store-components-3-x-imageElement) {
+        max-width: 107px;
+        border-radius: 6px;
+    }
 }
