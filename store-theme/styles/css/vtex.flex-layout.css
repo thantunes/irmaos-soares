@@ -550,6 +550,10 @@
     color: #fff;
 }
 
+.flexRowContent--minicart-product-info-middle {
+    flex-direction: column;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     /* .flexRow--minibanners-2 */
 

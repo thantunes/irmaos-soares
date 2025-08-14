@@ -353,13 +353,19 @@
             "blockClass": "minicart-product-info-middle"
         }
     },
-
-    "flex-layout.row#unit-price.mobile": {
-        "children": ["unit-price"],
+    "quantity-selector": {
         "props": {
-          "marginTop": "3"
+            "mode": "stepper"
         }
-      },
+    },
+    "flex-layout.row#unit-price.mobile": {
+        "children": [
+            "unit-price"
+        ],
+        "props": {
+            "marginTop": "3"
+        }
+    },
     "flex-layout.row#minicart-prices-container": {
         "children": [
             "price#mobile",

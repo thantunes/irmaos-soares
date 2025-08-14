@@ -1,4 +1,4 @@
-.unitPriceMeasurementUnit{
+.unitPriceMeasurementUnit {
     font-size: 0;
 }
 .unitPrice {
@@ -8,4 +8,17 @@
 .unitPriceMeasurementUnit::before {
     content: " por unidade";
     font-size: 12px;
+}
+.quantitySelector {
+    max-width: 200px;
+    margin-right: auto;
+    margin-top: 5px;
+}
+.productImageContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.productImageAnchor {
+    height: 100%;
 }

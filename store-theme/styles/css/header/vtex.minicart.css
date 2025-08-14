@@ -20,7 +20,7 @@
     font-size: 12px;
     line-height: 100%;
     color: #fff;
-    background-color: #BACD29;
+    background-color: #bacd29;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -179,6 +179,7 @@
 
 .minicartProductListContainer :global(.vtex-product-list-0-x-price) {
     width: max-content;
+    margin-top: 5px;
 }
 
 .minicartProductListContainer :global(.vtex-dropdown__button) {
