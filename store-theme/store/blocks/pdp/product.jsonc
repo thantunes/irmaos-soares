@@ -59,11 +59,14 @@
         ]
     },
     "responsive-layout.desktop#vitrine-quem-viu-viu-tambem": {
-        "children": ["shelf.relatedProducts#product"]
+        "children": [
+            "shelf.relatedProducts#product"
+        ]
     },
-
     "responsive-layout.mobile#vitrine-quem-viu-viu-tambem": {
-        "children": ["shelf.relatedProducts#product-mobile"]
+        "children": [
+            "shelf.relatedProducts#product-mobile"
+        ]
     },
     "shelf.relatedProducts#product": {
         "blocks": [
@@ -269,6 +272,14 @@
         }
     },
     "product-quantity": {
+        "props": {
+            "blockClass": "product-quantity",
+            // "quantitySelectorStep": "singleUnit",
+            "showUnit": true,
+            "showLabel": false
+        }
+    },
+    "product-quantity#summary": {
         "props": {
             "blockClass": "product-quantity",
             // "quantitySelectorStep": "singleUnit",

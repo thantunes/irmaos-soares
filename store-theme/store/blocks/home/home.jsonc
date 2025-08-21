@@ -103,9 +103,9 @@
                 "stopOnHover": "true"
             },
             "infinite": true,
-            "showNavigationArrows": "never",
+            "showNavigationArrows": "desktopOnly",
             "showPaginationDots": "always",
-            "blockClass": "carousel",
+            "blockClass": ["carousel", "slider-principal-images"],
             "fullWidth": false
         }
     },

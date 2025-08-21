@@ -19,7 +19,7 @@ const CustomParcelamento: StorefrontFunctionComponent<Product> = () => {
     const precoJuros =  (parseFloat(preco) * 1.119).toFixed(2);
     const precoJurosReal = parseFloat(precoJuros);
 
-    if (categoryId && categoryId == "101")  return null;
+    if (categoryId && categoryId == "101")  return <p className={`${styles.parcelamentoIS}`}></p>;
 
     // Check if product is in category 184 or if it is in cluster 139, 142 or 143
     if (categoryId === "184" || product?.productClusters.some((cluster: { id: string; }) => cluster.id === "142" || cluster.id === "143")) {

@@ -38,5 +38,8 @@
   },
   "buy-together": {
     "component": "BuyTogether"
+  },
+  "quantity-input-fix": {
+    "component": "QuantityInputFix"
   }
 }

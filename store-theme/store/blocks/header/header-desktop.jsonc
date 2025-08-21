@@ -20,6 +20,7 @@
     },
     "flex-layout.row#header-topbar-container": {
         "children": [
+            "quantity-input-fix",
             "responsive-layout.desktop#header-topbar-content",
             "responsive-layout.mobile#header-topbar-content"
         ],
