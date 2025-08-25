@@ -114,4 +114,8 @@
     .container--is-shelf :global(.vtex-button__label)::after {
         min-width: 33px;
     }
+
+    .container--is-shelf :global(.vtex-button__label) {
+        gap: 6px;
+    }
 }
