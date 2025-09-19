@@ -85,8 +85,8 @@
     "search-result-layout.desktop": {
         "children": [
             "rich-text#seo-hidden-text",
-            "flex-layout.row#searchtitle",
             "flex-layout.row#searchbread",
+            "flex-layout.row#searchtitle",
             "flex-layout.row#result"
         ],
         "props": {

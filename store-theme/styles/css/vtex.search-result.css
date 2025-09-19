@@ -167,6 +167,10 @@
     color: #73aa00;
 }
 
+.container--layout {
+    padding-top: 10px;
+}
+
 .filterIcon {
     padding: 0;
 }
@@ -300,6 +304,9 @@
     margin-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
+    :global(.vtex-breadcrumb-1-x-container) {
+        margin-top: 0;
+    }
     .galleryTitle--layout {
         position: initial;
         margin: 0;
