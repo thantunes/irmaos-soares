@@ -1,7 +1,7 @@
 {
     "store.search": {
         "blocks": [
-            "flex-layout.row#dep-banner",
+            // "flex-layout.row#dep-banner",
             "flex-layout.row#searchtitle",
             "search-result-layout"
         ],
@@ -16,7 +16,7 @@
     },
     "store.search#brand": {
         "blocks": [
-            "flex-layout.row#dep-banner",
+            // "flex-layout.row#dep-banner",
             "flex-layout.row#searchtitle",
             "search-result-layout"
         ],
@@ -32,7 +32,7 @@
     },
     "store.search#department": {
         "blocks": [
-            "flex-layout.row#dep-banner",
+            // "flex-layout.row#dep-banner",
             "flex-layout.row#searchtitle",
             "search-result-layout"
         ],
@@ -47,7 +47,7 @@
     },
     "store.search#category": {
         "blocks": [
-            "flex-layout.row#dep-banner",
+            // "flex-layout.row#dep-banner",
             "flex-layout.row#searchtitle",
             "search-result-layout"
         ],
@@ -62,7 +62,7 @@
     },
     "store.search#subcategory": {
         "blocks": [
-            "flex-layout.row#dep-banner",
+            // "flex-layout.row#dep-banner",
             "flex-layout.row#searchtitle",
             "search-result-layout"
         ],
@@ -282,9 +282,9 @@
     "search-result-layout.mobile": {
         "children": [
             "rich-text#seo-hidden-text",
-            "flex-layout.row#searchtitle",
             "flex-layout.row#searchbread-mobile",
-            "flex-layout.row#dep-banner-mobile",
+            "flex-layout.row#searchtitle",
+            // "flex-layout.row#dep-banner-mobile",
             // "flex-layout.row#searchtitlemobile",
             "flex-layout.row#searchinfomobile",
             // "flex-layout.row#productCountMobile",

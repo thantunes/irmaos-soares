@@ -114,7 +114,7 @@
 }
 
 .galleryTitle--layout {
-    position: absolute;
+    position: initial;
     top: -12rem;
     left: 36px;
     color: #fff;
@@ -122,6 +122,9 @@
     font-weight: 600;
     font-size: 38px;
     line-height: 100%;
+
+    color: black;
+    margin: 40px 0 50px;
 }
 
 :global(.vtex-breadcrumb-1-x-container) {
@@ -298,7 +301,7 @@
 }
 @media screen and (max-width: 767px) {
     .galleryTitle--layout {
-        position: absolute;
+        position: initial;
         margin: 0;
         text-align: left;
         line-height: 37px;
@@ -310,6 +313,11 @@
         min-height: 74px;
         display: flex;
         align-items: center;
+
+        color: #000;
+        max-width: initial;
+        margin-left: 16px;
+        margin-top: 10px;
     }
 
     .filters--layout {
