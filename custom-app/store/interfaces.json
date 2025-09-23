@@ -41,5 +41,13 @@
   },
   "quantity-input-fix": {
     "component": "QuantityInputFix"
+  },
+  "suggestions-shelf": {
+    "component": "SuggestionsShelf",
+    "composition": "children"
+  },
+  "accessories-shelf": {
+    "component": "AccessoriesShelf",
+    "composition": "children"
   }
 }

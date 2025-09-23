@@ -5,6 +5,8 @@
             "condition-layout.product#availability",
             "flex-layout.row#product-description",
             "buy-together",
+            "accessories-shelf",
+            "suggestions-shelf",
             // "tab-layout#product-details",
             // "flex-layout.row#description",
             // "flex-layout.row#vitrine-similares",
@@ -15,6 +17,16 @@
         "props": {
             "blockClass": "product--is"
         }
+    },
+    "suggestions-shelf": {
+        "children": [
+            "product-rating-summary"
+        ]
+    },
+    "accessories-shelf": {
+        "children": [
+            "product-rating-summary"
+        ]
     },
     "flex-layout.row#product-description": {
         "children": [

@@ -33,6 +33,9 @@
     "vtex.checkout-splunk": "0.x",
     "vtex.order-items": "0.x"
   },
+  "peerDependencies": {
+    "vtex.reviews-and-ratings": "3.x"
+  },
   "registries": [
     "smartcheckout"
   ],

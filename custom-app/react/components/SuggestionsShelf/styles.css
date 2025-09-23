@@ -1,0 +1,94 @@
+.customShelfTitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: left;
+  color: #000000;
+  justify-content: flex-start;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.customProductContainer {
+  max-width: 288px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cecece;
+  transition: 0.2s all ease-in-out;
+}
+
+.customProductContainer:hover {
+  border-color: #7ea30a;
+}
+
+.customProduct {
+  text-decoration: none;
+  color: #000;
+}
+
+.customProduct h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000005;
+  min-height: 92px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 8px 0 11px;
+}
+
+.customProduct .priceContainer {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: #7ea30a;
+}
+
+.customProduct .priceContainer span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000005;
+  line-height: 100%;
+  margin-left: 7px;
+  display: block;
+  margin-bottom: -5px;
+}
+
+.customProduct .installments {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262626;
+  margin-bottom: 22px;
+  min-height: 40px;
+  margin-top: 6px;
+}
+
+.customProductContainer button {
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  padding: 0;
+  color: #fff;
+  height: 52px;
+  background-color: #0d6721;
+  border: none;
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+  .customShelfTitle {
+    padding-left: 16px;
+  }
+}

@@ -592,7 +592,39 @@
     bottom: 54px;
 }
 
+:global(.vtex-render__container-id-suggestions-shelf),
+:global(.vtex-render__container-id-accessories-shelf) {
+    max-width: 1440px;
+    margin: 0 auto 40px;
+    width: 100%;
+}
+
+:global(.irmaossoares-zig-custom-0-x-customProductContainer)
+    :global(.vtex-reviews-and-ratings-3-x-summaryTotalReviews) {
+    display: none;
+}
+
+:global(.irmaossoares-zig-custom-0-x-paginationDotsContainer) {
+    bottom: -24px;
+}
+
+:global(.irmaossoares-zig-custom-0-x-paginationDot--isActive) {
+    background: #a7cb33;
+}
+
+:global(.irmaossoares-zig-custom-0-x-slide) {
+    max-width: fit-content;
+}
+
+:global(.irmaossoares-zig-custom-0-x-sliderTrack) {
+    justify-content: center;
+    gap: 10px;
+}
+
 @media (max-width: 1023px) {
+    :global(.irmaossoares-zig-custom-0-x-slide) {
+        max-width: initial;
+    }
     :global(.vtex-add-to-cart-button-0-x-buttonText) {
         margin-bottom: -3px;
     }
