@@ -14,15 +14,14 @@ const SuggestionsShelf: React.FC = ({ children }) => {
   >([])
   const [isLoading, setIsLoading] = useState(false)
   isLoading
-  const sliderConfig = {
+  const sliderConfig: React.ComponentProps<typeof SliderLayout> = {
     itemsPerPage: {
       desktop: 5,
       tablet: 2,
       phone: 1,
     },
-    infinite: true,
-    showNavigationArrows: 'desktopOnly',
-    blockClass: 'carousel',
+    infinite: false,
+    showNavigationArrows: 'never',
   }
   //   const { addItems } = OrderItems.useOrderItems()
 
@@ -56,7 +55,7 @@ const SuggestionsShelf: React.FC = ({ children }) => {
   return (
     <>
       <h2 className={styles.customShelfTitle}>Isto combina com</h2>
-      <SliderLayout {...{ sliderConfig }}>
+      <SliderLayout {...sliderConfig}>
         {suggestedProducts.map((product: ProductTypes.Product) => (
           <ProductCard
             product={product}

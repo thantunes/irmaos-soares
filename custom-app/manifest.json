@@ -1,7 +1,7 @@
 {
   "vendor": "irmaossoares",
   "name": "zig-custom",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "title": "zig-custom",
   "description": "zig-custom component for VTEX IO. Only for irmaossoares store.",
   "defaultLocale": "pt-BR",
@@ -32,9 +32,6 @@
     "vtex.checkout-graphql": "0.x",
     "vtex.checkout-splunk": "0.x",
     "vtex.order-items": "0.x"
-  },
-  "peerDependencies": {
-    "vtex.reviews-and-ratings": "3.x"
   },
   "registries": [
     "smartcheckout"

@@ -21,13 +21,16 @@ const BuyTogether = () => {
 
   // useMemo para calcular valores de produto e evitar recalcular a cada renderização
   const firstProduct = useMemo(() => similarProducts[0], [similarProducts])
+  const secondProduct = useMemo(() => similarProducts[1], [similarProducts])
   const finalTotal = useMemo(() => {
     const mainProductPrice =
       mainProduct?.items?.[0]?.sellers?.[0]?.commertialOffer?.ListPrice ?? 0
     const similarProductPrice =
       firstProduct?.items?.[0]?.sellers?.[0]?.commertialOffer?.ListPrice ?? 0
-    return mainProductPrice + similarProductPrice
-  }, [mainProduct, firstProduct])
+    const similarSecondProductPrice =
+      secondProduct?.items?.[0]?.sellers?.[0]?.commertialOffer?.ListPrice ?? 0
+    return mainProductPrice + similarProductPrice + similarSecondProductPrice
+  }, [mainProduct, firstProduct, secondProduct])
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -66,8 +69,13 @@ const BuyTogether = () => {
         quantity: 1,
         seller: firstProduct?.items?.[0]?.sellers?.[0]?.sellerId ?? '',
       },
+      {
+        id: secondProduct?.productId ?? '',
+        quantity: 1,
+        seller: secondProduct?.items?.[0]?.sellers?.[0]?.sellerId ?? '',
+      },
     ],
-    [mainProduct, firstProduct]
+    [mainProduct, firstProduct, secondProduct]
   )
 
   const handleAddToCart = async () => {
@@ -99,14 +107,40 @@ const BuyTogether = () => {
       <h2>Aproveite e leve junto</h2>
       <div className={styles.wrapper}>
         <div className={styles.container}>
-          {mainProduct && <RenderProduct product={mainProduct} />}
-          <PlusIcon />
-          {firstProduct && <RenderProduct product={firstProduct} />}
+          {mainProduct && (
+            <RenderProduct
+              product={mainProduct}
+              twoProducts={secondProduct ? true : false}
+            />
+          )}
+
+          {firstProduct && (
+            <>
+              <PlusIcon />
+              <RenderProduct
+                product={firstProduct}
+                twoProducts={secondProduct ? true : false}
+              />
+            </>
+          )}
+
+          {secondProduct && (
+            <>
+              <PlusIcon />
+              <RenderProduct
+                product={secondProduct}
+                twoProducts={secondProduct ? true : false}
+              />
+            </>
+          )}
+
           <EqualIcon />
         </div>
 
         <div className={styles.addToCartContainer}>
-          <div className={styles.productsCount}>os 2 produtos por</div>
+          <div className={styles.productsCount}>
+            os {secondProduct ? '3' : '2'} produtos por
+          </div>
           <div className={styles.finalPrice}>
             <strong>
               {finalTotal.toLocaleString('pt-BR', {

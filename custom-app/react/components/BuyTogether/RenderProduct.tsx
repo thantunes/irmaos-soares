@@ -4,9 +4,10 @@ import styles from './styles.css'
 
 interface RenderProductProps {
   product: ProductTypes.Product
+  twoProducts: boolean
 }
 
-const RenderProduct: React.FC<RenderProductProps> = ({ product }) => {
+const RenderProduct: React.FC<RenderProductProps> = ({ product, twoProducts }) => {
   if (!product) return null
 
   const {
@@ -26,7 +27,7 @@ const RenderProduct: React.FC<RenderProductProps> = ({ product }) => {
   return (
     <a
       href={`/${linkText}/p`}
-      className={styles.product}
+      className={`${styles.product} ${twoProducts ? styles.twoProducts : ''}`}
       aria-label={productName}
     >
       <img src={productImage} alt={productName} />

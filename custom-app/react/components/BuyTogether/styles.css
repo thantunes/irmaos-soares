@@ -1,5 +1,5 @@
 .buyTogether {
-  max-width: 1209px;
+  max-width: 1440px;
   margin: 0 auto 47px;
 }
 
@@ -24,12 +24,16 @@
   margin: 47px 0 24px;
 }
 
+.buyTogetherIcon {
+  min-width: 40px;
+}
+
 .product {
   max-width: 309px;
   background: #fff;
   border-radius: 8px;
   padding: 22px;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   text-decoration: none;
 }
 
@@ -41,6 +45,12 @@
   font-weight: bold;
   color: #000;
   font-size: 16px;
+  min-height: 55.17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .product .price {
@@ -85,7 +95,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .addToCartContainer button:hover {
@@ -111,6 +121,10 @@
 
 .finalPrice strong {
   font-weight: 600;
+}
+
+.twoProducts {
+  max-width: 259px;
 }
 
 @media (max-width: 1024px) {

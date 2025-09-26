@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from '../styles.css'
 
 const PlusIcon: any = () => {
   return (
@@ -8,6 +9,7 @@ const PlusIcon: any = () => {
       viewBox="0 0 61 61"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={styles.buyTogetherIcon}
     >
       <rect x="0.5" y="0.5" width="60" height="60" rx="30" fill="#0D6721" />
       <path

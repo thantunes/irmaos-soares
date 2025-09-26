@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\raulo\AppData\Local\vtex\client\4.2.0\node_modules\yarn\bin\yarn.js --non-interactive --ignore-engines
+  C:\Program Files\nodejs\node.exe C:\Users\raulo\AppData\Local\vtex\client\4.2.2\node_modules\yarn\bin\yarn.js --non-interactive --ignore-engines
 
 PATH: 
   C:\Users\raulo\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\raulo\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\raulo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\OpenSSL-Win64\bin;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Users\raulo\AppData\Local\Microsoft\WindowsApps;C:\Users\raulo\AppData\Roaming\npm;C:\Program Files\vtex\bin;C:\Users\raulo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\raulo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\OpenSSL-Win64\bin;C:\Users\raulo\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -15,11 +15,11 @@ Platform:
 
 Trace: 
   Error: https://dev--irmaossoares.myvtex.com/_v/private/typings/linked/v1/irmaossoares.zig-custom@0.0.12+build1706015591/public/@types/irmaossoares.zig-custom: Request failed "500 Internal Server Error"
-      at ResponseError.ExtendableBuiltin (C:\Users\raulo\AppData\Local\vtex\client\4.2.0\node_modules\yarn\lib\cli.js:696:66)
-      at new ResponseError (C:\Users\raulo\AppData\Local\vtex\client\4.2.0\node_modules\yarn\lib\cli.js:802:124)
-      at Request.<anonymous> (C:\Users\raulo\AppData\Local\vtex\client\4.2.0\node_modules\yarn\lib\cli.js:67058:16)
+      at ResponseError.ExtendableBuiltin (C:\Users\raulo\AppData\Local\vtex\client\4.2.2\node_modules\yarn\lib\cli.js:696:66)
+      at new ResponseError (C:\Users\raulo\AppData\Local\vtex\client\4.2.2\node_modules\yarn\lib\cli.js:802:124)
+      at Request.<anonymous> (C:\Users\raulo\AppData\Local\vtex\client\4.2.2\node_modules\yarn\lib\cli.js:67058:16)
       at Request.emit (events.js:376:20)
-      at Request.module.exports.Request.onRequestResponse (C:\Users\raulo\AppData\Local\vtex\client\4.2.0\node_modules\yarn\lib\cli.js:141539:10)
+      at Request.module.exports.Request.onRequestResponse (C:\Users\raulo\AppData\Local\vtex\client\4.2.2\node_modules\yarn\lib\cli.js:141539:10)
       at ClientRequest.emit (events.js:376:20)
       at HTTPParser.parserOnIncomingClient (_http_client.js:647:27)
       at HTTPParser.parserOnHeadersComplete (_http_common.js:126:17)
