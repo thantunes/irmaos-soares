@@ -368,9 +368,19 @@
     "search-not-found-layout": {
         "children": [
             "flex-layout.row#searchbread",
-            "flex-layout.row#notfound"
+            "flex-layout.row#notfound",
+            "rich-text#shelf-title-search-not-found",
+            "flex-layout.row#shelf-search-not-found"
         ]
     },
+
+"rich-text#shelf-title-search-not-found": {
+        "props": {
+            "text": "## Confira as ofertas da semana",
+            "blockClass": "shelfTitle"
+        }
+    },
+
     "flex-layout.row#notfound": {
         "children": [
             "not-found"
