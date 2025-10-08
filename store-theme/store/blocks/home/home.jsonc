@@ -246,5 +246,42 @@
             "fullWidth": false,
             "blockClass": "shelf"
         }
+    },
+
+
+        "flex-layout.row#shelf-search-not-found": {
+        "children": [
+            "list-context.product-list#ofertas-semana-search-not-found"
+        ],
+        "props": {
+            "blockClass": "shelf"
+        }
+    },
+    "list-context.product-list#ofertas-semana-search-not-found": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#ofertas-semana-search-not-found"
+        ],
+        "props": {
+            "hideUnavailableItems": true,
+            "orderBy": "OrderByBestDiscountDESC",
+            "collection": "151"
+        }
+    },
+    "slider-layout#ofertas-semana-search-not-found": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 2
+            },
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "mobileOnly",
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf"
+        }
     }
 }
