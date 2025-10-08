@@ -1,7 +1,7 @@
 {
     "minicart.v2": {
         "props": {
-            "MinicartIcon": "flex-layout.row#minicart-open-button",
+            // "MinicartIcon": "flex-layout.row#minicart-open-button",
             "quantityDisplay": "always",
             "maxDrawerWidth": 360,
             "customPixelEventName": "addToCart",

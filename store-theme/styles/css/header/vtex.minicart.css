@@ -74,8 +74,7 @@
     filter: opacity(0.8);
 }
 
-.closeIconButton .closeIcon,
-.cartIcon {
+.closeIconButton .closeIcon {
     display: none;
 }
 
@@ -274,4 +273,12 @@
 
 .minicartProductListContainer :global(.vtex-product-price-1-x-installments) {
     display: none;
+}
+
+.cartIcon {
+    overflow: visible !important;
+    display: flex;
+    width: 34px;
+    margin-top: -15px;
+    margin-right: 8px;
 }
