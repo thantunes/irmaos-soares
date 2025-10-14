@@ -67,9 +67,11 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
   const checkCategory = () => {
     const categories = product?.categories
 
+    console.log({categories})
+
     if (categories) {
       if (
-        categories.includes('/Pisos e Revestimentos/Pisos e Revestimentos/')
+        categories.includes('/Pisos e Revestimentos/')
       ) {
         setShowCalculator(true)
         const sellingPrice = document.querySelector(

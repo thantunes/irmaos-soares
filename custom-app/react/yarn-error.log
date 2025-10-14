@@ -8,7 +8,7 @@ Yarn version:
   1.22.10
 
 Node version: 
-  14.17.0
+  18.20.3
 
 Platform: 
   win32 x64
@@ -18,13 +18,13 @@ Trace:
       at ResponseError.ExtendableBuiltin (C:\Users\raulo\AppData\Local\vtex\client\4.2.2\node_modules\yarn\lib\cli.js:696:66)
       at new ResponseError (C:\Users\raulo\AppData\Local\vtex\client\4.2.2\node_modules\yarn\lib\cli.js:802:124)
       at Request.<anonymous> (C:\Users\raulo\AppData\Local\vtex\client\4.2.2\node_modules\yarn\lib\cli.js:67058:16)
-      at Request.emit (events.js:376:20)
-      at Request.module.exports.Request.onRequestResponse (C:\Users\raulo\AppData\Local\vtex\client\4.2.2\node_modules\yarn\lib\cli.js:141539:10)
-      at ClientRequest.emit (events.js:376:20)
-      at HTTPParser.parserOnIncomingClient (_http_client.js:647:27)
-      at HTTPParser.parserOnHeadersComplete (_http_common.js:126:17)
-      at TLSSocket.socketOnData (_http_client.js:515:22)
-      at TLSSocket.emit (events.js:376:20)
+      at Request.emit (node:events:517:28)
+      at module.exports.Request.onRequestResponse (C:\Users\raulo\AppData\Local\vtex\client\4.2.2\node_modules\yarn\lib\cli.js:141539:10)
+      at ClientRequest.emit (node:events:517:28)
+      at HTTPParser.parserOnIncomingClient (node:_http_client:700:27)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+      at TLSSocket.socketOnData (node:_http_client:541:22)
+      at TLSSocket.emit (node:events:517:28)
 
 npm manifest: 
   {
