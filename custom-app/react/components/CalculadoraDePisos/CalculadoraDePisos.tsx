@@ -2,35 +2,11 @@ import React, { useEffect, useState } from 'react'
 import styles from './styles.css'
 //@ts-ignore
 import useProduct from 'vtex.product-context/useProduct'
-import formatPrice from '../../utils/formatPrice'
 import { useProductDispatch } from 'vtex.product-context'
+import formatPrice from '../../utils/formatPrice'
 
-// import Installments from "vtex.product-price/Installments";
-
-interface CalculatorProps {
-  productContext: {
-    product: {
-      items: {
-        unitMultiplier: number
-        sellers: {
-          commertialOffer: {
-            Price: number
-            Installments: {
-              Value: number[]
-            }[]
-          }
-        }[]
-      }[]
-      categories: string[]
-    }
-  }
-}
-
-const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
-  children,
-}: {
-  children?: React.ReactNode
-}) => {
+const CalculadoraDePisos: StorefrontFunctionComponent = (props: any) => {
+  const { children } = props
   const dispatch = useProductDispatch()
   const { product } = useProduct()
 
@@ -39,6 +15,7 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
   const [countBoxesPrice, setCountBoxesPrice] = useState(0)
   const [addPercent, setAddPercent] = useState(false)
   const [showCalculator, setShowCalculator] = useState(false)
+
   const classNames = {
     wrapper: styles.calculadora_wrapper,
     title: styles.calculadora_title,
@@ -54,76 +31,69 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
     percentLabel: styles.percent_label,
     eachBoxPrice: styles.eachBoxPrice,
   }
-  useEffect(() => {
-    if (product) {
-      checkCategory()
-    }
-  }, [product])
 
-  useEffect(() => {
-    recalculate()
-  }, [boxValue, addPercent])
+  // 🔍 Verifica se o produto pertence a uma categoria de piso
+  const isFloorCategory = (categories: string[] = []): boolean => {
+    return categories.some(
+      (cat) =>
+        cat.includes('Pisos e Revestimentos') ||
+        cat.includes('Porcelanato')
+    )
+  }
 
-  const checkCategory = () => {
-    const categories = product?.categories
+  // 🧩 Verifica categoria e remove o preço padrão se necessário
+  useEffect(() => {
+    if (!product) return
+    const categories = product.categories ?? []
 
     console.log({categories})
 
-    if (categories) {
-      if (
-        categories.includes('/Pisos e Revestimentos/')
-      ) {
-        setShowCalculator(true)
-        const sellingPrice = document.querySelector(
-          '.vtex-product-price-1-x-sellingPrice'
-        )
-        if (sellingPrice) {
-          document
-            .querySelector('.vtex-product-price-1-x-sellingPrice')
-            ?.remove()
-        }
-      } else {
-        setShowCalculator(false)
-      }
-    }
-  }
+    if (isFloorCategory(categories)) {
+      setShowCalculator(true)
 
-  const unitMultiplier = product?.items[0].unitMultiplier!
+      const sellingPriceElement = document.querySelector(
+        '.vtex-product-price-1-x-sellingPrice'
+      )
+      if (sellingPriceElement) sellingPriceElement.remove()
+    } else {
+      setShowCalculator(false)
+    }
+  }, [product])
+
+  const unitMultiplier = product?.items?.[0]?.unitMultiplier ?? 1
   const pricePerSquareMeter =
-    product?.items[0].sellers[0].commertialOffer.Price!
-  // const installments = product?.items[0].sellers[0].commertialOffer.Installments[0].Value!;
+    product?.items?.[0]?.sellers?.[0]?.commertialOffer?.Price ?? 0
 
-  const recalculate = () => {
-    let calculatedValue = boxValue
-    if (addPercent) {
-      calculatedValue *= 1.1 // Adiciona 10%
+  // 🔄 Recalcula caixas e valor total
+  useEffect(() => {
+    const recalculate = () => {
+      let calculatedValue = boxValue
+      if (addPercent) calculatedValue *= 1.1 // adiciona 10%
+
+      const calculatedBoxes = Math.ceil(calculatedValue / unitMultiplier) || 0
+      const calculatedPrice = Math.floor(
+        calculatedBoxes * pricePerSquareMeter * unitMultiplier * 100
+      ) / 100
+
+      setCountBoxes(calculatedBoxes)
+      setCountBoxesPrice(calculatedPrice)
+
+      dispatch?.({
+        type: 'SET_QUANTITY',
+        args: { quantity: calculatedBoxes },
+      } as any)
     }
 
-    let calculatedBoxes = Math.ceil(calculatedValue / unitMultiplier) || 0
-    let calculatedPrice = calculatedBoxes * pricePerSquareMeter * unitMultiplier
-    calculatedPrice = Math.floor(calculatedPrice * 100) / 100
-
-    console.log({pricePerSquareMeter})
-
-    setCountBoxes(calculatedBoxes)
-    dispatch?.({
-      type: 'SET_QUANTITY',
-      args: {
-        quantity: calculatedBoxes,
-      },
-    } as any)
-    setCountBoxesPrice(calculatedPrice)
-  }
+    recalculate()
+  }, [boxValue, addPercent, unitMultiplier, pricePerSquareMeter, dispatch])
 
   const handleBoxValueChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseFloat(event.target.value)
-    setBoxValue(value)
+    setBoxValue(isNaN(value) ? 1 : value)
   }
 
   const handleAddPercentChange = () => {
     setAddPercent(!addPercent)
-
-    console.log(countBoxesPrice)
   }
 
   if (!showCalculator) return null
@@ -140,10 +110,12 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
       </div>
 
       {children}
+
       <section className={classNames.wrapper}>
         <h3 className={classNames.title}>
           Quantos metros quadrados você precisa?
         </h3>
+
         <div className={classNames.calculadora_box}>
           <div className={classNames.boxContainer}>
             <div className={classNames.left}>
@@ -157,6 +129,7 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
                 onChange={handleBoxValueChange}
               />
             </div>
+
             <div className={classNames.right}>
               <span className={classNames.countBoxes}>
                 {countBoxes} caixa(s) ({unitMultiplier} m²/caixa)
@@ -169,11 +142,11 @@ const CalculadoraDePisos: StorefrontFunctionComponent<CalculatorProps> = ({
               </span>
             </div>
           </div>
+
           <div className={classNames.percent}>
             <input
               className={classNames.percentInput}
               type="checkbox"
-              name="add-percent"
               id="add-percent"
               checked={addPercent}
               onChange={handleAddPercentChange}

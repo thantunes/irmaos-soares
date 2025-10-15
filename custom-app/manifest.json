@@ -1,7 +1,7 @@
 {
   "vendor": "irmaossoares",
   "name": "zig-custom",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "title": "zig-custom",
   "description": "zig-custom component for VTEX IO. Only for irmaossoares store.",
   "defaultLocale": "pt-BR",
