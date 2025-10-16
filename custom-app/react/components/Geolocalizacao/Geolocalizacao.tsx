@@ -24,7 +24,8 @@ function Geolocalizacao() {
   console.log({ session })
 
   const getLocation = async (cep: string) => {
-    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
+    const cepFormatted = cep.replace('-', '').trim() // remove "-" e espaços
+    const response = await fetch(`https://opencep.com/v1/${cepFormatted}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -32,6 +33,7 @@ function Geolocalizacao() {
       },
     })
     const data = await response.json()
+    console.log({ data, cep: cepFormatted })
     return data
   }
 
@@ -132,19 +134,19 @@ function Geolocalizacao() {
     try {
       const response = await getLocation(cep)
 
-      if (response?.erro) {
+      if (!response || response.erro) {
         setErrorIS('CEP inválido')
         setIsLoading(false)
         return
       }
 
       const cepFormatted = cep.replace('-', '')
-      Cookies.set('userLocation', response.localidade) // Salvar o nome da cidade no cookie
-      Cookies.set('userPostalCode', cep) // Salvar o CEP no cookie
-      handleCepChange(cepFormatted)
+      Cookies.set('userLocation', response.localidade) // cidade
+      Cookies.set('userPostalCode', cep) // CEP
+      Cookies.set('userUF', response.uf) // opcional, salvar estado
+      await handleCepChange(cepFormatted)
       handleModalToggle()
       setIsLoading(false)
-      // window.location.reload()
     } catch (error) {
       setIsLoading(false)
       console.log('error: ', error)
@@ -161,28 +163,27 @@ function Geolocalizacao() {
   // }
 
   useEffect(() => {
-    // Verifique se o nome da cidade já está no cookie
     const savedLocation = Cookies.get('userLocation')
 
     if (savedLocation) {
-      // Se o nome da cidade estiver no cookie, use-o
       setLocation(savedLocation)
     } else {
-      var validacep = /^[0-9]{8}$/
-      const cep = Cookies.get('userPostalCode') || ''
+      const cepCookie = Cookies.get('userPostalCode') || ''
+      const validacep = /^[0-9]{8}$/
 
-      if (!cep) {
+      if (!cepCookie) {
         handleModalToggle()
+        return
       }
 
-      if (cep && validacep.test(cep)) {
-        getLocation(cep).then((data) => {
-          if (data?.erro) {
+      if (cepCookie && validacep.test(cepCookie)) {
+        getLocation(cepCookie).then((data) => {
+          if (!data || data.erro) {
             setErrorIS('CEP inválido')
             return
           }
-          // Após obter o nome da cidade, salve-o em um cookie
           Cookies.set('userLocation', data.localidade)
+          Cookies.set('userUF', data.uf)
           setLocation(data.localidade)
         })
       }
