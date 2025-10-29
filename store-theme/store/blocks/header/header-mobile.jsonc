@@ -68,6 +68,8 @@
 			"title": "Logo Irmãos Soares",
 			"href": "/",
 			"url": "assets/logo-irmao-soares.png",
+            /* BLACK FRIDAY */
+            /*"url": "https://irmaossoares.vtexassets.com/assets/vtex.file-manager-graphql/images/a2d0e92e-de90-4823-8b14-5f3763f0f704___bbd032c9a4c047b29d791a97fa2730e8.png",*/
 			"width": "130"
 		}
 	}
