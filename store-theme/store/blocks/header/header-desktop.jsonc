@@ -160,7 +160,10 @@
     },
     "image#wishlist-header": {
         "props": {
-            "src": "/arquivos/wishlist.svg",
+            "src": "/arquivos/wishlist.svg", 
+             /* BLACK FRIDAY */
+            /* "src": "https://irmaossoares.vtexassets.com/assets/vtex.file-manager-graphql/images/bf10076d-cab2-45a1-91c2-f245fc699537___9cb9bbbc6188813722993211dd3b42c1.png",
+            "blockClass": "wishlist-header",*/
             "blockClass": "wishlist-header",
             "link": {
                 "url": "/account#/wishlist"
