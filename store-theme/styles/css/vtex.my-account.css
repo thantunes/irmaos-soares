@@ -728,3 +728,78 @@
         border-radius: 6px;
     }
 }
+
+
+
+
+/* BLACK FRIDAY */
+/*
+  :global(.vtex-store-header-2-x-headerRowBackground--main-header-mobile), 
+  :global(.vtex-store-header-2-x-headerRowBackground--main-header),
+  :global(.vtex-flex-layout-0-x-flexRow--main-header-menu), 
+  :global(.vtex-flex-layout-0-x-flexRow--main-header-menu) 
+  :global(.vtex-category-menu-2-x-section--department) {background-color: #000!important;}
+  :global(.vtex-menu-2-x-styledLinkContent--menu-links-item) {color: #fff!important;}
+  :global(.irmaossoares-zig-custom-0-x-navLink) {color: #fff!important;}
+  :global(.vtex-render__container-id-home),
+  :global(.vtex-render__container-id-home-pitchbar),
+  :global(.vtex-render__container-id-shelf-title),
+  :global(.vtex-render__container-id-shelf),
+  :global(.vtex-render__container-id-home-banners-1),
+  :global(.vtex-render__container-id-shelf-title-2-new),
+  :global(.vtex-render__container-id-shelf-2),
+  :global(.vtex-render__container-id-home-banner-2-container),
+  :global(.vtex-render__container-id-compre-por-departamento-title),
+  :global(.vtex-render__container-id-home-compre-por-departamento),
+  :global(.vtex-render__container-id-shelf-title-3),
+  :global(.vtex-render__container-id-shelf-3),
+  :global(.vtex-render__container-id-home-banners-3),
+  :global(.vtex-flex-layout-0-x-flexRow--menu-row){background-color: #050500;}
+  :global(.vtex-store-footer-2-x-footerLayout--footer--is)
+  :global(.vtex-menu-2-x-styledLinkContent--footer-menu-item), 
+  :global(.vtex-store-footer-2-x-footerLayout--footer--is) 
+  :global(.vtex-rich-text-0-x-link--footer-menu-item),
+  :global(.vtex-store-footer-2-x-footerLayout--footer--is)
+  :global(.vtex-rich-text-0-x-paragraph--footer-menu-title) ,
+  :global(.render-route-store-home)
+  :global(.vtex-rich-text-0-x-headingLevel2--shelfTitle),
+  :global(.vtex-login-2-x-label), 
+  :global(.vtex-login-2-x-profile){color: #fff!important;}
+  :global(.vtex-login-2-x-container .vtex-button__label::before){background: url(https://irmaossoares.vtexassets.com/assets/vtex.file-manager-graphql/images/ffce27bb-6ef5-45a5-a21e-a0c92ab7d647___9add38c3a40ccc6687bb6c5e0dc3617d.png) center no-repeat!important;}
+  :global(.vtex-flex-layout-0-x-flexRowContent--home-banners-1) 
+  :global(.vtex-store-components-3-x-imageElement){border-radius: 15px;}
+  :global(.vtex-minicart-2-x-minicartWrapperContainer)
+  :global(.vtex-minicart-2-x-minicartContainer)
+  :global(.vtex-button){background-image: url(https://irmaossoares.vtexassets.com/assets/vtex.file-manager-graphql/images/67e9b0b2-4137-4bf7-8d7f-ca3368b05e9d___4894cea….png) !important;background-position: left !important; background-repeat: no-repeat !important; background-size: 30px !important;}
+  :global(.vtex-minicart-2-x-minicartContainer)
+  :global(.vtex-button)
+  :global(.vtex-minicart-2-x-cartIcon){opacity: 0!important;}
+  :global(.vtex-flex-layout-0-x-flexColChild--footer-logo-container)
+  :global(.vtex-store-components-3-x-imageElement){max-width: 190px;}
+  :global(.vtex-flex-layout-0-x-flexRowContent--footer-socials-container)
+  :global(.vtex-store-components-3-x-imageElement){background-color: #ddd;border-radius: 4px;}
+  :global(.vtex-flex-layout-0-x-flexRowContent--home-banners-3)
+  :global(.vtex-store-components-3-x-imageElement){border-radius: 10px;}
+  :global(.irmaossoares-zig-custom-0-x-menuToggle) span {background: #fff;}
+
+@media screen and (max-width: 980px) {
+  :global(.vtex-store-footer-2-x-footerLayout){margin-top: -35px;}
+  :global(.irmaossoares-zig-custom-0-x-navLink) {color: #000 !important;}
+  :global(.vtex-store-components-3-x-searchBarContainer){background-color: #000;}
+}
+@media screen and (min-width: 981px) {
+  :global(.vtex-store-components-3-x-searchBarInnerContainer){
+    background-color: #000!important;
+    border: 1px solid #d9d9d9!important;}
+
+     :global(.vtex-store-components-3-x-searchBarContainer)
+     :global(.vtex-styleguide-9-x-input::placeholder), 
+     :global(.vtex-store-components-3-x-searchBarContainer) 
+     :global(.vtex-styleguide-9-x-input) {color: #fff!important; background-color: #000!important;}
+     :global(.vtex-store-components-3-x-searchBarIcon--search){  background-color: #000!important;background-image: url(https://irmaossoares.vtexassets.com/assets/vtex.file-manager-graphql/images/520f21b4-3d77-45c7-b5cb-e5f5f3f7ff9c___6f75eb1….png)!important;background-position: center!important;background-repeat: no-repeat!important; background-size: 16px!important;}
+     :global(.vtex-store-components-3-x-searchBarIcon--search)::before {display:none!important;}
+     :global(.vtex-store-components-3-x-searchBarIcon--search)
+     :global(.vtex-store-components-3-x-searchIcon){opacity: 0!important;}
+    }
+     */
+/* END - BLACK FRIDAY  */
