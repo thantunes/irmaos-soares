@@ -43,6 +43,9 @@
     "image#logo-new-footer": {
         "props": {
             "src": "/arquivos/footer-new-logo.png"
+            /* BLACK FRIDAY */
+ /* "src": "https://irmaossoares.vtexassets.com/assets/vtex.file-manager-graphql/images/87f17fc5-cdc2-4070-9764-5ff6740fca09___56a7123f270d76b401d933fa0d8f224e.png" */
+        }
         }
     },
     "flex-layout.row#footer-socials-container": {
